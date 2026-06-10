@@ -1,0 +1,6 @@
+{
+  "melody_midi": "C:\\Users\\常永康\\OneDrive\\桌面\\大三下\\语音信息处理\\YiYuTongSheng\\data\\score\\melody.mid",
+  "lyrics_singable": "C:\\Users\\常永康\\OneDrive\\桌面\\大三下\\语音信息处理\\YiYuTongSheng\\data\\lyrics\\lyrics_singable.json",
+  "alignment": "C:\\Users\\常永康\\OneDrive\\桌面\\大三下\\语音信息处理\\YiYuTongSheng\\data\\alignment\\note_lyric_alignment.json",
+  "todo": "generate .ustx project for OpenUtau or export DiffSinger input."
+}

@@ -1,0 +1,99 @@
+{
+  "language": "en",
+  "phrases": [
+    {
+      "id": 1,
+      "zh": "我想和你去看海",
+      "start": 0.0,
+      "end": 3.2,
+      "note_start": 0,
+      "note_end": 3,
+      "target_language": "en",
+      "literal": "I want to go see the sea with you",
+      "note_count": 3,
+      "candidates": [
+        {
+          "text": "Let's go see the sea",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.333,
+          "singability_score": 1.0,
+          "ending_score": 1.0,
+          "final_score": 0.72
+        },
+        {
+          "text": "I want the sea with you",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.0,
+          "singability_score": 1.0,
+          "ending_score": 1.0,
+          "final_score": 0.62
+        },
+        {
+          "text": "Go see the sea with me",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.0,
+          "singability_score": 1.0,
+          "ending_score": 1.0,
+          "final_score": 0.62
+        }
+      ],
+      "selected": {
+        "text": "Let's go see the sea",
+        "syllables": 5,
+        "semantic_score": 0.8,
+        "rhythm_score": 0.333,
+        "singability_score": 1.0,
+        "ending_score": 1.0,
+        "final_score": 0.72
+      },
+      "text": "Let's go see the sea",
+      "syllables": [
+        "let's go",
+        "see",
+        "the sea"
+      ],
+      "tokens": [
+        {
+          "word": "let's",
+          "phonemes": [
+            "L",
+            "EH",
+            "T",
+            "S"
+          ]
+        },
+        {
+          "word": "go",
+          "phonemes": [
+            "G",
+            "OW"
+          ]
+        },
+        {
+          "word": "see",
+          "phonemes": [
+            "S",
+            "IY"
+          ]
+        },
+        {
+          "word": "the",
+          "phonemes": [
+            "DH",
+            "AH"
+          ]
+        },
+        {
+          "word": "sea",
+          "phonemes": [
+            "S",
+            "IY"
+          ]
+        }
+      ]
+    }
+  ]
+}

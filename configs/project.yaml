@@ -1,0 +1,25 @@
+project:
+  name: "YiyuTongsheng"
+  target_language: "en"
+  sample_rate: 44100
+
+paths:
+  raw_song: "data/raw/original_song.wav"
+  vocals: "data/stems/vocals.wav"
+  accompaniment: "data/stems/accompaniment.wav"
+  lyrics_zh: "data/lyrics/lyrics_zh.txt"
+  phrase_map: "data/lyrics/phrase_map.json"
+  f0_csv: "data/score/f0.csv"
+  melody_notes: "data/score/melody_notes.json"
+  melody_midi: "data/score/melody.mid"
+  lyrics_literal: "data/lyrics/lyrics_literal.json"
+  lyrics_singable: "data/lyrics/lyrics_singable.json"
+  phonemes_target: "data/phoneme/phonemes_target.json"
+  note_lyric_alignment: "data/alignment/note_lyric_alignment.json"
+  svs_vocal: "data/svs/target_language_vocal.wav"
+  rvc_converted: "data/rvc/converted_voice.wav"
+  final_mix: "data/final/final_mix.wav"
+
+pipeline:
+  allow_mock_outputs: true
+  overwrite: true

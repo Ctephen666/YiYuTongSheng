@@ -1,0 +1,5 @@
+svs:
+  backend: "openutau"
+  voicebank: "TODO_target_language_voicebank"
+  export_plan: "data/svs/openutau_export_plan.json"
+  render_command: "TODO_openutau_or_diffsinger_command"

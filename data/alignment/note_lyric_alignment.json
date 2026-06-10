@@ -1,0 +1,40 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "status": "success",
+      "items": [
+        {
+          "syllable": "let's go",
+          "notes": [
+            {
+              "pitch": "C4",
+              "start": 0.0,
+              "duration": 0.5
+            }
+          ]
+        },
+        {
+          "syllable": "see",
+          "notes": [
+            {
+              "pitch": "D4",
+              "start": 0.5,
+              "duration": 0.5
+            }
+          ]
+        },
+        {
+          "syllable": "the sea",
+          "notes": [
+            {
+              "pitch": "E4",
+              "start": 1.0,
+              "duration": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+adapter:
+  semantic_weight: 0.4
+  rhythm_weight: 0.3
+  singability_weight: 0.2
+  ending_weight: 0.1
+  max_candidates: 3

@@ -32,6 +32,13 @@ class JapanesePhonemizer:
         chars = [char for char in text if not char.isspace()]
         return [{"mora": char, "phonemes": [char]} for char in chars]
 
+    def selected_text(self, phrase: dict) -> str:
+        """Return selected lyric text from either current string or legacy dict format."""
+        selected = phrase.get("selected", "")
+        if isinstance(selected, dict):
+            return selected.get("text", "")
+        return str(selected)
+
     def run(self) -> dict:
         """Generate mock Japanese phoneme JSON.
 
@@ -47,7 +54,7 @@ class JapanesePhonemizer:
         singable = read_json(singable_path, {"phrases": [{"id": 1, "selected": {"text": "海を見に行こう"}}]})
         phrases = []
         for phrase in singable.get("phrases", []):
-            text = phrase.get("selected", {}).get("text", "")
+            text = self.selected_text(phrase)
             tokens = self.phonemize_line(text)
             phrases.append({**phrase, "text": text, "syllables": [item["mora"] for item in tokens], "tokens": tokens})
 

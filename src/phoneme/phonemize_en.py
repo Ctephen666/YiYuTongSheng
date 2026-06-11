@@ -79,6 +79,13 @@ class EnglishPhonemizer:
             index += 1
         return units
 
+    def selected_text(self, phrase: dict) -> str:
+        """Return selected lyric text from either current string or legacy dict format."""
+        selected = phrase.get("selected", "")
+        if isinstance(selected, dict):
+            return selected.get("text", "")
+        return str(selected)
+
     def run(self) -> dict:
         """Generate target-language phoneme JSON.
 
@@ -97,7 +104,7 @@ class EnglishPhonemizer:
         )
         phrases = []
         for phrase in singable.get("phrases", []):
-            text = phrase.get("selected", {}).get("text", "")
+            text = self.selected_text(phrase)
             tokens = self.phonemize_line(text)
             syllables = self.alignment_units(text)
             phrases.append({**phrase, "text": text, "syllables": syllables, "tokens": tokens})

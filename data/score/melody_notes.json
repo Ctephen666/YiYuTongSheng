@@ -1,24 +1,3478 @@
 {
+  "source": "opencpop_textgrid",
+  "sample_id": "2002",
   "phrases": [
     {
       "id": 1,
-      "start": 0.0,
-      "end": 3.2,
+      "zh": "你是我穷极一生到不了的天堂",
+      "start": 2.70904,
+      "end": 10.06609,
       "notes": [
         {
-          "pitch": "C4",
-          "start": 0.0,
-          "duration": 0.5
+          "index": 0,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 2.70904,
+          "end": 2.88751,
+          "duration": 0.17847
         },
         {
+          "index": 1,
+          "lyric": "是",
+          "syllable": "shi",
           "pitch": "D4",
-          "start": 0.5,
-          "duration": 0.5
+          "midi": 62,
+          "start": 2.88751,
+          "end": 3.72841,
+          "duration": 0.8409
         },
         {
-          "pitch": "E4",
-          "start": 1.0,
-          "duration": 1.0
+          "index": 2,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 3.72841,
+          "end": 4.23939,
+          "duration": 0.51098
+        },
+        {
+          "index": 3,
+          "lyric": "穷",
+          "syllable": "qiong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 4.49523,
+          "end": 4.98433,
+          "duration": 0.4891
+        },
+        {
+          "index": 4,
+          "lyric": "极",
+          "syllable": "ji",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 4.98433,
+          "end": 5.30661,
+          "duration": 0.32228
+        },
+        {
+          "index": 5,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 5.30661,
+          "end": 5.5894,
+          "duration": 0.28279
+        },
+        {
+          "index": 6,
+          "lyric": "生",
+          "syllable": "sheng",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 5.5894,
+          "end": 6.15817,
+          "duration": 0.56877
+        },
+        {
+          "index": 7,
+          "lyric": "到",
+          "syllable": "dao",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 6.15817,
+          "end": 6.45164,
+          "duration": 0.29347
+        },
+        {
+          "index": 8,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 6.55088,
+          "end": 7.22032,
+          "duration": 0.66944
+        },
+        {
+          "index": 9,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 7.22032,
+          "end": 8.05393,
+          "duration": 0.83361
+        },
+        {
+          "index": 10,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 8.05393,
+          "end": 8.28113,
+          "duration": 0.2272
+        },
+        {
+          "index": 11,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 8.3312,
+          "end": 8.72498,
+          "duration": 0.39378
+        },
+        {
+          "index": 12,
+          "lyric": "堂",
+          "syllable": "tang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 8.72498,
+          "end": 9.54778,
+          "duration": 0.8228
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "zh": "却偏偏还是会奢望",
+      "start": 10.06609,
+      "end": 14.84438,
+      "notes": [
+        {
+          "index": 13,
+          "lyric": "却",
+          "syllable": "qve",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 10.06609,
+          "end": 10.44932,
+          "duration": 0.38323
+        },
+        {
+          "index": 14,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "G4",
+          "midi": 67,
+          "start": 10.44932,
+          "end": 10.86964,
+          "duration": 0.42032
+        },
+        {
+          "index": 15,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 10.86964,
+          "end": 11.18338,
+          "duration": 0.31374
+        },
+        {
+          "index": 16,
+          "lyric": "还",
+          "syllable": "hai",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 11.18338,
+          "end": 11.47247,
+          "duration": 0.28909
+        },
+        {
+          "index": 17,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 11.47247,
+          "end": 11.88061,
+          "duration": 0.40814
+        },
+        {
+          "index": 18,
+          "lyric": "会",
+          "syllable": "hui",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 11.88061,
+          "end": 12.20929,
+          "duration": 0.32868
+        },
+        {
+          "index": 19,
+          "lyric": "奢",
+          "syllable": "she",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 12.20929,
+          "end": 12.98962,
+          "duration": 0.78033
+        },
+        {
+          "index": 20,
+          "lyric": "望",
+          "syllable": "wang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 13.05503,
+          "end": 14.29286,
+          "duration": 1.23783
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "start": 14.84438,
+      "end": 21.71207,
+      "notes": [
+        {
+          "index": 21,
+          "lyric": "让",
+          "syllable": "rang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 14.84438,
+          "end": 15.40396,
+          "duration": 0.55958
+        },
+        {
+          "index": 22,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 15.40396,
+          "end": 16.09493,
+          "duration": 0.69097
+        },
+        {
+          "index": 23,
+          "lyric": "铺",
+          "syllable": "pu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 16.27954,
+          "end": 16.6529,
+          "duration": 0.37336
+        },
+        {
+          "index": 24,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 16.6529,
+          "end": 17.04414,
+          "duration": 0.39124
+        },
+        {
+          "index": 25,
+          "lyric": "盖",
+          "syllable": "gai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 17.04414,
+          "end": 17.38722,
+          "duration": 0.34308
+        },
+        {
+          "index": 26,
+          "lyric": "地",
+          "syllable": "di",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 17.38722,
+          "end": 17.56329,
+          "duration": 0.17607
+        },
+        {
+          "index": 27,
+          "lyric": "琢",
+          "syllable": "zuo",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 17.65578,
+          "end": 18.0346,
+          "duration": 0.37882
+        },
+        {
+          "index": 28,
+          "lyric": "磨",
+          "syllable": "mo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 18.0346,
+          "end": 18.4844,
+          "duration": 0.4498
+        },
+        {
+          "index": 29,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 18.89845,
+          "end": 19.89079,
+          "duration": 0.99234
+        },
+        {
+          "index": 30,
+          "lyric": "停",
+          "syllable": "ting",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 19.89079,
+          "end": 20.18896,
+          "duration": 0.29817
+        },
+        {
+          "index": 31,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 20.18896,
+          "end": 20.80083,
+          "duration": 0.61187
+        },
+        {
+          "index": 32,
+          "lyric": "象",
+          "syllable": "xiang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 20.80083,
+          "end": 21.42159,
+          "duration": 0.62076
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "zh": "这未知的",
+      "start": 21.71207,
+      "end": 24.14347,
+      "notes": [
+        {
+          "index": 33,
+          "lyric": "这",
+          "syllable": "zhe",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 21.71207,
+          "end": 22.13581,
+          "duration": 0.42374
+        },
+        {
+          "index": 34,
+          "lyric": "未",
+          "syllable": "wei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 22.13581,
+          "end": 22.79058,
+          "duration": 0.65477
+        },
+        {
+          "index": 35,
+          "lyric": "知",
+          "syllable": "zhi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 22.79058,
+          "end": 23.21392,
+          "duration": 0.42334
+        },
+        {
+          "index": 36,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 23.21392,
+          "end": 23.90369,
+          "duration": 0.68977
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "zh": "疯狂",
+      "start": 24.14347,
+      "end": 29.94879,
+      "notes": [
+        {
+          "index": 37,
+          "lyric": "疯",
+          "syllable": "feng",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 24.14347,
+          "end": 24.75267,
+          "duration": 0.6092
+        },
+        {
+          "index": 38,
+          "lyric": "狂",
+          "syllable": "kuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 24.75267,
+          "end": 26.88991,
+          "duration": 2.13724
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "zh": "在铺垫着对你的奢望",
+      "start": 29.94879,
+      "end": 34.76901,
+      "notes": [
+        {
+          "index": 39,
+          "lyric": "在",
+          "syllable": "zai",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 29.94879,
+          "end": 30.32086,
+          "duration": 0.37207
+        },
+        {
+          "index": 40,
+          "lyric": "铺",
+          "syllable": "pu",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 30.39663,
+          "end": 30.74216,
+          "duration": 0.34553
+        },
+        {
+          "index": 41,
+          "lyric": "垫",
+          "syllable": "dian",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 30.74216,
+          "end": 31.07234,
+          "duration": 0.33018
+        },
+        {
+          "index": 42,
+          "lyric": "着",
+          "syllable": "zhe",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 31.07234,
+          "end": 31.64557,
+          "duration": 0.57323
+        },
+        {
+          "index": 43,
+          "lyric": "对",
+          "syllable": "dui",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 31.83018,
+          "end": 32.0533,
+          "duration": 0.22312
+        },
+        {
+          "index": 44,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 32.0533,
+          "end": 32.94222,
+          "duration": 0.88892
+        },
+        {
+          "index": 45,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 32.94222,
+          "end": 33.13119,
+          "duration": 0.18897
+        },
+        {
+          "index": 46,
+          "lyric": "奢",
+          "syllable": "she",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 33.13119,
+          "end": 34.00682,
+          "duration": 0.87563
+        },
+        {
+          "index": 47,
+          "lyric": "望",
+          "syllable": "wang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 34.00682,
+          "end": 34.38614,
+          "duration": 0.37932
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "zh": "你主动的退让我被动的撒谎",
+      "start": 34.76901,
+      "end": 41.54764,
+      "notes": [
+        {
+          "index": 48,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 34.76901,
+          "end": 35.04282,
+          "duration": 0.27381
+        },
+        {
+          "index": 49,
+          "lyric": "主",
+          "syllable": "zhu",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 35.04282,
+          "end": 35.47874,
+          "duration": 0.43592
+        },
+        {
+          "index": 50,
+          "lyric": "动",
+          "syllable": "dong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 35.47874,
+          "end": 35.84005,
+          "duration": 0.36131
+        },
+        {
+          "index": 51,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 35.84005,
+          "end": 36.03894,
+          "duration": 0.19889
+        },
+        {
+          "index": 52,
+          "lyric": "退",
+          "syllable": "tui",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 36.1099,
+          "end": 36.52915,
+          "duration": 0.41925
+        },
+        {
+          "index": 53,
+          "lyric": "让",
+          "syllable": "rang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 36.52915,
+          "end": 37.24698,
+          "duration": 0.71783
+        },
+        {
+          "index": 54,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 37.63212,
+          "end": 37.81308,
+          "duration": 0.18096
+        },
+        {
+          "index": 55,
+          "lyric": "被",
+          "syllable": "bei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 37.96462,
+          "end": 38.37173,
+          "duration": 0.40711
+        },
+        {
+          "index": 56,
+          "lyric": "动",
+          "syllable": "dong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 38.37173,
+          "end": 38.72699,
+          "duration": 0.35526
+        },
+        {
+          "index": 57,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 38.72699,
+          "end": 38.88173,
+          "duration": 0.15474
+        },
+        {
+          "index": 58,
+          "lyric": "撒",
+          "syllable": "sa",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 38.88173,
+          "end": 39.34775,
+          "duration": 0.46602
+        },
+        {
+          "index": 59,
+          "lyric": "谎",
+          "syllable": "huang",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 39.34775,
+          "end": 39.98087,
+          "duration": 0.63312
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "zh": "做出一种虚伪的想象",
+      "start": 41.54764,
+      "end": 46.31726,
+      "notes": [
+        {
+          "index": 60,
+          "lyric": "做",
+          "syllable": "zuo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 41.54764,
+          "end": 41.8427,
+          "duration": 0.29506
+        },
+        {
+          "index": 61,
+          "lyric": "出",
+          "syllable": "chu",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 41.8427,
+          "end": 42.30868,
+          "duration": 0.46598
+        },
+        {
+          "index": 62,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 42.30868,
+          "end": 42.67311,
+          "duration": 0.36443
+        },
+        {
+          "index": 63,
+          "lyric": "种",
+          "syllable": "zhong",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 42.67311,
+          "end": 43.10222,
+          "duration": 0.42911
+        },
+        {
+          "index": 64,
+          "lyric": "虚",
+          "syllable": "xv",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 43.31347,
+          "end": 43.81755,
+          "duration": 0.50408
+        },
+        {
+          "index": 65,
+          "lyric": "伪",
+          "syllable": "wei",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 43.81755,
+          "end": 44.51007,
+          "duration": 0.69252
+        },
+        {
+          "index": 66,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 44.51007,
+          "end": 44.68388,
+          "duration": 0.17381
+        },
+        {
+          "index": 67,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 44.68388,
+          "end": 45.43181,
+          "duration": 0.74793
+        },
+        {
+          "index": 68,
+          "lyric": "象",
+          "syllable": "xiang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 45.43181,
+          "end": 46.0286,
+          "duration": 0.59679
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "zh": "没离开的迹象",
+      "start": 46.31726,
+      "end": 53.07766,
+      "notes": [
+        {
+          "index": 69,
+          "lyric": "没",
+          "syllable": "mei",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 46.31726,
+          "end": 46.6904,
+          "duration": 0.37314
+        },
+        {
+          "index": 70,
+          "lyric": "离",
+          "syllable": "li",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 46.6904,
+          "end": 47.26705,
+          "duration": 0.57665
+        },
+        {
+          "index": 71,
+          "lyric": "开",
+          "syllable": "kai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 47.34389,
+          "end": 47.83339,
+          "duration": 0.4895
+        },
+        {
+          "index": 72,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 47.83339,
+          "end": 48.44134,
+          "duration": 0.60795
+        },
+        {
+          "index": 73,
+          "lyric": "迹",
+          "syllable": "ji",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 48.82315,
+          "end": 49.1295,
+          "duration": 0.30635
+        },
+        {
+          "index": 74,
+          "lyric": "象",
+          "syllable": "xiang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 49.1295,
+          "end": 51.27056,
+          "duration": 2.14106
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "zh": "你没回头多直接了当",
+      "start": 53.07766,
+      "end": 58.22624,
+      "notes": [
+        {
+          "index": 75,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 53.07766,
+          "end": 53.41167,
+          "duration": 0.33401
+        },
+        {
+          "index": 76,
+          "lyric": "没",
+          "syllable": "mei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 53.41167,
+          "end": 53.77947,
+          "duration": 0.3678
+        },
+        {
+          "index": 77,
+          "lyric": "回",
+          "syllable": "hui",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 53.77947,
+          "end": 54.16417,
+          "duration": 0.3847
+        },
+        {
+          "index": 78,
+          "lyric": "头",
+          "syllable": "tou",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 54.23087,
+          "end": 54.70396,
+          "duration": 0.47309
+        },
+        {
+          "index": 79,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 54.9912,
+          "end": 55.21663,
+          "duration": 0.22543
+        },
+        {
+          "index": 80,
+          "lyric": "直",
+          "syllable": "zhi",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 55.27265,
+          "end": 55.979,
+          "duration": 0.70635
+        },
+        {
+          "index": 81,
+          "lyric": "接",
+          "syllable": "jie",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 55.979,
+          "end": 56.42297,
+          "duration": 0.44397
+        },
+        {
+          "index": 82,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 56.42297,
+          "end": 57.13132,
+          "duration": 0.70835
+        },
+        {
+          "index": 83,
+          "lyric": "当",
+          "syllable": "dang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 57.13132,
+          "end": 57.7905,
+          "duration": 0.65918
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "zh": "自私在不断生长",
+      "start": 58.22624,
+      "end": 62.91681,
+      "notes": [
+        {
+          "index": 84,
+          "lyric": "自",
+          "syllable": "zi",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 58.22624,
+          "end": 58.48697,
+          "duration": 0.26073
+        },
+        {
+          "index": 85,
+          "lyric": "私",
+          "syllable": "si",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 58.48697,
+          "end": 58.89213,
+          "duration": 0.40516
+        },
+        {
+          "index": 86,
+          "lyric": "在",
+          "syllable": "zai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 58.89213,
+          "end": 59.29871,
+          "duration": 0.40658
+        },
+        {
+          "index": 87,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 59.35064,
+          "end": 59.66278,
+          "duration": 0.31214
+        },
+        {
+          "index": 88,
+          "lyric": "断",
+          "syllable": "duan",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 59.66278,
+          "end": 59.92475,
+          "duration": 0.26197
+        },
+        {
+          "index": 89,
+          "lyric": "生",
+          "syllable": "sheng",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 59.92475,
+          "end": 60.66912,
+          "duration": 0.74437
+        },
+        {
+          "index": 90,
+          "lyric": "长",
+          "syllable": "zhang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 60.66912,
+          "end": 62.23162,
+          "duration": 1.5625
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "zh": "我多想陪你一场也想你和我一样",
+      "start": 62.91681,
+      "end": 69.36071,
+      "notes": [
+        {
+          "index": 91,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 62.91681,
+          "end": 63.31757,
+          "duration": 0.40076
+        },
+        {
+          "index": 92,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 63.31757,
+          "end": 63.53601,
+          "duration": 0.21844
+        },
+        {
+          "index": 93,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 63.53601,
+          "end": 63.9782,
+          "duration": 0.44219
+        },
+        {
+          "index": 94,
+          "lyric": "陪",
+          "syllable": "pei",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 63.9782,
+          "end": 64.37646,
+          "duration": 0.39826
+        },
+        {
+          "index": 95,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 64.37646,
+          "end": 64.68517,
+          "duration": 0.30871
+        },
+        {
+          "index": 96,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 64.75347,
+          "end": 64.97783,
+          "duration": 0.22436
+        },
+        {
+          "index": 97,
+          "lyric": "场",
+          "syllable": "chang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 65.01145,
+          "end": 65.51349,
+          "duration": 0.50204
+        },
+        {
+          "index": 98,
+          "lyric": "也",
+          "syllable": "ye",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 65.78881,
+          "end": 66.05839,
+          "duration": 0.26958
+        },
+        {
+          "index": 99,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 66.05839,
+          "end": 66.55972,
+          "duration": 0.50133
+        },
+        {
+          "index": 100,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 66.55972,
+          "end": 66.7936,
+          "duration": 0.23388
+        },
+        {
+          "index": 101,
+          "lyric": "和",
+          "syllable": "he",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 66.7936,
+          "end": 67.26455,
+          "duration": 0.47095
+        },
+        {
+          "index": 102,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 67.26455,
+          "end": 67.59643,
+          "duration": 0.33188
+        },
+        {
+          "index": 103,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 67.59643,
+          "end": 68.01208,
+          "duration": 0.41565
+        },
+        {
+          "index": 104,
+          "lyric": "样",
+          "syllable": "yang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 68.01208,
+          "end": 68.7765,
+          "duration": 0.76442
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "zh": "就背上了行囊",
+      "start": 69.36071,
+      "end": 76.57263,
+      "notes": [
+        {
+          "index": 105,
+          "lyric": "就",
+          "syllable": "jiu",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 69.36071,
+          "end": 69.69281,
+          "duration": 0.3321
+        },
+        {
+          "index": 106,
+          "lyric": "背",
+          "syllable": "bei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 69.76484,
+          "end": 70.36021,
+          "duration": 0.59537
+        },
+        {
+          "index": 107,
+          "lyric": "上",
+          "syllable": "shang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 70.36021,
+          "end": 70.92481,
+          "duration": 0.5646
+        },
+        {
+          "index": 108,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 70.92481,
+          "end": 71.57363,
+          "duration": 0.64882
+        },
+        {
+          "index": 109,
+          "lyric": "行",
+          "syllable": "xing",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 71.80061,
+          "end": 72.49469,
+          "duration": 0.69408
+        },
+        {
+          "index": 110,
+          "lyric": "囊",
+          "syllable": "nang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 72.49469,
+          "end": 74.64731,
+          "duration": 2.15262
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "zh": "你是我穷极一生到不了的天堂",
+      "start": 76.57263,
+      "end": 83.79607,
+      "notes": [
+        {
+          "index": 111,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 76.57263,
+          "end": 76.76974,
+          "duration": 0.19711
+        },
+        {
+          "index": 112,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 76.76974,
+          "end": 77.53678,
+          "duration": 0.76704
+        },
+        {
+          "index": 113,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 77.53678,
+          "end": 78.30894,
+          "duration": 0.77216
+        },
+        {
+          "index": 114,
+          "lyric": "穷",
+          "syllable": "qiong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 78.30894,
+          "end": 78.84486,
+          "duration": 0.53592
+        },
+        {
+          "index": 115,
+          "lyric": "极",
+          "syllable": "ji",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 78.84486,
+          "end": 79.18474,
+          "duration": 0.33988
+        },
+        {
+          "index": 116,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 79.18474,
+          "end": 79.43321,
+          "duration": 0.24847
+        },
+        {
+          "index": 117,
+          "lyric": "生",
+          "syllable": "sheng",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 79.43321,
+          "end": 79.94209,
+          "duration": 0.50888
+        },
+        {
+          "index": 118,
+          "lyric": "到",
+          "syllable": "dao",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 79.94209,
+          "end": 80.31047,
+          "duration": 0.36838
+        },
+        {
+          "index": 119,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 80.31047,
+          "end": 80.93483,
+          "duration": 0.62436
+        },
+        {
+          "index": 120,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 80.93483,
+          "end": 81.7559,
+          "duration": 0.82107
+        },
+        {
+          "index": 121,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 81.7559,
+          "end": 81.98204,
+          "duration": 0.22614
+        },
+        {
+          "index": 122,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 82.03326,
+          "end": 82.42112,
+          "duration": 0.38786
+        },
+        {
+          "index": 123,
+          "lyric": "堂",
+          "syllable": "tang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 82.42112,
+          "end": 83.28576,
+          "duration": 0.86464
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "zh": "却偏偏还是会奢望",
+      "start": 83.79607,
+      "end": 88.54155,
+      "notes": [
+        {
+          "index": 124,
+          "lyric": "却",
+          "syllable": "qve",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 83.79607,
+          "end": 84.20785,
+          "duration": 0.41178
+        },
+        {
+          "index": 125,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "G4",
+          "midi": 67,
+          "start": 84.20785,
+          "end": 84.59402,
+          "duration": 0.38617
+        },
+        {
+          "index": 126,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 84.59402,
+          "end": 84.92265,
+          "duration": 0.32863
+        },
+        {
+          "index": 127,
+          "lyric": "还",
+          "syllable": "hai",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 84.92265,
+          "end": 85.20117,
+          "duration": 0.27852
+        },
+        {
+          "index": 128,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 85.20117,
+          "end": 85.62696,
+          "duration": 0.42579
+        },
+        {
+          "index": 129,
+          "lyric": "会",
+          "syllable": "hui",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 85.62696,
+          "end": 85.93953,
+          "duration": 0.31257
+        },
+        {
+          "index": 130,
+          "lyric": "奢",
+          "syllable": "she",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 85.93953,
+          "end": 86.77554,
+          "duration": 0.83601
+        },
+        {
+          "index": 131,
+          "lyric": "望",
+          "syllable": "wang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 86.77554,
+          "end": 87.96583,
+          "duration": 1.19029
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "start": 88.54155,
+      "end": 95.40097,
+      "notes": [
+        {
+          "index": 132,
+          "lyric": "让",
+          "syllable": "rang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 88.54155,
+          "end": 89.16302,
+          "duration": 0.62147
+        },
+        {
+          "index": 133,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 89.16302,
+          "end": 89.76382,
+          "duration": 0.6008
+        },
+        {
+          "index": 134,
+          "lyric": "铺",
+          "syllable": "pu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 90.00765,
+          "end": 90.35807,
+          "duration": 0.35042
+        },
+        {
+          "index": 135,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 90.35807,
+          "end": 90.77367,
+          "duration": 0.4156
+        },
+        {
+          "index": 136,
+          "lyric": "盖",
+          "syllable": "gai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 90.77367,
+          "end": 91.12334,
+          "duration": 0.34967
+        },
+        {
+          "index": 137,
+          "lyric": "地",
+          "syllable": "di",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 91.12334,
+          "end": 91.35872,
+          "duration": 0.23538
+        },
+        {
+          "index": 138,
+          "lyric": "琢",
+          "syllable": "zuo",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 91.35872,
+          "end": 91.78064,
+          "duration": 0.42192
+        },
+        {
+          "index": 139,
+          "lyric": "磨",
+          "syllable": "mo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 91.78064,
+          "end": 92.20269,
+          "duration": 0.42205
+        },
+        {
+          "index": 140,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 92.56338,
+          "end": 93.6166,
+          "duration": 1.05322
+        },
+        {
+          "index": 141,
+          "lyric": "停",
+          "syllable": "ting",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 93.6166,
+          "end": 93.88778,
+          "duration": 0.27118
+        },
+        {
+          "index": 142,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 93.88778,
+          "end": 94.5526,
+          "duration": 0.66482
+        },
+        {
+          "index": 143,
+          "lyric": "象",
+          "syllable": "xiang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 94.5526,
+          "end": 95.11711,
+          "duration": 0.56451
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "zh": "这未知的疯狂",
+      "start": 95.40097,
+      "end": 99.82475,
+      "notes": [
+        {
+          "index": 144,
+          "lyric": "这",
+          "syllable": "zhe",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 95.40097,
+          "end": 95.81065,
+          "duration": 0.40968
+        },
+        {
+          "index": 145,
+          "lyric": "未",
+          "syllable": "wei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 95.81065,
+          "end": 96.54569,
+          "duration": 0.73504
+        },
+        {
+          "index": 146,
+          "lyric": "知",
+          "syllable": "zhi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 96.54569,
+          "end": 96.94266,
+          "duration": 0.39697
+        },
+        {
+          "index": 147,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 96.94266,
+          "end": 97.60428,
+          "duration": 0.66162
+        },
+        {
+          "index": 148,
+          "lyric": "疯",
+          "syllable": "feng",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 97.84843,
+          "end": 98.3582,
+          "duration": 0.50977
+        },
+        {
+          "index": 149,
+          "lyric": "狂",
+          "syllable": "kuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 98.3582,
+          "end": 99.53769,
+          "duration": 1.17949
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "zh": "我开始不管不顾不问这场疯狂",
+      "start": 99.82475,
+      "end": 106.89635,
+      "notes": [
+        {
+          "index": 150,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 99.82475,
+          "end": 99.97832,
+          "duration": 0.15357
+        },
+        {
+          "index": 151,
+          "lyric": "开",
+          "syllable": "kai",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 100.09731,
+          "end": 100.80767,
+          "duration": 0.71036
+        },
+        {
+          "index": 152,
+          "lyric": "始",
+          "syllable": "shi",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 100.80767,
+          "end": 101.35368,
+          "duration": 0.54601
+        },
+        {
+          "index": 153,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 101.60499,
+          "end": 101.97324,
+          "duration": 0.36825
+        },
+        {
+          "index": 154,
+          "lyric": "管",
+          "syllable": "guan",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 101.97324,
+          "end": 102.34744,
+          "duration": 0.3742
+        },
+        {
+          "index": 155,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 102.34744,
+          "end": 102.69457,
+          "duration": 0.34713
+        },
+        {
+          "index": 156,
+          "lyric": "顾",
+          "syllable": "gu",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 102.69457,
+          "end": 103.02218,
+          "duration": 0.32761
+        },
+        {
+          "index": 157,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 103.0513,
+          "end": 103.43174,
+          "duration": 0.38044
+        },
+        {
+          "index": 158,
+          "lyric": "问",
+          "syllable": "wen",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 103.43174,
+          "end": 104.10065,
+          "duration": 0.66891
+        },
+        {
+          "index": 159,
+          "lyric": "这",
+          "syllable": "zhe",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 104.10065,
+          "end": 104.79392,
+          "duration": 0.69327
+        },
+        {
+          "index": 160,
+          "lyric": "场",
+          "syllable": "chang",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 104.79392,
+          "end": 105.1242,
+          "duration": 0.33028
+        },
+        {
+          "index": 161,
+          "lyric": "疯",
+          "syllable": "feng",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 105.1242,
+          "end": 105.55216,
+          "duration": 0.42796
+        },
+        {
+          "index": 162,
+          "lyric": "狂",
+          "syllable": "kuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 105.55216,
+          "end": 106.55967,
+          "duration": 1.00751
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "zh": "始终掩盖自己伪装你说爱有多荒唐",
+      "start": 106.89635,
+      "end": 114.85272,
+      "notes": [
+        {
+          "index": 163,
+          "lyric": "始",
+          "syllable": "shi",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 106.89635,
+          "end": 107.30483,
+          "duration": 0.40848
+        },
+        {
+          "index": 164,
+          "lyric": "终",
+          "syllable": "zhong",
+          "pitch": "G4",
+          "midi": 67,
+          "start": 107.30483,
+          "end": 107.77628,
+          "duration": 0.47145
+        },
+        {
+          "index": 165,
+          "lyric": "掩",
+          "syllable": "yan",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 107.77628,
+          "end": 108.11723,
+          "duration": 0.34095
+        },
+        {
+          "index": 166,
+          "lyric": "盖",
+          "syllable": "gai",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 108.11723,
+          "end": 108.41549,
+          "duration": 0.29826
+        },
+        {
+          "index": 167,
+          "lyric": "自",
+          "syllable": "zi",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 108.41549,
+          "end": 108.75759,
+          "duration": 0.3421
+        },
+        {
+          "index": 168,
+          "lyric": "己",
+          "syllable": "ji",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 108.75759,
+          "end": 109.12402,
+          "duration": 0.36643
+        },
+        {
+          "index": 169,
+          "lyric": "伪",
+          "syllable": "wei",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 109.12402,
+          "end": 109.81463,
+          "duration": 0.69061
+        },
+        {
+          "index": 170,
+          "lyric": "装",
+          "syllable": "zhuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 109.81463,
+          "end": 110.94935,
+          "duration": 1.13472
+        },
+        {
+          "index": 171,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 112.06583,
+          "end": 112.315,
+          "duration": 0.24917
+        },
+        {
+          "index": 172,
+          "lyric": "说",
+          "syllable": "shuo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 112.315,
+          "end": 112.76053,
+          "duration": 0.44553
+        },
+        {
+          "index": 173,
+          "lyric": "爱",
+          "syllable": "ai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 112.76053,
+          "end": 113.13198,
+          "duration": 0.37145
+        },
+        {
+          "index": 174,
+          "lyric": "有",
+          "syllable": "you",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 113.13198,
+          "end": 113.52362,
+          "duration": 0.39164
+        },
+        {
+          "index": 175,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 113.52362,
+          "end": 113.76447,
+          "duration": 0.24085
+        },
+        {
+          "index": 176,
+          "lyric": "荒",
+          "syllable": "huang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 113.76447,
+          "end": 114.19133,
+          "duration": 0.42686
+        },
+        {
+          "index": 177,
+          "lyric": "堂",
+          "syllable": "tang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 114.19133,
+          "end": 114.59204,
+          "duration": 0.40071
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "zh": "谁会在你的身旁却还是一个人流浪",
+      "start": 114.85272,
+      "end": 122.84952,
+      "notes": [
+        {
+          "index": 178,
+          "lyric": "谁",
+          "syllable": "shui",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 114.85272,
+          "end": 115.22586,
+          "duration": 0.37314
+        },
+        {
+          "index": 179,
+          "lyric": "会",
+          "syllable": "hui",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 115.22586,
+          "end": 115.59936,
+          "duration": 0.3735
+        },
+        {
+          "index": 180,
+          "lyric": "在",
+          "syllable": "zai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 115.59936,
+          "end": 115.96049,
+          "duration": 0.36113
+        },
+        {
+          "index": 181,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 115.96049,
+          "end": 116.43257,
+          "duration": 0.47208
+        },
+        {
+          "index": 182,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 116.43257,
+          "end": 116.56493,
+          "duration": 0.13236
+        },
+        {
+          "index": 183,
+          "lyric": "身",
+          "syllable": "shen",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 116.56493,
+          "end": 117.09156,
+          "duration": 0.52663
+        },
+        {
+          "index": 184,
+          "lyric": "旁",
+          "syllable": "pang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 117.09156,
+          "end": 117.87893,
+          "duration": 0.78737
+        },
+        {
+          "index": 185,
+          "lyric": "却",
+          "syllable": "qve",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 118.54708,
+          "end": 118.83645,
+          "duration": 0.28937
+        },
+        {
+          "index": 186,
+          "lyric": "还",
+          "syllable": "hai",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 118.83645,
+          "end": 119.60785,
+          "duration": 0.7714
+        },
+        {
+          "index": 187,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 119.60785,
+          "end": 119.9649,
+          "duration": 0.35705
+        },
+        {
+          "index": 188,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 119.9649,
+          "end": 120.78103,
+          "duration": 0.81613
+        },
+        {
+          "index": 189,
+          "lyric": "个",
+          "syllable": "ge",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 120.78103,
+          "end": 121.0366,
+          "duration": 0.25557
+        },
+        {
+          "index": 190,
+          "lyric": "人",
+          "syllable": "ren",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 121.0366,
+          "end": 121.53816,
+          "duration": 0.50156
+        },
+        {
+          "index": 191,
+          "lyric": "流",
+          "syllable": "liu",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 121.53816,
+          "end": 122.25509,
+          "duration": 0.71693
+        },
+        {
+          "index": 192,
+          "lyric": "浪",
+          "syllable": "lang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 122.25509,
+          "end": 122.59835,
+          "duration": 0.34326
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "zh": "和从前一样",
+      "start": 122.84952,
+      "end": 125.62984,
+      "notes": [
+        {
+          "index": 193,
+          "lyric": "和",
+          "syllable": "he",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 122.84952,
+          "end": 123.13849,
+          "duration": 0.28897
+        },
+        {
+          "index": 194,
+          "lyric": "从",
+          "syllable": "cong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 123.13849,
+          "end": 123.61177,
+          "duration": 0.47328
+        },
+        {
+          "index": 195,
+          "lyric": "前",
+          "syllable": "qian",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 123.61177,
+          "end": 124.00238,
+          "duration": 0.39061
+        },
+        {
+          "index": 196,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 124.00238,
+          "end": 124.36987,
+          "duration": 0.36749
+        },
+        {
+          "index": 197,
+          "lyric": "样",
+          "syllable": "yang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 124.36987,
+          "end": 125.62984,
+          "duration": 1.25997
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "zh": "你没回头多直截了当",
+      "start": 148.50111,
+      "end": 153.63671,
+      "notes": [
+        {
+          "index": 198,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 148.50111,
+          "end": 148.8698,
+          "duration": 0.36869
+        },
+        {
+          "index": 199,
+          "lyric": "没",
+          "syllable": "mei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 148.8698,
+          "end": 149.19261,
+          "duration": 0.32281
+        },
+        {
+          "index": 200,
+          "lyric": "回",
+          "syllable": "hui",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 149.19261,
+          "end": 149.57069,
+          "duration": 0.37808
+        },
+        {
+          "index": 201,
+          "lyric": "头",
+          "syllable": "tou",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 149.64405,
+          "end": 150.15263,
+          "duration": 0.50858
+        },
+        {
+          "index": 202,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 150.39647,
+          "end": 150.6311,
+          "duration": 0.23463
+        },
+        {
+          "index": 203,
+          "lyric": "直",
+          "syllable": "zhi",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 150.6311,
+          "end": 151.46039,
+          "duration": 0.82929
+        },
+        {
+          "index": 204,
+          "lyric": "截",
+          "syllable": "jie",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 151.46039,
+          "end": 151.78524,
+          "duration": 0.32485
+        },
+        {
+          "index": 205,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 151.78524,
+          "end": 152.56296,
+          "duration": 0.77772
+        },
+        {
+          "index": 206,
+          "lyric": "当",
+          "syllable": "dang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 152.56296,
+          "end": 153.21329,
+          "duration": 0.65033
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "zh": "自私在不断生长",
+      "start": 153.63671,
+      "end": 158.30202,
+      "notes": [
+        {
+          "index": 207,
+          "lyric": "自",
+          "syllable": "zi",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 153.63671,
+          "end": 153.9087,
+          "duration": 0.27199
+        },
+        {
+          "index": 208,
+          "lyric": "私",
+          "syllable": "si",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 153.9087,
+          "end": 154.33577,
+          "duration": 0.42707
+        },
+        {
+          "index": 209,
+          "lyric": "在",
+          "syllable": "zai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 154.33577,
+          "end": 154.71998,
+          "duration": 0.38421
+        },
+        {
+          "index": 210,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 154.78721,
+          "end": 155.09882,
+          "duration": 0.31161
+        },
+        {
+          "index": 211,
+          "lyric": "断",
+          "syllable": "duan",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 155.09882,
+          "end": 155.35461,
+          "duration": 0.25579
+        },
+        {
+          "index": 212,
+          "lyric": "生",
+          "syllable": "sheng",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 155.35461,
+          "end": 156.17026,
+          "duration": 0.81565
+        },
+        {
+          "index": 213,
+          "lyric": "长",
+          "syllable": "zhang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 156.17026,
+          "end": 157.79914,
+          "duration": 1.62888
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "zh": "我多想陪你一场也想你和我一样",
+      "start": 158.30202,
+      "end": 164.8188,
+      "notes": [
+        {
+          "index": 214,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 158.30202,
+          "end": 158.73114,
+          "duration": 0.42912
+        },
+        {
+          "index": 215,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 158.73114,
+          "end": 158.96266,
+          "duration": 0.23152
+        },
+        {
+          "index": 216,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 158.96266,
+          "end": 159.39325,
+          "duration": 0.43059
+        },
+        {
+          "index": 217,
+          "lyric": "陪",
+          "syllable": "pei",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 159.39325,
+          "end": 159.78075,
+          "duration": 0.3875
+        },
+        {
+          "index": 218,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 159.78075,
+          "end": 160.11583,
+          "duration": 0.33508
+        },
+        {
+          "index": 219,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 160.16768,
+          "end": 160.42112,
+          "duration": 0.25344
+        },
+        {
+          "index": 220,
+          "lyric": "场",
+          "syllable": "chang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 160.42112,
+          "end": 160.96055,
+          "duration": 0.53943
+        },
+        {
+          "index": 221,
+          "lyric": "也",
+          "syllable": "ye",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 161.26211,
+          "end": 161.51372,
+          "duration": 0.25161
+        },
+        {
+          "index": 222,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 161.51372,
+          "end": 161.92177,
+          "duration": 0.40805
+        },
+        {
+          "index": 223,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 161.92177,
+          "end": 162.22057,
+          "duration": 0.2988
+        },
+        {
+          "index": 224,
+          "lyric": "和",
+          "syllable": "he",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 162.22057,
+          "end": 162.64092,
+          "duration": 0.42035
+        },
+        {
+          "index": 225,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 162.64092,
+          "end": 162.99308,
+          "duration": 0.35216
+        },
+        {
+          "index": 226,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 162.99308,
+          "end": 163.3623,
+          "duration": 0.36922
+        },
+        {
+          "index": 227,
+          "lyric": "样",
+          "syllable": "yang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 163.3623,
+          "end": 164.19057,
+          "duration": 0.82827
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "zh": "就背上了行囊",
+      "start": 164.8188,
+      "end": 169.15948,
+      "notes": [
+        {
+          "index": 228,
+          "lyric": "就",
+          "syllable": "jiu",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 164.8188,
+          "end": 165.20719,
+          "duration": 0.38839
+        },
+        {
+          "index": 229,
+          "lyric": "背",
+          "syllable": "bei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 165.26108,
+          "end": 165.80212,
+          "duration": 0.54104
+        },
+        {
+          "index": 230,
+          "lyric": "上",
+          "syllable": "shang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 165.80212,
+          "end": 166.36485,
+          "duration": 0.56273
+        },
+        {
+          "index": 231,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 166.36485,
+          "end": 166.93341,
+          "duration": 0.56856
+        },
+        {
+          "index": 232,
+          "lyric": "行",
+          "syllable": "xing",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 167.20873,
+          "end": 167.7952,
+          "duration": 0.58647
+        },
+        {
+          "index": 233,
+          "lyric": "囊",
+          "syllable": "nang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 167.7952,
+          "end": 168.86731,
+          "duration": 1.07211
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "zh": "你是我穷极一生到不了的天堂",
+      "start": 169.15948,
+      "end": 176.34508,
+      "notes": [
+        {
+          "index": 234,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 169.15948,
+          "end": 169.34623,
+          "duration": 0.18675
+        },
+        {
+          "index": 235,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 169.34623,
+          "end": 170.19646,
+          "duration": 0.85023
+        },
+        {
+          "index": 236,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 170.19646,
+          "end": 170.70749,
+          "duration": 0.51103
+        },
+        {
+          "index": 237,
+          "lyric": "穷",
+          "syllable": "qiong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 170.87618,
+          "end": 171.36906,
+          "duration": 0.49288
+        },
+        {
+          "index": 238,
+          "lyric": "极",
+          "syllable": "ji",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 171.36906,
+          "end": 171.63585,
+          "duration": 0.26679
+        },
+        {
+          "index": 239,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 171.63585,
+          "end": 171.96621,
+          "duration": 0.33036
+        },
+        {
+          "index": 240,
+          "lyric": "生",
+          "syllable": "sheng",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 171.96621,
+          "end": 172.4498,
+          "duration": 0.48359
+        },
+        {
+          "index": 241,
+          "lyric": "到",
+          "syllable": "dao",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 172.4498,
+          "end": 172.7786,
+          "duration": 0.3288
+        },
+        {
+          "index": 242,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 172.83409,
+          "end": 173.48158,
+          "duration": 0.64749
+        },
+        {
+          "index": 243,
+          "lyric": "了",
+          "syllable": "le",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 173.48158,
+          "end": 174.26614,
+          "duration": 0.78456
+        },
+        {
+          "index": 244,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 174.26614,
+          "end": 174.48437,
+          "duration": 0.21823
+        },
+        {
+          "index": 245,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 174.5532,
+          "end": 174.91953,
+          "duration": 0.36633
+        },
+        {
+          "index": 246,
+          "lyric": "堂",
+          "syllable": "tang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 174.91953,
+          "end": 175.92392,
+          "duration": 1.00439
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "zh": "却偏偏还是会奢望",
+      "start": 176.34508,
+      "end": 181.069,
+      "notes": [
+        {
+          "index": 247,
+          "lyric": "却",
+          "syllable": "qve",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 176.34508,
+          "end": 176.69991,
+          "duration": 0.35483
+        },
+        {
+          "index": 248,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "G4",
+          "midi": 67,
+          "start": 176.76353,
+          "end": 177.13809,
+          "duration": 0.37456
+        },
+        {
+          "index": 249,
+          "lyric": "偏",
+          "syllable": "pian",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 177.13809,
+          "end": 177.47144,
+          "duration": 0.33335
+        },
+        {
+          "index": 250,
+          "lyric": "还",
+          "syllable": "hai",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 177.47144,
+          "end": 177.73582,
+          "duration": 0.26438
+        },
+        {
+          "index": 251,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 177.73582,
+          "end": 178.1604,
+          "duration": 0.42458
+        },
+        {
+          "index": 252,
+          "lyric": "会",
+          "syllable": "hui",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 178.1604,
+          "end": 178.4636,
+          "duration": 0.3032
+        },
+        {
+          "index": 253,
+          "lyric": "奢",
+          "syllable": "she",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 178.4636,
+          "end": 179.26711,
+          "duration": 0.80351
+        },
+        {
+          "index": 254,
+          "lyric": "望",
+          "syllable": "wang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 179.26711,
+          "end": 180.5329,
+          "duration": 1.26579
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "start": 181.069,
+      "end": 187.93518,
+      "notes": [
+        {
+          "index": 255,
+          "lyric": "让",
+          "syllable": "rang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 181.069,
+          "end": 181.91612,
+          "duration": 0.84712
+        },
+        {
+          "index": 256,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 181.91612,
+          "end": 182.32332,
+          "duration": 0.4072
+        },
+        {
+          "index": 257,
+          "lyric": "铺",
+          "syllable": "pu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 182.54226,
+          "end": 182.89655,
+          "duration": 0.35429
+        },
+        {
+          "index": 258,
+          "lyric": "天",
+          "syllable": "tian",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 182.89655,
+          "end": 183.31157,
+          "duration": 0.41502
+        },
+        {
+          "index": 259,
+          "lyric": "盖",
+          "syllable": "gai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 183.31157,
+          "end": 183.67159,
+          "duration": 0.36002
+        },
+        {
+          "index": 260,
+          "lyric": "地",
+          "syllable": "di",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 183.67159,
+          "end": 183.92023,
+          "duration": 0.24864
+        },
+        {
+          "index": 261,
+          "lyric": "琢",
+          "syllable": "zuo",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 183.92023,
+          "end": 184.31244,
+          "duration": 0.39221
+        },
+        {
+          "index": 262,
+          "lyric": "墨",
+          "syllable": "mo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 184.31244,
+          "end": 184.73685,
+          "duration": 0.42441
+        },
+        {
+          "index": 263,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 185.09914,
+          "end": 186.08206,
+          "duration": 0.98292
+        },
+        {
+          "index": 264,
+          "lyric": "停",
+          "syllable": "ting",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 186.14822,
+          "end": 186.41873,
+          "duration": 0.27051
+        },
+        {
+          "index": 265,
+          "lyric": "想",
+          "syllable": "xiang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 186.41873,
+          "end": 187.08854,
+          "duration": 0.66981
+        },
+        {
+          "index": 266,
+          "lyric": "象",
+          "syllable": "xiang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 187.08854,
+          "end": 187.74887,
+          "duration": 0.66033
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "zh": "这未知的疯狂我开始不管不顾",
+      "start": 187.93518,
+      "end": 195.60391,
+      "notes": [
+        {
+          "index": 267,
+          "lyric": "这",
+          "syllable": "zhe",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 187.93518,
+          "end": 188.26669,
+          "duration": 0.33151
+        },
+        {
+          "index": 268,
+          "lyric": "未",
+          "syllable": "wei",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 188.26669,
+          "end": 189.06597,
+          "duration": 0.79928
+        },
+        {
+          "index": 269,
+          "lyric": "知",
+          "syllable": "zhi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 189.06597,
+          "end": 189.45605,
+          "duration": 0.39008
+        },
+        {
+          "index": 270,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 189.45605,
+          "end": 190.06454,
+          "duration": 0.60849
+        },
+        {
+          "index": 271,
+          "lyric": "疯",
+          "syllable": "feng",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 190.36173,
+          "end": 190.8535,
+          "duration": 0.49177
+        },
+        {
+          "index": 272,
+          "lyric": "狂",
+          "syllable": "kuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 190.8535,
+          "end": 191.94869,
+          "duration": 1.09519
+        },
+        {
+          "index": 273,
+          "lyric": "我",
+          "syllable": "wo",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 192.30337,
+          "end": 192.63419,
+          "duration": 0.33082
+        },
+        {
+          "index": 274,
+          "lyric": "开",
+          "syllable": "kai",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 192.63419,
+          "end": 193.26481,
+          "duration": 0.63062
+        },
+        {
+          "index": 275,
+          "lyric": "始",
+          "syllable": "shi",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 193.26481,
+          "end": 193.8512,
+          "duration": 0.58639
+        },
+        {
+          "index": 276,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 194.14506,
+          "end": 194.50539,
+          "duration": 0.36033
+        },
+        {
+          "index": 277,
+          "lyric": "管",
+          "syllable": "guan",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 194.50539,
+          "end": 194.90045,
+          "duration": 0.39506
+        },
+        {
+          "index": 278,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 194.90045,
+          "end": 195.24194,
+          "duration": 0.34149
+        },
+        {
+          "index": 279,
+          "lyric": "顾",
+          "syllable": "gu",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 195.24194,
+          "end": 195.53135,
+          "duration": 0.28941
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "zh": "不问这场疯狂",
+      "start": 195.60391,
+      "end": 199.44504,
+      "notes": [
+        {
+          "index": 280,
+          "lyric": "不",
+          "syllable": "bu",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 195.60391,
+          "end": 195.88177,
+          "duration": 0.27786
+        },
+        {
+          "index": 281,
+          "lyric": "问",
+          "syllable": "wen",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 195.88177,
+          "end": 196.61689,
+          "duration": 0.73512
+        },
+        {
+          "index": 282,
+          "lyric": "这",
+          "syllable": "zhe",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 196.61689,
+          "end": 197.29767,
+          "duration": 0.68078
+        },
+        {
+          "index": 283,
+          "lyric": "场",
+          "syllable": "chang",
+          "pitch": "A#4",
+          "midi": 70,
+          "start": 197.29767,
+          "end": 197.62546,
+          "duration": 0.32779
+        },
+        {
+          "index": 284,
+          "lyric": "疯",
+          "syllable": "feng",
+          "pitch": "A4",
+          "midi": 69,
+          "start": 197.62546,
+          "end": 198.0592,
+          "duration": 0.43374
+        },
+        {
+          "index": 285,
+          "lyric": "狂",
+          "syllable": "kuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 198.0592,
+          "end": 199.07199,
+          "duration": 1.01279
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "zh": "始终掩盖自己伪装",
+      "start": 199.44504,
+      "end": 204.61115,
+      "notes": [
+        {
+          "index": 286,
+          "lyric": "始",
+          "syllable": "shi",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 199.44504,
+          "end": 199.83326,
+          "duration": 0.38822
+        },
+        {
+          "index": 287,
+          "lyric": "终",
+          "syllable": "zhong",
+          "pitch": "G4",
+          "midi": 67,
+          "start": 199.83326,
+          "end": 200.27651,
+          "duration": 0.44325
+        },
+        {
+          "index": 288,
+          "lyric": "掩",
+          "syllable": "yan",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 200.27651,
+          "end": 200.67989,
+          "duration": 0.40338
+        },
+        {
+          "index": 289,
+          "lyric": "盖",
+          "syllable": "gai",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 200.67989,
+          "end": 200.979,
+          "duration": 0.29911
+        },
+        {
+          "index": 290,
+          "lyric": "自",
+          "syllable": "zi",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 200.979,
+          "end": 201.29514,
+          "duration": 0.31614
+        },
+        {
+          "index": 291,
+          "lyric": "己",
+          "syllable": "ji",
+          "pitch": "D#4",
+          "midi": 63,
+          "start": 201.29514,
+          "end": 201.59877,
+          "duration": 0.30363
+        },
+        {
+          "index": 292,
+          "lyric": "伪",
+          "syllable": "wei",
+          "pitch": "F4",
+          "midi": 65,
+          "start": 201.59877,
+          "end": 202.39739,
+          "duration": 0.79862
+        },
+        {
+          "index": 293,
+          "lyric": "装",
+          "syllable": "zhuang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 202.39739,
+          "end": 203.71023,
+          "duration": 1.31284
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "zh": "你说爱有多荒唐谁会在你的身旁",
+      "start": 204.61115,
+      "end": 211.07439,
+      "notes": [
+        {
+          "index": 294,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 204.61115,
+          "end": 204.84859,
+          "duration": 0.23744
+        },
+        {
+          "index": 295,
+          "lyric": "说",
+          "syllable": "shuo",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 204.84859,
+          "end": 205.24685,
+          "duration": 0.39826
+        },
+        {
+          "index": 296,
+          "lyric": "爱",
+          "syllable": "ai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 205.24685,
+          "end": 205.55631,
+          "duration": 0.30946
+        },
+        {
+          "index": 297,
+          "lyric": "有",
+          "syllable": "you",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 205.55631,
+          "end": 206.07147,
+          "duration": 0.51516
+        },
+        {
+          "index": 298,
+          "lyric": "多",
+          "syllable": "duo",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 206.07147,
+          "end": 206.2921,
+          "duration": 0.22063
+        },
+        {
+          "index": 299,
+          "lyric": "荒",
+          "syllable": "huang",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 206.2921,
+          "end": 206.73945,
+          "duration": 0.44735
+        },
+        {
+          "index": 300,
+          "lyric": "堂",
+          "syllable": "tang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 206.73945,
+          "end": 207.16319,
+          "duration": 0.42374
+        },
+        {
+          "index": 301,
+          "lyric": "谁",
+          "syllable": "shui",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 207.38835,
+          "end": 207.80644,
+          "duration": 0.41809
+        },
+        {
+          "index": 302,
+          "lyric": "会",
+          "syllable": "hui",
+          "pitch": "C4",
+          "midi": 60,
+          "start": 207.80644,
+          "end": 208.15762,
+          "duration": 0.35118
+        },
+        {
+          "index": 303,
+          "lyric": "在",
+          "syllable": "zai",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 208.15762,
+          "end": 208.5023,
+          "duration": 0.34468
+        },
+        {
+          "index": 304,
+          "lyric": "你",
+          "syllable": "ni",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 208.5023,
+          "end": 208.96917,
+          "duration": 0.46687
+        },
+        {
+          "index": 305,
+          "lyric": "的",
+          "syllable": "de",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 208.96917,
+          "end": 209.1083,
+          "duration": 0.13913
+        },
+        {
+          "index": 306,
+          "lyric": "身",
+          "syllable": "shen",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 209.1083,
+          "end": 209.61292,
+          "duration": 0.50462
+        },
+        {
+          "index": 307,
+          "lyric": "旁",
+          "syllable": "pang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 209.61292,
+          "end": 210.34839,
+          "duration": 0.73547
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "zh": "却还是一个人流浪和从前一样",
+      "start": 211.07439,
+      "end": 218.0576,
+      "notes": [
+        {
+          "index": 308,
+          "lyric": "却",
+          "syllable": "qve",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 211.07439,
+          "end": 211.38119,
+          "duration": 0.3068
+        },
+        {
+          "index": 309,
+          "lyric": "还",
+          "syllable": "hai",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 211.38119,
+          "end": 212.03405,
+          "duration": 0.65286
+        },
+        {
+          "index": 310,
+          "lyric": "是",
+          "syllable": "shi",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 212.03405,
+          "end": 212.52804,
+          "duration": 0.49399
+        },
+        {
+          "index": 311,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 212.52804,
+          "end": 213.28531,
+          "duration": 0.75727
+        },
+        {
+          "index": 312,
+          "lyric": "个",
+          "syllable": "ge",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 213.28531,
+          "end": 213.59864,
+          "duration": 0.31333
+        },
+        {
+          "index": 313,
+          "lyric": "人",
+          "syllable": "ren",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 213.59864,
+          "end": 214.05591,
+          "duration": 0.45727
+        },
+        {
+          "index": 314,
+          "lyric": "流",
+          "syllable": "liu",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 214.05591,
+          "end": 214.67906,
+          "duration": 0.62315
+        },
+        {
+          "index": 315,
+          "lyric": "浪",
+          "syllable": "lang",
+          "pitch": "D4",
+          "midi": 62,
+          "start": 214.67906,
+          "end": 215.1406,
+          "duration": 0.46154
+        },
+        {
+          "index": 316,
+          "lyric": "和",
+          "syllable": "he",
+          "pitch": "D3",
+          "midi": 50,
+          "start": 215.42966,
+          "end": 215.67381,
+          "duration": 0.24415
+        },
+        {
+          "index": 317,
+          "lyric": "从",
+          "syllable": "cong",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 215.67381,
+          "end": 216.1256,
+          "duration": 0.45179
+        },
+        {
+          "index": 318,
+          "lyric": "前",
+          "syllable": "qian",
+          "pitch": "A#3",
+          "midi": 58,
+          "start": 216.1256,
+          "end": 216.55628,
+          "duration": 0.43068
+        },
+        {
+          "index": 319,
+          "lyric": "一",
+          "syllable": "yi",
+          "pitch": "A3",
+          "midi": 57,
+          "start": 216.55628,
+          "end": 216.95836,
+          "duration": 0.40208
+        },
+        {
+          "index": 320,
+          "lyric": "样",
+          "syllable": "yang",
+          "pitch": "G3",
+          "midi": 55,
+          "start": 216.95836,
+          "end": 218.0576,
+          "duration": 1.09924
         }
       ]
     }

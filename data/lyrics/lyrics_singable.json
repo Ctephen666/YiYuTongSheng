@@ -2,52 +2,1395 @@
   "phrases": [
     {
       "id": 1,
-      "zh": "我想和你去看海",
-      "start": 0.0,
-      "end": 3.2,
-      "note_start": 0,
-      "note_end": 3,
-      "target_language": "en",
-      "literal": "I want to go see the sea with you",
-      "note_count": 3,
+      "zh": "你是我穷极一生到不了的天堂",
+      "literal_en": "You are the heaven I cannot reach",
+      "note_count": 13,
+      "phrase_duration": 7.357,
       "candidates": [
         {
-          "text": "Let's go see the sea",
-          "syllables": 5,
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
           "semantic_score": 0.8,
-          "rhythm_score": 0.333,
+          "rhythm_score": 0.692,
           "singability_score": 1.0,
-          "ending_score": 1.0,
-          "final_score": 0.72
+          "ending_score": 0.8,
+          "final_score": 0.808
         },
         {
-          "text": "I want the sea with you",
-          "syllables": 6,
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
           "semantic_score": 0.8,
-          "rhythm_score": 0.0,
+          "rhythm_score": 0.846,
           "singability_score": 1.0,
-          "ending_score": 1.0,
-          "final_score": 0.62
+          "ending_score": 0.8,
+          "final_score": 0.854
         },
         {
-          "text": "Go see the sea with me",
-          "syllables": 6,
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
           "semantic_score": 0.8,
-          "rhythm_score": 0.0,
+          "rhythm_score": 0.769,
           "singability_score": 1.0,
-          "ending_score": 1.0,
-          "final_score": 0.62
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.715
         }
       ],
-      "selected": {
-        "text": "Let's go see the sea",
-        "syllables": 5,
-        "semantic_score": 0.8,
-        "rhythm_score": 0.333,
-        "singability_score": 1.0,
-        "ending_score": 1.0,
-        "final_score": 0.72
-      }
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 2,
+      "zh": "却偏偏还是会奢望",
+      "literal_en": "I still keep longing for you",
+      "note_count": 8,
+      "phrase_duration": 4.778,
+      "candidates": [
+        {
+          "text": "I still keep longing for you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.875,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.863
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.625,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.718
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        }
+      ],
+      "selected": "I still keep longing for you"
+    },
+    {
+      "id": 3,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "literal_en": "Let my dreams cover the sky",
+      "note_count": 12,
+      "phrase_duration": 6.868,
+      "candidates": [
+        {
+          "text": "Let my dreams cover the sky",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.583,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.705
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.583,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.705
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 4,
+      "zh": "这未知的",
+      "literal_en": "This unknown road",
+      "note_count": 4,
+      "phrase_duration": 2.431,
+      "candidates": [
+        {
+          "text": "This unknown road",
+          "syllables": 4,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "Stay with me",
+          "syllables": 3,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "Do not let go",
+          "syllables": 4,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "Shine on me",
+          "syllables": 3,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        }
+      ],
+      "selected": "This unknown road"
+    },
+    {
+      "id": 5,
+      "zh": "疯狂",
+      "literal_en": "Keeps calling me onward",
+      "note_count": 2,
+      "phrase_duration": 5.805,
+      "candidates": [
+        {
+          "text": "Stay with me",
+          "syllables": 3,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        },
+        {
+          "text": "Do not let go",
+          "syllables": 4,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.53
+        },
+        {
+          "text": "Shine on me",
+          "syllables": 3,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        }
+      ],
+      "selected": "Stay with me"
+    },
+    {
+      "id": 6,
+      "zh": "在铺垫着对你的奢望",
+      "literal_en": "I carry your light in my heart",
+      "note_count": 9,
+      "phrase_duration": 4.82,
+      "candidates": [
+        {
+          "text": "I carry your light in my heart",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.889,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.867
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.778,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.833
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 7,
+      "zh": "你主动的退让我被动的撒谎",
+      "literal_en": "Every moment turns back to you",
+      "note_count": 12,
+      "phrase_duration": 6.779,
+      "candidates": [
+        {
+          "text": "Every moment turns back to you",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.583,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.705
+        }
+      ],
+      "selected": "Every moment turns back to you"
+    },
+    {
+      "id": 8,
+      "zh": "做出一种虚伪的想象",
+      "literal_en": "I cannot stop imagining",
+      "note_count": 9,
+      "phrase_duration": 4.77,
+      "candidates": [
+        {
+          "text": "I cannot stop imagining",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.889,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.867
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.778,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.833
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 9,
+      "zh": "没离开的迹象",
+      "literal_en": "You are the heaven I cannot reach",
+      "note_count": 6,
+      "phrase_duration": 6.76,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.833,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.78
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.83
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.83
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 10,
+      "zh": "你没回头多直接了当",
+      "literal_en": "I still keep longing for you",
+      "note_count": 9,
+      "phrase_duration": 5.149,
+      "candidates": [
+        {
+          "text": "I still keep longing for you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.778,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.833
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.778,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.833
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 11,
+      "zh": "自私在不断生长",
+      "literal_en": "Let my dreams cover the sky",
+      "note_count": 7,
+      "phrase_duration": 4.691,
+      "candidates": [
+        {
+          "text": "Let my dreams cover the sky",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.714,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.744
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.857,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.857
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.857,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.857
+        }
+      ],
+      "selected": "Let my dreams cover the sky"
+    },
+    {
+      "id": 12,
+      "zh": "我多想陪你一场也想你和我一样",
+      "literal_en": "This unknown road",
+      "note_count": 14,
+      "phrase_duration": 6.444,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.786,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.836
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.714,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.814
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.571,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.771
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 13,
+      "zh": "就背上了行囊",
+      "literal_en": "Keeps calling me onward",
+      "note_count": 6,
+      "phrase_duration": 7.212,
+      "candidates": [
+        {
+          "text": "Keeps calling me onward",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.83
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.833,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.78
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.83
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.83
+        }
+      ],
+      "selected": "Keeps calling me onward"
+    },
+    {
+      "id": 14,
+      "zh": "你是我穷极一生到不了的天堂",
+      "literal_en": "I carry your light in my heart",
+      "note_count": 13,
+      "phrase_duration": 7.223,
+      "candidates": [
+        {
+          "text": "I carry your light in my heart",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.715
+        },
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.846,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.854
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.769,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.715
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 15,
+      "zh": "却偏偏还是会奢望",
+      "literal_en": "Every moment turns back to you",
+      "note_count": 8,
+      "phrase_duration": 4.745,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.625,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.718
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 16,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "literal_en": "I cannot stop imagining",
+      "note_count": 12,
+      "phrase_duration": 6.859,
+      "candidates": [
+        {
+          "text": "I cannot stop imagining",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.583,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.705
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 17,
+      "zh": "这未知的疯狂",
+      "literal_en": "You are the heaven I cannot reach",
+      "note_count": 6,
+      "phrase_duration": 4.424,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.833,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.85
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 18,
+      "zh": "我开始不管不顾不问这场疯狂",
+      "literal_en": "I still keep longing for you",
+      "note_count": 13,
+      "phrase_duration": 7.072,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.846,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.854
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.769,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.785
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 19,
+      "zh": "始终掩盖自己伪装你说爱有多荒唐",
+      "literal_en": "Let my dreams cover the sky",
+      "note_count": 15,
+      "phrase_duration": 7.956,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.733,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.82
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.533,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.69
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 20,
+      "zh": "谁会在你的身旁却还是一个人流浪",
+      "literal_en": "This unknown road",
+      "note_count": 15,
+      "phrase_duration": 7.997,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.733,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.82
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.533,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.69
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 21,
+      "zh": "和从前一样",
+      "literal_en": "Keeps calling me onward",
+      "note_count": 5,
+      "phrase_duration": 2.78,
+      "candidates": [
+        {
+          "text": "Keeps calling me onward",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.8,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.84
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.8,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.84
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.8,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.84
+        }
+      ],
+      "selected": "I still dream of you"
+    },
+    {
+      "id": 22,
+      "zh": "你没回头多直截了当",
+      "literal_en": "I carry your light in my heart",
+      "note_count": 9,
+      "phrase_duration": 5.136,
+      "candidates": [
+        {
+          "text": "I carry your light in my heart",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.889,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.867
+        },
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.778,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.833
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 23,
+      "zh": "自私在不断生长",
+      "literal_en": "Every moment turns back to you",
+      "note_count": 7,
+      "phrase_duration": 4.665,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.714,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.744
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.857,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.857
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.857,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.857
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 24,
+      "zh": "我多想陪你一场也想你和我一样",
+      "literal_en": "I cannot stop imagining",
+      "note_count": 14,
+      "phrase_duration": 6.517,
+      "candidates": [
+        {
+          "text": "I cannot stop imagining",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.571,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.771
+        },
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.786,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.836
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.714,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.814
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.571,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.771
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 25,
+      "zh": "就背上了行囊",
+      "literal_en": "You are the heaven I cannot reach",
+      "note_count": 6,
+      "phrase_duration": 4.341,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.833,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.85
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 26,
+      "zh": "你是我穷极一生到不了的天堂",
+      "literal_en": "I still keep longing for you",
+      "note_count": 13,
+      "phrase_duration": 7.186,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.846,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.854
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.769,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.785
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 27,
+      "zh": "却偏偏还是会奢望",
+      "literal_en": "Let my dreams cover the sky",
+      "note_count": 8,
+      "phrase_duration": 4.724,
+      "candidates": [
+        {
+          "text": "Let my dreams cover the sky",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.875,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.863
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.625,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.718
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        }
+      ],
+      "selected": "Let my dreams cover the sky"
+    },
+    {
+      "id": 28,
+      "zh": "让我铺天盖地琢磨不停想象",
+      "literal_en": "This unknown road",
+      "note_count": 12,
+      "phrase_duration": 6.866,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "I keep chasing your light",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.5,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.68
+        },
+        {
+          "text": "Let my heart run back to you",
+          "syllables": 7,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.583,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.705
+        }
+      ],
+      "selected": "You are the heaven I cannot reach"
+    },
+    {
+      "id": 29,
+      "zh": "这未知的疯狂我开始不管不顾",
+      "literal_en": "Keeps calling me onward",
+      "note_count": 13,
+      "phrase_duration": 7.669,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.846,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.854
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.769,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.715
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 30,
+      "zh": "不问这场疯狂",
+      "literal_en": "I carry your light in my heart",
+      "note_count": 6,
+      "phrase_duration": 3.841,
+      "candidates": [
+        {
+          "text": "I carry your light in my heart",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.8
+        },
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.833,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.85
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.9
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 31,
+      "zh": "始终掩盖自己伪装",
+      "literal_en": "Every moment turns back to you",
+      "note_count": 8,
+      "phrase_duration": 5.166,
+      "candidates": [
+        {
+          "text": "I still dream of you",
+          "syllables": 5,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.625,
+          "singability_score": 0.65,
+          "ending_score": 0.8,
+          "final_score": 0.718
+        },
+        {
+          "text": "Stay with me through the night",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        },
+        {
+          "text": "You are the light I need",
+          "syllables": 6,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.75,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.825
+        }
+      ],
+      "selected": "Stay with me through the night"
+    },
+    {
+      "id": 32,
+      "zh": "你说爱有多荒唐谁会在你的身旁",
+      "literal_en": "I cannot stop imagining",
+      "note_count": 14,
+      "phrase_duration": 6.463,
+      "candidates": [
+        {
+          "text": "I cannot stop imagining",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.571,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.771
+        },
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.786,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.836
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.714,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.814
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.571,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.771
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
+    },
+    {
+      "id": 33,
+      "zh": "却还是一个人流浪和从前一样",
+      "literal_en": "You are the heaven I cannot reach",
+      "note_count": 13,
+      "phrase_duration": 6.983,
+      "candidates": [
+        {
+          "text": "You are the heaven I cannot reach",
+          "syllables": 9,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.692,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.808
+        },
+        {
+          "text": "You are the heaven I cannot reach tonight",
+          "syllables": 11,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.846,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.854
+        },
+        {
+          "text": "I keep chasing the light I cannot hold",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.769,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.831
+        },
+        {
+          "text": "Let my heart cross the sky to you",
+          "syllables": 8,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.615,
+          "singability_score": 1.0,
+          "ending_score": 0.8,
+          "final_score": 0.785
+        }
+      ],
+      "selected": "You are the heaven I cannot reach tonight"
     }
   ]
 }

@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from json import JSONDecodeError
+
 from src.common.io_utils import path_from_config, project_root, write_text
-from src.common.json_utils import write_json
+from src.common.json_utils import read_json, write_json
 
 
 class PhraseMapper:
@@ -30,6 +32,26 @@ class PhraseMapper:
             Align each source phrase to detected melody phrase boundaries.
         """
         lyrics_zh = path_from_config(self.config, "lyrics_zh")
+        phrase_map = path_from_config(self.config, "phrase_map")
+
+        if phrase_map.exists():
+            try:
+                existing_phrase_map = read_json(phrase_map, default={})
+            except JSONDecodeError:
+                existing_phrase_map = {}
+            if (
+                isinstance(existing_phrase_map, dict)
+                and existing_phrase_map.get("source") == "opencpop_textgrid"
+            ):
+                return {
+                    "status": "skipped_existing",
+                    "outputs": {
+                        "phrase_map": str(phrase_map),
+                        "lyrics_zh": str(lyrics_zh),
+                    },
+                    "message": "Existing OpenCPOP TextGrid phrase_map detected. Skip phrase mapping.",
+                }
+
         example = project_root(self.config) / "examples" / "lyrics_zh.example.txt"
         if not lyrics_zh.exists():
             example_text = example.read_text(encoding="utf-8") if example.exists() else "我想和你去看海\n"
@@ -54,7 +76,6 @@ class PhraseMapper:
                 }
             )
 
-        phrase_map = path_from_config(self.config, "phrase_map")
         write_json(phrase_map, {"phrases": phrases}, self.config)
         return {
             "status": "mock",

@@ -17,9 +17,18 @@ paths:
   phonemes_target: "data/phoneme/phonemes_target.json"
   note_lyric_alignment: "data/alignment/note_lyric_alignment.json"
   svs_vocal: "data/svs/target_language_vocal.wav"
+  svs_input: "data/svs/svs_input.json"
+  openutau_project: "data/svs/target_language.ustx"
   rvc_converted: "data/rvc/converted_voice.wav"
+
   final_mix: "data/final/final_mix.wav"
 
 pipeline:
   allow_mock_outputs: true
   overwrite: true
+
+models:
+  translation_backend: "qwen_api"
+  translation_model: "qwen3.6-plus"
+  translation_batch_size: 12
+  qwen_base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"

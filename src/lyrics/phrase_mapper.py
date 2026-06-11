@@ -41,7 +41,11 @@ class PhraseMapper:
                 existing_phrase_map = {}
             if (
                 isinstance(existing_phrase_map, dict)
-                and existing_phrase_map.get("source") == "opencpop_textgrid"
+                and existing_phrase_map.get("source") in {
+                        "opencpop_textgrid",
+                        "popc_textgrid",
+                        "popcmusic",
+                    }
             ):
                 return {
                     "status": "skipped_existing",

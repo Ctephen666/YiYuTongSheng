@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from src.common.io_utils import path_from_config, require_or_mock_input
-from src.common.json_utils import write_json
+from src.common.json_utils import read_json, write_json
 
 
 class F0ToNoteConverter:
@@ -29,9 +29,21 @@ class F0ToNoteConverter:
         TODO:
             Implement real pitch tracking, smoothing, note segmentation, and rests.
         """
+
+        melody_notes = path_from_config(self.config, "melody_notes")
+
+        if melody_notes.exists():
+            existing = read_json(melody_notes, default={})
+            if existing.get("source") in {"opencpop_textgrid", "popc_textgrid", "popcmusic"}:
+                return {
+                    "status": "skipped_existing",
+                    "outputs": {"melody_notes": str(melody_notes)},
+                    "message": "Existing dataset melody_notes detected. Skip F0-to-note conversion.",
+                }
+
         f0_csv = path_from_config(self.config, "f0_csv")
         input_status = require_or_mock_input(f0_csv, self.config, "F0 CSV")
-        melody_notes = path_from_config(self.config, "melody_notes")
+        
         data = {
             "phrases": [
                 {

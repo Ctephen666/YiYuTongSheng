@@ -29,6 +29,8 @@ from src.preprocess.separate_vocals import VocalSeparator
 from src.svc.rvc_infer import RVCInferencer
 from src.svs.export_openutau_project import OpenUtauExporter
 from src.svs.render_singing import SingingRenderer
+from src.svs.export_svs_input import SVSInputExporter
+from src.svs.simple_formant_synth import SimpleFormantSynthesizer
 
 
 VALID_STEPS = [
@@ -144,7 +146,7 @@ def build_pipeline(config: dict) -> dict[str, list[Callable[[dict], object]]]:
         "lyrics": [PhraseMapper, LyricTranslator, SingableLyricAdapter],
         "phoneme": [phonemizer],
         "alignment": [NoteLyricAligner],
-        "svs": [OpenUtauExporter, SingingRenderer],
+        "svs": [SVSInputExporter, OpenUtauExporter, SimpleFormantSynthesizer],
         "svc": [RVCInferencer],
         "mix": [VocalAligner, AudioMixer],
         "evaluate": [ReportGenerator],

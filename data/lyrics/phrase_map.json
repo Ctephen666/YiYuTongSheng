@@ -1,272 +1,312 @@
 {
   "source": "opencpop_textgrid",
-  "sample_id": "2002",
-  "textgrid": "data\\dataset\\opencpop\\textgrids\\2002.TextGrid",
+  "sample_id": "2001",
+  "textgrid": "data\\dataset\\opencpop\\textgrids\\2001.TextGrid",
   "note_index_rule": "note_start inclusive, note_end exclusive",
   "phrases": [
     {
       "id": 1,
-      "zh": "你是我穷极一生到不了的天堂",
-      "start": 2.70904,
-      "end": 10.06609,
+      "zh": "感受停在我发端的指尖",
+      "start": 12.47841,
+      "end": 16.55634,
       "note_start": 0,
-      "note_end": 13
+      "note_end": 10
     },
     {
       "id": 2,
-      "zh": "却偏偏还是会奢望",
-      "start": 10.06609,
-      "end": 14.84438,
-      "note_start": 13,
-      "note_end": 21
+      "zh": "如何瞬间冻结时间",
+      "start": 16.55634,
+      "end": 23.33113,
+      "note_start": 10,
+      "note_end": 18
     },
     {
       "id": 3,
-      "zh": "让我铺天盖地琢磨不停想象",
-      "start": 14.84438,
-      "end": 21.71207,
-      "note_start": 21,
-      "note_end": 33
+      "zh": "记住望着我坚定的双眼",
+      "start": 23.33113,
+      "end": 27.46611,
+      "note_start": 18,
+      "note_end": 28
     },
     {
       "id": 4,
-      "zh": "这未知的",
-      "start": 21.71207,
-      "end": 24.14347,
-      "note_start": 33,
-      "note_end": 37
+      "zh": "也许已经没有明天",
+      "start": 27.46611,
+      "end": 33.97518,
+      "note_start": 28,
+      "note_end": 36
     },
     {
       "id": 5,
-      "zh": "疯狂",
-      "start": 24.14347,
-      "end": 29.94879,
-      "note_start": 37,
-      "note_end": 39
+      "zh": "面对浩瀚的星海我们微小得像尘埃",
+      "start": 33.97518,
+      "end": 39.06457,
+      "note_start": 36,
+      "note_end": 56
     },
     {
       "id": 6,
-      "zh": "在铺垫着对你的奢望",
-      "start": 29.94879,
-      "end": 34.76901,
-      "note_start": 39,
-      "note_end": 48
+      "zh": "漂浮在一片无奈",
+      "start": 39.06457,
+      "end": 44.8147,
+      "note_start": 56,
+      "note_end": 68
     },
     {
       "id": 7,
-      "zh": "你主动的退让我被动的撒谎",
-      "start": 34.76901,
-      "end": 41.54764,
-      "note_start": 48,
-      "note_end": 60
+      "zh": "缘份让我们相遇乱世以外",
+      "start": 44.8147,
+      "end": 50.3095,
+      "note_start": 68,
+      "note_end": 79
     },
     {
       "id": 8,
-      "zh": "做出一种虚伪的想象",
-      "start": 41.54764,
-      "end": 46.31726,
-      "note_start": 60,
-      "note_end": 69
+      "zh": "命运却要我们危难中相爱",
+      "start": 50.3095,
+      "end": 55.7377,
+      "note_start": 79,
+      "note_end": 90
     },
     {
       "id": 9,
-      "zh": "没离开的迹象",
-      "start": 46.31726,
-      "end": 53.07766,
-      "note_start": 69,
-      "note_end": 75
+      "zh": "也许未来遥远在光年之外",
+      "start": 55.7377,
+      "end": 61.18378,
+      "note_start": 90,
+      "note_end": 101
     },
     {
       "id": 10,
-      "zh": "你没回头多直接了当",
-      "start": 53.07766,
-      "end": 58.22624,
-      "note_start": 75,
-      "note_end": 84
+      "zh": "我愿守候未知里为你等待",
+      "start": 61.18378,
+      "end": 65.19451,
+      "note_start": 101,
+      "note_end": 112
     },
     {
       "id": 11,
-      "zh": "自私在不断生长",
-      "start": 58.22624,
-      "end": 62.91681,
-      "note_start": 84,
-      "note_end": 91
+      "zh": "我没想到为了你我能疯狂到山崩海啸",
+      "start": 65.19451,
+      "end": 72.03509,
+      "note_start": 112,
+      "note_end": 128
     },
     {
       "id": 12,
-      "zh": "我多想陪你一场也想你和我一样",
-      "start": 62.91681,
-      "end": 69.36071,
-      "note_start": 91,
-      "note_end": 105
+      "zh": "没有你根本不想逃我的大脑",
+      "start": 72.03509,
+      "end": 77.57073,
+      "note_start": 128,
+      "note_end": 141
     },
     {
       "id": 13,
-      "zh": "就背上了行囊",
-      "start": 69.36071,
-      "end": 76.57263,
-      "note_start": 105,
-      "note_end": 111
+      "zh": "为了你已经疯狂到脉搏心跳没有你",
+      "start": 77.57073,
+      "end": 83.74217,
+      "note_start": 141,
+      "note_end": 156
     },
     {
       "id": 14,
-      "zh": "你是我穷极一生到不了的天堂",
-      "start": 76.57263,
-      "end": 83.79607,
-      "note_start": 111,
-      "note_end": 124
+      "zh": "根本不重要",
+      "start": 83.74217,
+      "end": 88.81514,
+      "note_start": 156,
+      "note_end": 161
     },
     {
       "id": 15,
-      "zh": "却偏偏还是会奢望",
-      "start": 83.79607,
-      "end": 88.54155,
-      "note_start": 124,
-      "note_end": 132
+      "zh": "一双围在我胸口的臂弯",
+      "start": 88.81514,
+      "end": 92.82762,
+      "note_start": 161,
+      "note_end": 171
     },
     {
       "id": 16,
-      "zh": "让我铺天盖地琢磨不停想象",
-      "start": 88.54155,
-      "end": 95.40097,
-      "note_start": 132,
-      "note_end": 144
+      "zh": "足够抵挡天旋地转",
+      "start": 92.82762,
+      "end": 99.7639,
+      "note_start": 171,
+      "note_end": 179
     },
     {
       "id": 17,
-      "zh": "这未知的疯狂",
-      "start": 95.40097,
-      "end": 99.82475,
-      "note_start": 144,
-      "note_end": 150
-    },
-    {
-      "id": 18,
-      "zh": "我开始不管不顾不问这场疯狂",
-      "start": 99.82475,
-      "end": 106.89635,
-      "note_start": 150,
-      "note_end": 163
-    },
-    {
-      "id": 19,
-      "zh": "始终掩盖自己伪装你说爱有多荒唐",
-      "start": 106.89635,
-      "end": 114.85272,
-      "note_start": 163,
-      "note_end": 178
-    },
-    {
-      "id": 20,
-      "zh": "谁会在你的身旁却还是一个人流浪",
-      "start": 114.85272,
-      "end": 122.84952,
-      "note_start": 178,
+      "zh": "一种执迷不放手的倔强足以",
+      "start": 99.7639,
+      "end": 104.54605,
+      "note_start": 179,
       "note_end": 193
     },
     {
-      "id": 21,
-      "zh": "和从前一样",
-      "start": 122.84952,
-      "end": 125.62984,
+      "id": 18,
+      "zh": "点燃所有希望",
+      "start": 104.54605,
+      "end": 110.2519,
       "note_start": 193,
-      "note_end": 198
+      "note_end": 200
+    },
+    {
+      "id": 19,
+      "zh": "宇宙磅礡而冷漠我们的爱微小却闪烁",
+      "start": 110.2519,
+      "end": 115.4605,
+      "note_start": 200,
+      "note_end": 222
+    },
+    {
+      "id": 20,
+      "zh": "颠簸却如此忘我",
+      "start": 115.4605,
+      "end": 121.18199,
+      "note_start": 222,
+      "note_end": 233
+    },
+    {
+      "id": 21,
+      "zh": "缘分让我们相遇乱世以外",
+      "start": 121.18199,
+      "end": 126.68117,
+      "note_start": 233,
+      "note_end": 244
     },
     {
       "id": 22,
-      "zh": "你没回头多直截了当",
-      "start": 148.50111,
-      "end": 153.63671,
-      "note_start": 198,
-      "note_end": 207
-    },
-    {
-      "id": 23,
-      "zh": "自私在不断生长",
-      "start": 153.63671,
-      "end": 158.30202,
-      "note_start": 207,
-      "note_end": 214
-    },
-    {
-      "id": 24,
-      "zh": "我多想陪你一场也想你和我一样",
-      "start": 158.30202,
-      "end": 164.8188,
-      "note_start": 214,
-      "note_end": 228
-    },
-    {
-      "id": 25,
-      "zh": "就背上了行囊",
-      "start": 164.8188,
-      "end": 169.15948,
-      "note_start": 228,
-      "note_end": 234
-    },
-    {
-      "id": 26,
-      "zh": "你是我穷极一生到不了的天堂",
-      "start": 169.15948,
-      "end": 176.34508,
-      "note_start": 234,
-      "note_end": 247
-    },
-    {
-      "id": 27,
-      "zh": "却偏偏还是会奢望",
-      "start": 176.34508,
-      "end": 181.069,
-      "note_start": 247,
+      "zh": "命运却要我们危难中相爱",
+      "start": 126.68117,
+      "end": 132.10616,
+      "note_start": 244,
       "note_end": 255
     },
     {
-      "id": 28,
-      "zh": "让我铺天盖地琢磨不停想象",
-      "start": 181.069,
-      "end": 187.93518,
+      "id": 23,
+      "zh": "也许未来遥远在光年之外",
+      "start": 132.10616,
+      "end": 137.541,
       "note_start": 255,
-      "note_end": 267
+      "note_end": 266
+    },
+    {
+      "id": 24,
+      "zh": "我愿守候未知里为你等待",
+      "start": 137.541,
+      "end": 141.559,
+      "note_start": 266,
+      "note_end": 277
+    },
+    {
+      "id": 25,
+      "zh": "我没想到为了你我能疯狂到",
+      "start": 141.559,
+      "end": 146.99698,
+      "note_start": 277,
+      "note_end": 289
+    },
+    {
+      "id": 26,
+      "zh": "山崩海啸没有你根本不想逃",
+      "start": 146.99698,
+      "end": 152.53254,
+      "note_start": 289,
+      "note_end": 301
+    },
+    {
+      "id": 27,
+      "zh": "我的大脑为了你已经疯狂到",
+      "start": 152.53254,
+      "end": 157.93827,
+      "note_start": 301,
+      "note_end": 313
+    },
+    {
+      "id": 28,
+      "zh": "脉搏心跳没有你根本不重",
+      "start": 157.93827,
+      "end": 161.78984,
+      "note_start": 313,
+      "note_end": 324
     },
     {
       "id": 29,
-      "zh": "这未知的疯狂我开始不管不顾",
-      "start": 187.93518,
-      "end": 195.60391,
-      "note_start": 267,
-      "note_end": 280
+      "zh": "要也许航道以外",
+      "start": 161.78984,
+      "end": 169.54354,
+      "note_start": 324,
+      "note_end": 332
     },
     {
       "id": 30,
-      "zh": "不问这场疯狂",
-      "start": 195.60391,
-      "end": 199.44504,
-      "note_start": 280,
-      "note_end": 286
+      "zh": "是醒不来的梦乱世",
+      "start": 169.54354,
+      "end": 177.44916,
+      "note_start": 332,
+      "note_end": 340
     },
     {
       "id": 31,
-      "zh": "始终掩盖自己伪装",
-      "start": 199.44504,
-      "end": 204.61115,
-      "note_start": 286,
-      "note_end": 294
+      "zh": "以外是纯粹的相拥",
+      "start": 177.44916,
+      "end": 185.21924,
+      "note_start": 340,
+      "note_end": 349
     },
     {
       "id": 32,
-      "zh": "你说爱有多荒唐谁会在你的身旁",
-      "start": 204.61115,
-      "end": 211.07439,
-      "note_start": 294,
-      "note_end": 308
+      "zh": "我没想到为了你我能疯狂到山崩海啸",
+      "start": 185.21924,
+      "end": 192.08807,
+      "note_start": 349,
+      "note_end": 365
     },
     {
       "id": 33,
-      "zh": "却还是一个人流浪和从前一样",
-      "start": 211.07439,
-      "end": 218.0576,
-      "note_start": 308,
-      "note_end": 321
+      "zh": "没有你根本不想逃我的大脑为了你已经疯狂",
+      "start": 192.08807,
+      "end": 200.02843,
+      "note_start": 365,
+      "note_end": 384
+    },
+    {
+      "id": 34,
+      "zh": "到脉搏心跳没有你根本不重要",
+      "start": 200.02843,
+      "end": 207.32931,
+      "note_start": 384,
+      "note_end": 397
+    },
+    {
+      "id": 35,
+      "zh": "相遇乱世以外",
+      "start": 207.32931,
+      "end": 212.88081,
+      "note_start": 397,
+      "note_end": 404
+    },
+    {
+      "id": 36,
+      "zh": "危难中相爱相遇",
+      "start": 212.88081,
+      "end": 219.11413,
+      "note_start": 404,
+      "note_end": 413
+    },
+    {
+      "id": 37,
+      "zh": "乱世以外危难中",
+      "start": 219.11413,
+      "end": 226.80215,
+      "note_start": 413,
+      "note_end": 421
+    },
+    {
+      "id": 38,
+      "zh": "相爱我没想到",
+      "start": 226.80215,
+      "end": 230.49141,
+      "note_start": 421,
+      "note_end": 429
     }
   ]
 }

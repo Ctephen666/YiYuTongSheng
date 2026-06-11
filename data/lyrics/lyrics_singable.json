@@ -5,7 +5,7 @@
     {
       "id": 1,
       "zh": "感受停在我发端的指尖",
-      "literal_en": "Feeling the fingertips resting at the ends of my hair",
+      "literal_en": "Feel the fingertips resting at the ends of my hair",
       "note_count": 10,
       "phrase_duration": 4.078,
       "target_syllables": 8,
@@ -15,37 +15,48 @@
       ],
       "candidates": [
         {
-          "text": "Feeling fingertips resting at ends of my hair",
-          "syllables": 12,
+          "text": "Feel the fingertips resting at the ends of my hair",
+          "syllables": 13,
           "semantic_score": 1.0,
-          "rhythm_score": 0.917,
+          "rhythm_score": 0.846,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.975
+          "final_score": 0.962
         },
         {
-          "text": "Feeling the fingertips resting at the ends of my hair",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.951
-        },
-        {
-          "text": "Feeling resting at ends of my hair",
-          "syllables": 9,
+          "text": "Feel resting at ends of my hair",
+          "syllables": 8,
           "semantic_score": 0.875,
-          "rhythm_score": 0.8,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.914
+          "final_score": 0.949
+        },
+        {
+          "text": "Feel fingertips resting at ends of my hair",
+          "syllables": 11,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.908
+        },
+        {
+          "text": "Feel fingertips resting at ends of my",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.884
         },
         {
           "text": "fingertips resting at ends of my",
@@ -70,28 +81,6 @@
           "final_score": 0.878
         },
         {
-          "text": "Feeling at ends of my hair",
-          "syllables": 7,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.874
-        },
-        {
-          "text": "Feeling fingertips resting at ends of my",
-          "syllables": 11,
-          "semantic_score": 0.875,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.874
-        },
-        {
           "text": "resting at ends of my hair",
           "syllables": 7,
           "semantic_score": 0.75,
@@ -114,6 +103,17 @@
           "final_score": 0.84
         },
         {
+          "text": "Feel at ends of my hair",
+          "syllables": 6,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.838
+        },
+        {
           "text": "resting at ends of my",
           "syllables": 6,
           "semantic_score": 0.625,
@@ -125,15 +125,15 @@
           "final_score": 0.803
         },
         {
-          "text": "Feeling fingertips resting at ends",
-          "syllables": 9,
+          "text": "Feel fingertips resting at ends",
+          "syllables": 8,
           "semantic_score": 0.625,
-          "rhythm_score": 0.8,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 0.5,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.753
+          "final_score": 0.789
         },
         {
           "text": "ends of my hair",
@@ -158,13 +158,13 @@
           "final_score": 0.619
         }
       ],
-      "selected": "Feeling fingertips resting at ends of my hair",
-      "selected_score": 0.975
+      "selected": "Feel the fingertips resting at the ends of my hair",
+      "selected_score": 0.962
     },
     {
       "id": 2,
       "zh": "如何瞬间冻结时间",
-      "literal_en": "How it instantly freezes time",
+      "literal_en": "How to instantly freeze time",
       "note_count": 8,
       "phrase_duration": 6.775,
       "target_syllables": 6,
@@ -174,35 +174,35 @@
       ],
       "candidates": [
         {
-          "text": "How it instantly freezes time",
-          "syllables": 8,
+          "text": "How to instantly freeze time",
+          "syllables": 7,
           "semantic_score": 1.0,
-          "rhythm_score": 0.55,
+          "rhythm_score": 0.75,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.914
+          "final_score": 0.951
         },
         {
-          "text": "How freezes time",
+          "text": "How to freeze time",
           "syllables": 4,
-          "semantic_score": 0.6,
+          "semantic_score": 0.8,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.787
+          "final_score": 0.85
         }
       ],
-      "selected": "How it instantly freezes time",
-      "selected_score": 0.914
+      "selected": "How to instantly freeze time",
+      "selected_score": 0.951
     },
     {
       "id": 3,
       "zh": "记住望着我坚定的双眼",
-      "literal_en": "Remembering the determined eyes looking at me",
+      "literal_en": "Remember the determined eyes gazing at me",
       "note_count": 10,
       "phrase_duration": 4.135,
       "target_syllables": 8,
@@ -212,7 +212,18 @@
       ],
       "candidates": [
         {
-          "text": "Remembering determined eyes looking at me",
+          "text": "Remember determined eyes gazing at me",
+          "syllables": 12,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.981
+        },
+        {
+          "text": "Remember the determined eyes gazing at me",
           "syllables": 13,
           "semantic_score": 1.0,
           "rhythm_score": 0.846,
@@ -223,18 +234,18 @@
           "final_score": 0.968
         },
         {
-          "text": "Remembering the determined eyes looking at me",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
+          "text": "Remember eyes gazing at me",
+          "syllables": 8,
+          "semantic_score": 0.833,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.957
+          "final_score": 0.942
         },
         {
-          "text": "Remembering eyes looking at me",
+          "text": "determined eyes gazing at me",
           "syllables": 9,
           "semantic_score": 0.833,
           "rhythm_score": 0.8,
@@ -245,18 +256,7 @@
           "final_score": 0.906
         },
         {
-          "text": "determined eyes looking at me",
-          "syllables": 9,
-          "semantic_score": 0.833,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.906
-        },
-        {
-          "text": "eyes looking at me",
+          "text": "eyes gazing at me",
           "syllables": 5,
           "semantic_score": 0.667,
           "rhythm_score": 0.833,
@@ -267,7 +267,18 @@
           "final_score": 0.859
         },
         {
-          "text": "looking at me",
+          "text": "Remember gazing at me",
+          "syllables": 7,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.853
+        },
+        {
+          "text": "gazing at me",
           "syllables": 4,
           "semantic_score": 0.5,
           "rhythm_score": 0.667,
@@ -276,17 +287,6 @@
           "singability_score": 1.0,
           "ending_score": 0.85,
           "final_score": 0.775
-        },
-        {
-          "text": "Remembering at me",
-          "syllables": 6,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.763
         },
         {
           "text": "at me",
@@ -300,8 +300,8 @@
           "final_score": 0.662
         }
       ],
-      "selected": "Remembering determined eyes looking at me",
-      "selected_score": 0.968
+      "selected": "Remember determined eyes gazing at me",
+      "selected_score": 0.981
     },
     {
       "id": 4,
@@ -558,7 +558,7 @@
     {
       "id": 6,
       "zh": "漂浮在一片无奈",
-      "literal_en": "Floating in an expanse of helplessness",
+      "literal_en": "Floating in a sea of helplessness",
       "note_count": 12,
       "phrase_duration": 5.75,
       "target_syllables": 9,
@@ -568,7 +568,7 @@
       ],
       "candidates": [
         {
-          "text": "Floating in expanse of helplessness",
+          "text": "Floating in a sea of helplessness",
           "syllables": 9,
           "semantic_score": 1.0,
           "rhythm_score": 1.0,
@@ -579,8 +579,8 @@
           "final_score": 0.984
         },
         {
-          "text": "Floating in an expanse of helplessness",
-          "syllables": 10,
+          "text": "Floating in sea of helplessness",
+          "syllables": 8,
           "semantic_score": 1.0,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
@@ -601,7 +601,7 @@
           "final_score": 0.848
         }
       ],
-      "selected": "Floating in expanse of helplessness",
+      "selected": "Floating in a sea of helplessness",
       "selected_score": 0.984
     },
     {
@@ -733,7 +733,7 @@
     {
       "id": 8,
       "zh": "命运却要我们危难中相爱",
-      "literal_en": "Yet destiny demands we fall in love amidst danger",
+      "literal_en": "Yet destiny demands we fall in love amidst peril",
       "note_count": 11,
       "phrase_duration": 5.428,
       "target_syllables": 8,
@@ -743,7 +743,7 @@
       ],
       "candidates": [
         {
-          "text": "we fall in love amidst danger",
+          "text": "we fall in love amidst peril",
           "syllables": 8,
           "semantic_score": 0.667,
           "rhythm_score": 1.0,
@@ -754,7 +754,7 @@
           "final_score": 0.883
         },
         {
-          "text": "Yet we fall in love amidst danger",
+          "text": "Yet we fall in love amidst peril",
           "syllables": 9,
           "semantic_score": 0.778,
           "rhythm_score": 0.8,
@@ -765,7 +765,7 @@
           "final_score": 0.882
         },
         {
-          "text": "Yet destiny demands we fall in love amidst danger",
+          "text": "Yet destiny demands we fall in love amidst peril",
           "syllables": 14,
           "semantic_score": 1.0,
           "rhythm_score": 0.786,
@@ -787,7 +787,7 @@
           "final_score": 0.831
         },
         {
-          "text": "Yet we in amidst danger",
+          "text": "Yet we in amidst peril",
           "syllables": 7,
           "semantic_score": 0.556,
           "rhythm_score": 0.8,
@@ -798,7 +798,7 @@
           "final_score": 0.811
         },
         {
-          "text": "fall in love amidst danger",
+          "text": "fall in love amidst peril",
           "syllables": 7,
           "semantic_score": 0.556,
           "rhythm_score": 0.8,
@@ -831,7 +831,7 @@
           "final_score": 0.775
         },
         {
-          "text": "Yet demands we fall in love amidst danger",
+          "text": "Yet demands we fall in love amidst peril",
           "syllables": 11,
           "semantic_score": 0.889,
           "rhythm_score": 0.55,
@@ -864,7 +864,7 @@
           "final_score": 0.744
         },
         {
-          "text": "in love amidst danger",
+          "text": "in love amidst peril",
           "syllables": 6,
           "semantic_score": 0.444,
           "rhythm_score": 0.6,
@@ -875,7 +875,7 @@
           "final_score": 0.74
         },
         {
-          "text": "demands we fall in love amidst danger",
+          "text": "demands we fall in love amidst peril",
           "syllables": 10,
           "semantic_score": 0.778,
           "rhythm_score": 0.6,
@@ -908,7 +908,7 @@
           "final_score": 0.673
         },
         {
-          "text": "love amidst danger",
+          "text": "love amidst peril",
           "syllables": 5,
           "semantic_score": 0.333,
           "rhythm_score": 0.833,
@@ -930,7 +930,7 @@
           "final_score": 0.619
         },
         {
-          "text": "amidst danger",
+          "text": "amidst peril",
           "syllables": 4,
           "semantic_score": 0.222,
           "rhythm_score": 0.667,
@@ -941,13 +941,13 @@
           "final_score": 0.561
         }
       ],
-      "selected": "we fall in love amidst danger",
+      "selected": "we fall in love amidst peril",
       "selected_score": 0.883
     },
     {
       "id": 9,
       "zh": "也许未来遥远在光年之外",
-      "literal_en": "Perhaps the future lies far beyond light years away",
+      "literal_en": "Perhaps the future lies far beyond light-years away",
       "note_count": 11,
       "phrase_duration": 5.446,
       "target_syllables": 8,
@@ -1254,7 +1254,7 @@
     {
       "id": 11,
       "zh": "我没想到为了你我能疯狂到山崩海啸",
-      "literal_en": "I never thought for you I could go so wild as to make mountains collapse and oceans surge",
+      "literal_en": "I never expected I could go so mad for you that mountains would collapse and tsunamis would rise",
       "note_count": 16,
       "phrase_duration": 6.841,
       "target_syllables": 12,
@@ -1264,178 +1264,321 @@
       ],
       "candidates": [
         {
-          "text": "I for you I as to mountains collapse oceans surge",
-          "syllables": 13,
-          "semantic_score": 0.6,
-          "rhythm_score": 0.8,
+          "text": "I never expected I go so mad for you mountains",
+          "syllables": 14,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.929,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.897
+        },
+        {
+          "text": "I mad for you mountains collapse tsunamis rise",
+          "syllables": 12,
+          "semantic_score": 0.667,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.832
+          "final_score": 0.889
         },
         {
-          "text": "I for you I as to collapse oceans surge",
+          "text": "mad for you mountains collapse tsunamis rise",
           "syllables": 11,
-          "semantic_score": 0.533,
+          "semantic_score": 0.583,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.81
+          "final_score": 0.826
         },
         {
-          "text": "I go so wild as to make",
+          "text": "so mad for you mountains collapse tsunamis",
+          "syllables": 11,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.82
+        },
+        {
+          "text": "go so mad for you mountains",
           "syllables": 7,
-          "semantic_score": 0.467,
+          "semantic_score": 0.5,
           "rhythm_score": 0.875,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.749
+          "ending_score": 0.65,
+          "final_score": 0.807
         },
         {
-          "text": "I for you I as to oceans surge",
+          "text": "I go so mad for you",
+          "syllables": 6,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.791
+        },
+        {
+          "text": "I for you tsunamis rise",
+          "syllables": 7,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.786
+        },
+        {
+          "text": "mad for you mountains collapse",
+          "syllables": 7,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.786
+        },
+        {
+          "text": "expected I go so mad for you",
           "syllables": 9,
-          "semantic_score": 0.467,
+          "semantic_score": 0.583,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.744
+          "final_score": 0.781
         },
         {
-          "text": "so wild as to make mountains",
-          "syllables": 7,
-          "semantic_score": 0.4,
-          "rhythm_score": 0.875,
+          "text": "go so mad for you mountains collapse",
+          "syllables": 9,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.781
+        },
+        {
+          "text": "I go so mad for you mountains",
+          "syllables": 8,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.775
+        },
+        {
+          "text": "for you mountains collapse tsunamis rise",
+          "syllables": 10,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.763
+        },
+        {
+          "text": "so mad for you mountains",
+          "syllables": 6,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.758
+        },
+        {
+          "text": "mad for you mountains collapse tsunamis",
+          "syllables": 10,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.757
+        },
+        {
+          "text": "I for you collapse tsunamis rise",
+          "syllables": 9,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.755
+        },
+        {
+          "text": "so mad for you mountains collapse",
+          "syllables": 8,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.755
+        },
+        {
+          "text": "go so mad for you",
+          "syllables": 5,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.625,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.741
+        },
+        {
+          "text": "for you mountains collapse tsunamis",
+          "syllables": 9,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
           "final_score": 0.722
         },
         {
-          "text": "as to make mountains collapse",
+          "text": "expected I go so mad",
           "syllables": 7,
-          "semantic_score": 0.333,
+          "semantic_score": 0.417,
           "rhythm_score": 0.875,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.25,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.706
+          "ending_score": 0.65,
+          "final_score": 0.66
         },
         {
-          "text": "go so wild as to make",
+          "text": "you mountains collapse tsunamis rise",
+          "syllables": 9,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.608
+        },
+        {
+          "text": "never expected I go so",
+          "syllables": 8,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.608
+        },
+        {
+          "text": "collapse tsunamis rise",
           "syllables": 6,
-          "semantic_score": 0.4,
+          "semantic_score": 0.25,
           "rhythm_score": 0.75,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.705
+          "final_score": 0.59
         },
         {
-          "text": "as to make mountains collapse oceans surge",
-          "syllables": 10,
-          "semantic_score": 0.467,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.699
-        },
-        {
-          "text": "wild as to make mountains collapse oceans",
-          "syllables": 10,
-          "semantic_score": 0.467,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.693
-        },
-        {
-          "text": "so wild as to make mountains collapse",
-          "syllables": 9,
-          "semantic_score": 0.467,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.691
-        },
-        {
-          "text": "go so wild as to make mountains",
+          "text": "mountains collapse tsunamis rise",
           "syllables": 8,
-          "semantic_score": 0.467,
+          "semantic_score": 0.333,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.25,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.684
+          "ending_score": 0.85,
+          "final_score": 0.581
         },
         {
-          "text": "wild as to make mountains",
-          "syllables": 6,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.678
-        },
-        {
-          "text": "wild as to make mountains collapse",
+          "text": "I never expected I go",
           "syllables": 8,
-          "semantic_score": 0.4,
+          "semantic_score": 0.333,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.669
+          "final_score": 0.581
         },
         {
-          "text": "as to make mountains collapse oceans",
-          "syllables": 9,
-          "semantic_score": 0.4,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "text": "I never expected I go so mad",
+          "syllables": 10,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.6,
+          "grammar_score": 0.75,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.663
+          "final_score": 0.578
         },
         {
-          "text": "so wild as to make",
-          "syllables": 5,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.625,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "text": "never expected I go so mad",
+          "syllables": 9,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.55,
+          "grammar_score": 0.75,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.568
+        },
+        {
+          "text": "I never expected I go so",
+          "syllables": 9,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 0.75,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.661
+          "final_score": 0.548
+        },
+        {
+          "text": "tsunamis rise",
+          "syllables": 4,
+          "semantic_score": 0.167,
+          "rhythm_score": 0.5,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.519
         }
       ],
-      "selected": "I for you I as to mountains collapse oceans surge",
-      "selected_score": 0.832
+      "selected": "I never expected I go so mad for you mountains",
+      "selected_score": 0.897
     },
     {
       "id": 12,
       "zh": "没有你根本不想逃我的大脑",
-      "literal_en": "Without you, my mind has no desire to flee at all",
+      "literal_en": "Without you, my mind simply refuses to flee",
       "note_count": 13,
       "phrase_duration": 5.536,
       "target_syllables": 10,
@@ -1445,107 +1588,129 @@
       ],
       "candidates": [
         {
-          "text": "Without you my no desire to flee at all",
-          "syllables": 11,
-          "semantic_score": 0.9,
-          "rhythm_score": 0.8,
+          "text": "Without you my mind refuses to flee",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.922
+          "ending_score": 0.85,
+          "final_score": 0.955
         },
         {
-          "text": "Without you my mind no desire to flee at all",
+          "text": "Without you my mind simply refuses to flee",
           "syllables": 12,
           "semantic_score": 1.0,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.917
+          "ending_score": 0.85,
+          "final_score": 0.923
         },
         {
-          "text": "Without you my mind has no desire to flee at all",
-          "syllables": 13,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.55,
+          "text": "Without you my refuses to flee",
+          "syllables": 9,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.908
-        },
-        {
-          "text": "Without you my mind no desire to flee",
-          "syllables": 10,
-          "semantic_score": 0.8,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.878
+          "final_score": 0.88
         },
         {
-          "text": "Without you my to flee at all",
-          "syllables": 8,
-          "semantic_score": 0.7,
-          "rhythm_score": 0.6,
+          "text": "you my mind simply refuses to flee",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
-          "relation_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.875
+        },
+        {
+          "text": "Without you my mind simply refuses",
+          "syllables": 10,
+          "semantic_score": 0.75,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.822
+          "final_score": 0.829
         },
         {
-          "text": "no desire to flee at all",
+          "text": "my mind simply refuses to flee",
+          "syllables": 9,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.799
+        },
+        {
+          "text": "Without you my mind simply",
           "syllables": 7,
-          "semantic_score": 0.6,
+          "semantic_score": 0.625,
           "rhythm_score": 0.875,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.5,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.786
+          "ending_score": 0.85,
+          "final_score": 0.773
         },
         {
-          "text": "mind no desire to flee at all",
+          "text": "simply refuses to flee",
+          "syllables": 7,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.733
+        },
+        {
+          "text": "mind simply refuses to flee",
           "syllables": 8,
-          "semantic_score": 0.7,
+          "semantic_score": 0.625,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.5,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.768
+          "ending_score": 0.85,
+          "final_score": 0.723
         },
         {
-          "text": "desire to flee at all",
-          "syllables": 6,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.75,
+          "text": "refuses to flee",
+          "syllables": 5,
+          "semantic_score": 0.375,
+          "rhythm_score": 0.625,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.5,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.731
+          "ending_score": 0.85,
+          "final_score": 0.648
         },
         {
-          "text": "to flee at all",
-          "syllables": 4,
-          "semantic_score": 0.4,
-          "rhythm_score": 0.5,
+          "text": "to flee",
+          "syllables": 2,
+          "semantic_score": 0.25,
+          "rhythm_score": 0.25,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.5,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.654
+          "ending_score": 0.85,
+          "final_score": 0.54
         }
       ],
-      "selected": "Without you my no desire to flee at all",
-      "selected_score": 0.922
+      "selected": "Without you my mind refuses to flee",
+      "selected_score": 0.955
     },
     {
       "id": 13,
@@ -1797,7 +1962,7 @@
     {
       "id": 14,
       "zh": "根本不重要",
-      "literal_en": "Simply do not matter at all",
+      "literal_en": "simply do not matter at all",
       "note_count": 5,
       "phrase_duration": 5.073,
       "target_syllables": 4,
@@ -1807,7 +1972,7 @@
       ],
       "candidates": [
         {
-          "text": "Simply don't matter at all",
+          "text": "simply don't matter at all",
           "syllables": 7,
           "semantic_score": 0.8,
           "rhythm_score": 0.55,
@@ -1840,7 +2005,7 @@
           "final_score": 0.753
         }
       ],
-      "selected": "Simply don't matter at all",
+      "selected": "simply don't matter at all",
       "selected_score": 0.844
     },
     {
@@ -1961,7 +2126,7 @@
     {
       "id": 16,
       "zh": "足够抵挡天旋地转",
-      "literal_en": "Is enough to withstand the heavens and earth turning",
+      "literal_en": "is enough to withstand the dizzying spin",
       "note_count": 8,
       "phrase_duration": 6.936,
       "target_syllables": 6,
@@ -1971,7 +2136,18 @@
       ],
       "candidates": [
         {
-          "text": "enough to withstand heavens earth turning",
+          "text": "is enough to withstand dizzying spin",
+          "syllables": 9,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.889,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.969
+        },
+        {
+          "text": "is enough to withstand the dizzying spin",
           "syllables": 10,
           "semantic_score": 1.0,
           "rhythm_score": 0.8,
@@ -1982,112 +2158,46 @@
           "final_score": 0.953
         },
         {
-          "text": "Is enough to withstand heavens and earth turning",
-          "syllables": 12,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.667,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.929
-        },
-        {
-          "text": "enough to earth turning",
+          "text": "enough to dizzying spin",
           "syllables": 6,
-          "semantic_score": 0.667,
+          "semantic_score": 0.8,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.883
+          "final_score": 0.925
         },
         {
-          "text": "enough to heavens earth turning",
+          "text": "enough to withstand dizzying spin",
           "syllables": 8,
-          "semantic_score": 0.833,
+          "semantic_score": 1.0,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.855
+          "final_score": 0.908
         },
         {
-          "text": "enough to withstand heavens earth",
-          "syllables": 8,
-          "semantic_score": 0.833,
+          "text": "enough to spin",
+          "syllables": 4,
+          "semantic_score": 0.6,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.855
-        },
-        {
-          "text": "to withstand heavens earth turning",
-          "syllables": 8,
-          "semantic_score": 0.833,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.855
-        },
-        {
-          "text": "to turning",
-          "syllables": 3,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.731
-        },
-        {
-          "text": "withstand heavens earth turning",
-          "syllables": 7,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.25,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.718
-        },
-        {
-          "text": "heavens earth turning",
-          "syllables": 5,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.25,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.664
-        },
-        {
-          "text": "earth turning",
-          "syllables": 3,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.25,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.611
+          "final_score": 0.781
         }
       ],
-      "selected": "enough to withstand heavens earth turning",
-      "selected_score": 0.953
+      "selected": "is enough to withstand dizzying spin",
+      "selected_score": 0.969
     },
     {
       "id": 17,
       "zh": "一种执迷不放手的倔强足以",
-      "literal_en": "A stubborn obsession that refuses to let go is enough to",
+      "literal_en": "A stubborn obsession of refusing to let go is enough to",
       "note_count": 14,
       "phrase_duration": 4.782,
       "target_syllables": 10,
@@ -2097,79 +2207,112 @@
       ],
       "candidates": [
         {
-          "text": "stubborn obsession refuses to let go",
-          "syllables": 11,
-          "semantic_score": 0.857,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.914
-        },
-        {
-          "text": "stubborn obsession refuses to let go enough",
-          "syllables": 13,
+          "text": "stubborn obsession of refusing to let go enough",
+          "syllables": 14,
           "semantic_score": 1.0,
-          "rhythm_score": 0.55,
+          "rhythm_score": 0.929,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.908
+          "final_score": 0.977
         },
         {
-          "text": "obsession refuses to let go enough",
-          "syllables": 11,
-          "semantic_score": 0.857,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.908
-        },
-        {
-          "text": "stubborn obsession refuses to let",
+          "text": "obsession of refusing to let go",
           "syllables": 10,
-          "semantic_score": 0.714,
+          "semantic_score": 0.75,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.898
+          "ending_score": 0.85,
+          "final_score": 0.915
         },
         {
-          "text": "obsession refuses to let go",
-          "syllables": 9,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.8,
+          "text": "stubborn obsession of refusing to let go",
+          "syllables": 12,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.868
+          "final_score": 0.884
         },
         {
-          "text": "refuses to let go enough",
-          "syllables": 8,
-          "semantic_score": 0.714,
+          "text": "obsession of refusing to let go enough",
+          "syllables": 12,
+          "semantic_score": 0.875,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.826
+          "final_score": 0.878
+        },
+        {
+          "text": "stubborn obsession of refusing to let",
+          "syllables": 11,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.874
+        },
+        {
+          "text": "of refusing to let go enough",
+          "syllables": 9,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.874
+        },
+        {
+          "text": "of refusing to let go",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.853
+        },
+        {
+          "text": "obsession of refusing to let",
+          "syllables": 9,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.834
+        },
+        {
+          "text": "refusing to let go enough",
+          "syllables": 8,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.717
         }
       ],
-      "selected": "stubborn obsession refuses to let go",
-      "selected_score": 0.914
+      "selected": "stubborn obsession of refusing to let go enough",
+      "selected_score": 0.977
     },
     {
       "id": 18,
       "zh": "点燃所有希望",
-      "literal_en": "Ignite all hope",
+      "literal_en": "ignite all hope",
       "note_count": 7,
       "phrase_duration": 5.706,
       "target_syllables": 5,
@@ -2179,7 +2322,7 @@
       ],
       "candidates": [
         {
-          "text": "Ignite all hope",
+          "text": "ignite all hope",
           "syllables": 4,
           "semantic_score": 1.0,
           "rhythm_score": 0.75,
@@ -2190,13 +2333,13 @@
           "final_score": 0.951
         }
       ],
-      "selected": "Ignite all hope",
+      "selected": "ignite all hope",
       "selected_score": 0.951
     },
     {
       "id": 19,
       "zh": "宇宙磅礡而冷漠我们的爱微小却闪烁",
-      "literal_en": "The universe is majestic and indifferent, our love is tiny yet shimmering",
+      "literal_en": "The universe is vast and indifferent, our love is tiny yet shimmering",
       "note_count": 22,
       "phrase_duration": 5.209,
       "target_syllables": 15,
@@ -2206,40 +2349,29 @@
       ],
       "candidates": [
         {
-          "text": "universe majestic indifferent our love tiny yet shimmering",
-          "syllables": 18,
+          "text": "universe vast indifferent our love tiny yet shimmering",
+          "syllables": 16,
           "semantic_score": 1.0,
-          "rhythm_score": 0.833,
+          "rhythm_score": 0.938,
           "grammar_score": 0.75,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.899
+          "final_score": 0.918
+        },
+        {
+          "text": "universe is vast and indifferent our love is tiny yet shimmering",
+          "syllables": 19,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.789,
+          "grammar_score": 0.75,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.892
         },
         {
           "text": "universe indifferent our love tiny yet shimmering",
-          "syllables": 15,
-          "semantic_score": 0.875,
-          "rhythm_score": 1.0,
-          "grammar_score": 0.75,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.89
-        },
-        {
-          "text": "universe majestic indifferent our love tiny yet",
-          "syllables": 15,
-          "semantic_score": 0.875,
-          "rhythm_score": 1.0,
-          "grammar_score": 0.75,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.89
-        },
-        {
-          "text": "majestic indifferent our love tiny yet shimmering",
           "syllables": 15,
           "semantic_score": 0.875,
           "rhythm_score": 1.0,
@@ -2261,19 +2393,30 @@
           "final_score": 0.85
         },
         {
-          "text": "universe majestic indifferent our love tiny",
-          "syllables": 14,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.833,
+          "text": "universe vast indifferent our love tiny yet",
+          "syllables": 13,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.667,
           "grammar_score": 0.75,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.826
+          "ending_score": 0.65,
+          "final_score": 0.83
         },
         {
-          "text": "universe majestic indifferent our love",
-          "syllables": 12,
+          "text": "vast indifferent our love tiny yet shimmering",
+          "syllables": 13,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.667,
+          "grammar_score": 0.75,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.83
+        },
+        {
+          "text": "universe vast indifferent our love",
+          "syllables": 10,
           "semantic_score": 0.625,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
@@ -2283,8 +2426,8 @@
           "final_score": 0.795
         },
         {
-          "text": "majestic indifferent our love tiny",
-          "syllables": 11,
+          "text": "vast indifferent our love tiny",
+          "syllables": 9,
           "semantic_score": 0.625,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
@@ -2316,6 +2459,17 @@
           "final_score": 0.789
         },
         {
+          "text": "universe vast indifferent our love tiny",
+          "syllables": 12,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.55,
+          "grammar_score": 0.75,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.774
+        },
+        {
           "text": "universe our love tiny yet shimmering",
           "syllables": 11,
           "semantic_score": 0.75,
@@ -2338,8 +2492,8 @@
           "final_score": 0.768
         },
         {
-          "text": "majestic indifferent our love tiny yet",
-          "syllables": 12,
+          "text": "vast indifferent our love tiny yet",
+          "syllables": 10,
           "semantic_score": 0.75,
           "rhythm_score": 0.55,
           "grammar_score": 0.75,
@@ -2371,13 +2525,13 @@
           "final_score": 0.649
         }
       ],
-      "selected": "universe majestic indifferent our love tiny yet shimmering",
-      "selected_score": 0.899
+      "selected": "universe vast indifferent our love tiny yet shimmering",
+      "selected_score": 0.918
     },
     {
       "id": 20,
       "zh": "颠簸却如此忘我",
-      "literal_en": "Turbulent yet so completely absorbed",
+      "literal_en": "turbulent yet so utterly absorbed",
       "note_count": 11,
       "phrase_duration": 5.721,
       "target_syllables": 8,
@@ -2387,29 +2541,40 @@
       ],
       "candidates": [
         {
-          "text": "Turbulent yet so completely absorbed",
-          "syllables": 12,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.917,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.975
-        },
-        {
-          "text": "Turbulent yet completely absorbed",
+          "text": "turbulent yet so utterly absorbed",
           "syllables": 11,
-          "semantic_score": 0.8,
+          "semantic_score": 1.0,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.844
+          "final_score": 0.908
         },
         {
-          "text": "Turbulent absorbed",
+          "text": "turbulent yet utterly absorbed",
+          "syllables": 10,
+          "semantic_score": 0.8,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.854
+        },
+        {
+          "text": "turbulent utterly absorbed",
+          "syllables": 9,
+          "semantic_score": 0.6,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.826
+        },
+        {
+          "text": "turbulent absorbed",
           "syllables": 6,
           "semantic_score": 0.4,
           "rhythm_score": 0.6,
@@ -2420,13 +2585,13 @@
           "final_score": 0.725
         }
       ],
-      "selected": "Turbulent yet so completely absorbed",
-      "selected_score": 0.975
+      "selected": "turbulent yet so utterly absorbed",
+      "selected_score": 0.908
     },
     {
       "id": 21,
       "zh": "缘分让我们相遇乱世以外",
-      "literal_en": "Fate let us meet outside the chaotic world",
+      "literal_en": "Destiny brought us together outside the chaotic world",
       "note_count": 11,
       "phrase_duration": 5.499,
       "target_syllables": 8,
@@ -2436,52 +2601,52 @@
       ],
       "candidates": [
         {
-          "text": "Fate let us meet outside chaotic world",
-          "syllables": 9,
+          "text": "Destiny brought us together outside chaotic world",
+          "syllables": 13,
           "semantic_score": 1.0,
-          "rhythm_score": 0.8,
+          "rhythm_score": 0.846,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.953
+          "final_score": 0.962
         },
         {
-          "text": "Fate let us meet outside chaotic",
-          "syllables": 8,
+          "text": "Destiny brought us together outside the chaotic world",
+          "syllables": 14,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.786,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.951
+        },
+        {
+          "text": "Destiny brought us together outside chaotic",
+          "syllables": 12,
           "semantic_score": 0.857,
-          "rhythm_score": 1.0,
+          "rhythm_score": 0.917,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.944
+          "final_score": 0.929
         },
         {
-          "text": "let us meet outside chaotic world",
-          "syllables": 8,
-          "semantic_score": 0.857,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.944
-        },
-        {
-          "text": "Fate let us meet outside the chaotic world",
+          "text": "brought us together outside chaotic world",
           "syllables": 10,
-          "semantic_score": 1.0,
+          "semantic_score": 0.857,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.917
+          "final_score": 0.872
         },
         {
-          "text": "Fate us outside chaotic world",
-          "syllables": 7,
+          "text": "Destiny us outside chaotic world",
+          "syllables": 9,
           "semantic_score": 0.714,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
@@ -2491,8 +2656,8 @@
           "final_score": 0.862
         },
         {
-          "text": "us meet outside chaotic world",
-          "syllables": 7,
+          "text": "us together outside chaotic world",
+          "syllables": 9,
           "semantic_score": 0.714,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
@@ -2502,8 +2667,8 @@
           "final_score": 0.862
         },
         {
-          "text": "let us meet outside chaotic",
-          "syllables": 7,
+          "text": "brought us together outside chaotic",
+          "syllables": 9,
           "semantic_score": 0.714,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
@@ -2513,15 +2678,26 @@
           "final_score": 0.862
         },
         {
-          "text": "meet outside chaotic world",
-          "syllables": 6,
+          "text": "together outside chaotic world",
+          "syllables": 8,
           "semantic_score": 0.571,
-          "rhythm_score": 0.6,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.78
+          "final_score": 0.852
+        },
+        {
+          "text": "Destiny us outside world",
+          "syllables": 7,
+          "semantic_score": 0.571,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.816
         },
         {
           "text": "outside chaotic world",
@@ -2546,13 +2722,13 @@
           "final_score": 0.551
         }
       ],
-      "selected": "Fate let us meet outside chaotic world",
-      "selected_score": 0.953
+      "selected": "Destiny brought us together outside chaotic world",
+      "selected_score": 0.962
     },
     {
       "id": 22,
       "zh": "命运却要我们危难中相爱",
-      "literal_en": "Yet destiny wants us to love each other in times of crisis",
+      "literal_en": "yet fate demands we fall in love amidst danger",
       "note_count": 11,
       "phrase_duration": 5.425,
       "target_syllables": 8,
@@ -2562,123 +2738,211 @@
       ],
       "candidates": [
         {
-          "text": "Yet destiny wants us to love each other in times",
-          "syllables": 14,
-          "semantic_score": 0.833,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.844
-        },
-        {
-          "text": "Yet us to in times of crisis",
-          "syllables": 9,
-          "semantic_score": 0.583,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.82
-        },
-        {
-          "text": "Yet us to other in times of crisis",
-          "syllables": 11,
+          "text": "we fall in love amidst danger",
+          "syllables": 8,
           "semantic_score": 0.667,
-          "rhythm_score": 0.55,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.802
+          "final_score": 0.883
         },
         {
-          "text": "Yet us to in of crisis",
+          "text": "yet we fall in love amidst danger",
+          "syllables": 9,
+          "semantic_score": 0.778,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.882
+        },
+        {
+          "text": "yet fate demands we fall in love amidst danger",
+          "syllables": 12,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.917,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.866
+        },
+        {
+          "text": "yet fate demands we fall in love",
+          "syllables": 8,
+          "semantic_score": 0.778,
+          "rhythm_score": 1.0,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.816
+        },
+        {
+          "text": "yet we in amidst danger",
           "syllables": 7,
-          "semantic_score": 0.5,
+          "semantic_score": 0.556,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.793
+          "final_score": 0.811
         },
         {
-          "text": "to love each other in times",
-          "syllables": 8,
-          "semantic_score": 0.5,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.776
-        },
-        {
-          "text": "us to love each other in times",
-          "syllables": 9,
-          "semantic_score": 0.583,
+          "text": "fall in love amidst danger",
+          "syllables": 7,
+          "semantic_score": 0.556,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.767
+          "final_score": 0.811
         },
         {
-          "text": "other in times of crisis",
+          "text": "demands we fall in love amidst",
           "syllables": 8,
-          "semantic_score": 0.417,
+          "semantic_score": 0.667,
           "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.749
+          "final_score": 0.775
         },
         {
-          "text": "each other in times of crisis",
-          "syllables": 9,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.8,
+          "text": "we fall in love amidst",
+          "syllables": 6,
+          "semantic_score": 0.556,
+          "rhythm_score": 0.6,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.775
+        },
+        {
+          "text": "yet fate demands we fall in love amidst",
+          "syllables": 10,
+          "semantic_score": 0.889,
+          "rhythm_score": 0.6,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.774
+        },
+        {
+          "text": "fate demands we fall in love amidst",
+          "syllables": 9,
+          "semantic_score": 0.778,
+          "rhythm_score": 0.8,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.774
+        },
+        {
+          "text": "yet demands we fall in love amidst danger",
+          "syllables": 11,
+          "semantic_score": 0.889,
+          "rhythm_score": 0.55,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.765
+        },
+        {
+          "text": "fate demands we fall in love",
+          "syllables": 7,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.8,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.745
+        },
+        {
+          "text": "in love amidst danger",
+          "syllables": 6,
+          "semantic_score": 0.444,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
           "final_score": 0.74
         },
         {
-          "text": "love each other in times of crisis",
+          "text": "demands we fall in love amidst danger",
           "syllables": 10,
-          "semantic_score": 0.583,
+          "semantic_score": 0.778,
           "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.731
+          "final_score": 0.738
         },
         {
-          "text": "in times of crisis",
+          "text": "demands we fall in love",
           "syllables": 6,
-          "semantic_score": 0.333,
+          "semantic_score": 0.556,
           "rhythm_score": 0.6,
+          "grammar_score": 0.55,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.673
+        },
+        {
+          "text": "love amidst danger",
+          "syllables": 5,
+          "semantic_score": 0.333,
+          "rhythm_score": 0.833,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.651
+          "final_score": 0.626
+        },
+        {
+          "text": "amidst danger",
+          "syllables": 4,
+          "semantic_score": 0.222,
+          "rhythm_score": 0.667,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.561
+        },
+        {
+          "text": "yet fate demands we fall",
+          "syllables": 6,
+          "semantic_score": 0.556,
+          "rhythm_score": 0.6,
+          "grammar_score": 0.55,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.547
         }
       ],
-      "selected": "Yet destiny wants us to love each other in times",
-      "selected_score": 0.844
+      "selected": "we fall in love amidst danger",
+      "selected_score": 0.883
     },
     {
       "id": 23,
       "zh": "也许未来遥远在光年之外",
-      "literal_en": "Perhaps the future is distant, beyond light-years",
+      "literal_en": "Perhaps the future lies far away, beyond light years",
       "note_count": 11,
       "phrase_duration": 5.435,
       "target_syllables": 8,
@@ -2688,40 +2952,40 @@
       ],
       "candidates": [
         {
-          "text": "Perhaps future distant beyond light years",
-          "syllables": 9,
+          "text": "Perhaps the future lies far away beyond light years",
+          "syllables": 12,
           "semantic_score": 1.0,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.975
+        },
+        {
+          "text": "future lies far away beyond light years",
+          "syllables": 9,
+          "semantic_score": 0.875,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.953
+          "final_score": 0.914
         },
         {
-          "text": "Perhaps future distant beyond light",
+          "text": "future lies far away beyond light",
           "syllables": 8,
-          "semantic_score": 0.833,
+          "semantic_score": 0.75,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.936
+          "final_score": 0.909
         },
         {
-          "text": "Perhaps future is distant beyond light years",
-          "syllables": 10,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.917
-        },
-        {
-          "text": "Perhaps the future is distant beyond light years",
+          "text": "Perhaps future lies far away beyond light years",
           "syllables": 11,
           "semantic_score": 1.0,
           "rhythm_score": 0.55,
@@ -2732,68 +2996,123 @@
           "final_score": 0.908
         },
         {
-          "text": "the future is distant beyond light years",
-          "syllables": 9,
-          "semantic_score": 0.833,
-          "rhythm_score": 0.8,
+          "text": "the future lies far away beyond light years",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.9
+          "final_score": 0.878
         },
         {
-          "text": "future distant beyond light years",
+          "text": "Perhaps future lies far away beyond light",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.878
+        },
+        {
+          "text": "lies far away beyond light years",
           "syllables": 7,
-          "semantic_score": 0.833,
+          "semantic_score": 0.75,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.9
+          "final_score": 0.874
         },
         {
-          "text": "distant beyond light years",
+          "text": "future away beyond light years",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.834
+        },
+        {
+          "text": "away beyond light years",
           "syllables": 5,
-          "semantic_score": 0.667,
+          "semantic_score": 0.5,
           "rhythm_score": 0.833,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.853
+          "final_score": 0.799
+        },
+        {
+          "text": "far away beyond light years",
+          "syllables": 6,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.797
+        },
+        {
+          "text": "lies far away beyond light",
+          "syllables": 6,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.797
+        },
+        {
+          "text": "Perhaps future lies far away",
+          "syllables": 8,
+          "semantic_score": 0.625,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.755
         },
         {
           "text": "beyond light years",
           "syllables": 3,
-          "semantic_score": 0.5,
+          "semantic_score": 0.375,
           "rhythm_score": 0.5,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.739
+          "final_score": 0.699
         },
         {
           "text": "light years",
           "syllables": 2,
-          "semantic_score": 0.333,
+          "semantic_score": 0.25,
           "rhythm_score": 0.333,
           "grammar_score": 1.0,
           "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.536
+          "final_score": 0.509
         }
       ],
-      "selected": "Perhaps future distant beyond light years",
-      "selected_score": 0.953
+      "selected": "Perhaps the future lies far away beyond light years",
+      "selected_score": 0.975
     },
     {
       "id": 24,
       "zh": "我愿守候未知里为你等待",
-      "literal_en": "I am willing to wait in the unknown for you",
+      "literal_en": "I am willing to wait for you in the unknown",
       "note_count": 11,
       "phrase_duration": 4.018,
       "target_syllables": 8,
@@ -2803,720 +3122,51 @@
       ],
       "candidates": [
         {
-          "text": "willing to wait in unknown for you",
+          "text": "willing to wait for you in unknown",
           "syllables": 9,
           "semantic_score": 0.875,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.92
+          "ending_score": 0.65,
+          "final_score": 0.914
         },
         {
-          "text": "I'm to wait in unknown for you",
+          "text": "I'm to wait for you in unknown",
           "syllables": 8,
           "semantic_score": 0.75,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.915
+          "ending_score": 0.65,
+          "final_score": 0.909
         },
         {
-          "text": "I'm willing to wait in unknown for you",
+          "text": "I'm willing to wait for you in unknown",
           "syllables": 10,
           "semantic_score": 0.875,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.884
+          "ending_score": 0.65,
+          "final_score": 0.878
         },
         {
-          "text": "to wait in unknown for you",
+          "text": "to wait for you in unknown",
           "syllables": 7,
           "semantic_score": 0.75,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.88
-        },
-        {
-          "text": "I'm willing to wait in the unknown for you",
-          "syllables": 11,
-          "semantic_score": 0.875,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
+          "ending_score": 0.65,
           "final_score": 0.874
         },
         {
-          "text": "I'm to in unknown for you",
-          "syllables": 7,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.84
-        },
-        {
-          "text": "I'm willing to wait in unknown",
-          "syllables": 8,
-          "semantic_score": 0.625,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.816
-        },
-        {
-          "text": "willing to wait in unknown",
-          "syllables": 7,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.78
-        },
-        {
-          "text": "in unknown for you",
-          "syllables": 5,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.833,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.752
-        },
-        {
-          "text": "wait in unknown for you",
-          "syllables": 6,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.75
-        }
-      ],
-      "selected": "willing to wait in unknown for you",
-      "selected_score": 0.92
-    },
-    {
-      "id": 25,
-      "zh": "我没想到为了你我能疯狂到",
-      "literal_en": "I didn't expect that for you I could go crazy to the point",
-      "note_count": 12,
-      "phrase_duration": 5.438,
-      "target_syllables": 9,
-      "target_syllable_range": [
-        6,
-        11
-      ],
-      "candidates": [
-        {
-          "text": "I didn't expect for you I go crazy to point",
-          "syllables": 12,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.917,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.975
-        },
-        {
-          "text": "I didn't expect that for you I could go crazy to point",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.951
-        },
-        {
-          "text": "I didn't expect that for you I could go crazy to the point",
-          "syllables": 15,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.733,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.941
-        },
-        {
-          "text": "I for you I go crazy to point",
-          "syllables": 9,
-          "semantic_score": 0.778,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.918
-        },
-        {
-          "text": "I expect for you I go crazy to point",
-          "syllables": 11,
-          "semantic_score": 0.889,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.882
-        },
-        {
-          "text": "for you I go crazy to point",
-          "syllables": 8,
-          "semantic_score": 0.778,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.882
-        },
-        {
-          "text": "didn't expect for you I go crazy",
-          "syllables": 9,
-          "semantic_score": 0.778,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.844
-        },
-        {
-          "text": "I didn't expect for you I go crazy",
-          "syllables": 10,
-          "semantic_score": 0.778,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.808
-        },
-        {
-          "text": "I didn't expect for you I go",
-          "syllables": 8,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.773
-        },
-        {
-          "text": "expect for you I go crazy",
-          "syllables": 8,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.773
-        },
-        {
-          "text": "I for you I to point",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.766
-        },
-        {
-          "text": "didn't expect for you I go",
-          "syllables": 7,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.737
-        },
-        {
-          "text": "you I go crazy to point",
-          "syllables": 7,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.731
-        },
-        {
-          "text": "go crazy to point",
-          "syllables": 5,
-          "semantic_score": 0.444,
-          "rhythm_score": 0.833,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.702
-        },
-        {
-          "text": "I didn't expect for you I",
-          "syllables": 7,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.701
-        },
-        {
-          "text": "I didn't expect for you",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.692
-        },
-        {
-          "text": "didn't expect for you I",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.692
-        },
-        {
-          "text": "expect for you I go",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.692
-        },
-        {
-          "text": "for you I go crazy",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.692
-        },
-        {
-          "text": "I go crazy to point",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.686
-        },
-        {
-          "text": "crazy to point",
-          "syllables": 4,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.667,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.636
-        },
-        {
-          "text": "to point",
-          "syllables": 2,
-          "semantic_score": 0.222,
-          "rhythm_score": 0.333,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.541
-        }
-      ],
-      "selected": "I didn't expect for you I go crazy to point",
-      "selected_score": 0.975
-    },
-    {
-      "id": 26,
-      "zh": "山崩海啸没有你根本不想逃",
-      "literal_en": "of mountains collapsing and seas roaring, without you I simply don't want to flee",
-      "note_count": 12,
-      "phrase_duration": 5.536,
-      "target_syllables": 9,
-      "target_syllable_range": [
-        6,
-        11
-      ],
-      "candidates": [
-        {
-          "text": "of without you I don't want to flee",
-          "syllables": 9,
-          "semantic_score": 0.615,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.872
-        },
-        {
-          "text": "of roaring without you I don't want to flee",
-          "syllables": 11,
-          "semantic_score": 0.692,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.825
-        },
-        {
-          "text": "of mountains collapsing seas roaring without you I",
-          "syllables": 13,
-          "semantic_score": 0.615,
-          "rhythm_score": 0.846,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.791
-        },
-        {
-          "text": "of mountains collapsing seas roaring without you",
-          "syllables": 12,
-          "semantic_score": 0.538,
-          "rhythm_score": 0.917,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.779
-        },
-        {
-          "text": "of without you I to flee",
-          "syllables": 7,
-          "semantic_score": 0.462,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.751
-        }
-      ],
-      "selected": "of without you I don't want to flee",
-      "selected_score": 0.872
-    },
-    {
-      "id": 27,
-      "zh": "我的大脑为了你已经疯狂到",
-      "literal_en": "my brain has already gone crazy for you to the point",
-      "note_count": 12,
-      "phrase_duration": 5.406,
-      "target_syllables": 9,
-      "target_syllable_range": [
-        6,
-        11
-      ],
-      "candidates": [
-        {
-          "text": "my brain already gone crazy for you to point",
-          "syllables": 12,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.917,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.975
-        },
-        {
-          "text": "my brain has already gone crazy for you to point",
-          "syllables": 13,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.846,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.962
-        },
-        {
-          "text": "my brain gone crazy for you to point",
-          "syllables": 9,
-          "semantic_score": 0.889,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.954
-        },
-        {
-          "text": "my brain has already gone crazy for you to the point",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.951
-        },
-        {
-          "text": "my brain has gone crazy for you to the point",
-          "syllables": 11,
-          "semantic_score": 0.889,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.882
-        },
-        {
-          "text": "already gone crazy for you to point",
-          "syllables": 10,
-          "semantic_score": 0.778,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.882
-        },
-        {
-          "text": "my crazy for you to point",
-          "syllables": 7,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.811
-        },
-        {
-          "text": "gone crazy for you to point",
-          "syllables": 7,
-          "semantic_score": 0.667,
-          "rhythm_score": 0.6,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.811
-        },
-        {
-          "text": "brain already gone crazy for you",
-          "syllables": 9,
-          "semantic_score": 0.667,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.809
-        },
-        {
-          "text": "my brain already gone crazy for you",
-          "syllables": 10,
-          "semantic_score": 0.778,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.808
-        },
-        {
-          "text": "crazy for you to point",
-          "syllables": 6,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.766
-        },
-        {
-          "text": "for you to point",
-          "syllables": 4,
-          "semantic_score": 0.444,
-          "rhythm_score": 0.667,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.752
-        },
-        {
-          "text": "already gone crazy for you",
-          "syllables": 8,
-          "semantic_score": 0.556,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.737
-        },
-        {
-          "text": "you to point",
-          "syllables": 3,
-          "semantic_score": 0.333,
-          "rhythm_score": 0.5,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.606
-        },
-        {
-          "text": "to point",
-          "syllables": 2,
-          "semantic_score": 0.222,
-          "rhythm_score": 0.333,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.541
-        }
-      ],
-      "selected": "my brain already gone crazy for you to point",
-      "selected_score": 0.975
-    },
-    {
-      "id": 28,
-      "zh": "脉搏心跳没有你根本不重",
-      "literal_en": "where pulse and heartbeat, without you simply aren't important",
-      "note_count": 11,
-      "phrase_duration": 3.852,
-      "target_syllables": 8,
-      "target_syllable_range": [
-        6,
-        11
-      ],
-      "candidates": [
-        {
-          "text": "where pulse heartbeat without you simply aren't important",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.951
-        },
-        {
-          "text": "where pulse and heartbeat without you simply aren't important",
-          "syllables": 15,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.733,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.941
-        },
-        {
-          "text": "where pulse and heartbeat without you aren't important",
-          "syllables": 13,
-          "semantic_score": 0.875,
-          "rhythm_score": 0.846,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.922
-        },
-        {
-          "text": "pulse heartbeat without you simply aren't important",
-          "syllables": 13,
-          "semantic_score": 0.875,
-          "rhythm_score": 0.846,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.922
-        },
-        {
-          "text": "heartbeat without you simply aren't important",
-          "syllables": 12,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.917,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.894
-        },
-        {
-          "text": "where pulse heartbeat without you simply",
-          "syllables": 9,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.88
-        },
-        {
-          "text": "pulse heartbeat without you simply",
-          "syllables": 8,
-          "semantic_score": 0.625,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.876
-        },
-        {
-          "text": "where pulse heartbeat without you simply aren't",
+          "text": "I'm willing to wait for you in the unknown",
           "syllables": 11,
           "semantic_score": 0.875,
           "rhythm_score": 0.55,
@@ -3527,8 +3177,222 @@
           "final_score": 0.868
         },
         {
-          "text": "where pulse heartbeat without you",
+          "text": "I'm to for you in unknown",
           "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.834
+        },
+        {
+          "text": "I'm willing to wait for you",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.786
+        },
+        {
+          "text": "willing to wait for you",
+          "syllables": 6,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.75
+        },
+        {
+          "text": "for you in unknown",
+          "syllables": 5,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.833,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.746
+        },
+        {
+          "text": "wait for you in unknown",
+          "syllables": 6,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.744
+        }
+      ],
+      "selected": "willing to wait for you in unknown",
+      "selected_score": 0.914
+    },
+    {
+      "id": 25,
+      "zh": "我没想到为了你我能疯狂到",
+      "literal_en": "I never expected that for you I could go so crazy",
+      "note_count": 12,
+      "phrase_duration": 5.438,
+      "target_syllables": 9,
+      "target_syllable_range": [
+        6,
+        11
+      ],
+      "candidates": [
+        {
+          "text": "I never expected for you I go so crazy",
+          "syllables": 13,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.846,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.968
+        },
+        {
+          "text": "I never expected that for you I could go so crazy",
+          "syllables": 15,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.733,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.947
+        },
+        {
+          "text": "never expected for you I go so",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.92
+        },
+        {
+          "text": "expected for you I go so crazy",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.92
+        },
+        {
+          "text": "I never expected that for you I could go crazy",
+          "syllables": 14,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.786,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.917
+        },
+        {
+          "text": "never expected for you I go",
+          "syllables": 9,
+          "semantic_score": 0.75,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.915
+        },
+        {
+          "text": "I never expected for you I go so",
+          "syllables": 11,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.884
+        },
+        {
+          "text": "I expected for you I go crazy",
+          "syllables": 10,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "I never expected for you I go",
+          "syllables": 10,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "expected for you I go so",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "I never expected for you I",
+          "syllables": 9,
+          "semantic_score": 0.625,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.876
+        },
+        {
+          "text": "for you I go so",
+          "syllables": 5,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.833,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.846
+        },
+        {
+          "text": "for you I go so crazy",
+          "syllables": 7,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.844
+        },
+        {
+          "text": "I never expected for you",
+          "syllables": 8,
           "semantic_score": 0.625,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
@@ -3538,112 +3402,743 @@
           "final_score": 0.84
         },
         {
-          "text": "pulse heartbeat without you simply aren't",
+          "text": "never expected for you I",
+          "syllables": 8,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.84
+        },
+        {
+          "text": "I for you I go crazy",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.803
+        },
+        {
+          "text": "expected for you I go",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.803
+        },
+        {
+          "text": "I go so crazy",
+          "syllables": 5,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.833,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.686
+        },
+        {
+          "text": "you I go so crazy",
+          "syllables": 6,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.674
+        },
+        {
+          "text": "go so crazy",
+          "syllables": 4,
+          "semantic_score": 0.375,
+          "rhythm_score": 0.667,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.616
+        },
+        {
+          "text": "so crazy",
+          "syllables": 3,
+          "semantic_score": 0.25,
+          "rhythm_score": 0.5,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.545
+        }
+      ],
+      "selected": "I never expected for you I go so crazy",
+      "selected_score": 0.968
+    },
+    {
+      "id": 26,
+      "zh": "山崩海啸没有你根本不想逃",
+      "literal_en": "Mountains crumbling and seas raging, without you I don't even want to flee",
+      "note_count": 12,
+      "phrase_duration": 5.536,
+      "target_syllables": 9,
+      "target_syllable_range": [
+        6,
+        11
+      ],
+      "candidates": [
+        {
+          "text": "Mountains without you I want to flee",
+          "syllables": 9,
+          "semantic_score": 0.583,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.862
+        },
+        {
+          "text": "Mountains without you I don't want to flee",
           "syllables": 10,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.853
+        },
+        {
+          "text": "Mountains crumbling seas raging without you I don't even want",
+          "syllables": 15,
+          "semantic_score": 0.833,
+          "rhythm_score": 0.733,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.808
+        },
+        {
+          "text": "Mountains crumbling seas raging without you I don't",
+          "syllables": 12,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.788
+        },
+        {
+          "text": "crumbling seas raging without you I",
+          "syllables": 9,
+          "semantic_score": 0.5,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.755
+        },
+        {
+          "text": "raging without you I don't even",
+          "syllables": 9,
+          "semantic_score": 0.5,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.749
+        },
+        {
+          "text": "you I don't even want to flee",
+          "syllables": 8,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.746
+        },
+        {
+          "text": "crumbling seas raging without you I don't",
+          "syllables": 10,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.74
+        },
+        {
+          "text": "seas raging without you I don't even",
+          "syllables": 10,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.74
+        },
+        {
+          "text": "raging without you I don't even want",
+          "syllables": 10,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.74
+        },
+        {
+          "text": "without you I to flee",
+          "syllables": 6,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.728
+        },
+        {
+          "text": "Mountains crumbling seas raging without you",
+          "syllables": 10,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.719
+        },
+        {
+          "text": "seas raging without you I don't",
+          "syllables": 8,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.713
+        },
+        {
+          "text": "without you I don't even want",
+          "syllables": 8,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.713
+        },
+        {
+          "text": "Mountains crumbling seas raging without you I",
+          "syllables": 11,
+          "semantic_score": 0.583,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.71
+        },
+        {
+          "text": "crumbling seas raging without you",
+          "syllables": 8,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.693
+        },
+        {
+          "text": "I don't even want to flee",
+          "syllables": 7,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.683
+        },
+        {
+          "text": "even want to flee",
+          "syllables": 5,
+          "semantic_score": 0.333,
+          "rhythm_score": 0.833,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.672
+        },
+        {
+          "text": "seas raging without you I",
+          "syllables": 7,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.657
+        },
+        {
+          "text": "raging without you I don't",
+          "syllables": 7,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.651
+        },
+        {
+          "text": "without you I don't even",
+          "syllables": 7,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.651
+        },
+        {
+          "text": "don't even want to flee",
+          "syllables": 6,
+          "semantic_score": 0.417,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.648
+        },
+        {
+          "text": "want to flee",
+          "syllables": 3,
+          "semantic_score": 0.25,
+          "rhythm_score": 0.5,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.586
+        },
+        {
+          "text": "to flee",
+          "syllables": 2,
+          "semantic_score": 0.167,
+          "rhythm_score": 0.333,
+          "grammar_score": 1.0,
+          "relation_score": 0.5,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.529
+        }
+      ],
+      "selected": "Mountains without you I want to flee",
+      "selected_score": 0.862
+    },
+    {
+      "id": 27,
+      "zh": "我的大脑为了你已经疯狂到",
+      "literal_en": "My mind for you has already gone so crazy",
+      "note_count": 12,
+      "phrase_duration": 5.406,
+      "target_syllables": 9,
+      "target_syllable_range": [
+        6,
+        11
+      ],
+      "candidates": [
+        {
+          "text": "My mind for you has already gone so crazy",
+          "syllables": 12,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.981
+        },
+        {
+          "text": "My mind for you has gone so crazy",
+          "syllables": 9,
+          "semantic_score": 0.875,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.955
+        },
+        {
+          "text": "My mind for you already gone so",
+          "syllables": 9,
+          "semantic_score": 0.875,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.955
+        },
+        {
+          "text": "My mind for you already gone so crazy",
+          "syllables": 11,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.923
+        },
+        {
+          "text": "mind for you already gone so crazy",
+          "syllables": 10,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.92
+        },
+        {
+          "text": "for you already gone so crazy",
+          "syllables": 9,
+          "semantic_score": 0.75,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.915
+        },
+        {
+          "text": "My mind for you has gone crazy",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "My mind for you already gone",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "mind for you already gone so",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.88
+        },
+        {
+          "text": "My mind for you gone crazy",
+          "syllables": 7,
           "semantic_score": 0.75,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.838
+          "ending_score": 0.85,
+          "final_score": 0.844
         },
         {
-          "text": "where without you aren't important",
-          "syllables": 9,
+          "text": "My mind for you already",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.803
+        },
+        {
+          "text": "mind for you already gone",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.803
+        },
+        {
+          "text": "for you already gone so",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.803
+        },
+        {
+          "text": "you already gone so crazy",
+          "syllables": 8,
           "semantic_score": 0.625,
           "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.719
+        },
+        {
+          "text": "already gone so crazy",
+          "syllables": 7,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.644
+        },
+        {
+          "text": "gone so crazy",
+          "syllables": 4,
+          "semantic_score": 0.375,
+          "rhythm_score": 0.667,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.616
+        },
+        {
+          "text": "so crazy",
+          "syllables": 3,
+          "semantic_score": 0.25,
+          "rhythm_score": 0.5,
+          "grammar_score": 1.0,
+          "relation_score": 0.25,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.545
+        }
+      ],
+      "selected": "My mind for you has already gone so crazy",
+      "selected_score": 0.981
+    },
+    {
+      "id": 28,
+      "zh": "脉搏心跳没有你根本不重",
+      "literal_en": "Pulse and heartbeat, without you simply aren't important",
+      "note_count": 11,
+      "phrase_duration": 3.852,
+      "target_syllables": 8,
+      "target_syllable_range": [
+        6,
+        11
+      ],
+      "candidates": [
+        {
+          "text": "Pulse heartbeat without you simply aren't important",
+          "syllables": 13,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.846,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.834
+          "final_score": 0.962
         },
         {
-          "text": "heartbeat without you simply aren't",
-          "syllables": 9,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
+          "text": "Pulse and heartbeat without you simply aren't important",
+          "syllables": 14,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.786,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.834
+          "final_score": 0.951
         },
         {
-          "text": "where heartbeat without you aren't important",
+          "text": "Pulse and heartbeat without you aren't important",
+          "syllables": 12,
+          "semantic_score": 0.857,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.929
+        },
+        {
+          "text": "heartbeat without you simply aren't important",
+          "syllables": 12,
+          "semantic_score": 0.857,
+          "rhythm_score": 0.917,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.929
+        },
+        {
+          "text": "Pulse heartbeat without you simply",
+          "syllables": 8,
+          "semantic_score": 0.714,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.904
+        },
+        {
+          "text": "Pulse heartbeat without you simply aren't",
+          "syllables": 10,
+          "semantic_score": 0.857,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.872
+        },
+        {
+          "text": "Pulse heartbeat without you aren't important",
           "syllables": 11,
-          "semantic_score": 0.75,
+          "semantic_score": 0.857,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.828
+          "final_score": 0.863
+        },
+        {
+          "text": "Pulse without you aren't important",
+          "syllables": 9,
+          "semantic_score": 0.714,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.862
+        },
+        {
+          "text": "heartbeat without you simply aren't",
+          "syllables": 9,
+          "semantic_score": 0.714,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.862
         },
         {
           "text": "without you simply aren't important",
           "syllables": 10,
-          "semantic_score": 0.625,
+          "semantic_score": 0.714,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.797
+          "final_score": 0.826
         },
         {
-          "text": "where without you important",
+          "text": "Pulse without you important",
           "syllables": 7,
-          "semantic_score": 0.5,
+          "semantic_score": 0.571,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.793
+          "final_score": 0.816
         },
         {
           "text": "you simply aren't important",
           "syllables": 8,
-          "semantic_score": 0.5,
+          "semantic_score": 0.571,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.709
+          "final_score": 0.732
         },
         {
           "text": "simply aren't important",
           "syllables": 7,
-          "semantic_score": 0.375,
+          "semantic_score": 0.429,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.634
+          "final_score": 0.651
         },
         {
           "text": "aren't important",
           "syllables": 5,
-          "semantic_score": 0.25,
+          "semantic_score": 0.286,
           "rhythm_score": 0.833,
           "grammar_score": 1.0,
           "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.6
+          "final_score": 0.611
         }
       ],
-      "selected": "where pulse heartbeat without you simply aren't important",
-      "selected_score": 0.951
+      "selected": "Pulse heartbeat without you simply aren't important",
+      "selected_score": 0.962
     },
     {
       "id": 29,
       "zh": "要也许航道以外",
-      "literal_en": "Perhaps beyond the channel",
+      "literal_en": "Perhaps beyond the course",
       "note_count": 8,
       "phrase_duration": 7.754,
       "target_syllables": 6,
@@ -3653,46 +4148,46 @@
       ],
       "candidates": [
         {
-          "text": "Perhaps beyond the channel",
-          "syllables": 6,
-          "semantic_score": 1.0,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.989
-        },
-        {
-          "text": "Perhaps beyond channel",
+          "text": "Perhaps beyond the course",
           "syllables": 5,
           "semantic_score": 1.0,
           "rhythm_score": 0.75,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.945
+          "ending_score": 0.85,
+          "final_score": 0.951
         },
         {
-          "text": "beyond the channel",
+          "text": "Perhaps beyond course",
           "syllables": 4,
-          "semantic_score": 0.667,
+          "semantic_score": 1.0,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.802
+          "ending_score": 0.85,
+          "final_score": 0.914
+        },
+        {
+          "text": "beyond the course",
+          "syllables": 3,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.844
         }
       ],
-      "selected": "Perhaps beyond the channel",
-      "selected_score": 0.989
+      "selected": "Perhaps beyond the course",
+      "selected_score": 0.951
     },
     {
       "id": 30,
       "zh": "是醒不来的梦乱世",
-      "literal_en": "is a dream that cannot be woken from, in chaotic times",
+      "literal_en": "Is a dream I cannot wake from, in a chaotic world",
       "note_count": 8,
       "phrase_duration": 7.906,
       "target_syllables": 6,
@@ -3702,194 +4197,140 @@
       ],
       "candidates": [
         {
-          "text": "dream can't woken from in chaotic times",
-          "syllables": 10,
-          "semantic_score": 0.857,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.908
-        },
-        {
-          "text": "can't woken from in chaotic times",
+          "text": "dream I can't wake from in chaotic world",
           "syllables": 9,
-          "semantic_score": 0.714,
+          "semantic_score": 0.875,
           "rhythm_score": 0.889,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.878
+          "final_score": 0.929
         },
         {
-          "text": "dream from in chaotic times",
-          "syllables": 7,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.853
-        },
-        {
-          "text": "from in chaotic times",
-          "syllables": 6,
-          "semantic_score": 0.571,
-          "rhythm_score": 1.0,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.852
-        },
-        {
-          "text": "dream can't woken from in chaotic",
-          "syllables": 8,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.817
-        },
-        {
-          "text": "woken from in chaotic times",
-          "syllables": 8,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.817
-        },
-        {
-          "text": "dream from in times",
-          "syllables": 5,
-          "semantic_score": 0.571,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.807
-        },
-        {
-          "text": "can't woken from in chaotic",
-          "syllables": 7,
-          "semantic_score": 0.571,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.807
-        },
-        {
-          "text": "from in times",
-          "syllables": 4,
-          "semantic_score": 0.429,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.726
-        },
-        {
-          "text": "in chaotic times",
-          "syllables": 5,
-          "semantic_score": 0.429,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.682
-        }
-      ],
-      "selected": "dream can't woken from in chaotic times",
-      "selected_score": 0.908
-    },
-    {
-      "id": 31,
-      "zh": "以外是纯粹的相拥",
-      "literal_en": "beyond it is a pure embrace",
-      "note_count": 9,
-      "phrase_duration": 7.77,
-      "target_syllables": 7,
-      "target_syllable_range": [
-        6,
-        11
-      ],
-      "candidates": [
-        {
-          "text": "beyond it's pure embrace",
-          "syllables": 5,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.833,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.886
-        },
-        {
-          "text": "beyond it's a pure embrace",
-          "syllables": 6,
-          "semantic_score": 0.75,
+          "text": "Is dream I can't wake from in chaotic world",
+          "syllables": 10,
+          "semantic_score": 0.875,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
-          "ending_score": 0.85,
-          "final_score": 0.88
-        }
-      ],
-      "selected": "beyond it's pure embrace",
-      "selected_score": 0.886
-    },
-    {
-      "id": 32,
-      "zh": "我没想到为了你我能疯狂到山崩海啸",
-      "literal_en": "I didn't expect that for you I could go crazy to the point of mountains collapsing and seas roaring",
-      "note_count": 16,
-      "phrase_duration": 6.869,
-      "target_syllables": 12,
-      "target_syllable_range": [
-        8,
-        13
-      ],
-      "candidates": [
+          "ending_score": 0.65,
+          "final_score": 0.914
+        },
         {
-          "text": "I for you I to of collapsing seas roaring",
+          "text": "Is a dream I can't wake from in a chaotic world",
           "syllables": 12,
-          "semantic_score": 0.571,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.667,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.89
+        },
+        {
+          "text": "wake from in chaotic world",
+          "syllables": 6,
+          "semantic_score": 0.625,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.852
+          "final_score": 0.87
         },
         {
-          "text": "I didn't expect for you I go crazy to point",
-          "syllables": 12,
-          "semantic_score": 0.643,
-          "rhythm_score": 1.0,
+          "text": "dream I wake from in chaotic world",
+          "syllables": 8,
+          "semantic_score": 0.875,
+          "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.822
+          "final_score": 0.868
         },
         {
-          "text": "I for you I to of seas roaring",
-          "syllables": 9,
+          "text": "can't wake from in chaotic",
+          "syllables": 6,
+          "semantic_score": 0.5,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.83
+        },
+        {
+          "text": "dream I can't wake from in chaotic",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.828
+        },
+        {
+          "text": "I can't wake from in chaotic world",
+          "syllables": 8,
+          "semantic_score": 0.75,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.828
+        },
+        {
+          "text": "dream I from in world",
+          "syllables": 5,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.824
+        },
+        {
+          "text": "can't wake from in chaotic world",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.824
+        },
+        {
+          "text": "I can't wake from in chaotic",
+          "syllables": 7,
+          "semantic_score": 0.625,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.824
+        },
+        {
+          "text": "from in chaotic world",
+          "syllables": 5,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.785
+        },
+        {
+          "text": "I from in world",
+          "syllables": 4,
           "semantic_score": 0.5,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
@@ -3899,123 +4340,254 @@
           "final_score": 0.749
         },
         {
-          "text": "go crazy to point of mountains collapsing",
-          "syllables": 11,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.8,
+          "text": "in chaotic world",
+          "syllables": 4,
+          "semantic_score": 0.375,
+          "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 0.5,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.74
-        },
+          "final_score": 0.628
+        }
+      ],
+      "selected": "dream I can't wake from in chaotic world",
+      "selected_score": 0.929
+    },
+    {
+      "id": 31,
+      "zh": "以外是纯粹的相拥",
+      "literal_en": "Outside is a pure embrace",
+      "note_count": 9,
+      "phrase_duration": 7.77,
+      "target_syllables": 7,
+      "target_syllable_range": [
+        6,
+        11
+      ],
+      "candidates": [
         {
-          "text": "crazy to point of mountains collapsing seas",
-          "syllables": 11,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.74
-        },
-        {
-          "text": "to point of mountains collapsing seas roaring",
-          "syllables": 11,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.74
-        },
-        {
-          "text": "crazy to point of mountains",
+          "text": "Outside is a pure embrace",
           "syllables": 7,
-          "semantic_score": 0.357,
+          "semantic_score": 1.0,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.995
+        },
+        {
+          "text": "Outside pure embrace",
+          "syllables": 5,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.833,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.965
+        },
+        {
+          "text": "Outside is pure embrace",
+          "syllables": 6,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.959
+        }
+      ],
+      "selected": "Outside is a pure embrace",
+      "selected_score": 0.995
+    },
+    {
+      "id": 32,
+      "zh": "我没想到为了你我能疯狂到山崩海啸",
+      "literal_en": "I never expected that for you I could go so crazy as to see mountains crumble and seas rage",
+      "note_count": 16,
+      "phrase_duration": 6.869,
+      "target_syllables": 12,
+      "target_syllable_range": [
+        8,
+        13
+      ],
+      "candidates": [
+        {
+          "text": "I for you I as to see mountains crumble seas rage",
+          "syllables": 13,
+          "semantic_score": 0.667,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.853
+        },
+        {
+          "text": "I for you I as to crumble seas rage",
+          "syllables": 10,
+          "semantic_score": 0.533,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.774
+        },
+        {
+          "text": "I for you I as to seas rage",
+          "syllables": 8,
+          "semantic_score": 0.467,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.744
+        },
+        {
+          "text": "go so crazy as to see",
+          "syllables": 7,
+          "semantic_score": 0.4,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.728
+        },
+        {
+          "text": "as to see mountains crumble",
+          "syllables": 7,
+          "semantic_score": 0.333,
+          "rhythm_score": 0.875,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.706
+        },
+        {
+          "text": "crazy as to see mountains",
+          "syllables": 7,
+          "semantic_score": 0.333,
           "rhythm_score": 0.875,
           "grammar_score": 1.0,
           "relation_score": 0.667,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.708
+          "final_score": 0.7
         },
         {
-          "text": "for you I go crazy to point",
-          "syllables": 8,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.695
-        },
-        {
-          "text": "I go crazy to point of mountains",
-          "syllables": 9,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.695
-        },
-        {
-          "text": "crazy to point of mountains collapsing",
+          "text": "so crazy as to see mountains crumble",
           "syllables": 10,
-          "semantic_score": 0.429,
+          "semantic_score": 0.467,
+          "rhythm_score": 0.6,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.699
+        },
+        {
+          "text": "crazy as to see mountains crumble seas",
+          "syllables": 10,
+          "semantic_score": 0.467,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 0.667,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.681
+          "final_score": 0.693
         },
         {
-          "text": "go crazy to point of mountains",
+          "text": "I go so crazy as to see",
           "syllables": 8,
-          "semantic_score": 0.429,
+          "semantic_score": 0.467,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 0.667,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.672
+          "ending_score": 0.85,
+          "final_score": 0.691
         },
         {
-          "text": "to point of mountains collapsing seas",
+          "text": "as to see mountains crumble seas rage",
           "syllables": 9,
-          "semantic_score": 0.429,
+          "semantic_score": 0.467,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 0.667,
           "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.672
+          "ending_score": 0.85,
+          "final_score": 0.691
         },
         {
-          "text": "to point of mountains collapsing",
-          "syllables": 8,
-          "semantic_score": 0.357,
+          "text": "go so crazy as to see mountains",
+          "syllables": 9,
+          "semantic_score": 0.467,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 0.667,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.649
+          "final_score": 0.684
+        },
+        {
+          "text": "so crazy as to see",
+          "syllables": 6,
+          "semantic_score": 0.333,
+          "rhythm_score": 0.75,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.684
+        },
+        {
+          "text": "crazy as to see mountains crumble",
+          "syllables": 9,
+          "semantic_score": 0.4,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.669
+        },
+        {
+          "text": "so crazy as to see mountains",
+          "syllables": 8,
+          "semantic_score": 0.4,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.663
+        },
+        {
+          "text": "as to see mountains crumble seas",
+          "syllables": 8,
+          "semantic_score": 0.4,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.663
         }
       ],
-      "selected": "I for you I to of collapsing seas roaring",
-      "selected_score": 0.852
+      "selected": "I for you I as to see mountains crumble seas rage",
+      "selected_score": 0.853
     },
     {
       "id": 33,
       "zh": "没有你根本不想逃我的大脑为了你已经疯狂",
-      "literal_en": "without you I simply don't want to flee, my brain has already gone crazy for you",
+      "literal_en": "Without you I don't even want to flee, my mind for you has already gone crazy",
       "note_count": 19,
       "phrase_duration": 7.94,
       "target_syllables": 14,
@@ -4025,18 +4597,18 @@
       ],
       "candidates": [
         {
-          "text": "without you I don't want to flee my brain has gone crazy for you",
-          "syllables": 16,
-          "semantic_score": 0.857,
-          "rhythm_score": 0.938,
+          "text": "Without you I don't even want to flee my mind for you has gone crazy",
+          "syllables": 18,
+          "semantic_score": 0.929,
+          "rhythm_score": 0.833,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.85,
-          "final_score": 0.939
+          "final_score": 0.943
         },
         {
-          "text": "without you I don't want to flee my brain gone crazy for you",
+          "text": "Without you I don't want to flee my mind for you gone crazy",
           "syllables": 15,
           "semantic_score": 0.857,
           "rhythm_score": 0.833,
@@ -4047,7 +4619,7 @@
           "final_score": 0.92
         },
         {
-          "text": "without you I to flee my brain gone crazy for you",
+          "text": "Without you I to flee my mind for you gone crazy",
           "syllables": 13,
           "semantic_score": 0.714,
           "rhythm_score": 0.833,
@@ -4058,7 +4630,7 @@
           "final_score": 0.874
         },
         {
-          "text": "without you I simply don't want to flee my brain",
+          "text": "Without you I don't even want to flee my mind",
           "syllables": 12,
           "semantic_score": 0.714,
           "rhythm_score": 0.667,
@@ -4069,7 +4641,7 @@
           "final_score": 0.785
         },
         {
-          "text": "without you I to my gone crazy for you",
+          "text": "Without you I to my for you gone crazy",
           "syllables": 11,
           "semantic_score": 0.571,
           "rhythm_score": 0.55,
@@ -4080,7 +4652,18 @@
           "final_score": 0.777
         },
         {
-          "text": "without you I simply don't want to flee",
+          "text": "want to flee my mind for you",
+          "syllables": 7,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.778,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.742
+        },
+        {
+          "text": "Without you I don't even want to flee",
           "syllables": 10,
           "semantic_score": 0.571,
           "rhythm_score": 0.55,
@@ -4089,15 +4672,37 @@
           "singability_score": 1.0,
           "ending_score": 0.85,
           "final_score": 0.724
+        },
+        {
+          "text": "to flee my mind for you already",
+          "syllables": 9,
+          "semantic_score": 0.5,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.701
+        },
+        {
+          "text": "to flee my mind for you",
+          "syllables": 6,
+          "semantic_score": 0.429,
+          "rhythm_score": 0.667,
+          "grammar_score": 1.0,
+          "relation_score": 0.667,
+          "singability_score": 1.0,
+          "ending_score": 0.85,
+          "final_score": 0.699
         }
       ],
-      "selected": "without you I don't want to flee my brain has gone crazy for you",
-      "selected_score": 0.939
+      "selected": "Without you I don't even want to flee my mind for you has gone crazy",
+      "selected_score": 0.943
     },
     {
       "id": 34,
       "zh": "到脉搏心跳没有你根本不重要",
-      "literal_en": "to the point where pulse and heartbeat, without you, simply don't matter",
+      "literal_en": "To the point where pulse and heartbeat, without you, simply don't matter",
       "note_count": 13,
       "phrase_duration": 7.301,
       "target_syllables": 10,
@@ -4107,7 +4712,7 @@
       ],
       "candidates": [
         {
-          "text": "to point where pulse heartbeat without you simply don't matter",
+          "text": "To point where pulse heartbeat without you simply don't matter",
           "syllables": 14,
           "semantic_score": 1.0,
           "rhythm_score": 0.929,
@@ -4118,7 +4723,7 @@
           "final_score": 0.977
         },
         {
-          "text": "to point where pulse and heartbeat without you simply don't matter",
+          "text": "To point where pulse and heartbeat without you simply don't matter",
           "syllables": 15,
           "semantic_score": 1.0,
           "rhythm_score": 0.867,
@@ -4129,7 +4734,7 @@
           "final_score": 0.965
         },
         {
-          "text": "to the point where pulse and heartbeat without you simply don't matter",
+          "text": "To the point where pulse and heartbeat without you simply don't matter",
           "syllables": 16,
           "semantic_score": 1.0,
           "rhythm_score": 0.812,
@@ -4140,7 +4745,7 @@
           "final_score": 0.956
         },
         {
-          "text": "to the point where pulse and heartbeat without you don't matter",
+          "text": "To the point where pulse and heartbeat without you don't matter",
           "syllables": 14,
           "semantic_score": 0.9,
           "rhythm_score": 0.929,
@@ -4151,7 +4756,7 @@
           "final_score": 0.945
         },
         {
-          "text": "to point where pulse heartbeat without you simply",
+          "text": "To point where pulse heartbeat without you simply",
           "syllables": 11,
           "semantic_score": 0.8,
           "rhythm_score": 0.8,
@@ -4162,7 +4767,7 @@
           "final_score": 0.896
         },
         {
-          "text": "to where pulse heartbeat without you don't matter",
+          "text": "To where pulse heartbeat without you don't matter",
           "syllables": 11,
           "semantic_score": 0.8,
           "rhythm_score": 0.8,
@@ -4173,7 +4778,7 @@
           "final_score": 0.89
         },
         {
-          "text": "to point where pulse and heartbeat without you don't matter",
+          "text": "To point where pulse and heartbeat without you don't matter",
           "syllables": 13,
           "semantic_score": 0.9,
           "rhythm_score": 0.55,
@@ -4184,7 +4789,7 @@
           "final_score": 0.876
         },
         {
-          "text": "to point where pulse heartbeat without you",
+          "text": "To point where pulse heartbeat without you",
           "syllables": 9,
           "semantic_score": 0.7,
           "rhythm_score": 0.8,
@@ -4195,7 +4800,7 @@
           "final_score": 0.864
         },
         {
-          "text": "to heartbeat without you don't matter",
+          "text": "To heartbeat without you don't matter",
           "syllables": 9,
           "semantic_score": 0.6,
           "rhythm_score": 0.8,
@@ -4294,7 +4899,7 @@
           "final_score": 0.715
         },
         {
-          "text": "to point where pulse heartbeat",
+          "text": "To point where pulse heartbeat",
           "syllables": 6,
           "semantic_score": 0.5,
           "rhythm_score": 0.75,
@@ -4338,13 +4943,13 @@
           "final_score": 0.677
         }
       ],
-      "selected": "to point where pulse heartbeat without you simply don't matter",
+      "selected": "To point where pulse heartbeat without you simply don't matter",
       "selected_score": 0.977
     },
     {
       "id": 35,
       "zh": "相遇乱世以外",
-      "literal_en": "meeting beyond the chaotic world",
+      "literal_en": "Meeting outside the chaotic world",
       "note_count": 7,
       "phrase_duration": 5.552,
       "target_syllables": 5,
@@ -4354,18 +4959,29 @@
       ],
       "candidates": [
         {
-          "text": "meeting beyond chaotic world",
-          "syllables": 6,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.75,
+          "text": "Meeting outside world",
+          "syllables": 5,
+          "semantic_score": 0.75,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.945
+          "final_score": 0.909
         },
         {
-          "text": "meeting beyond the chaotic world",
+          "text": "Meeting outside the chaotic world",
+          "syllables": 8,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.55,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.908
+        },
+        {
+          "text": "Meeting outside chaotic world",
           "syllables": 7,
           "semantic_score": 1.0,
           "rhythm_score": 0.55,
@@ -4376,24 +4992,24 @@
           "final_score": 0.908
         },
         {
-          "text": "meeting beyond world",
-          "syllables": 4,
-          "semantic_score": 0.75,
+          "text": "outside world",
+          "syllables": 3,
+          "semantic_score": 0.5,
           "rhythm_score": 0.75,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.864
+          "final_score": 0.785
         }
       ],
-      "selected": "meeting beyond chaotic world",
-      "selected_score": 0.945
+      "selected": "Meeting outside world",
+      "selected_score": 0.909
     },
     {
       "id": 36,
       "zh": "危难中相爱相遇",
-      "literal_en": "loving and meeting each other in times of peril",
+      "literal_en": "Falling in love and meeting amidst peril",
       "note_count": 9,
       "phrase_duration": 6.233,
       "target_syllables": 7,
@@ -4403,156 +5019,112 @@
       ],
       "candidates": [
         {
-          "text": "loving meeting each other in times of peril",
-          "syllables": 13,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.846,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.962
-        },
-        {
-          "text": "loving and meeting each other in times of peril",
-          "syllables": 14,
-          "semantic_score": 1.0,
-          "rhythm_score": 0.786,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.951
-        },
-        {
-          "text": "loving each other in times of peril",
+          "text": "Falling in love and meeting amidst peril",
           "syllables": 11,
-          "semantic_score": 0.875,
+          "semantic_score": 1.0,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.868
+          "final_score": 0.908
         },
         {
-          "text": "meeting each other in times of peril",
-          "syllables": 11,
-          "semantic_score": 0.875,
+          "text": "Falling in love meeting amidst peril",
+          "syllables": 10,
+          "semantic_score": 1.0,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.868
+          "final_score": 0.908
         },
         {
-          "text": "each other in times of peril",
+          "text": "Falling in love meeting amidst",
+          "syllables": 8,
+          "semantic_score": 0.833,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.9
+        },
+        {
+          "text": "in love meeting amidst peril",
+          "syllables": 8,
+          "semantic_score": 0.833,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.9
+        },
+        {
+          "text": "Falling in amidst peril",
+          "syllables": 7,
+          "semantic_score": 0.667,
+          "rhythm_score": 1.0,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.883
+        },
+        {
+          "text": "Falling in meeting amidst peril",
           "syllables": 9,
-          "semantic_score": 0.75,
+          "semantic_score": 0.833,
           "rhythm_score": 0.6,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.838
+          "final_score": 0.864
         },
         {
-          "text": "loving in times of peril",
-          "syllables": 8,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
+          "text": "love meeting amidst peril",
+          "syllables": 7,
+          "semantic_score": 0.667,
+          "rhythm_score": 1.0,
           "grammar_score": 1.0,
-          "relation_score": 1.0,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.834
+          "final_score": 0.763
         },
         {
-          "text": "other in times of peril",
-          "syllables": 8,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.834
-        },
-        {
-          "text": "loving in of peril",
+          "text": "meeting amidst peril",
           "syllables": 6,
           "semantic_score": 0.5,
           "rhythm_score": 0.8,
           "grammar_score": 1.0,
-          "relation_score": 1.0,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.793
+          "final_score": 0.674
         },
         {
-          "text": "in times of peril",
-          "syllables": 6,
-          "semantic_score": 0.5,
-          "rhythm_score": 0.8,
+          "text": "amidst peril",
+          "syllables": 4,
+          "semantic_score": 0.333,
+          "rhythm_score": 0.667,
           "grammar_score": 1.0,
-          "relation_score": 1.0,
+          "relation_score": 0.25,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.793
-        },
-        {
-          "text": "meeting each other in times",
-          "syllables": 8,
-          "semantic_score": 0.625,
-          "rhythm_score": 0.8,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.753
-        },
-        {
-          "text": "loving meeting each other in times",
-          "syllables": 10,
-          "semantic_score": 0.75,
-          "rhythm_score": 0.55,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.748
-        },
-        {
-          "text": "times of peril",
-          "syllables": 5,
-          "semantic_score": 0.375,
-          "rhythm_score": 0.833,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.679
-        },
-        {
-          "text": "of peril",
-          "syllables": 3,
-          "semantic_score": 0.25,
-          "rhythm_score": 0.5,
-          "grammar_score": 1.0,
-          "relation_score": 0.5,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.58
+          "final_score": 0.596
         }
       ],
-      "selected": "loving meeting each other in times of peril",
-      "selected_score": 0.962
+      "selected": "Falling in love and meeting amidst peril",
+      "selected_score": 0.908
     },
     {
       "id": 37,
       "zh": "乱世以外危难中",
-      "literal_en": "Outside the chaotic times, in the midst of danger",
+      "literal_en": "Outside the chaotic times, amidst danger",
       "note_count": 8,
       "phrase_duration": 7.688,
       "target_syllables": 6,
@@ -4562,7 +5134,18 @@
       ],
       "candidates": [
         {
-          "text": "Outside chaotic times in midst of danger",
+          "text": "Outside chaotic times amidst danger",
+          "syllables": 10,
+          "semantic_score": 1.0,
+          "rhythm_score": 0.8,
+          "grammar_score": 1.0,
+          "relation_score": 1.0,
+          "singability_score": 1.0,
+          "ending_score": 0.65,
+          "final_score": 0.953
+        },
+        {
+          "text": "Outside the chaotic times amidst danger",
           "syllables": 11,
           "semantic_score": 1.0,
           "rhythm_score": 0.727,
@@ -4573,74 +5156,41 @@
           "final_score": 0.94
         },
         {
-          "text": "chaotic times in midst of danger",
-          "syllables": 9,
-          "semantic_score": 0.857,
-          "rhythm_score": 0.889,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.87
-        },
-        {
-          "text": "Outside in midst of danger",
-          "syllables": 7,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 1.0,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.853
-        },
-        {
-          "text": "Outside in of danger",
+          "text": "Outside amidst danger",
           "syllables": 6,
-          "semantic_score": 0.571,
+          "semantic_score": 0.6,
           "rhythm_score": 1.0,
           "grammar_score": 1.0,
           "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.852
+          "final_score": 0.862
         },
         {
-          "text": "times in midst of danger",
-          "syllables": 7,
-          "semantic_score": 0.714,
-          "rhythm_score": 0.75,
-          "grammar_score": 1.0,
-          "relation_score": 0.667,
-          "singability_score": 1.0,
-          "ending_score": 0.65,
-          "final_score": 0.8
-        },
-        {
-          "text": "Outside chaotic times in midst",
+          "text": "Outside times amidst danger",
           "syllables": 8,
-          "semantic_score": 0.714,
+          "semantic_score": 0.8,
           "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.764
+          "final_score": 0.844
         },
         {
-          "text": "in midst of danger",
-          "syllables": 5,
-          "semantic_score": 0.571,
-          "rhythm_score": 0.75,
+          "text": "Outside danger",
+          "syllables": 4,
+          "semantic_score": 0.4,
+          "rhythm_score": 0.55,
           "grammar_score": 1.0,
-          "relation_score": 0.667,
+          "relation_score": 1.0,
           "singability_score": 1.0,
           "ending_score": 0.65,
-          "final_score": 0.754
+          "final_score": 0.717
         }
       ],
-      "selected": "Outside chaotic times in midst of danger",
-      "selected_score": 0.94
+      "selected": "Outside chaotic times amidst danger",
+      "selected_score": 0.953
     },
     {
       "id": 38,

@@ -6,17 +6,12 @@ from typing import Iterable
 
 DATA_DIRS = [
     "data/raw",
-    "data/stems",
     "data/score",
     "data/lyrics",
     "data/phoneme",
     "data/alignment",
     "data/svs",
-    "data/rvc",
-    "data/final",
-    "outputs/figures",
     "outputs/logs",
-    "outputs/reports",
 ]
 
 

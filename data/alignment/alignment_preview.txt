@@ -1,530 +1,529 @@
 [1] 感受停在我发端的指尖
-EN: Feeling fingertips resting at ends of my hair
-ALIGN: raw_units=12, aligned_units=10, notes=10, weak_merges=2, forced_merges=0
-Feeling/fee -> G#4 12.478-12.731
-Feeling/ling -> G#4 12.731-13.159
-fingertips/fin -> F#4 13.159-13.480
-fingertips/ger -> F#4 13.480-13.838
-fingertips/tips -> E4 13.838-14.057
-resting/res -> E4 14.057-14.576
-resting/ting -> D#4 14.576-14.928
-at+ends+of/at-ends-of [merged] -> D#4 14.928-15.080
-my/my -> E4 15.169-15.575
-hair/hair -> E4 15.575-16.272
+EN: Feel the fingertips resting at the ends of my hair
+ALIGN: raw_units=13, aligned_units=10, notes=10, weak_merges=3, forced_merges=0
+Feel/feel -> G#4 12.514-12.757
+the+fingertips/the-fin-ger-tips [merged] -> G#4 12.849-13.139
+resting/res -> F#4 13.186-13.517
+resting/ting -> F#4 13.541-13.841
+at/at -> E4 13.898-14.138
+the/the -> E4 14.229-14.523
+ends/ends -> D#4 14.577-14.864
+of/of -> D#4 14.925-15.124
+my/my -> E4 15.268-15.553
+hair/hair -> E4 15.651-16.172
 
 [2] 如何瞬间冻结时间
-EN: How it instantly freezes time
-ALIGN: raw_units=8, aligned_units=8, notes=8, weak_merges=0, forced_merges=0
-How/how -> B3 16.556-16.851
-it/it -> B3 16.851-17.135
-instantly/ins -> B3 17.135-17.930
-instantly/tant -> G#4 17.930-18.922
-instantly/ly -> B3 19.324-19.635
-freezes/free -> B3 19.635-19.850
-freezes/zes -> B3 19.850-20.632
-time/time -> F#4 20.632-22.152
+EN: How to instantly freeze time
+ALIGN: raw_units=7, aligned_units=7, notes=8, weak_merges=0, forced_merges=0
+How/how -> B3 16.632-16.973
+to/to -> B3 16.973-17.314
+instantly/ins -> B3 17.314-17.858
+instantly/tant -> G#4 18.033-18.768 + B3 19.359-19.700
+instantly/ly -> B3 19.700-20.041
+freeze/freeze -> B3 20.041-20.632
+time/time -> F#4 20.770-22.065
 
 [3] 记住望着我坚定的双眼
-EN: Remembering determined eyes looking at me
-ALIGN: raw_units=12, aligned_units=10, notes=10, weak_merges=2, forced_merges=0
-Remembering/re-mem-be [merged] -> G#4 23.331-23.720
-Remembering/ring -> G#4 23.720-24.088
-determined/deter -> F#4 24.088-24.451
-determined/mi -> F#4 24.451-24.768
-determined/ned -> E4 24.768-24.929
-eyes/eyes -> E4 24.985-25.481
-looking/loo -> D#4 25.481-25.823
-looking/king -> D#4 25.823-25.965
-at/at -> E4 25.965-26.364
-me/me -> E4 26.364-27.149
+EN: Remember determined eyes gazing at me
+ALIGN: raw_units=11, aligned_units=10, notes=10, weak_merges=1, forced_merges=0
+Remember/re-mem [merged] -> G#4 23.445-23.730
+Remember/ber -> G#4 23.767-24.095
+determined/deter -> F#4 24.128-24.409
+determined/mi -> F#4 24.440-24.740
+determined/ned -> E4 24.767-24.967
+eyes/eyes -> E4 25.108-25.453
+gazing/ga -> D#4 25.463-25.788
+gazing/zing -> D#4 25.825-26.080
+at/at -> E4 26.180-26.452
+me/me -> E4 26.506-27.061
 
 [4] 也许已经没有明天
 EN: Perhaps there's no tomorrow left
 ALIGN: raw_units=8, aligned_units=8, notes=8, weak_merges=0, forced_merges=0
-Perhaps/per -> B3 27.466-27.703
-Perhaps/haps -> B3 27.703-28.129
-there's/there's -> B3 28.129-28.790
-no/no -> G#4 28.790-29.811
-tomorrow/to -> B3 30.220-30.464
-tomorrow/mor -> B3 30.464-30.791
-tomorrow/row -> B3 30.791-31.533
-left/left -> F#4 31.533-32.868
+Perhaps/per -> B3 27.555-27.878
+Perhaps/haps -> B3 27.926-28.219
+there's/there's -> B3 28.259-28.724
+no/no -> G#4 28.911-29.665
+tomorrow/to -> B3 30.264-30.567
+tomorrow/mor -> B3 30.604-30.902
+tomorrow/row -> B3 30.926-31.521
+left/left -> F#4 31.686-32.878
 
 [5] 面对浩瀚的星海我们微小得像尘埃
 EN: Facing the vast sea of stars we're as tiny as dust
 ALIGN: raw_units=13, aligned_units=13, notes=20, weak_merges=0, forced_merges=0
-Facing/fa -> C#4 33.975-34.172 + D#4 34.172-34.274
-Facing/cing -> C#4 34.274-34.579
-the/the -> D#4 34.579-34.676 + E4 34.676-34.776
-vast/vast -> D#4 34.776-34.926
-sea/sea -> E4 34.926-35.287 + G#4 35.287-35.509
-of/of -> A4 35.509-35.692
-stars/stars -> G#4 35.692-36.170 + C#4 36.555-36.662
-we're/we're -> C#4 36.662-36.805
-as/as -> D#4 36.805-36.974 + C#4 36.974-37.198
-tiny/ti -> D#4 37.198-37.288
-tiny/ny -> E4 37.288-37.702 + E4 37.702-38.080
-as/as -> G#4 38.080-38.243
-dust/dust -> A4 38.243-38.450 + G#4 38.450-38.768
+Facing/fa -> C#4 33.989-34.165 + D#4 34.202-34.338
+Facing/cing -> C#4 34.348-34.490
+the/the -> D#4 34.516-34.645 + E4 34.661-34.811
+vast/vast -> D#4 34.834-35.023
+sea/sea -> E4 35.038-35.291 + G#4 35.328-35.509
+of/of -> A4 35.523-35.692
+stars/stars -> G#4 35.703-36.094 + C#4 36.548-36.729
+we're/we're -> C#4 36.757-36.902
+as/as -> D#4 36.918-37.065 + C#4 37.087-37.224
+tiny/ti -> D#4 37.247-37.378
+tiny/ny -> E4 37.415-37.703 + E4 37.759-38.064
+as/as -> G#4 38.084-38.243
+dust/dust -> A4 38.254-38.450 + G#4 38.464-38.743
 
 [6] 漂浮在一片无奈
-EN: Floating in expanse of helplessness
+EN: Floating in a sea of helplessness
 ALIGN: raw_units=9, aligned_units=9, notes=12, weak_merges=0, forced_merges=0
-Floating/floa -> E4 39.065-39.250
-Floating/ting -> F#4 39.250-39.427 + G#4 39.427-39.621
-in/in -> A4 39.621-39.881
-expanse/ex -> G#4 39.881-40.180
-expanse/panse -> E4 40.427-40.625 + F#4 40.625-40.790
-of/of -> G#4 40.790-40.975
-helplessness/help -> A4 40.975-41.187
-helplessness/less -> G#4 41.187-41.434 + E4 41.434-41.875
-helplessness/ness -> F#4 41.875-43.400
+Floating/floa -> E4 39.122-39.263
+Floating/ting -> F#4 39.322-39.447 + G#4 39.486-39.649
+in/in -> A4 39.663-39.820
+a/a -> G#4 39.838-40.122
+sea/sea -> E4 40.470-40.625 + F#4 40.631-40.790
+of/of -> G#4 40.841-40.972
+helplessness/help -> A4 40.994-41.187
+helplessness/less -> G#4 41.210-41.443 + E4 41.506-41.866
+helplessness/ness -> F#4 41.878-43.112
 
 [7] 缘份让我们相遇乱世以外
 EN: Fate brought us together outside the chaotic world
 ALIGN: raw_units=13, aligned_units=11, notes=11, weak_merges=2, forced_merges=0
-Fate/fate -> D#4 44.815-45.138
-brought/brought -> E4 45.138-45.463
-us/us -> E4 45.463-45.946
-together/to-get-her [merged] -> F#4 45.946-46.158
-outside/out -> F#4 46.158-46.453
-outside/side -> G#4 46.453-46.918
-the/the -> G#4 46.918-47.282
-chaotic/ch -> B4 47.419-47.571
-chaotic/ao -> B4 47.571-47.841
-chaotic/tic -> C#5 47.841-48.276
-world/world -> C#5 48.276-49.847
+Fate/fate -> D#4 44.892-45.186
+brought/brought -> E4 45.234-45.531
+us/us -> E4 45.553-45.872
+together/to-get-her [merged] -> F#4 45.903-46.165
+outside/out -> F#4 46.239-46.518
+outside/side -> G#4 46.604-46.895
+the/the -> G#4 46.939-47.324
+chaotic/ch -> B4 47.460-47.680
+chaotic/ao -> B4 47.709-47.991
+chaotic/tic -> C#5 48.024-48.334
+world/world -> C#5 48.364-49.700
 
 [8] 命运却要我们危难中相爱
-EN: we fall in love amidst danger
+EN: we fall in love amidst peril
 ALIGN: raw_units=8, aligned_units=8, notes=11, weak_merges=0, forced_merges=0
-we/we -> E4 50.309-50.642
-fall/fall -> F#4 50.642-50.957 + F#4 50.957-51.328
-in/in -> G#4 51.328-51.614
-love/love -> G#4 51.614-52.008 + B4 52.008-52.367
-amidst/a -> B4 52.367-52.891
-amidst/midst -> E4 52.891-53.068
-danger/dan -> G#4 53.068-53.307 + F#4 53.307-53.802
-danger/ger -> F#4 53.802-55.062
+we/we -> E4 50.334-50.591
+fall/fall -> F#4 50.649-50.933 + F#4 51.000-51.300
+in/in -> G#4 51.364-51.636
+love/love -> G#4 51.695-52.040 + B4 52.071-52.278
+amidst/a -> B4 52.395-52.814
+amidst/midst -> E4 52.915-53.097
+peril/pe -> G#4 53.097-53.249 + F#4 53.437-53.740
+peril/ril -> F#4 53.763-54.854
 
 [9] 也许未来遥远在光年之外
 EN: Perhaps the future lies far beyond light years away
 ALIGN: raw_units=13, aligned_units=11, notes=11, weak_merges=2, forced_merges=0
-Perhaps/per -> E4 55.738-55.964
-Perhaps/haps -> E4 55.964-56.331
-the+future/the-fu-ture [merged] -> E4 56.331-56.709
-lies/lies -> F#4 56.709-57.017
-far/far -> F#4 57.017-57.415
-beyond/bey -> G#4 57.415-57.785
-beyond/ond -> G#4 57.785-58.237
-light/light -> B4 58.312-58.550
-years/years -> B4 58.550-58.822
-away/a -> C#5 58.822-59.148
-away/way -> C#5 59.148-60.594
+Perhaps/per -> E4 55.857-56.072
+Perhaps/haps -> E4 56.159-56.408
+the+future/the-fu-ture [merged] -> E4 56.474-56.781
+lies/lies -> F#4 56.820-57.105
+far/far -> F#4 57.151-57.402
+beyond/bey -> G#4 57.457-57.675
+beyond/ond -> G#4 57.828-58.257
+light/light -> B4 58.366-58.551
+years/years -> B4 58.565-58.839
+away/a -> C#5 58.886-59.214
+away/way -> C#5 59.241-60.534
 
 [10] 我愿守候未知里为你等待
 EN: willing to wait for you in unknown
 ALIGN: raw_units=9, aligned_units=9, notes=11, weak_merges=0, forced_merges=0
-willing/wil -> E4 61.184-61.487
-willing/ling -> F#4 61.487-61.775
-to/to -> F#4 61.775-62.178 + G#4 62.178-62.625
-wait/wait -> G#4 62.625-62.921
-for/for -> B4 62.921-63.124
-you/you -> B4 63.124-63.591
-in/in -> E4 63.799-63.934 + G#4 63.934-64.272
-unknown/unk -> F#4 64.342-64.592
-unknown/nown -> F#4 64.592-64.984
+willing/wil -> E4 61.270-61.554
+willing/ling -> F#4 61.605-61.839
+to/to -> F#4 61.928-62.236 + G#4 62.280-62.577
+wait/wait -> G#4 62.632-62.888
+for/for -> B4 62.952-63.276
+you/you -> B4 63.290-63.591
+in/in -> E4 63.807-63.993 + G#4 64.017-64.226
+unknown/unk -> F#4 64.352-64.626
+unknown/nown -> F#4 64.668-64.942
 
 [11] 我没想到为了你我能疯狂到山崩海啸
-EN: I for you I as to mountains collapse oceans surge
-ALIGN: raw_units=13, aligned_units=13, notes=16, weak_merges=0, forced_merges=0
-I/i -> A4 65.195-65.604
-for/for -> G#4 65.604-65.868
-you/you -> F#4 65.868-66.379 + E4 66.379-66.668
-I/i -> E4 66.668-66.881
-as/as -> B4 66.881-66.974
-to/to -> B4 66.974-67.302
-mountains/moun -> B4 67.346-67.695 + B4 67.695-67.880
-mountains/tains -> E4 67.880-68.427
-collapse/col -> E4 68.500-69.110
-collapse/lapse -> C#4 69.110-69.623
-oceans/o -> A4 70.600-71.065 + G#4 71.065-71.421
-oceans/ceans -> F#4 71.421-71.650
-surge/surge -> E4 71.650-72.035
+EN: I never expected I go so mad for you mountains
+ALIGN: raw_units=14, aligned_units=14, notes=16, weak_merges=0, forced_merges=0
+I/i -> A4 65.305-65.601
+never/ne -> G#4 65.685-65.942
+never/ver -> F#4 66.026-66.331
+expected/ex -> E4 66.366-66.624 + E4 66.712-66.882
+expected/pec -> B4 66.898-67.068
+expected/ted -> B4 67.081-67.287
+I/i -> B4 67.386-67.703
+go/go -> B4 67.730-67.980
+so/so -> E4 68.084-68.399
+mad/mad -> E4 68.568-69.054
+for/for -> C#4 69.121-69.503 + A4 70.810-71.131
+you/you -> G#4 71.168-71.432
+mountains/moun -> F#4 71.491-71.805
+mountains/tains -> E4 71.844-72.087
 
 [12] 没有你根本不想逃我的大脑
-EN: Without you my no desire to flee at all
-ALIGN: raw_units=12, aligned_units=12, notes=13, weak_merges=0, forced_merges=0
-Without/wit -> E4 72.035-72.332
-Without/hout -> B4 72.332-72.479
-you/you -> B4 72.479-72.707
-my/my -> B4 72.832-73.177
-no/no -> B4 73.177-73.376
-desire/de -> E4 73.376-73.548
-desire/si -> E4 73.548-73.826 + E4 73.826-74.540
-desire/re -> D#4 74.540-75.224
-to/to -> A4 76.150-76.606
-flee/flee -> G#4 76.606-76.929
-at/at -> F#4 76.929-77.185
-all/all -> E4 77.185-77.571
+EN: Without you my mind refuses to flee
+ALIGN: raw_units=10, aligned_units=10, notes=13, weak_merges=0, forced_merges=0
+Without/wit -> E4 72.139-72.320
+Without/hout -> B4 72.331-72.500 + B4 72.524-72.710
+you/you -> B4 72.841-73.145
+my/my -> B4 73.169-73.342
+mind/mind -> E4 73.365-73.535
+refuses/re -> E4 73.567-73.881 + E4 74.092-74.513
+refuses/fu -> D#4 74.594-75.229
+refuses/ses -> A4 76.220-76.524
+to/to -> G#4 76.595-76.895 + F#4 76.936-77.254
+flee/flee -> E4 77.298-77.562
 
 [13] 为了你已经疯狂到脉搏心跳没有你
 EN: For you I've gone so crazy that without you my pulse and heartbeat
 ALIGN: raw_units=16, aligned_units=15, notes=15, weak_merges=1, forced_merges=0
-For+you/for-you [merged] -> E4 77.571-77.711
-I've/i've -> B4 77.711-77.870
-gone/gone -> B4 77.870-78.148
-so/so -> B4 78.148-78.492
-crazy/cra -> B4 78.492-78.839
-crazy/zy -> E4 78.839-79.394
-that/that -> E4 79.394-80.039
-without/wit -> C#4 80.039-80.464
-without/hout -> A4 81.626-82.064
-you/you -> G#4 82.064-82.282
-my/my -> F#4 82.282-82.670
-pulse/pulse -> E4 82.670-82.946
-and/and -> E4 82.946-83.195
-heartbeat/heart -> B4 83.195-83.392
-heartbeat/beat -> B4 83.392-83.598
+For+you/for-you [merged] -> E4 77.609-77.773
+I've/i've -> B4 77.790-77.956
+gone/gone -> B4 77.959-78.223
+so/so -> B4 78.300-78.501
+crazy/cra -> B4 78.631-78.932
+crazy/zy -> E4 79.003-79.328
+that/that -> E4 79.500-79.974
+without/wit -> C#4 80.013-80.445
+without/hout -> A4 81.714-82.037
+you/you -> G#4 82.072-82.349
+my/my -> F#4 82.399-82.660
+pulse/pulse -> E4 82.722-83.018
+and/and -> E4 83.092-83.263
+heartbeat/heart -> B4 83.263-83.433
+heartbeat/beat -> B4 83.433-83.619
 
 [14] 根本不重要
-EN: Simply don't matter at all
+EN: simply don't matter at all
 ALIGN: raw_units=7, aligned_units=5, notes=5, weak_merges=2, forced_merges=0
-Simply/simp -> B4 83.742-84.102
-Simply+don't+matter/ly-don't-mat [merged] -> B4 84.102-84.382
-matter/ter -> E4 84.435-84.795
-at/at -> E4 84.795-85.459
-all/all -> D#4 85.459-86.212
+simply/simp -> B4 83.761-84.016
+simply+don't+matter/ly-don't-mat [merged] -> B4 84.092-84.362
+matter/ter -> E4 84.446-84.702
+at/at -> E4 84.936-85.399
+all/all -> D#4 85.452-86.017
 
 [15] 一双围在我胸口的臂弯
 EN: pair of arms wrapped around my chest
 ALIGN: raw_units=8, aligned_units=8, notes=10, weak_merges=0, forced_merges=0
-pair/pair -> G#4 88.815-89.049
-of/of -> G#4 89.049-89.480
-arms/arms -> F#4 89.480-89.785 + F#4 89.785-90.166
-wrapped/wrapped -> E4 90.166-90.372
-around/a -> E4 90.372-90.864
-around/round -> D#4 90.864-91.269 + D#4 91.269-91.450
-my/my -> E4 91.594-91.844
-chest/chest -> E4 91.844-92.584
+pair/pair -> G#4 88.837-89.151
+of/of -> G#4 89.189-89.462
+arms/arms -> F#4 89.500-89.785 + F#4 89.849-90.173
+wrapped/wrapped -> E4 90.214-90.484
+around/a -> E4 90.557-90.855
+around/round -> D#4 90.908-91.190 + D#4 91.268-91.453
+my/my -> E4 91.599-91.926
+chest/chest -> E4 91.967-92.530
 
 [16] 足够抵挡天旋地转
-EN: enough to withstand heavens earth turning
+EN: is enough to withstand dizzying spin
 ALIGN: raw_units=10, aligned_units=8, notes=8, weak_merges=2, forced_merges=0
-enough+to/e-nough-to [merged] -> B3 92.828-93.270
-withstand/withs -> B3 93.270-93.626
-withstand/tand -> B3 93.626-94.236
-heavens/hea -> G#4 94.327-95.241
-heavens/vens -> B3 95.623-95.929
-earth/earth -> B3 95.929-96.403
-turning/tur -> B3 96.403-96.992
-turning/ning -> F#4 96.992-98.291
+is+enough/is-e-nough [merged] -> B3 92.957-93.230
+to/to -> B3 93.297-93.592
+withstand/withs -> B3 93.653-94.291
+withstand/tand -> G#4 94.347-95.048
+dizzying/diz -> B3 95.655-95.996
+dizzying/zy -> B3 96.018-96.389
+dizzying/ing -> B3 96.415-96.932
+spin/spin -> F#4 97.105-98.294
 
 [17] 一种执迷不放手的倔强足以
-EN: stubborn obsession refuses to let go
-ALIGN: raw_units=11, aligned_units=11, notes=14, weak_merges=0, forced_merges=0
-stubborn/stub -> G#4 99.764-100.025
-stubborn/born -> G#4 100.080-100.422 + F#4 100.422-100.636
-obsession/ob -> F#4 100.636-101.089
-obsession/ses -> E4 101.126-101.298
-obsession/sion -> E4 101.298-101.701
-refuses/re -> D#4 101.701-102.174 + D#4 102.174-102.396
-refuses/fu -> E4 102.396-102.792
-refuses/ses -> E4 102.792-103.054
-to/to -> D#4 103.054-103.294
-let/let -> C#4 103.294-103.568 + B3 103.811-104.172
-go/go -> B3 104.172-104.474
+EN: stubborn obsession of refusing to let go enough
+ALIGN: raw_units=14, aligned_units=14, notes=14, weak_merges=0, forced_merges=0
+stubborn/stub -> G#4 99.756-100.065
+stubborn/born -> G#4 100.087-100.405
+obsession/ob -> F#4 100.459-100.746
+obsession/ses -> F#4 100.774-101.087
+obsession/sion -> E4 101.109-101.381
+of/of -> E4 101.467-101.768
+refusing/re -> D#4 101.820-102.109
+refusing/fu -> D#4 102.146-102.399
+refusing/sing -> E4 102.489-102.764
+to/to -> E4 102.869-103.060
+let/let -> D#4 103.071-103.237
+go/go -> C#4 103.253-103.511
+enough/e -> B3 103.895-104.178
+enough/nough -> B3 104.227-104.480
 
 [18] 点燃所有希望
-EN: Ignite all hope
+EN: ignite all hope
 ALIGN: raw_units=4, aligned_units=4, notes=7, weak_merges=0, forced_merges=0
-Ignite/ig -> B3 104.546-105.151 + G#4 105.151-106.093
-Ignite/nite -> B3 106.436-106.857 + B3 106.857-107.117
-all/all -> B3 107.117-107.949
-hope/hope -> E4 107.949-108.177 + F#4 108.177-109.018
+ignite/ig -> B3 104.574-105.219 + G#4 105.264-105.849
+ignite/nite -> B3 106.598-106.895 + B3 106.945-107.288
+all/all -> B3 107.338-107.898
+hope/hope -> E4 107.922-108.092 + F#4 108.114-108.866
 
 [19] 宇宙磅礡而冷漠我们的爱微小却闪烁
-EN: universe majestic indifferent our love tiny yet shimmering
-ALIGN: raw_units=18, aligned_units=18, notes=22, weak_merges=0, forced_merges=0
-universe/u -> C#4 110.252-110.446
-universe/ni -> D#4 110.446-110.638
-universe/verse -> C#4 110.638-110.858 + D#4 110.858-110.996
-majestic/ma -> E4 110.996-111.167
-majestic/jes -> D#4 111.167-111.372
-majestic/tic -> E4 111.372-111.503
-indifferent/indif -> F#4 111.503-111.723 + G#4 111.723-111.906
-indifferent/fe -> A4 111.906-112.104
-indifferent/rent -> G#4 112.104-112.484
-our/o -> C#4 112.864-113.068
-our/ur -> C#4 113.068-113.233
-love/love -> D#4 113.233-113.375 + C#4 113.375-113.534
-tiny/ti -> D#4 113.534-113.646
-tiny/ny -> E4 113.646-113.893
-yet/yet -> D#4 113.893-114.019
-shimmering/shim -> E4 114.019-114.349 + G#4 114.349-114.655
-shimmering/me -> A4 114.655-114.826
-shimmering/ring -> G#4 114.826-115.128
+EN: universe vast indifferent our love tiny yet shimmering
+ALIGN: raw_units=16, aligned_units=16, notes=22, weak_merges=0, forced_merges=0
+universe/u -> C#4 110.271-110.470
+universe/ni -> D#4 110.484-110.626 + C#4 110.651-110.811
+universe/verse -> D#4 110.811-110.949
+vast/vast -> E4 110.996-111.145 + D#4 111.173-111.344
+indifferent/indif -> E4 111.362-111.499
+indifferent/fe -> F#4 111.513-111.683
+indifferent/rent -> G#4 111.710-111.865 + A4 111.869-112.043
+our/o -> G#4 112.047-112.376
+our/ur -> C#4 112.888-113.058
+love/love -> C#4 113.068-113.260 + D#4 113.276-113.386
+tiny/ti -> C#4 113.402-113.517
+tiny/ny -> D#4 113.558-113.705
+yet/yet -> E4 113.736-113.876 + D#4 113.899-114.055
+shimmering/shim -> E4 114.082-114.362
+shimmering/me -> G#4 114.406-114.547 + A4 114.580-114.729
+shimmering/ring -> G#4 114.754-115.101
 
 [20] 颠簸却如此忘我
-EN: Turbulent yet so completely absorbed
+EN: turbulent yet so utterly absorbed
 ALIGN: raw_units=10, aligned_units=10, notes=11, weak_merges=0, forced_merges=0
-Turbulent/tur -> E4 115.460-115.806
-Turbulent/bu -> G#4 115.806-115.990
-Turbulent/lent -> A4 115.990-116.193
-yet/yet -> G#4 116.193-116.491
-so/so -> E4 116.699-116.968 + F#4 116.968-117.097
-completely/comp -> G#4 117.097-117.384
-completely/lete -> A4 117.384-117.581
-completely/ly -> G#4 117.581-117.775
-absorbed/absor -> E4 117.775-118.045
-absorbed/bed -> F#4 118.045-119.825
+turbulent/tur -> E4 115.449-115.764
+turbulent/bu -> G#4 115.832-115.990
+turbulent/lent -> A4 116.007-116.193
+yet/yet -> G#4 116.202-116.435
+so/so -> E4 116.818-116.942 + F#4 116.963-117.149
+utterly/ut -> G#4 117.185-117.345
+utterly/ter -> A4 117.359-117.518
+utterly/ly -> G#4 117.527-117.763
+absorbed/absor -> E4 117.837-118.159
+absorbed/bed -> F#4 118.192-119.706
 
 [21] 缘分让我们相遇乱世以外
-EN: Fate let us meet outside chaotic world
-ALIGN: raw_units=10, aligned_units=10, notes=11, weak_merges=0, forced_merges=0
-Fate/fate -> D#4 121.182-121.488
-let/let -> E4 121.488-121.908
-us/us -> E4 121.908-122.223
-meet/meet -> F#4 122.223-122.549
-outside/out -> F#4 122.549-122.780 + G#4 122.780-123.269
-outside/side -> G#4 123.269-123.636
-chaotic/ch -> B4 123.768-123.902
-chaotic/ao -> B4 123.902-124.243
-chaotic/tic -> C#5 124.243-124.616
-world/world -> C#5 124.616-126.224
+EN: Destiny brought us together outside chaotic world
+ALIGN: raw_units=14, aligned_units=11, notes=11, weak_merges=3, forced_merges=0
+Destiny/des -> D#4 121.244-121.564
+Destiny+brought+us/ti-ny-brought-us [merged] -> E4 121.585-121.905
+together/to -> E4 121.926-122.246
+together/get -> F#4 122.267-122.587
+together/her -> F#4 122.608-122.928
+outside/out -> G#4 122.949-123.268
+outside/side -> G#4 123.290-123.660
+chaotic/ch -> B4 123.820-124.004
+chaotic/ao -> B4 124.037-124.258
+chaotic/tic -> C#5 124.345-124.621
+world/world -> C#5 124.696-126.054
 
 [22] 命运却要我们危难中相爱
-EN: Yet destiny wants us to love each other in times
-ALIGN: raw_units=13, aligned_units=11, notes=11, weak_merges=2, forced_merges=0
-Yet/yet -> E4 126.681-127.056
-destiny/des -> F#4 127.056-127.299
-destiny+wants/ti-ny-wants [merged] -> F#4 127.299-127.668
-us/us -> G#4 127.668-127.985
-to/to -> G#4 127.985-128.352
-love/love -> B4 128.352-128.715
-each/each -> B4 128.715-129.160
-other/ot -> E4 129.160-129.411
-other/her -> G#4 129.411-129.656
-in/in -> F#4 129.656-130.113
-times/times -> F#4 130.113-131.296
+EN: we fall in love amidst danger
+ALIGN: raw_units=8, aligned_units=8, notes=11, weak_merges=0, forced_merges=0
+we/we -> E4 126.693-126.993
+fall/fall -> F#4 127.034-127.334 + F#4 127.375-127.675
+in/in -> G#4 127.716-128.016
+love/love -> G#4 128.057-128.357 + B4 128.398-128.697
+amidst/a -> B4 128.739-129.209
+amidst/midst -> E4 129.234-129.425
+danger/dan -> G#4 129.442-129.660 + F#4 129.746-130.087
+danger/ger -> F#4 130.138-131.156
 
 [23] 也许未来遥远在光年之外
-EN: Perhaps future distant beyond light years
-ALIGN: raw_units=10, aligned_units=10, notes=11, weak_merges=0, forced_merges=0
-Perhaps/per -> E4 132.106-132.317
-Perhaps/haps -> E4 132.317-132.776
-future/fu -> E4 132.776-133.245
-future/ture -> F#4 133.245-133.523
-distant/dis -> F#4 133.523-133.825 + G#4 133.825-134.189
-distant/tant -> G#4 134.189-134.565
-beyond/bey -> B4 134.699-134.842
-beyond/ond -> B4 134.842-135.192
-light/light -> C#5 135.192-135.537
-years/years -> C#5 135.537-137.205
+EN: Perhaps the future lies far away beyond light years
+ALIGN: raw_units=13, aligned_units=11, notes=11, weak_merges=2, forced_merges=0
+Perhaps/per -> E4 132.186-132.437
+Perhaps/haps -> E4 132.540-132.778
+the+future/the-fu-ture [merged] -> E4 132.866-133.119
+lies/lies -> F#4 133.199-133.436
+far/far -> F#4 133.550-133.801
+away/a -> G#4 133.882-134.112
+away/way -> G#4 134.199-134.561
+beyond/bey -> B4 134.712-134.912
+beyond/ond -> B4 134.935-135.220
+light/light -> C#5 135.287-135.597
+years/years -> C#5 135.632-137.213
 
 [24] 我愿守候未知里为你等待
-EN: willing to wait in unknown for you
+EN: willing to wait for you in unknown
 ALIGN: raw_units=9, aligned_units=9, notes=11, weak_merges=0, forced_merges=0
-willing/wil -> E4 137.541-137.837
-willing/ling -> F#4 137.837-138.121
-to/to -> F#4 138.121-138.523 + G#4 138.523-138.857
-wait/wait -> G#4 138.857-139.263
-in/in -> B4 139.263-139.681
-unknown/unk -> B4 139.681-139.952
-unknown/nown -> E4 140.164-140.271 + G#4 140.271-140.579
-for/for -> F#4 140.706-141.037
-you/you -> F#4 141.037-141.405
+willing/wil -> E4 137.609-137.910
+willing/ling -> F#4 137.950-138.251
+to/to -> F#4 138.291-138.592 + G#4 138.632-138.933
+wait/wait -> G#4 138.973-139.274
+for/for -> B4 139.314-139.652
+you/you -> B4 139.676-139.953
+in/in -> E4 140.196-140.366 + G#4 140.366-140.619
+unknown/unk -> F#4 140.710-140.963
+unknown/nown -> F#4 141.021-141.337
 
 [25] 我没想到为了你我能疯狂到
-EN: I didn't expect for you I go crazy to point
-ALIGN: raw_units=12, aligned_units=12, notes=12, weak_merges=0, forced_merges=0
-I/i -> A4 141.559-141.959
-didn't/didn't -> G#4 141.959-142.228
-expect/ex -> F#4 142.228-142.732
-expect/pect -> E4 142.732-142.960
-for/for -> E4 142.960-143.198
-you/you -> B4 143.198-143.312
-I/i -> B4 143.312-143.670
-go/go -> B4 143.733-144.059
-crazy/cra -> B4 144.059-144.269
-crazy/zy -> E4 144.269-144.830
-to/to -> E4 144.830-145.283
-point/point -> C#4 145.283-145.876
+EN: I never expected for you I go so crazy
+ALIGN: raw_units=13, aligned_units=12, notes=12, weak_merges=1, forced_merges=0
+I/i -> A4 141.652-142.018
+never/ne-ver [merged] -> G#4 142.016-142.359
+expected/ex -> F#4 142.356-142.700
+expected/pec -> E4 142.709-142.980
+expected/ted -> E4 143.053-143.250
+for/for -> B4 143.264-143.428
+you/you -> B4 143.460-143.656
+I/i -> B4 143.780-144.098
+go/go -> B4 144.119-144.331
+so/so -> E4 144.446-144.746
+crazy/cra -> E4 144.950-145.429
+crazy/zy -> C#4 145.449-145.881
 
 [26] 山崩海啸没有你根本不想逃
-EN: of without you I don't want to flee
+EN: Mountains without you I want to flee
 ALIGN: raw_units=9, aligned_units=9, notes=12, weak_merges=0, forced_merges=0
-of/of -> A4 146.997-147.438
-without/wit -> G#4 147.438-147.773 + F#4 147.773-148.015
-without/hout -> E4 148.015-148.485
-you/you -> E4 148.485-148.657
-I/i -> B4 148.657-148.835 + B4 148.835-149.059
-don't/don't -> B4 149.194-149.533
-want/want -> B4 149.533-149.881
-to/to -> E4 149.881-150.111 + E4 150.274-150.860
-flee/flee -> D#4 150.860-151.403
+Mountains/moun -> A4 147.135-147.473
+Mountains/tains -> G#4 147.534-147.838 + F#4 147.882-148.138
+without/wit -> E4 148.210-148.453
+without/hout -> E4 148.526-148.666
+you/you -> B4 148.693-148.837 + B4 148.876-149.053
+I/i -> B4 149.196-149.463
+want/want -> B4 149.518-149.804
+to/to -> E4 149.895-150.141 + E4 150.386-150.827
+flee/flee -> D#4 150.886-151.429
 
 [27] 我的大脑为了你已经疯狂到
-EN: my brain already gone crazy for you to point
+EN: My mind for you has already gone so crazy
 ALIGN: raw_units=12, aligned_units=12, notes=12, weak_merges=0, forced_merges=0
-my/my -> A4 152.533-152.977
-brain/brain -> G#4 152.977-153.283
-already/al -> F#4 153.283-153.548
-already/rea -> E4 153.548-153.912
-already/dy -> E4 153.912-154.143
-gone/gone -> B4 154.143-154.205
-crazy/cra -> B4 154.205-154.543
-crazy/zy -> B4 154.543-154.833
-for/for -> B4 154.833-155.183
-you/you -> E4 155.183-155.684
-to/to -> E4 155.684-156.394
-point/point -> C#4 156.394-156.902
+My/my -> A4 152.608-152.910
+mind/mind -> G#4 152.959-153.251
+for/for -> F#4 153.311-153.561
+you/you -> E4 153.642-153.910
+has/has -> E4 153.950-154.121
+already/al -> B4 154.153-154.314
+already/rea -> B4 154.325-154.589
+already/dy -> B4 154.633-154.893
+gone/gone -> B4 154.980-155.270
+so/so -> E4 155.348-155.731
+crazy/cra -> E4 155.892-156.342
+crazy/zy -> C#4 156.415-156.851
 
 [28] 脉搏心跳没有你根本不重
-EN: where pulse heartbeat without you simply aren't important
-ALIGN: raw_units=13, aligned_units=11, notes=11, weak_merges=2, forced_merges=0
-where/where -> A4 157.938-158.398
-pulse/pulse -> G#4 158.398-158.642
-heartbeat/heart -> F#4 158.642-159.048
-heartbeat/beat -> E4 159.048-159.372
-without/wit -> E4 159.372-159.605
-without/hout -> B4 159.605-159.764
-you/you -> B4 159.764-160.027
-simply/simp -> B4 160.089-160.441
-simply+aren't+important/ly-aren't-im [merged] -> B4 160.441-160.699
-important/por -> E4 160.780-161.244
-important/tant -> E4 161.244-161.790
+EN: Pulse heartbeat without you simply aren't important
+ALIGN: raw_units=12, aligned_units=11, notes=11, weak_merges=1, forced_merges=0
+Pulse/pulse -> A4 158.041-158.382
+heartbeat/heart -> G#4 158.412-158.672
+heartbeat/beat -> F#4 158.754-159.031
+without/wit -> E4 159.080-159.405
+without/hout -> E4 159.443-159.619
+you/you -> B4 159.631-159.794
+simply/simp -> B4 159.807-159.981
+simply+aren't/ly-aren't [merged] -> B4 160.119-160.349
+important/im -> B4 160.449-160.682
+important/por -> E4 160.778-161.109
+important/tant -> E4 161.328-161.705
 
 [29] 要也许航道以外
-EN: Perhaps beyond the channel
-ALIGN: raw_units=7, aligned_units=7, notes=8, weak_merges=0, forced_merges=0
-Perhaps/per -> D#4 161.790-162.324
-Perhaps/haps -> E4 164.043-164.397
-beyond/bey -> C#4 164.397-165.165
-beyond/ond -> E4 165.546-165.956 + D#4 165.956-166.552
-the/the -> B3 166.552-167.176
-channel/chan -> D#4 167.176-167.983
-channel/nel -> E4 167.983-168.507
+EN: Perhaps beyond the course
+ALIGN: raw_units=6, aligned_units=6, notes=8, weak_merges=0, forced_merges=0
+Perhaps/per -> D#4 161.798-162.300
+Perhaps/haps -> E4 164.058-164.534 + C#4 164.562-164.964
+beyond/bey -> E4 165.628-165.979
+beyond/ond -> D#4 165.989-166.570
+the/the -> B3 166.642-167.273 + D#4 167.334-167.983
+course/course -> E4 167.996-168.456
 
 [30] 是醒不来的梦乱世
-EN: dream can't woken from in chaotic times
+EN: dream I can't wake from in chaotic world
 ALIGN: raw_units=10, aligned_units=8, notes=8, weak_merges=2, forced_merges=0
-dream/dream -> E4 169.544-169.919
-can't/can't -> D#4 169.919-170.655
-woken+from/wo-ken-from [merged] -> B3 170.777-171.451
-in/in -> F#3 171.451-172.071
-chaotic/ch -> B3 172.071-172.765
-chaotic/ao -> G#3 172.765-174.104
-chaotic/tic -> E4 176.387-176.713
-times/times -> D#4 176.713-177.449
+dream/dream -> E4 169.714-170.068
+I/i -> D#4 170.092-170.641
+can't/can't -> B3 170.773-171.359
+wake/wake -> F#3 171.484-171.980
+from+in+chaotic/from-in-ch [merged] -> B3 172.155-172.749
+chaotic/ao -> G#3 172.794-174.044
+chaotic/tic -> E4 176.496-176.837
+world/world -> D#4 176.881-177.483
 
 [31] 以外是纯粹的相拥
-EN: beyond it's pure embrace
-ALIGN: raw_units=6, aligned_units=6, notes=9, weak_merges=0, forced_merges=0
-beyond/bey -> B3 177.449-178.111 + F#4 178.111-178.827
-beyond/ond -> E4 178.827-179.398
-it's/it's -> E4 180.496-180.857
-pure/pure -> E4 180.857-181.500 + D#4 181.500-182.262
-embrace/emb -> D#4 182.262-182.570 + E4 182.756-183.701
-embrace/race -> F#4 183.701-184.955
+EN: Outside is a pure embrace
+ALIGN: raw_units=7, aligned_units=7, notes=9, weak_merges=0, forced_merges=0
+Outside/out -> B3 177.581-178.243
+Outside/side -> F#4 178.263-178.893 + E4 178.906-179.169
+is/is -> E4 180.543-180.842
+a/a -> E4 180.915-181.470
+pure/pure -> D#4 181.618-182.195
+embrace/emb -> D#4 182.261-182.548 + E4 182.984-183.595
+embrace/race -> F#4 183.651-184.848
 
 [32] 我没想到为了你我能疯狂到山崩海啸
-EN: I for you I to of collapsing seas roaring
-ALIGN: raw_units=12, aligned_units=12, notes=16, weak_merges=0, forced_merges=0
-I/i -> A4 185.219-185.611
-for/for -> G#4 185.611-185.873 + F#4 185.873-186.388
-you/you -> E4 186.388-186.655
-I/i -> E4 186.655-186.888
-to/to -> B4 186.888-186.972 + B4 186.972-187.363
-of/of -> B4 187.363-187.696
-collapsing/col -> B4 187.696-188.031
-collapsing/lap -> E4 188.031-188.514 + E4 188.514-189.124
-collapsing/sing -> C#4 189.124-189.487
-seas/seas -> A4 190.617-191.070
-roaring/roa -> G#4 191.070-191.423 + F#4 191.423-191.674
-roaring/ring -> E4 191.674-192.088
+EN: I for you I as to see mountains crumble seas rage
+ALIGN: raw_units=13, aligned_units=13, notes=16, weak_merges=0, forced_merges=0
+I/i -> A4 185.278-185.616
+for/for -> G#4 185.638-185.915
+you/you -> F#4 185.976-186.287 + E4 186.347-186.639
+I/i -> E4 186.655-186.838
+as/as -> B4 186.847-186.980
+to/to -> B4 187.034-187.321
+see/see -> B4 187.376-187.662 + B4 187.712-188.003
+mountains/moun -> E4 188.077-188.372
+mountains/tains -> E4 188.537-189.091
+crumble/cru -> C#4 189.111-189.507
+crumble/mble -> A4 190.781-191.129 + G#4 191.136-191.412
+seas/seas -> F#4 191.500-191.753
+rage/rage -> E4 191.848-192.094
 
 [33] 没有你根本不想逃我的大脑为了你已经疯狂
-EN: without you I don't want to flee my brain has gone crazy for you
-ALIGN: raw_units=16, aligned_units=16, notes=19, weak_merges=0, forced_merges=0
-without/wit -> E4 192.088-192.314
-without/hout -> B4 192.314-192.466
-you/you -> B4 192.466-192.714 + B4 192.848-193.178
-I/i -> B4 193.178-193.441
-don't/don't -> E4 193.539-193.770
-want/want -> E4 193.910-194.494
-to/to -> D#4 194.494-195.047
-flee/flee -> A4 196.177-196.630 + G#4 196.630-196.938
-my/my -> F#4 196.938-197.201
-brain/brain -> E4 197.201-197.556
-has/has -> E4 197.556-197.768
-gone/gone -> B4 197.768-197.886
-crazy/cra -> B4 197.886-198.234
-crazy/zy -> B4 198.234-198.527 + B4 198.527-198.838
-for/for -> E4 198.838-199.381
-you/you -> E4 199.381-200.028
+EN: Without you I don't even want to flee my mind for you has gone crazy
+ALIGN: raw_units=18, aligned_units=18, notes=19, weak_merges=0, forced_merges=0
+Without/wit -> E4 192.169-192.339
+Without/hout -> B4 192.348-192.497
+you/you -> B4 192.514-192.776
+I/i -> B4 192.821-193.116
+don't/don't -> B4 193.163-193.457
+even/e -> E4 193.538-193.794
+even/ven -> E4 194.040-194.470
+want/want -> D#4 194.503-194.999
+to/to -> A4 196.213-196.564 + G#4 196.601-196.893
+flee/flee -> F#4 196.962-197.231
+my/my -> E4 197.301-197.571
+mind/mind -> E4 197.567-197.571
+for/for -> B4 197.777-197.925
+you/you -> B4 197.959-198.230
+has/has -> B4 198.322-198.540
+gone/gone -> B4 198.633-198.885
+crazy/cra -> E4 199.021-199.332
+crazy/zy -> E4 199.513-199.987
 
 [34] 到脉搏心跳没有你根本不重要
-EN: to point where pulse heartbeat without you simply don't matter
+EN: To point where pulse heartbeat without you simply don't matter
 ALIGN: raw_units=14, aligned_units=13, notes=13, weak_merges=1, forced_merges=0
-to+point/to-point [merged] -> C#4 200.028-200.509
-where/where -> A4 201.619-202.058
-pulse/pulse -> G#4 202.058-202.297
-heartbeat/heart -> F#4 202.297-202.663
-heartbeat/beat -> E4 202.663-203.000
-without/wit -> E4 203.000-203.248
-without/hout -> B4 203.248-203.408
-you/you -> B4 203.408-203.656
-simply/simp -> B4 203.771-204.078
-simply/ly -> B4 204.078-204.364
-don't/don't -> E4 204.468-204.720
-matter/mat -> E4 204.877-205.388
-matter/ter -> D#4 205.388-205.919
+To+point/to-point [merged] -> C#4 200.061-200.396
+where/where -> A4 201.709-202.021
+pulse/pulse -> G#4 202.095-202.356
+heartbeat/heart -> F#4 202.432-202.717
+heartbeat/beat -> E4 202.764-203.000
+without/wit -> E4 203.037-203.173
+without/hout -> B4 203.220-203.344
+you/you -> B4 203.393-203.685
+simply/simp -> B4 203.746-204.026
+simply/ly -> B4 204.081-204.345
+don't/don't -> E4 204.469-204.766
+matter/mat -> E4 204.936-205.399
+matter/ter -> D#4 205.432-205.901
 
 [35] 相遇乱世以外
-EN: meeting beyond chaotic world
-ALIGN: raw_units=8, aligned_units=7, notes=7, weak_merges=1, forced_merges=0
-meeting/mee -> E4 207.329-207.823
-meeting/ting -> E4 207.823-208.186
-beyond/bey -> B4 208.186-210.102
-beyond/ond -> G#4 210.102-210.510
-chaotic/ch-ao [merged] -> G#4 210.510-210.883
-chaotic/tic -> B4 210.883-211.543
-world/world -> C#5 211.543-212.025
+EN: Meeting outside world
+ALIGN: raw_units=5, aligned_units=5, notes=7, weak_merges=0, forced_merges=0
+Meeting/mee -> E4 207.474-207.787
+Meeting/ting -> E4 207.803-208.116 + B4 208.172-210.141
+outside/out -> G#4 210.253-210.503
+outside/side -> G#4 210.572-210.923 + B4 210.945-211.543
+world/world -> C#5 211.578-211.983
 
 [36] 危难中相爱相遇
-EN: loving meeting each other in times of peril
-ALIGN: raw_units=12, aligned_units=9, notes=9, weak_merges=3, forced_merges=0
-loving+meeting/lo-ving-mee-ting [merged] -> E4 212.881-213.679
-each/each -> B4 213.679-215.616
-other/ot -> G#4 215.616-215.902
-other/her -> G#4 215.902-216.558
-in/in -> F#4 216.558-216.903
-times/times -> G#4 216.903-217.155
-of/of -> F#4 217.155-217.640
-peril/pe -> D#4 218.236-218.737
-peril/ril -> E4 218.737-219.114
+EN: Falling in love and meeting amidst peril
+ALIGN: raw_units=11, aligned_units=9, notes=9, weak_merges=2, forced_merges=0
+Falling/fal -> E4 212.964-213.678
+Falling/ling -> B4 213.686-215.550
+in+love+and/in-love-and [merged] -> G#4 215.645-215.949
+meeting/mee -> G#4 216.017-216.500
+meeting/ting -> F#4 216.568-216.903
+amidst/a -> G#4 216.923-217.155
+amidst/midst -> F#4 217.159-217.518
+peril/pe -> D#4 218.422-218.685
+peril/ril -> E4 218.741-219.026
 
 [37] 乱世以外危难中
-EN: Outside chaotic times in midst of danger
-ALIGN: raw_units=11, aligned_units=8, notes=8, weak_merges=3, forced_merges=0
-Outside/out -> B4 219.114-220.974
-Outside/side -> G#4 220.974-221.405
-chaotic+times/ch-ao-tic-times [merged] -> G#4 221.405-221.735
-in/in -> B4 221.735-222.474
-midst/midst -> C#5 222.474-222.945
-of/of -> E4 223.805-224.586
-danger/dan -> B4 224.586-226.511
-danger/ger -> G#4 226.511-226.802
+EN: Outside chaotic times amidst danger
+ALIGN: raw_units=10, aligned_units=8, notes=8, weak_merges=2, forced_merges=0
+Outside/out -> B4 219.097-220.983
+Outside/side -> G#4 221.155-221.443
+chaotic/ch-ao-tic [merged] -> G#4 221.479-221.753
+times/times -> B4 221.824-222.516
+amidst/a -> C#5 222.547-222.882
+amidst/midst -> E4 223.929-224.557
+danger/dan -> B4 224.597-226.439
+danger/ger -> G#4 226.571-226.848
 
 [38] 相爱我没想到
 EN: I never expected us to love each other
 ALIGN: raw_units=12, aligned_units=8, notes=8, weak_merges=4, forced_merges=0
-I/i -> G#4 226.802-227.416
-never+expected/ne-ver-ex-pec-ted [merged] -> F#4 227.416-227.802
-us/us -> G#4 227.802-228.068
-to/to -> F#4 228.068-228.519
-love/love -> A4 228.856-229.257
-each/each -> G#4 229.257-229.508
-other/ot -> F#4 229.508-229.991
-other/her -> E4 229.991-230.491
+I/i -> G#4 226.926-227.281
+never+expected/ne-ver-ex-pec-ted [merged] -> F#4 227.396-227.788
+us/us -> G#4 227.802-228.016
+to/to -> F#4 228.064-228.347
+love/love -> A4 228.957-229.258
+each/each -> G#4 229.298-229.552
+other/ot -> F#4 229.621-229.893
+other/her -> E4 230.004-230.420

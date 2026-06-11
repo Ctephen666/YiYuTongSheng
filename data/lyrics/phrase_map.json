@@ -1,7 +1,7 @@
 {
   "source": "opencpop_textgrid",
   "sample_id": "2001",
-  "textgrid": "data\\dataset\\opencpop\\textgrids\\2001.TextGrid",
+  "textgrid": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\textgrids\\2001.TextGrid",
   "note_index_rule": "note_start inclusive, note_end exclusive",
   "phrases": [
     {

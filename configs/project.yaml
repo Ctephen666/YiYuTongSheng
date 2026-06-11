@@ -1,30 +1,42 @@
 project:
-  name: "YiyuTongsheng"
+  name: "YiYuTongSheng"
   target_language: "en"
   sample_rate: 44100
 
 paths:
-  raw_song: "data/raw/original_song.wav"
-  vocals: "data/stems/vocals.wav"
-  accompaniment: "data/stems/accompaniment.wav"
+  opencpop_midi: "data/dataset/opencpop/midis/2001.midi"
+  opencpop_textgrid: "data/dataset/opencpop/textgrids/2001.TextGrid"
+
   lyrics_zh: "data/lyrics/lyrics_zh.txt"
   phrase_map: "data/lyrics/phrase_map.json"
-  f0_csv: "data/score/f0.csv"
-  melody_notes: "data/score/melody_notes.json"
+
   melody_midi: "data/score/melody.mid"
+  melody_notes: "data/score/melody_notes.json"
+
   lyrics_literal: "data/lyrics/lyrics_literal.json"
   lyrics_singable: "data/lyrics/lyrics_singable.json"
+  lyrics_singable_manual: "data/lyrics/lyrics_singable_manual.json"
+
   phonemes_target: "data/phoneme/phonemes_target.json"
   note_lyric_alignment: "data/alignment/note_lyric_alignment.json"
-  svs_vocal: "data/svs/target_language_vocal.wav"
-  svs_input: "data/svs/svs_input.json"
-  openutau_project: "data/svs/target_language.ustx"
-  rvc_converted: "data/rvc/converted_voice.wav"
 
-  final_mix: "data/final/final_mix.wav"
+  svs_vocal: "data/svs/target_language_vocal.wav"
+
+opencpop:
+  sample_id: '2001'
+
+svs:
+  backend: "melotts"
+  melotts_language: "EN"
+  melotts_speaker: "EN-US"
+  melotts_speed: 0.85
+  device: "auto"
+  phrase_fade_ms: 20
+  normalize_peak: 0.98
+  enable_phrase_pitch_shift: false
 
 pipeline:
-  allow_mock_outputs: true
+  allow_mock_outputs: false
   overwrite: true
 
 models:

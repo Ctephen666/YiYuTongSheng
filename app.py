@@ -12,187 +12,190 @@ except ImportError:  # pragma: no cover
 from src.alignment.note_lyric_aligner import NoteLyricAligner
 from src.common.io_utils import ensure_directories
 from src.common.logger import setup_logger
-from src.evaluate.generate_report import ReportGenerator
 from src.lyrics.adapt_singable_lyrics import SingableLyricAdapter
-from src.lyrics.phrase_mapper import PhraseMapper
+from src.lyrics.import_opencpop_textgrid import OpenCpopTextGridImporter
 from src.lyrics.translate_lyrics import LyricTranslator
-from src.melody.export_score import ScoreExporter
-from src.melody.extract_f0 import F0Extractor
-from src.melody.f0_to_note import F0ToNoteConverter
-from src.mix.align_vocal import VocalAligner
-from src.mix.mix_audio import AudioMixer
+from src.melody.import_opencpop_midi import OpenCpopMidiImporter
 from src.phoneme.phonemize_en import EnglishPhonemizer
-from src.phoneme.phonemize_ja import JapanesePhonemizer
-from src.preprocess.clean_audio import AudioCleaner
-from src.preprocess.normalize_audio import AudioNormalizer
-from src.preprocess.separate_vocals import VocalSeparator
-from src.svc.rvc_infer import RVCInferencer
-from src.svs.export_openutau_project import OpenUtauExporter
-from src.svs.render_singing import SingingRenderer
-from src.svs.export_svs_input import SVSInputExporter
-from src.svs.simple_formant_synth import SimpleFormantSynthesizer
+from src.svs.melotts_renderer import MeloTTSRenderer
 
 
 VALID_STEPS = [
     "all",
-    "preprocess",
     "melody",
     "lyrics",
     "phoneme",
     "alignment",
     "svs",
-    "svc",
-    "mix",
-    "evaluate",
 ]
+
+ALL_STEPS = ["melody", "lyrics", "phoneme", "alignment", "svs"]
+DEFAULT_OPENCPop_MIDI_DIR = "data/dataset/opencpop/midis"
+DEFAULT_OPENCPop_TEXTGRID_DIR = "data/dataset/opencpop/textgrids"
 
 
 def _minimal_yaml_load(path: Path) -> dict:
-    """Load the simple project YAML format when PyYAML is unavailable.
-
-    Input:
-        path: Config file path.
-    Output:
-        Nested dict for the project scaffold config.
-    TODO:
-        Remove this fallback once PyYAML is guaranteed in the runtime environment.
-    """
+    """Load the simple project YAML format when PyYAML is unavailable."""
     data: dict[str, dict] = {}
     current_section: str | None = None
+
     for raw_line in path.read_text(encoding="utf-8").splitlines():
         line = raw_line.rstrip()
         if not line or line.lstrip().startswith("#"):
             continue
+
         if not line.startswith(" ") and line.endswith(":"):
             current_section = line[:-1]
             data[current_section] = {}
             continue
+
         if current_section and ":" in line:
             key, value = line.strip().split(":", 1)
             value = value.strip().strip('"').strip("'")
+
             if value.lower() in {"true", "false"}:
                 parsed: object = value.lower() == "true"
             else:
                 try:
                     parsed = int(value)
                 except ValueError:
-                    parsed = value
+                    try:
+                        parsed = float(value)
+                    except ValueError:
+                        parsed = value
+
             data[current_section][key] = parsed
+
     return data
 
 
-def load_config(config_path: Path, target_language: str | None = None) -> dict:
-    """Load project config and apply command-line overrides.
+def _resolve_config_path(config_path: str) -> Path:
+    path = Path(config_path)
+    if path.is_absolute():
+        return path
+    return Path(__file__).resolve().parent / path
 
-    Input:
-        config_path: YAML config path.
-        target_language: Optional en/ja override.
-    Output:
-        Pipeline config dict.
-    TODO:
-        Add pydantic/dataclass validation for production runs.
-    """
+
+def _opencpop_midi_from_id(sample_id: str) -> str:
+    sample_id = str(sample_id).strip()
+    if not sample_id:
+        raise ValueError("--opencpop-id cannot be empty.")
+
+    suffix = ".midi" if not sample_id.lower().endswith((".mid", ".midi")) else ""
+    return str(Path(DEFAULT_OPENCPop_MIDI_DIR) / f"{sample_id}{suffix}")
+
+
+
+def _opencpop_textgrid_from_id(sample_id: str) -> str:
+    sample_id = str(sample_id).strip()
+    suffix = ".TextGrid" if not sample_id.lower().endswith(".textgrid") else ""
+    return str(Path(DEFAULT_OPENCPop_TEXTGRID_DIR) / f"{sample_id}{suffix}")
+
+def _apply_cli_overrides(
+    config: dict,
+    target_language: str | None = None,
+    opencpop_id: str | None = None,
+    opencpop_midi: str | None = None,
+) -> dict:
+    if target_language:
+        config.setdefault("project", {})["target_language"] = target_language
+
+    if opencpop_id and opencpop_midi:
+        raise ValueError("Use only one of --opencpop-id or --opencpop-midi.")
+
+    if opencpop_id:
+        config.setdefault("paths", {})["opencpop_midi"] = _opencpop_midi_from_id(opencpop_id)
+        config.setdefault("paths", {})["opencpop_textgrid"] = _opencpop_textgrid_from_id(opencpop_id)
+        config.setdefault("opencpop", {})["sample_id"] = str(opencpop_id).strip().removesuffix(".midi").removesuffix(".mid")
+
+    if opencpop_midi:
+        config.setdefault("paths", {})["opencpop_midi"] = opencpop_midi
+
+    return config
+
+
+def load_config(
+    config_path: Path,
+    target_language: str | None = None,
+    opencpop_id: str | None = None,
+    opencpop_midi: str | None = None,
+) -> dict:
+    """Load project config and apply command-line overrides."""
     if yaml is not None:
         config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
     else:
         config = _minimal_yaml_load(config_path)
 
     config["_project_root"] = str(Path(__file__).resolve().parent)
-    if target_language:
-        config.setdefault("project", {})["target_language"] = target_language
-    return config
+    return _apply_cli_overrides(config, target_language, opencpop_id, opencpop_midi)
 
 
 def run_stage(name: str, factories: list[Callable[[dict], object]], config: dict, logger) -> list[dict]:
-    """Run all modules in one named stage.
-
-    Input:
-        name: Stage name.
-        factories: Classes or callables that accept config and expose run().
-        config: Pipeline config.
-        logger: Configured logger.
-    Output:
-        List of stage result dicts.
-    TODO:
-        Persist a run manifest with timing, versions, and input hashes.
-    """
+    """Run all modules in one named stage."""
     logger.info("Running stage: %s", name)
     results = []
+
     for factory in factories:
         module = factory(config)
         result = module.run()
         results.append(result)
         logger.info("%s -> %s | %s", module.__class__.__name__, result.get("status"), result.get("message"))
+
         for key, value in result.get("outputs", {}).items():
             logger.info("  output %-24s %s", key + ":", value)
+
     return results
 
 
 def build_pipeline(config: dict) -> dict[str, list[Callable[[dict], object]]]:
-    """Build the stage-to-module mapping.
-
-    Input:
-        config: Pipeline config.
-    Output:
-        Dict mapping step names to module factories.
-    TODO:
-        Make this plugin-driven for swapping real model backends.
-    """
-    language = config.get("project", {}).get("target_language", "en")
-    phonemizer = JapanesePhonemizer if language == "ja" else EnglishPhonemizer
+    """Build the current OpenCpop MIDI + MeloTTS baseline pipeline."""
     return {
-        "preprocess": [VocalSeparator, AudioCleaner, AudioNormalizer],
-        "melody": [F0Extractor, F0ToNoteConverter, ScoreExporter],
-        "lyrics": [PhraseMapper, LyricTranslator, SingableLyricAdapter],
-        "phoneme": [phonemizer],
+        "melody": [OpenCpopTextGridImporter, OpenCpopMidiImporter],
+        "lyrics": [OpenCpopTextGridImporter, LyricTranslator, SingableLyricAdapter],
+        "phoneme": [EnglishPhonemizer],
         "alignment": [NoteLyricAligner],
-        "svs": [SVSInputExporter, OpenUtauExporter, SimpleFormantSynthesizer],
-        "svc": [RVCInferencer],
-        "mix": [VocalAligner, AudioMixer],
-        "evaluate": [ReportGenerator],
+        "svs": [MeloTTSRenderer],
     }
 
 
 def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments.
-
-    Input:
-        Command-line argv.
-    Output:
-        argparse.Namespace.
-    TODO:
-        Add run-id, dry-run, and strict/no-mock flags.
-    """
-    parser = argparse.ArgumentParser(description="YiyuTongsheng mock singing voice conversion pipeline.")
+    parser = argparse.ArgumentParser(description="YiYuTongSheng OpenCpop MIDI + MeloTTS baseline pipeline.")
     parser.add_argument("--config", default="configs/project.yaml", help="Path to project YAML config.")
     parser.add_argument("--step", default="all", choices=VALID_STEPS, help="Pipeline step to run.")
-    parser.add_argument("--target-language", choices=["en", "ja"], default=None, help="Override target language.")
+    parser.add_argument("--target-language", choices=["en"], default=None, help="Override target language.")
+    parser.add_argument(
+        "--opencpop-id",
+        default=None,
+        help="OpenCpop sample id under data/dataset/opencpop/midis, for example 2001.",
+    )
+    parser.add_argument(
+        "--opencpop-midi",
+        default=None,
+        help="Explicit OpenCpop MIDI path. Overrides paths.opencpop_midi in the config.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
-    """Run the requested pipeline step.
-
-    Input:
-        CLI arguments: --config, --step, and --target-language.
-    Output:
-        Creates mock project artifacts and prints stage statuses.
-    TODO:
-        Add structured run manifests and resume support.
-    """
     args = parse_args()
-    config_path = Path(args.config)
-    if not config_path.is_absolute():
-        config_path = Path(__file__).resolve().parent / config_path
+    config_path = _resolve_config_path(args.config)
+    config = load_config(
+        config_path,
+        target_language=args.target_language,
+        opencpop_id=args.opencpop_id,
+        opencpop_midi=args.opencpop_midi,
+    )
 
-    config = load_config(config_path, args.target_language)
     ensure_directories(config)
     logger = setup_logger(log_file=Path(config["_project_root"]) / "outputs" / "logs" / "pipeline.log")
     logger.info("Project: %s", config.get("project", {}).get("name"))
     logger.info("Target language: %s", config.get("project", {}).get("target_language"))
+    logger.info("OpenCpop MIDI: %s", config.get("paths", {}).get("opencpop_midi"))
+    logger.info("OpenCpop TextGrid: %s", config.get("paths", {}).get("opencpop_textgrid"))
 
     pipeline = build_pipeline(config)
-    selected_steps = list(pipeline.keys()) if args.step == "all" else [args.step]
+    selected_steps = ALL_STEPS if args.step == "all" else [args.step]
+
     for step in selected_steps:
         run_stage(step, pipeline[step], config, logger)
 

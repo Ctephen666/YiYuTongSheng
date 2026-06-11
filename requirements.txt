@@ -1,7 +1,11 @@
 numpy
-pandas
 pyyaml
-matplotlib
 soundfile
 librosa
-pydub
+pretty_midi
+
+# MeloTTS install:
+# pip install git+https://github.com/myshell-ai/MeloTTS.git
+# python -m unidic download
+praatio
+openai

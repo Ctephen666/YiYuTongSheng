@@ -20,13 +20,14 @@ paths:
   phonemes_target: "data/phoneme/phonemes_target.json"
   note_lyric_alignment: "data/alignment/note_lyric_alignment.json"
 
+  svs_vocal_flat: "data/svs/target_language_vocal_flat.wav"
   svs_vocal: "data/svs/target_language_vocal.wav"
 
 opencpop:
   sample_id: '2001'
 
 svs:
-  backend: "melotts"
+  backend: "melotts_world"
   melotts_language: "EN"
   melotts_speaker: "EN-US"
   melotts_speed: 0.85
@@ -34,6 +35,14 @@ svs:
   phrase_fade_ms: 20
   normalize_peak: 0.98
   enable_phrase_pitch_shift: false
+  flat_vocal: "data/svs/target_language_vocal_flat.wav"
+  enable_world_f0: true
+  world_frame_period: 5.0
+  f0_smooth_window: 5
+  enable_vibrato: true
+  vibrato_rate: 5.5
+  vibrato_depth: 0.01
+  min_vibrato_note_duration: 0.4
 
 pipeline:
   allow_mock_outputs: false

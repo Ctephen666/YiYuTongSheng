@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from src.common.io_utils import ensure_parent, path_from_config, should_write
+from src.common.io_utils import ensure_parent, path_from_config, project_root, resolve_path, should_write
 from src.common.json_utils import read_json, write_json
 
 
@@ -39,6 +39,14 @@ class MeloTTSRenderer:
 
     def _svs_config(self) -> dict:
         return self.config.get("svs", {})
+
+    def _flat_output_path(self) -> Path:
+        paths = self.config.get("paths", {})
+        if paths.get("svs_vocal_flat"):
+            return path_from_config(self.config, "svs_vocal_flat")
+        if self._svs_config().get("flat_vocal"):
+            return resolve_path(self.config, self._svs_config()["flat_vocal"])
+        return project_root(self.config) / "data" / "svs" / "target_language_vocal_flat.wav"
 
     def _import_audio_dependencies(self):
         try:
@@ -86,8 +94,6 @@ class MeloTTSRenderer:
         if speaker.isdigit():
             return int(speaker)
 
-        # MeloTTS English exposes these stable speaker names. Resolve them
-        # before touching version-dependent internals such as hps.data.spk2id.
         known_english_speakers = {
             "EN-US": 0,
             "EN-BR": 1,
@@ -98,11 +104,7 @@ class MeloTTSRenderer:
         if speaker in known_english_speakers:
             return known_english_speakers[speaker]
 
-        speaker_sources = [
-            getattr(model, "speaker_ids", None),
-            getattr(model, "spk2id", None),
-        ]
-
+        speaker_sources = [getattr(model, "speaker_ids", None), getattr(model, "spk2id", None)]
         hps_data = getattr(getattr(model, "hps", None), "data", None)
         if hps_data is not None:
             speaker_sources.extend([
@@ -115,25 +117,22 @@ class MeloTTSRenderer:
             if speaker_ids is None:
                 continue
             available = speaker_ids
-
             try:
                 resolved = speaker_ids.get(speaker)
             except Exception:
                 resolved = None
             if resolved is not None:
                 return int(resolved)
-
             try:
                 return int(speaker_ids[speaker])
             except Exception:
                 pass
-
             try:
                 items = list(speaker_ids.items())
             except Exception:
                 items = []
             if items:
-                fallback_name, fallback_id = items[0]
+                _, fallback_id = items[0]
                 return int(fallback_id)
 
         raise RuntimeError(
@@ -141,12 +140,13 @@ class MeloTTSRenderer:
             f"requested={speaker!r}, available={available!r}. "
             "For English use one of: EN-US, EN-BR, EN_INDIA, EN-AU, EN-Default, or set melotts_speaker to a numeric id."
         )
+
     def _phrase_by_id(self, lyric_phrases: list[dict]) -> dict:
-        result = {}
-        for phrase in lyric_phrases:
-            if isinstance(phrase, dict) and phrase.get("id") is not None:
-                result[phrase.get("id")] = phrase
-        return result
+        return {
+            phrase.get("id"): phrase
+            for phrase in lyric_phrases
+            if isinstance(phrase, dict) and phrase.get("id") is not None
+        }
 
     def _matched_lyric(self, melody_phrase: dict, lyric_phrases: list[dict], lyric_by_id: dict, index: int) -> dict:
         phrase_id = melody_phrase.get("id")
@@ -159,20 +159,9 @@ class MeloTTSRenderer:
     def _tts_to_file(self, model: Any, text: str, speaker_id: Any, output_path: Path, speed: float) -> None:
         ensure_parent(output_path)
         try:
-            model.tts_to_file(
-                text=text,
-                speaker_id=speaker_id,
-                output_path=str(output_path),
-                speed=speed,
-                quiet=True,
-            )
+            model.tts_to_file(text=text, speaker_id=speaker_id, output_path=str(output_path), speed=speed, quiet=True)
         except TypeError:
-            model.tts_to_file(
-                text=text,
-                speaker_id=speaker_id,
-                output_path=str(output_path),
-                speed=speed,
-            )
+            model.tts_to_file(text=text, speaker_id=speaker_id, output_path=str(output_path), speed=speed)
 
     def _fit_length(self, wav, target_len: int, sample_rate: int, librosa, np):
         if target_len <= 0:
@@ -220,18 +209,12 @@ class MeloTTSRenderer:
     def run(self) -> dict:
         melody_path = path_from_config(self.config, "melody_notes")
         lyrics_path = path_from_config(self.config, "lyrics_singable")
-        output_path = path_from_config(self.config, "svs_vocal")
+        output_path = self._flat_output_path()
         report_path = output_path.parent / "melotts_render_report.json"
         phrase_dir = output_path.parent / "melotts_phrases"
 
-        self._required_input(
-            melody_path,
-            "Missing melody_notes.json. Run first: python app.py --step melody --target-language en",
-        )
-        self._required_input(
-            lyrics_path,
-            "Missing lyrics_singable.json. Run first: python app.py --step lyrics --target-language en",
-        )
+        self._required_input(melody_path, "Missing melody_notes.json. Run first: python app.py --step melody --target-language en")
+        self._required_input(lyrics_path, "Missing lyrics_singable.json. Run first: python app.py --step lyrics --target-language en")
 
         librosa, np, sf = self._import_audio_dependencies()
         model = self._build_model()
@@ -254,12 +237,8 @@ class MeloTTSRenderer:
             raise RuntimeError("lyrics_singable.json contains no phrases.")
 
         lyric_by_id = self._phrase_by_id(lyric_phrases)
-        final_duration = max(
-            float(phrase.get("start", 0.0)) + float(phrase.get("duration", 0.0))
-            for phrase in melody_phrases
-        )
+        final_duration = max(float(phrase.get("start", 0.0)) + float(phrase.get("duration", 0.0)) for phrase in melody_phrases)
         final = np.zeros(int((final_duration + 0.5) * sample_rate), dtype=np.float32)
-
         report_phrases = []
 
         for index, melody_phrase in enumerate(melody_phrases):
@@ -276,6 +255,8 @@ class MeloTTSRenderer:
                 phrase_file_id = index + 1
 
             raw_phrase_path = phrase_dir / f"phrase_{phrase_file_id:03d}_raw.wav"
+            aligned_phrase_path = phrase_dir / f"phrase_{phrase_file_id:03d}_aligned.wav"
+
             if should_write(raw_phrase_path, self.config):
                 self._tts_to_file(model, text, speaker_id, raw_phrase_path, speed)
 
@@ -283,21 +264,23 @@ class MeloTTSRenderer:
             phrase_wav = self._fit_length(wav, target_samples, sample_rate, librosa, np)
             phrase_wav = self._fade(phrase_wav, sample_rate, np)
 
+            ensure_parent(aligned_phrase_path)
+            sf.write(str(aligned_phrase_path), phrase_wav, sample_rate)
+
             start_sample = max(0, int(start * sample_rate))
             end_sample = min(len(final), start_sample + len(phrase_wav))
             if end_sample > start_sample:
                 final[start_sample:end_sample] += phrase_wav[: end_sample - start_sample]
 
-            report_phrases.append(
-                {
-                    "id": phrase_id,
-                    "text": text,
-                    "start": start,
-                    "duration": duration,
-                    "raw_path": str(raw_phrase_path),
-                    "target_samples": target_samples,
-                }
-            )
+            report_phrases.append({
+                "id": phrase_id,
+                "text": text,
+                "start": start,
+                "duration": duration,
+                "raw_path": str(raw_phrase_path),
+                "aligned_path": str(aligned_phrase_path),
+                "target_samples": target_samples,
+            })
 
         peak = float(np.max(np.abs(final))) if final.size else 0.0
         if peak > normalize_peak > 0:
@@ -307,9 +290,10 @@ class MeloTTSRenderer:
         sf.write(str(output_path), final, sample_rate)
 
         report = {
-            "backend": "melotts",
+            "backend": "melotts_flat",
             "language": language,
             "speaker": speaker,
+            "speaker_id": speaker_id,
             "sample_rate": sample_rate,
             "phrase_count": len(report_phrases),
             "output": str(output_path),
@@ -320,9 +304,6 @@ class MeloTTSRenderer:
 
         return {
             "status": "success",
-            "outputs": {
-                "svs_vocal": str(output_path),
-                "melotts_render_report": str(report_path),
-            },
+            "outputs": {"svs_vocal_flat": str(output_path), "melotts_render_report": str(report_path)},
             "message": self.WARNING,
         }

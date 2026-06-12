@@ -9,3 +9,5 @@ pretty_midi
 # python -m unidic download
 praatio
 openai
+pyworld
+scipy

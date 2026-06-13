@@ -19,6 +19,7 @@ from src.melody.import_opencpop_midi import OpenCpopMidiImporter
 from src.phoneme.phonemize_en import EnglishPhonemizer
 from src.svs.melotts_renderer import MeloTTSRenderer
 from src.svs.aligned_dtw_world_renderer import AlignedDTWWorldRenderer
+from src.svs.source_f0_guided_world_renderer import SourceF0GuidedWorldRenderer
 
 
 VALID_STEPS = [
@@ -155,7 +156,7 @@ def build_pipeline(config: dict) -> dict[str, list[Callable[[dict], object]]]:
         "lyrics": [OpenCpopTextGridImporter, LyricTranslator, SingableLyricAdapter],
         "phoneme": [EnglishPhonemizer],
         "alignment": [NoteLyricAligner],
-        "svs": [MeloTTSRenderer, AlignedDTWWorldRenderer],
+        "svs": [MeloTTSRenderer, AlignedDTWWorldRenderer, SourceF0GuidedWorldRenderer],
     }
 
 

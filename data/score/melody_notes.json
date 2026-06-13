@@ -1,6 +1,6 @@
 {
   "source": "opencpop_midi",
-  "midi": "data\\dataset\\opencpop\\midis\\2001.midi",
+  "midi": "data/dataset/opencpop/midis/2001.midi",
   "note_count": 429,
   "phrases": [
     {

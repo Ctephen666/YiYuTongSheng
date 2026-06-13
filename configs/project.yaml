@@ -12,6 +12,9 @@ paths:
 
   melody_midi: "data/score/melody.mid"
   melody_notes: "data/score/melody_notes.json"
+  vocals: "data/stems/vocals.wav"
+  source_f0_csv: "data/score/source_f0.csv"
+  source_f0_refined_csv: "data/score/source_f0_refined.csv"
 
   lyrics_literal: "data/lyrics/lyrics_literal.json"
   lyrics_singable: "data/lyrics/lyrics_singable.json"
@@ -22,38 +25,77 @@ paths:
   dtw_syllable_alignment: "data/alignment/dtw_syllable_alignment.json"
 
   svs_vocal_flat: "data/svs/target_language_vocal_flat.wav"
+  svs_vocal_source_f0: "data/svs/target_language_vocal_source_f0.wav"
   svs_vocal: "data/svs/target_language_vocal.wav"
 
 opencpop:
   sample_id: '2001'
 
+alignment:
+  strategy: "singing_duration_aware"
+  enable_duration_aware_assignment: true
+  enable_singing_weight: true
+  enable_vowel_region_export: true
+  enable_alignment_quality_report: true
+  weak_word_weight: 0.45
+  content_word_weight: 1.25
+  stressed_syllable_weight: 1.30
+  long_vowel_weight: 1.15
+  diphthong_weight: 1.20
+  min_note_duration_for_content: 0.35
+  short_note_duration: 0.22
+  vowel_center_ratio_default: 0.65
+  onset_ratio_default: 0.18
+  coda_ratio_default: 0.17
+  max_forced_merge_ratio: 0.35
+
 svs:
-  backend: "melotts_aligned_dtw_world"
+  backend: "source_f0_guided_world"
   melotts_language: "EN"
   melotts_speaker: "EN-US"
   melotts_speed: 0.85
   device: "auto"
 
-  phrase_fade_ms: 20
-  normalize_peak: 0.98
-  enable_phrase_pitch_shift: false
-  flat_vocal: "data/svs/target_language_vocal_flat.wav"
-
-  enable_world_f0: true
+  use_source_f0_guided: true
+  source_f0_method: "harvest"
   world_frame_period: 5.0
+
+  source_f0_detail_strength: 0.65
+  midi_anchor_strength: 0.35
+  max_source_delta_semitones: 2.5
+  source_f0_smooth_window: 5
+
+  vowel_source_strength: 0.90
+  consonant_source_strength: 0.20
+  flat_f0_blend_strength: 0.10
+
+  midi_transpose: 0
+  min_voiced_f0: 70.0
+  max_voiced_f0: 900.0
+
   f0_smooth_window: 5
+  enable_portamento: true
+  portamento_ms: 30
+  max_f0_jump_semitones: 10.0
+
+  enable_vibrato: false
 
   enable_aligned_dtw: true
   dtw_feature: "rms"
-  dtw_band_rad: 0.25
+  dtw_band_rad: 0.15
   dtw_energy_frames_per_second: 200
 
-  enable_vibrato: true
-  vibrato_rate: 5.5
-  vibrato_depth: 0.006
-  min_vibrato_note_duration: 0.45
+  phrase_fade_ms: 25
+  normalize_peak: 0.95
+  enable_phrase_pitch_shift: false
+  flat_vocal: "data/svs/target_language_vocal_flat.wav"
 
-  midi_transpose: 0
+  enable_de_metal_filter: true
+  de_metal_lowpass_hz: 10000
+  enable_soft_limiter: true
+  limiter_threshold: 0.95
+
+  output_source_f0_as_default: true
 
 pipeline:
   allow_mock_outputs: false

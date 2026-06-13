@@ -6,12 +6,12 @@
     {
       "id": 1,
       "zh": "感受停在我发端的指尖",
-      "literal_en": "Feel the fingertips resting at the ends of my hair",
-      "text": "Feel the fingertips resting at the ends of my hair",
+      "literal_en": "Feel the fingertips resting at my hairline",
+      "text": "Feel fingertips resting at my",
       "note_count": 10,
       "phrase_duration": 4.078,
       "unit_type": "syllable",
-      "unit_count": 13,
+      "unit_count": 8,
       "units": [
         {
           "unit_id": 0,
@@ -28,21 +28,9 @@
         },
         {
           "unit_id": 1,
-          "unit": "the",
-          "word": "the",
-          "word_index": 1,
-          "syllable_index": 0,
-          "phonemes": [
-            "DH",
-            "AH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 2,
           "unit": "fin",
           "word": "fingertips",
-          "word_index": 2,
+          "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
             "F",
@@ -52,10 +40,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 3,
+          "unit_id": 2,
           "unit": "ger",
           "word": "fingertips",
-          "word_index": 2,
+          "word_index": 1,
           "syllable_index": 1,
           "phonemes": [
             "G",
@@ -64,10 +52,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 4,
+          "unit_id": 3,
           "unit": "tips",
           "word": "fingertips",
-          "word_index": 2,
+          "word_index": 1,
           "syllable_index": 2,
           "phonemes": [
             "T",
@@ -78,10 +66,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 4,
           "unit": "res",
           "word": "resting",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "R",
@@ -91,10 +79,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 5,
           "unit": "ting",
           "word": "resting",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 1,
           "phonemes": [
             "T",
@@ -104,10 +92,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 6,
           "unit": "at",
           "word": "at",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "AE",
@@ -116,65 +104,14 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
-          "unit": "the",
-          "word": "the",
-          "word_index": 5,
-          "syllable_index": 0,
-          "phonemes": [
-            "DH",
-            "AH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 9,
-          "unit": "ends",
-          "word": "ends",
-          "word_index": 6,
-          "syllable_index": 0,
-          "phonemes": [
-            "EH",
-            "N",
-            "D",
-            "Z"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 10,
-          "unit": "of",
-          "word": "of",
-          "word_index": 7,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH",
-            "V"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 11,
+          "unit_id": 7,
           "unit": "my",
           "word": "my",
-          "word_index": 8,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "M",
             "AY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 12,
-          "unit": "hair",
-          "word": "hair",
-          "word_index": 9,
-          "syllable_index": 0,
-          "phonemes": [
-            "HH",
-            "EH",
-            "R"
           ],
           "phoneme_source": "cmudict"
         }
@@ -207,32 +144,8 @@
           ]
         },
         {
-          "word": "the",
-          "word_index": 1,
-          "phonemes": [
-            "DH",
-            "AH"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 1,
-              "unit": "the",
-              "word": "the",
-              "word_index": 1,
-              "syllable_index": 0,
-              "phonemes": [
-                "DH",
-                "AH"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "fingertips",
-          "word_index": 2,
+          "word_index": 1,
           "phonemes": [
             "F",
             "IH",
@@ -248,10 +161,10 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 2,
+              "unit_id": 1,
               "unit": "fin",
               "word": "fingertips",
-              "word_index": 2,
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
                 "F",
@@ -261,10 +174,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 3,
+              "unit_id": 2,
               "unit": "ger",
               "word": "fingertips",
-              "word_index": 2,
+              "word_index": 1,
               "syllable_index": 1,
               "phonemes": [
                 "G",
@@ -273,10 +186,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 4,
+              "unit_id": 3,
               "unit": "tips",
               "word": "fingertips",
-              "word_index": 2,
+              "word_index": 1,
               "syllable_index": 2,
               "phonemes": [
                 "T",
@@ -290,7 +203,7 @@
         },
         {
           "word": "resting",
-          "word_index": 3,
+          "word_index": 2,
           "phonemes": [
             "R",
             "EH",
@@ -303,10 +216,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 4,
               "unit": "res",
               "word": "resting",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "R",
@@ -316,10 +229,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 6,
+              "unit_id": 5,
               "unit": "ting",
               "word": "resting",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 1,
               "phonemes": [
                 "T",
@@ -332,7 +245,7 @@
         },
         {
           "word": "at",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "AE",
             "T"
@@ -341,10 +254,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 7,
+              "unit_id": 6,
               "unit": "at",
               "word": "at",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "AE",
@@ -355,84 +268,8 @@
           ]
         },
         {
-          "word": "the",
-          "word_index": 5,
-          "phonemes": [
-            "DH",
-            "AH"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 8,
-              "unit": "the",
-              "word": "the",
-              "word_index": 5,
-              "syllable_index": 0,
-              "phonemes": [
-                "DH",
-                "AH"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "ends",
-          "word_index": 6,
-          "phonemes": [
-            "EH",
-            "N",
-            "D",
-            "Z"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 9,
-              "unit": "ends",
-              "word": "ends",
-              "word_index": 6,
-              "syllable_index": 0,
-              "phonemes": [
-                "EH",
-                "N",
-                "D",
-                "Z"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "of",
-          "word_index": 7,
-          "phonemes": [
-            "AH",
-            "V"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 10,
-              "unit": "of",
-              "word": "of",
-              "word_index": 7,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH",
-                "V"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "my",
-          "word_index": 8,
+          "word_index": 4,
           "phonemes": [
             "M",
             "AY"
@@ -441,40 +278,14 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 7,
               "unit": "my",
               "word": "my",
-              "word_index": 8,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "M",
                 "AY"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "hair",
-          "word_index": 9,
-          "phonemes": [
-            "HH",
-            "EH",
-            "R"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 12,
-              "unit": "hair",
-              "word": "hair",
-              "word_index": 9,
-              "syllable_index": 0,
-              "phonemes": [
-                "HH",
-                "EH",
-                "R"
               ],
               "phoneme_source": "cmudict"
             }
@@ -1900,12 +1711,12 @@
     {
       "id": 6,
       "zh": "漂浮在一片无奈",
-      "literal_en": "Floating in a sea of helplessness",
-      "text": "Floating in a sea of helplessness",
+      "literal_en": "Floating in a vast expanse of helplessness",
+      "text": "Floating in vast expanse of helplessness",
       "note_count": 12,
       "phrase_duration": 5.75,
       "unit_type": "syllable",
-      "unit_count": 9,
+      "unit_count": 10,
       "units": [
         {
           "unit_id": 0,
@@ -1947,29 +1758,47 @@
         },
         {
           "unit_id": 3,
-          "unit": "a",
-          "word": "a",
+          "unit": "vast",
+          "word": "vast",
           "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
-            "AH"
+            "V",
+            "AE",
+            "S",
+            "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 4,
-          "unit": "sea",
-          "word": "sea",
+          "unit": "ex",
+          "word": "expanse",
           "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
-            "S",
-            "IY"
+            "IH",
+            "K",
+            "S"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 5,
+          "unit": "panse",
+          "word": "expanse",
+          "word_index": 3,
+          "syllable_index": 1,
+          "phonemes": [
+            "P",
+            "AE",
+            "N",
+            "S"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 6,
           "unit": "of",
           "word": "of",
           "word_index": 4,
@@ -1981,7 +1810,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 7,
           "unit": "help",
           "word": "helplessness",
           "word_index": 5,
@@ -1995,7 +1824,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 8,
           "unit": "less",
           "word": "helplessness",
           "word_index": 5,
@@ -2008,7 +1837,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 9,
           "unit": "ness",
           "word": "helplessness",
           "word_index": 5,
@@ -2089,46 +1918,72 @@
           ]
         },
         {
-          "word": "a",
+          "word": "vast",
           "word_index": 2,
           "phonemes": [
-            "AH"
+            "V",
+            "AE",
+            "S",
+            "T"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 3,
-              "unit": "a",
-              "word": "a",
+              "unit": "vast",
+              "word": "vast",
               "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
-                "AH"
+                "V",
+                "AE",
+                "S",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
           ]
         },
         {
-          "word": "sea",
+          "word": "expanse",
           "word_index": 3,
           "phonemes": [
+            "IH",
+            "K",
             "S",
-            "IY"
+            "P",
+            "AE",
+            "N",
+            "S"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 1,
+          "syllable_count": 2,
           "syllables": [
             {
               "unit_id": 4,
-              "unit": "sea",
-              "word": "sea",
+              "unit": "ex",
+              "word": "expanse",
               "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
-                "S",
-                "IY"
+                "IH",
+                "K",
+                "S"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 5,
+              "unit": "panse",
+              "word": "expanse",
+              "word_index": 3,
+              "syllable_index": 1,
+              "phonemes": [
+                "P",
+                "AE",
+                "N",
+                "S"
               ],
               "phoneme_source": "cmudict"
             }
@@ -2145,7 +2000,7 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 6,
               "unit": "of",
               "word": "of",
               "word_index": 4,
@@ -2177,7 +2032,7 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 6,
+              "unit_id": 7,
               "unit": "help",
               "word": "helplessness",
               "word_index": 5,
@@ -2191,7 +2046,7 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 8,
               "unit": "less",
               "word": "helplessness",
               "word_index": 5,
@@ -2204,7 +2059,7 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 8,
+              "unit_id": 9,
               "unit": "ness",
               "word": "helplessness",
               "word_index": 5,
@@ -3766,140 +3621,43 @@
     {
       "id": 11,
       "zh": "我没想到为了你我能疯狂到山崩海啸",
-      "literal_en": "I never expected I could go so mad for you that mountains would collapse and tsunamis would rise",
-      "text": "I never expected I go so mad for you mountains",
+      "literal_en": "I never expected I could go so crazy for you as to cause mountains to collapse and tsunamis to rise",
+      "text": "crazy for you as to cause",
       "note_count": 16,
       "phrase_duration": 6.841,
       "unit_type": "syllable",
-      "unit_count": 14,
+      "unit_count": 7,
       "units": [
         {
           "unit_id": 0,
-          "unit": "i",
-          "word": "I",
+          "unit": "cra",
+          "word": "crazy",
           "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
-            "AY"
+            "K",
+            "R",
+            "EY"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 1,
-          "unit": "ne",
-          "word": "never",
-          "word_index": 1,
-          "syllable_index": 0,
+          "unit": "zy",
+          "word": "crazy",
+          "word_index": 0,
+          "syllable_index": 1,
           "phonemes": [
-            "N",
-            "EH"
+            "Z",
+            "IY"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 2,
-          "unit": "ver",
-          "word": "never",
-          "word_index": 1,
-          "syllable_index": 1,
-          "phonemes": [
-            "V",
-            "ER"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 3,
-          "unit": "ex",
-          "word": "expected",
-          "word_index": 2,
-          "syllable_index": 0,
-          "phonemes": [
-            "IH",
-            "K",
-            "S"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 4,
-          "unit": "pec",
-          "word": "expected",
-          "word_index": 2,
-          "syllable_index": 1,
-          "phonemes": [
-            "P",
-            "EH",
-            "K"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 5,
-          "unit": "ted",
-          "word": "expected",
-          "word_index": 2,
-          "syllable_index": 2,
-          "phonemes": [
-            "T",
-            "AH",
-            "D"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 6,
-          "unit": "i",
-          "word": "I",
-          "word_index": 3,
-          "syllable_index": 0,
-          "phonemes": [
-            "AY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 7,
-          "unit": "go",
-          "word": "go",
-          "word_index": 4,
-          "syllable_index": 0,
-          "phonemes": [
-            "G",
-            "OW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 8,
-          "unit": "so",
-          "word": "so",
-          "word_index": 5,
-          "syllable_index": 0,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 9,
-          "unit": "mad",
-          "word": "mad",
-          "word_index": 6,
-          "syllable_index": 0,
-          "phonemes": [
-            "M",
-            "AE",
-            "D"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 10,
           "unit": "for",
           "word": "for",
-          "word_index": 7,
+          "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
             "F",
@@ -3909,10 +3667,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
+          "unit_id": 3,
           "unit": "you",
           "word": "you",
-          "word_index": 8,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "Y",
@@ -3921,28 +3679,38 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
-          "unit": "moun",
-          "word": "mountains",
-          "word_index": 9,
+          "unit_id": 4,
+          "unit": "as",
+          "word": "as",
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
-            "M",
-            "AW",
-            "N"
+            "AE",
+            "Z"
           ],
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 13,
-          "unit": "tains",
-          "word": "mountains",
-          "word_index": 9,
-          "syllable_index": 1,
+          "unit_id": 5,
+          "unit": "to",
+          "word": "to",
+          "word_index": 4,
+          "syllable_index": 0,
           "phonemes": [
             "T",
-            "AH",
-            "N",
+            "UW"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 6,
+          "unit": "cause",
+          "word": "cause",
+          "word_index": 5,
+          "syllable_index": 0,
+          "phonemes": [
+            "K",
+            "AA",
             "Z"
           ],
           "phoneme_source": "cmudict"
@@ -3950,214 +3718,40 @@
       ],
       "tokens": [
         {
-          "word": "I",
+          "word": "crazy",
           "word_index": 0,
           "phonemes": [
-            "AY"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 0,
-              "unit": "i",
-              "word": "I",
-              "word_index": 0,
-              "syllable_index": 0,
-              "phonemes": [
-                "AY"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "never",
-          "word_index": 1,
-          "phonemes": [
-            "N",
-            "EH",
-            "V",
-            "ER"
+            "K",
+            "R",
+            "EY",
+            "Z",
+            "IY"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 1,
-              "unit": "ne",
-              "word": "never",
-              "word_index": 1,
+              "unit_id": 0,
+              "unit": "cra",
+              "word": "crazy",
+              "word_index": 0,
               "syllable_index": 0,
               "phonemes": [
-                "N",
-                "EH"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 2,
-              "unit": "ver",
-              "word": "never",
-              "word_index": 1,
-              "syllable_index": 1,
-              "phonemes": [
-                "V",
-                "ER"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "expected",
-          "word_index": 2,
-          "phonemes": [
-            "IH",
-            "K",
-            "S",
-            "P",
-            "EH",
-            "K",
-            "T",
-            "AH",
-            "D"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 3,
-          "syllables": [
-            {
-              "unit_id": 3,
-              "unit": "ex",
-              "word": "expected",
-              "word_index": 2,
-              "syllable_index": 0,
-              "phonemes": [
-                "IH",
                 "K",
-                "S"
+                "R",
+                "EY"
               ],
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 4,
-              "unit": "pec",
-              "word": "expected",
-              "word_index": 2,
+              "unit_id": 1,
+              "unit": "zy",
+              "word": "crazy",
+              "word_index": 0,
               "syllable_index": 1,
               "phonemes": [
-                "P",
-                "EH",
-                "K"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 5,
-              "unit": "ted",
-              "word": "expected",
-              "word_index": 2,
-              "syllable_index": 2,
-              "phonemes": [
-                "T",
-                "AH",
-                "D"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "I",
-          "word_index": 3,
-          "phonemes": [
-            "AY"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 6,
-              "unit": "i",
-              "word": "I",
-              "word_index": 3,
-              "syllable_index": 0,
-              "phonemes": [
-                "AY"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "go",
-          "word_index": 4,
-          "phonemes": [
-            "G",
-            "OW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 7,
-              "unit": "go",
-              "word": "go",
-              "word_index": 4,
-              "syllable_index": 0,
-              "phonemes": [
-                "G",
-                "OW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "so",
-          "word_index": 5,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 8,
-              "unit": "so",
-              "word": "so",
-              "word_index": 5,
-              "syllable_index": 0,
-              "phonemes": [
-                "S",
-                "OW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "mad",
-          "word_index": 6,
-          "phonemes": [
-            "M",
-            "AE",
-            "D"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 9,
-              "unit": "mad",
-              "word": "mad",
-              "word_index": 6,
-              "syllable_index": 0,
-              "phonemes": [
-                "M",
-                "AE",
-                "D"
+                "Z",
+                "IY"
               ],
               "phoneme_source": "cmudict"
             }
@@ -4165,7 +3759,7 @@
         },
         {
           "word": "for",
-          "word_index": 7,
+          "word_index": 1,
           "phonemes": [
             "F",
             "AO",
@@ -4175,10 +3769,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 2,
               "unit": "for",
               "word": "for",
-              "word_index": 7,
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
                 "F",
@@ -4191,7 +3785,7 @@
         },
         {
           "word": "you",
-          "word_index": 8,
+          "word_index": 2,
           "phonemes": [
             "Y",
             "UW"
@@ -4200,10 +3794,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 3,
               "unit": "you",
               "word": "you",
-              "word_index": 8,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "Y",
@@ -4214,43 +3808,73 @@
           ]
         },
         {
-          "word": "mountains",
-          "word_index": 9,
+          "word": "as",
+          "word_index": 3,
           "phonemes": [
-            "M",
-            "AW",
-            "N",
-            "T",
-            "AH",
-            "N",
+            "AE",
             "Z"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 2,
+          "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 12,
-              "unit": "moun",
-              "word": "mountains",
-              "word_index": 9,
+              "unit_id": 4,
+              "unit": "as",
+              "word": "as",
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AW",
-                "N"
+                "AE",
+                "Z"
               ],
               "phoneme_source": "cmudict"
-            },
+            }
+          ]
+        },
+        {
+          "word": "to",
+          "word_index": 4,
+          "phonemes": [
+            "T",
+            "UW"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
             {
-              "unit_id": 13,
-              "unit": "tains",
-              "word": "mountains",
-              "word_index": 9,
-              "syllable_index": 1,
+              "unit_id": 5,
+              "unit": "to",
+              "word": "to",
+              "word_index": 4,
+              "syllable_index": 0,
               "phonemes": [
                 "T",
-                "AH",
-                "N",
+                "UW"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "cause",
+          "word_index": 5,
+          "phonemes": [
+            "K",
+            "AA",
+            "Z"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 6,
+              "unit": "cause",
+              "word": "cause",
+              "word_index": 5,
+              "syllable_index": 0,
+              "phonemes": [
+                "K",
+                "AA",
                 "Z"
               ],
               "phoneme_source": "cmudict"
@@ -4262,12 +3886,12 @@
     {
       "id": 12,
       "zh": "没有你根本不想逃我的大脑",
-      "literal_en": "Without you, my mind simply refuses to flee",
-      "text": "Without you my mind refuses to flee",
+      "literal_en": "Without you, my mind has no desire to flee at all",
+      "text": "Without you my no desire to flee at all",
       "note_count": 13,
       "phrase_duration": 5.536,
       "unit_type": "syllable",
-      "unit_count": 10,
+      "unit_count": 12,
       "units": [
         {
           "unit_id": 0,
@@ -4320,53 +3944,48 @@
         },
         {
           "unit_id": 4,
-          "unit": "mind",
-          "word": "mind",
+          "unit": "no",
+          "word": "no",
           "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
-            "M",
-            "AY",
             "N",
-            "D"
+            "OW"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 5,
-          "unit": "re",
-          "word": "refuses",
+          "unit": "de",
+          "word": "desire",
           "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
-            "R",
-            "AH",
-            "F"
+            "D",
+            "IH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 6,
-          "unit": "fu",
-          "word": "refuses",
+          "unit": "si",
+          "word": "desire",
           "word_index": 4,
           "syllable_index": 1,
           "phonemes": [
-            "Y",
-            "UW"
+            "Z",
+            "AY"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 7,
-          "unit": "ses",
-          "word": "refuses",
+          "unit": "re",
+          "word": "desire",
           "word_index": 4,
           "syllable_index": 2,
           "phonemes": [
-            "Z",
-            "AH",
-            "Z"
+            "ER"
           ],
           "phoneme_source": "cmudict"
         },
@@ -4392,6 +4011,30 @@
             "F",
             "L",
             "IY"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 10,
+          "unit": "at",
+          "word": "at",
+          "word_index": 7,
+          "syllable_index": 0,
+          "phonemes": [
+            "AE",
+            "T"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 11,
+          "unit": "all",
+          "word": "all",
+          "word_index": 8,
+          "syllable_index": 0,
+          "phonemes": [
+            "AO",
+            "L"
           ],
           "phoneme_source": "cmudict"
         }
@@ -4486,84 +4129,74 @@
           ]
         },
         {
-          "word": "mind",
+          "word": "no",
           "word_index": 3,
           "phonemes": [
-            "M",
-            "AY",
             "N",
-            "D"
+            "OW"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 4,
-              "unit": "mind",
-              "word": "mind",
+              "unit": "no",
+              "word": "no",
               "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AY",
                 "N",
-                "D"
+                "OW"
               ],
               "phoneme_source": "cmudict"
             }
           ]
         },
         {
-          "word": "refuses",
+          "word": "desire",
           "word_index": 4,
           "phonemes": [
-            "R",
-            "AH",
-            "F",
-            "Y",
-            "UW",
+            "D",
+            "IH",
             "Z",
-            "AH",
-            "Z"
+            "AY",
+            "ER"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 3,
           "syllables": [
             {
               "unit_id": 5,
-              "unit": "re",
-              "word": "refuses",
+              "unit": "de",
+              "word": "desire",
               "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
-                "R",
-                "AH",
-                "F"
+                "D",
+                "IH"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 6,
-              "unit": "fu",
-              "word": "refuses",
+              "unit": "si",
+              "word": "desire",
               "word_index": 4,
               "syllable_index": 1,
               "phonemes": [
-                "Y",
-                "UW"
+                "Z",
+                "AY"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 7,
-              "unit": "ses",
-              "word": "refuses",
+              "unit": "re",
+              "word": "desire",
               "word_index": 4,
               "syllable_index": 2,
               "phonemes": [
-                "Z",
-                "AH",
-                "Z"
+                "ER"
               ],
               "phoneme_source": "cmudict"
             }
@@ -4618,14 +4251,62 @@
               "phoneme_source": "cmudict"
             }
           ]
+        },
+        {
+          "word": "at",
+          "word_index": 7,
+          "phonemes": [
+            "AE",
+            "T"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 10,
+              "unit": "at",
+              "word": "at",
+              "word_index": 7,
+              "syllable_index": 0,
+              "phonemes": [
+                "AE",
+                "T"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "all",
+          "word_index": 8,
+          "phonemes": [
+            "AO",
+            "L"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 11,
+              "unit": "all",
+              "word": "all",
+              "word_index": 8,
+              "syllable_index": 0,
+              "phonemes": [
+                "AO",
+                "L"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
         }
       ]
     },
     {
       "id": 13,
       "zh": "为了你已经疯狂到脉搏心跳没有你",
-      "literal_en": "For you, I have gone so crazy that without you, my pulse and heartbeat",
-      "text": "For you I've gone so crazy that without you my pulse and heartbeat",
+      "literal_en": "For you, I've gone so crazy that my pulse and heartbeat without you",
+      "text": "For you I've gone so crazy that my pulse and heartbeat without you",
       "note_count": 15,
       "phrase_duration": 6.171,
       "unit_type": "syllable",
@@ -4733,46 +4414,9 @@
         },
         {
           "unit_id": 8,
-          "unit": "wit",
-          "word": "without",
-          "word_index": 7,
-          "syllable_index": 0,
-          "phonemes": [
-            "W",
-            "IH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 9,
-          "unit": "hout",
-          "word": "without",
-          "word_index": 7,
-          "syllable_index": 1,
-          "phonemes": [
-            "TH",
-            "AW",
-            "T"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 10,
-          "unit": "you",
-          "word": "you",
-          "word_index": 8,
-          "syllable_index": 0,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 11,
           "unit": "my",
           "word": "my",
-          "word_index": 9,
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
             "M",
@@ -4781,10 +4425,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
+          "unit_id": 9,
           "unit": "pulse",
           "word": "pulse",
-          "word_index": 10,
+          "word_index": 8,
           "syllable_index": 0,
           "phonemes": [
             "P",
@@ -4795,10 +4439,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 13,
+          "unit_id": 10,
           "unit": "and",
           "word": "and",
-          "word_index": 11,
+          "word_index": 9,
           "syllable_index": 0,
           "phonemes": [
             "AH",
@@ -4808,10 +4452,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 14,
+          "unit_id": 11,
           "unit": "heart",
           "word": "heartbeat",
-          "word_index": 12,
+          "word_index": 10,
           "syllable_index": 0,
           "phonemes": [
             "HH",
@@ -4822,15 +4466,52 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 15,
+          "unit_id": 12,
           "unit": "beat",
           "word": "heartbeat",
-          "word_index": 12,
+          "word_index": 10,
           "syllable_index": 1,
           "phonemes": [
             "B",
             "IY",
             "T"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 13,
+          "unit": "wit",
+          "word": "without",
+          "word_index": 11,
+          "syllable_index": 0,
+          "phonemes": [
+            "W",
+            "IH"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 14,
+          "unit": "hout",
+          "word": "without",
+          "word_index": 11,
+          "syllable_index": 1,
+          "phonemes": [
+            "TH",
+            "AW",
+            "T"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 15,
+          "unit": "you",
+          "word": "you",
+          "word_index": 12,
+          "syllable_index": 0,
+          "phonemes": [
+            "Y",
+            "UW"
           ],
           "phoneme_source": "cmudict"
         }
@@ -5027,72 +4708,8 @@
           ]
         },
         {
-          "word": "without",
-          "word_index": 7,
-          "phonemes": [
-            "W",
-            "IH",
-            "TH",
-            "AW",
-            "T"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 2,
-          "syllables": [
-            {
-              "unit_id": 8,
-              "unit": "wit",
-              "word": "without",
-              "word_index": 7,
-              "syllable_index": 0,
-              "phonemes": [
-                "W",
-                "IH"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 9,
-              "unit": "hout",
-              "word": "without",
-              "word_index": 7,
-              "syllable_index": 1,
-              "phonemes": [
-                "TH",
-                "AW",
-                "T"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "you",
-          "word_index": 8,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 10,
-              "unit": "you",
-              "word": "you",
-              "word_index": 8,
-              "syllable_index": 0,
-              "phonemes": [
-                "Y",
-                "UW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "my",
-          "word_index": 9,
+          "word_index": 7,
           "phonemes": [
             "M",
             "AY"
@@ -5101,10 +4718,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 8,
               "unit": "my",
               "word": "my",
-              "word_index": 9,
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
                 "M",
@@ -5116,7 +4733,7 @@
         },
         {
           "word": "pulse",
-          "word_index": 10,
+          "word_index": 8,
           "phonemes": [
             "P",
             "AH",
@@ -5127,10 +4744,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 12,
+              "unit_id": 9,
               "unit": "pulse",
               "word": "pulse",
-              "word_index": 10,
+              "word_index": 8,
               "syllable_index": 0,
               "phonemes": [
                 "P",
@@ -5144,7 +4761,7 @@
         },
         {
           "word": "and",
-          "word_index": 11,
+          "word_index": 9,
           "phonemes": [
             "AH",
             "N",
@@ -5154,10 +4771,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 13,
+              "unit_id": 10,
               "unit": "and",
               "word": "and",
-              "word_index": 11,
+              "word_index": 9,
               "syllable_index": 0,
               "phonemes": [
                 "AH",
@@ -5170,7 +4787,7 @@
         },
         {
           "word": "heartbeat",
-          "word_index": 12,
+          "word_index": 10,
           "phonemes": [
             "HH",
             "AA",
@@ -5184,10 +4801,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 14,
+              "unit_id": 11,
               "unit": "heart",
               "word": "heartbeat",
-              "word_index": 12,
+              "word_index": 10,
               "syllable_index": 0,
               "phonemes": [
                 "HH",
@@ -5198,15 +4815,79 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 15,
+              "unit_id": 12,
               "unit": "beat",
               "word": "heartbeat",
-              "word_index": 12,
+              "word_index": 10,
               "syllable_index": 1,
               "phonemes": [
                 "B",
                 "IY",
                 "T"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "without",
+          "word_index": 11,
+          "phonemes": [
+            "W",
+            "IH",
+            "TH",
+            "AW",
+            "T"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 2,
+          "syllables": [
+            {
+              "unit_id": 13,
+              "unit": "wit",
+              "word": "without",
+              "word_index": 11,
+              "syllable_index": 0,
+              "phonemes": [
+                "W",
+                "IH"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 14,
+              "unit": "hout",
+              "word": "without",
+              "word_index": 11,
+              "syllable_index": 1,
+              "phonemes": [
+                "TH",
+                "AW",
+                "T"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "you",
+          "word_index": 12,
+          "phonemes": [
+            "Y",
+            "UW"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 15,
+              "unit": "you",
+              "word": "you",
+              "word_index": 12,
+              "syllable_index": 0,
+              "phonemes": [
+                "Y",
+                "UW"
               ],
               "phoneme_source": "cmudict"
             }
@@ -5217,137 +4898,191 @@
     {
       "id": 14,
       "zh": "根本不重要",
-      "literal_en": "simply do not matter at all",
-      "text": "simply don't matter at all",
+      "literal_en": "are completely unimportant",
+      "text": "are completely unimportant",
       "note_count": 5,
       "phrase_duration": 5.073,
       "unit_type": "syllable",
-      "unit_count": 7,
+      "unit_count": 8,
       "units": [
         {
           "unit_id": 0,
-          "unit": "simp",
-          "word": "simply",
+          "unit": "are",
+          "word": "are",
           "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
-            "S",
-            "IH",
+            "AA",
+            "R"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 1,
+          "unit": "comp",
+          "word": "completely",
+          "word_index": 1,
+          "syllable_index": 0,
+          "phonemes": [
+            "K",
+            "AH",
             "M",
             "P"
           ],
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 1,
-          "unit": "ly",
-          "word": "simply",
-          "word_index": 0,
+          "unit_id": 2,
+          "unit": "lete",
+          "word": "completely",
+          "word_index": 1,
           "syllable_index": 1,
           "phonemes": [
             "L",
-            "IY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 2,
-          "unit": "don't",
-          "word": "don't",
-          "word_index": 1,
-          "syllable_index": 0,
-          "phonemes": [
-            "D",
-            "OW",
-            "N",
+            "IY",
             "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 3,
-          "unit": "mat",
-          "word": "matter",
-          "word_index": 2,
-          "syllable_index": 0,
+          "unit": "ly",
+          "word": "completely",
+          "word_index": 1,
+          "syllable_index": 2,
           "phonemes": [
-            "M",
-            "AE"
+            "L",
+            "IY"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 4,
-          "unit": "ter",
-          "word": "matter",
+          "unit": "u",
+          "word": "unimportant",
           "word_index": 2,
-          "syllable_index": 1,
+          "syllable_index": 0,
           "phonemes": [
-            "T",
-            "ER"
+            "AH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 5,
-          "unit": "at",
-          "word": "at",
-          "word_index": 3,
-          "syllable_index": 0,
+          "unit": "nim",
+          "word": "unimportant",
+          "word_index": 2,
+          "syllable_index": 1,
           "phonemes": [
-            "AE",
-            "T"
+            "N",
+            "IH",
+            "M"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 6,
-          "unit": "all",
-          "word": "all",
-          "word_index": 4,
-          "syllable_index": 0,
+          "unit": "por",
+          "word": "unimportant",
+          "word_index": 2,
+          "syllable_index": 2,
           "phonemes": [
+            "P",
             "AO",
-            "L"
+            "R"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 7,
+          "unit": "tant",
+          "word": "unimportant",
+          "word_index": 2,
+          "syllable_index": 3,
+          "phonemes": [
+            "T",
+            "AH",
+            "N",
+            "T"
           ],
           "phoneme_source": "cmudict"
         }
       ],
       "tokens": [
         {
-          "word": "simply",
+          "word": "are",
           "word_index": 0,
           "phonemes": [
-            "S",
-            "IH",
+            "AA",
+            "R"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 0,
+              "unit": "are",
+              "word": "are",
+              "word_index": 0,
+              "syllable_index": 0,
+              "phonemes": [
+                "AA",
+                "R"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "completely",
+          "word_index": 1,
+          "phonemes": [
+            "K",
+            "AH",
             "M",
             "P",
+            "L",
+            "IY",
+            "T",
             "L",
             "IY"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 2,
+          "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 0,
-              "unit": "simp",
-              "word": "simply",
-              "word_index": 0,
+              "unit_id": 1,
+              "unit": "comp",
+              "word": "completely",
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
-                "S",
-                "IH",
+                "K",
+                "AH",
                 "M",
                 "P"
               ],
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 1,
-              "unit": "ly",
-              "word": "simply",
-              "word_index": 0,
+              "unit_id": 2,
+              "unit": "lete",
+              "word": "completely",
+              "word_index": 1,
               "syllable_index": 1,
+              "phonemes": [
+                "L",
+                "IY",
+                "T"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 3,
+              "unit": "ly",
+              "word": "completely",
+              "word_index": 1,
+              "syllable_index": 2,
               "phonemes": [
                 "L",
                 "IY"
@@ -5357,114 +5092,72 @@
           ]
         },
         {
-          "word": "don't",
-          "word_index": 1,
+          "word": "unimportant",
+          "word_index": 2,
           "phonemes": [
-            "D",
-            "OW",
+            "AH",
+            "N",
+            "IH",
+            "M",
+            "P",
+            "AO",
+            "R",
+            "T",
+            "AH",
             "N",
             "T"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 1,
+          "syllable_count": 4,
           "syllables": [
             {
-              "unit_id": 2,
-              "unit": "don't",
-              "word": "don't",
-              "word_index": 1,
-              "syllable_index": 0,
-              "phonemes": [
-                "D",
-                "OW",
-                "N",
-                "T"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "matter",
-          "word_index": 2,
-          "phonemes": [
-            "M",
-            "AE",
-            "T",
-            "ER"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 2,
-          "syllables": [
-            {
-              "unit_id": 3,
-              "unit": "mat",
-              "word": "matter",
+              "unit_id": 4,
+              "unit": "u",
+              "word": "unimportant",
               "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AE"
+                "AH"
               ],
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 4,
-              "unit": "ter",
-              "word": "matter",
+              "unit_id": 5,
+              "unit": "nim",
+              "word": "unimportant",
               "word_index": 2,
               "syllable_index": 1,
               "phonemes": [
-                "T",
-                "ER"
+                "N",
+                "IH",
+                "M"
               ],
               "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "at",
-          "word_index": 3,
-          "phonemes": [
-            "AE",
-            "T"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 5,
-              "unit": "at",
-              "word": "at",
-              "word_index": 3,
-              "syllable_index": 0,
-              "phonemes": [
-                "AE",
-                "T"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "all",
-          "word_index": 4,
-          "phonemes": [
-            "AO",
-            "L"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
+            },
             {
               "unit_id": 6,
-              "unit": "all",
-              "word": "all",
-              "word_index": 4,
-              "syllable_index": 0,
+              "unit": "por",
+              "word": "unimportant",
+              "word_index": 2,
+              "syllable_index": 2,
               "phonemes": [
+                "P",
                 "AO",
-                "L"
+                "R"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 7,
+              "unit": "tant",
+              "word": "unimportant",
+              "word_index": 2,
+              "syllable_index": 3,
+              "phonemes": [
+                "T",
+                "AH",
+                "N",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
@@ -5788,30 +5481,18 @@
     {
       "id": 16,
       "zh": "足够抵挡天旋地转",
-      "literal_en": "is enough to withstand the dizzying spin",
-      "text": "is enough to withstand dizzying spin",
+      "literal_en": "is enough to withstand the dizzying spin of the world",
+      "text": "enough to withstand dizzying spin of world",
       "note_count": 8,
       "phrase_duration": 6.936,
       "unit_type": "syllable",
-      "unit_count": 10,
+      "unit_count": 11,
       "units": [
         {
           "unit_id": 0,
-          "unit": "is",
-          "word": "is",
-          "word_index": 0,
-          "syllable_index": 0,
-          "phonemes": [
-            "IH",
-            "Z"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 1,
           "unit": "e",
           "word": "enough",
-          "word_index": 1,
+          "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
             "IH"
@@ -5819,10 +5500,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 2,
+          "unit_id": 1,
           "unit": "nough",
           "word": "enough",
-          "word_index": 1,
+          "word_index": 0,
           "syllable_index": 1,
           "phonemes": [
             "N",
@@ -5832,10 +5513,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 3,
+          "unit_id": 2,
           "unit": "to",
           "word": "to",
-          "word_index": 2,
+          "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
             "T",
@@ -5844,10 +5525,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 4,
+          "unit_id": 3,
           "unit": "withs",
           "word": "withstand",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "W",
@@ -5858,10 +5539,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 4,
           "unit": "tand",
           "word": "withstand",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 1,
           "phonemes": [
             "T",
@@ -5872,10 +5553,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 5,
           "unit": "diz",
           "word": "dizzying",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "D",
@@ -5884,10 +5565,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 6,
           "unit": "zy",
           "word": "dizzying",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 1,
           "phonemes": [
             "Z",
@@ -5896,10 +5577,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 7,
           "unit": "ing",
           "word": "dizzying",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 2,
           "phonemes": [
             "IH",
@@ -5908,10 +5589,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 8,
           "unit": "spin",
           "word": "spin",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "S",
@@ -5920,36 +5601,38 @@
             "N"
           ],
           "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 9,
+          "unit": "of",
+          "word": "of",
+          "word_index": 5,
+          "syllable_index": 0,
+          "phonemes": [
+            "AH",
+            "V"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 10,
+          "unit": "world",
+          "word": "world",
+          "word_index": 6,
+          "syllable_index": 0,
+          "phonemes": [
+            "W",
+            "ER",
+            "L",
+            "D"
+          ],
+          "phoneme_source": "cmudict"
         }
       ],
       "tokens": [
         {
-          "word": "is",
-          "word_index": 0,
-          "phonemes": [
-            "IH",
-            "Z"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 0,
-              "unit": "is",
-              "word": "is",
-              "word_index": 0,
-              "syllable_index": 0,
-              "phonemes": [
-                "IH",
-                "Z"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "enough",
-          "word_index": 1,
+          "word_index": 0,
           "phonemes": [
             "IH",
             "N",
@@ -5960,10 +5643,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 1,
+              "unit_id": 0,
               "unit": "e",
               "word": "enough",
-              "word_index": 1,
+              "word_index": 0,
               "syllable_index": 0,
               "phonemes": [
                 "IH"
@@ -5971,10 +5654,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 2,
+              "unit_id": 1,
               "unit": "nough",
               "word": "enough",
-              "word_index": 1,
+              "word_index": 0,
               "syllable_index": 1,
               "phonemes": [
                 "N",
@@ -5987,7 +5670,7 @@
         },
         {
           "word": "to",
-          "word_index": 2,
+          "word_index": 1,
           "phonemes": [
             "T",
             "UW"
@@ -5996,10 +5679,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 3,
+              "unit_id": 2,
               "unit": "to",
               "word": "to",
-              "word_index": 2,
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
                 "T",
@@ -6011,7 +5694,7 @@
         },
         {
           "word": "withstand",
-          "word_index": 3,
+          "word_index": 2,
           "phonemes": [
             "W",
             "IH",
@@ -6026,10 +5709,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 4,
+              "unit_id": 3,
               "unit": "withs",
               "word": "withstand",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "W",
@@ -6040,10 +5723,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 5,
+              "unit_id": 4,
               "unit": "tand",
               "word": "withstand",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 1,
               "phonemes": [
                 "T",
@@ -6057,7 +5740,7 @@
         },
         {
           "word": "dizzying",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "D",
             "IH",
@@ -6070,10 +5753,10 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 6,
+              "unit_id": 5,
               "unit": "diz",
               "word": "dizzying",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "D",
@@ -6082,10 +5765,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 6,
               "unit": "zy",
               "word": "dizzying",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 1,
               "phonemes": [
                 "Z",
@@ -6094,10 +5777,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 8,
+              "unit_id": 7,
               "unit": "ing",
               "word": "dizzying",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 2,
               "phonemes": [
                 "IH",
@@ -6109,7 +5792,7 @@
         },
         {
           "word": "spin",
-          "word_index": 5,
+          "word_index": 4,
           "phonemes": [
             "S",
             "P",
@@ -6120,10 +5803,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 9,
+              "unit_id": 8,
               "unit": "spin",
               "word": "spin",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "S",
@@ -6134,18 +5817,70 @@
               "phoneme_source": "cmudict"
             }
           ]
+        },
+        {
+          "word": "of",
+          "word_index": 5,
+          "phonemes": [
+            "AH",
+            "V"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 9,
+              "unit": "of",
+              "word": "of",
+              "word_index": 5,
+              "syllable_index": 0,
+              "phonemes": [
+                "AH",
+                "V"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "world",
+          "word_index": 6,
+          "phonemes": [
+            "W",
+            "ER",
+            "L",
+            "D"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 10,
+              "unit": "world",
+              "word": "world",
+              "word_index": 6,
+              "syllable_index": 0,
+              "phonemes": [
+                "W",
+                "ER",
+                "L",
+                "D"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
         }
       ]
     },
     {
       "id": 17,
       "zh": "一种执迷不放手的倔强足以",
-      "literal_en": "A stubborn obsession of refusing to let go is enough to",
-      "text": "stubborn obsession of refusing to let go enough",
+      "literal_en": "A stubborn refusal to let go is enough to",
+      "text": "stubborn refusal to let go enough",
       "note_count": 14,
       "phrase_duration": 4.782,
       "unit_type": "syllable",
-      "unit_count": 14,
+      "unit_count": 10,
       "units": [
         {
           "unit_id": 0,
@@ -6175,58 +5910,9 @@
         },
         {
           "unit_id": 2,
-          "unit": "ob",
-          "word": "obsession",
-          "word_index": 1,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH",
-            "B"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 3,
-          "unit": "ses",
-          "word": "obsession",
-          "word_index": 1,
-          "syllable_index": 1,
-          "phonemes": [
-            "S",
-            "EH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 4,
-          "unit": "sion",
-          "word": "obsession",
-          "word_index": 1,
-          "syllable_index": 2,
-          "phonemes": [
-            "SH",
-            "AH",
-            "N"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 5,
-          "unit": "of",
-          "word": "of",
-          "word_index": 2,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH",
-            "V"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 6,
           "unit": "re",
-          "word": "refusing",
-          "word_index": 3,
+          "word": "refusal",
+          "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
             "R",
@@ -6236,10 +5922,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 3,
           "unit": "fu",
-          "word": "refusing",
-          "word_index": 3,
+          "word": "refusal",
+          "word_index": 1,
           "syllable_index": 1,
           "phonemes": [
             "Y",
@@ -6248,23 +5934,23 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
-          "unit": "sing",
-          "word": "refusing",
-          "word_index": 3,
+          "unit_id": 4,
+          "unit": "sal",
+          "word": "refusal",
+          "word_index": 1,
           "syllable_index": 2,
           "phonemes": [
             "Z",
-            "IH",
-            "NG"
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 5,
           "unit": "to",
           "word": "to",
-          "word_index": 4,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "T",
@@ -6273,10 +5959,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 10,
+          "unit_id": 6,
           "unit": "let",
           "word": "let",
-          "word_index": 5,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "L",
@@ -6286,10 +5972,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
+          "unit_id": 7,
           "unit": "go",
           "word": "go",
-          "word_index": 6,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "G",
@@ -6298,10 +5984,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
+          "unit_id": 8,
           "unit": "e",
           "word": "enough",
-          "word_index": 7,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "IH"
@@ -6309,10 +5995,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 13,
+          "unit_id": 9,
           "unit": "nough",
           "word": "enough",
-          "word_index": 7,
+          "word_index": 5,
           "syllable_index": 1,
           "phonemes": [
             "N",
@@ -6366,86 +6052,8 @@
           ]
         },
         {
-          "word": "obsession",
+          "word": "refusal",
           "word_index": 1,
-          "phonemes": [
-            "AH",
-            "B",
-            "S",
-            "EH",
-            "SH",
-            "AH",
-            "N"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 3,
-          "syllables": [
-            {
-              "unit_id": 2,
-              "unit": "ob",
-              "word": "obsession",
-              "word_index": 1,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH",
-                "B"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 3,
-              "unit": "ses",
-              "word": "obsession",
-              "word_index": 1,
-              "syllable_index": 1,
-              "phonemes": [
-                "S",
-                "EH"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 4,
-              "unit": "sion",
-              "word": "obsession",
-              "word_index": 1,
-              "syllable_index": 2,
-              "phonemes": [
-                "SH",
-                "AH",
-                "N"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "of",
-          "word_index": 2,
-          "phonemes": [
-            "AH",
-            "V"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 5,
-              "unit": "of",
-              "word": "of",
-              "word_index": 2,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH",
-                "V"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "refusing",
-          "word_index": 3,
           "phonemes": [
             "R",
             "AH",
@@ -6453,17 +6061,17 @@
             "Y",
             "UW",
             "Z",
-            "IH",
-            "NG"
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 6,
+              "unit_id": 2,
               "unit": "re",
-              "word": "refusing",
-              "word_index": 3,
+              "word": "refusal",
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
                 "R",
@@ -6473,10 +6081,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 3,
               "unit": "fu",
-              "word": "refusing",
-              "word_index": 3,
+              "word": "refusal",
+              "word_index": 1,
               "syllable_index": 1,
               "phonemes": [
                 "Y",
@@ -6485,15 +6093,15 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 8,
-              "unit": "sing",
-              "word": "refusing",
-              "word_index": 3,
+              "unit_id": 4,
+              "unit": "sal",
+              "word": "refusal",
+              "word_index": 1,
               "syllable_index": 2,
               "phonemes": [
                 "Z",
-                "IH",
-                "NG"
+                "AH",
+                "L"
               ],
               "phoneme_source": "cmudict"
             }
@@ -6501,7 +6109,7 @@
         },
         {
           "word": "to",
-          "word_index": 4,
+          "word_index": 2,
           "phonemes": [
             "T",
             "UW"
@@ -6510,10 +6118,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 9,
+              "unit_id": 5,
               "unit": "to",
               "word": "to",
-              "word_index": 4,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "T",
@@ -6525,7 +6133,7 @@
         },
         {
           "word": "let",
-          "word_index": 5,
+          "word_index": 3,
           "phonemes": [
             "L",
             "EH",
@@ -6535,10 +6143,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 6,
               "unit": "let",
               "word": "let",
-              "word_index": 5,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "L",
@@ -6551,7 +6159,7 @@
         },
         {
           "word": "go",
-          "word_index": 6,
+          "word_index": 4,
           "phonemes": [
             "G",
             "OW"
@@ -6560,10 +6168,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 7,
               "unit": "go",
               "word": "go",
-              "word_index": 6,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "G",
@@ -6575,7 +6183,7 @@
         },
         {
           "word": "enough",
-          "word_index": 7,
+          "word_index": 5,
           "phonemes": [
             "IH",
             "N",
@@ -6586,10 +6194,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 12,
+              "unit_id": 8,
               "unit": "e",
               "word": "enough",
-              "word_index": 7,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "IH"
@@ -6597,10 +6205,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 13,
+              "unit_id": 9,
               "unit": "nough",
               "word": "enough",
-              "word_index": 7,
+              "word_index": 5,
               "syllable_index": 1,
               "phonemes": [
                 "N",
@@ -7298,17 +6906,17 @@
     {
       "id": 20,
       "zh": "颠簸却如此忘我",
-      "literal_en": "turbulent yet so utterly absorbed",
-      "text": "turbulent yet so utterly absorbed",
+      "literal_en": "Turbulent yet so completely lost in it",
+      "text": "Turbulent yet so completely lost in it",
       "note_count": 11,
       "phrase_duration": 5.721,
       "unit_type": "syllable",
-      "unit_count": 10,
+      "unit_count": 11,
       "units": [
         {
           "unit_id": 0,
           "unit": "tur",
-          "word": "turbulent",
+          "word": "Turbulent",
           "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
@@ -7321,7 +6929,7 @@
         {
           "unit_id": 1,
           "unit": "bu",
-          "word": "turbulent",
+          "word": "Turbulent",
           "word_index": 0,
           "syllable_index": 1,
           "phonemes": [
@@ -7333,7 +6941,7 @@
         {
           "unit_id": 2,
           "unit": "lent",
-          "word": "turbulent",
+          "word": "Turbulent",
           "word_index": 0,
           "syllable_index": 2,
           "phonemes": [
@@ -7371,31 +6979,35 @@
         },
         {
           "unit_id": 5,
-          "unit": "ut",
-          "word": "utterly",
+          "unit": "comp",
+          "word": "completely",
           "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
-            "AH"
+            "K",
+            "AH",
+            "M",
+            "P"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 6,
-          "unit": "ter",
-          "word": "utterly",
+          "unit": "lete",
+          "word": "completely",
           "word_index": 3,
           "syllable_index": 1,
           "phonemes": [
-            "T",
-            "ER"
+            "L",
+            "IY",
+            "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 7,
           "unit": "ly",
-          "word": "utterly",
+          "word": "completely",
           "word_index": 3,
           "syllable_index": 2,
           "phonemes": [
@@ -7406,35 +7018,46 @@
         },
         {
           "unit_id": 8,
-          "unit": "absor",
-          "word": "absorbed",
+          "unit": "lost",
+          "word": "lost",
           "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
-            "AH",
-            "B"
+            "L",
+            "AO",
+            "S",
+            "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 9,
-          "unit": "bed",
-          "word": "absorbed",
-          "word_index": 4,
-          "syllable_index": 1,
+          "unit": "in",
+          "word": "in",
+          "word_index": 5,
+          "syllable_index": 0,
           "phonemes": [
-            "Z",
-            "AO",
-            "R",
-            "B",
-            "D"
+            "IH",
+            "N"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 10,
+          "unit": "it",
+          "word": "it",
+          "word_index": 6,
+          "syllable_index": 0,
+          "phonemes": [
+            "IH",
+            "T"
           ],
           "phoneme_source": "cmudict"
         }
       ],
       "tokens": [
         {
-          "word": "turbulent",
+          "word": "Turbulent",
           "word_index": 0,
           "phonemes": [
             "T",
@@ -7453,7 +7076,7 @@
             {
               "unit_id": 0,
               "unit": "tur",
-              "word": "turbulent",
+              "word": "Turbulent",
               "word_index": 0,
               "syllable_index": 0,
               "phonemes": [
@@ -7466,7 +7089,7 @@
             {
               "unit_id": 1,
               "unit": "bu",
-              "word": "turbulent",
+              "word": "Turbulent",
               "word_index": 0,
               "syllable_index": 1,
               "phonemes": [
@@ -7478,7 +7101,7 @@
             {
               "unit_id": 2,
               "unit": "lent",
-              "word": "turbulent",
+              "word": "Turbulent",
               "word_index": 0,
               "syllable_index": 2,
               "phonemes": [
@@ -7542,12 +7165,16 @@
           ]
         },
         {
-          "word": "utterly",
+          "word": "completely",
           "word_index": 3,
           "phonemes": [
+            "K",
             "AH",
+            "M",
+            "P",
+            "L",
+            "IY",
             "T",
-            "ER",
             "L",
             "IY"
           ],
@@ -7556,31 +7183,35 @@
           "syllables": [
             {
               "unit_id": 5,
-              "unit": "ut",
-              "word": "utterly",
+              "unit": "comp",
+              "word": "completely",
               "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
-                "AH"
+                "K",
+                "AH",
+                "M",
+                "P"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 6,
-              "unit": "ter",
-              "word": "utterly",
+              "unit": "lete",
+              "word": "completely",
               "word_index": 3,
               "syllable_index": 1,
               "phonemes": [
-                "T",
-                "ER"
+                "L",
+                "IY",
+                "T"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 7,
               "unit": "ly",
-              "word": "utterly",
+              "word": "completely",
               "word_index": 3,
               "syllable_index": 2,
               "phonemes": [
@@ -7592,44 +7223,76 @@
           ]
         },
         {
-          "word": "absorbed",
+          "word": "lost",
           "word_index": 4,
           "phonemes": [
-            "AH",
-            "B",
-            "Z",
+            "L",
             "AO",
-            "R",
-            "B",
-            "D"
+            "S",
+            "T"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 2,
+          "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 8,
-              "unit": "absor",
-              "word": "absorbed",
+              "unit": "lost",
+              "word": "lost",
               "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
-                "AH",
-                "B"
+                "L",
+                "AO",
+                "S",
+                "T"
               ],
               "phoneme_source": "cmudict"
-            },
+            }
+          ]
+        },
+        {
+          "word": "in",
+          "word_index": 5,
+          "phonemes": [
+            "IH",
+            "N"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
             {
               "unit_id": 9,
-              "unit": "bed",
-              "word": "absorbed",
-              "word_index": 4,
-              "syllable_index": 1,
+              "unit": "in",
+              "word": "in",
+              "word_index": 5,
+              "syllable_index": 0,
               "phonemes": [
-                "Z",
-                "AO",
-                "R",
-                "B",
-                "D"
+                "IH",
+                "N"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "it",
+          "word_index": 6,
+          "phonemes": [
+            "IH",
+            "T"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 10,
+              "unit": "it",
+              "word": "it",
+              "word_index": 6,
+              "syllable_index": 0,
+              "phonemes": [
+                "IH",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
@@ -7640,52 +7303,28 @@
     {
       "id": 21,
       "zh": "缘分让我们相遇乱世以外",
-      "literal_en": "Destiny brought us together outside the chaotic world",
-      "text": "Destiny brought us together outside chaotic world",
+      "literal_en": "Fate brought us together outside the chaotic world",
+      "text": "Fate brought us together outside the chaotic world",
       "note_count": 11,
       "phrase_duration": 5.499,
       "unit_type": "syllable",
-      "unit_count": 14,
+      "unit_count": 13,
       "units": [
         {
           "unit_id": 0,
-          "unit": "des",
-          "word": "Destiny",
+          "unit": "fate",
+          "word": "Fate",
           "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
-            "D",
-            "EH",
-            "S"
+            "F",
+            "EY",
+            "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 1,
-          "unit": "ti",
-          "word": "Destiny",
-          "word_index": 0,
-          "syllable_index": 1,
-          "phonemes": [
-            "T",
-            "AH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 2,
-          "unit": "ny",
-          "word": "Destiny",
-          "word_index": 0,
-          "syllable_index": 2,
-          "phonemes": [
-            "N",
-            "IY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 3,
           "unit": "brought",
           "word": "brought",
           "word_index": 1,
@@ -7699,7 +7338,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 4,
+          "unit_id": 2,
           "unit": "us",
           "word": "us",
           "word_index": 2,
@@ -7711,7 +7350,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 3,
           "unit": "to",
           "word": "together",
           "word_index": 3,
@@ -7723,7 +7362,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 4,
           "unit": "get",
           "word": "together",
           "word_index": 3,
@@ -7735,7 +7374,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 5,
           "unit": "her",
           "word": "together",
           "word_index": 3,
@@ -7747,7 +7386,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 6,
           "unit": "out",
           "word": "outside",
           "word_index": 4,
@@ -7759,7 +7398,7 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 7,
           "unit": "side",
           "word": "outside",
           "word_index": 4,
@@ -7772,10 +7411,22 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 10,
+          "unit_id": 8,
+          "unit": "the",
+          "word": "the",
+          "word_index": 5,
+          "syllable_index": 0,
+          "phonemes": [
+            "DH",
+            "AH"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 9,
           "unit": "ch",
           "word": "chaotic",
-          "word_index": 5,
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -7784,10 +7435,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
+          "unit_id": 10,
           "unit": "ao",
           "word": "chaotic",
-          "word_index": 5,
+          "word_index": 6,
           "syllable_index": 1,
           "phonemes": [
             "AA"
@@ -7795,10 +7446,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
+          "unit_id": 11,
           "unit": "tic",
           "word": "chaotic",
-          "word_index": 5,
+          "word_index": 6,
           "syllable_index": 2,
           "phonemes": [
             "T",
@@ -7808,10 +7459,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 13,
+          "unit_id": 12,
           "unit": "world",
           "word": "world",
-          "word_index": 6,
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
             "W",
@@ -7824,54 +7475,26 @@
       ],
       "tokens": [
         {
-          "word": "Destiny",
+          "word": "Fate",
           "word_index": 0,
           "phonemes": [
-            "D",
-            "EH",
-            "S",
-            "T",
-            "AH",
-            "N",
-            "IY"
+            "F",
+            "EY",
+            "T"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 3,
+          "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 0,
-              "unit": "des",
-              "word": "Destiny",
+              "unit": "fate",
+              "word": "Fate",
               "word_index": 0,
               "syllable_index": 0,
               "phonemes": [
-                "D",
-                "EH",
-                "S"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 1,
-              "unit": "ti",
-              "word": "Destiny",
-              "word_index": 0,
-              "syllable_index": 1,
-              "phonemes": [
-                "T",
-                "AH"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 2,
-              "unit": "ny",
-              "word": "Destiny",
-              "word_index": 0,
-              "syllable_index": 2,
-              "phonemes": [
-                "N",
-                "IY"
+                "F",
+                "EY",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
@@ -7890,7 +7513,7 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 3,
+              "unit_id": 1,
               "unit": "brought",
               "word": "brought",
               "word_index": 1,
@@ -7916,7 +7539,7 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 4,
+              "unit_id": 2,
               "unit": "us",
               "word": "us",
               "word_index": 2,
@@ -7944,7 +7567,7 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 3,
               "unit": "to",
               "word": "together",
               "word_index": 3,
@@ -7956,7 +7579,7 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 6,
+              "unit_id": 4,
               "unit": "get",
               "word": "together",
               "word_index": 3,
@@ -7968,7 +7591,7 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 5,
               "unit": "her",
               "word": "together",
               "word_index": 3,
@@ -7995,7 +7618,7 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 8,
+              "unit_id": 6,
               "unit": "out",
               "word": "outside",
               "word_index": 4,
@@ -8007,7 +7630,7 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 9,
+              "unit_id": 7,
               "unit": "side",
               "word": "outside",
               "word_index": 4,
@@ -8022,8 +7645,32 @@
           ]
         },
         {
-          "word": "chaotic",
+          "word": "the",
           "word_index": 5,
+          "phonemes": [
+            "DH",
+            "AH"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 8,
+              "unit": "the",
+              "word": "the",
+              "word_index": 5,
+              "syllable_index": 0,
+              "phonemes": [
+                "DH",
+                "AH"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "chaotic",
+          "word_index": 6,
           "phonemes": [
             "K",
             "EY",
@@ -8036,10 +7683,10 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 9,
               "unit": "ch",
               "word": "chaotic",
-              "word_index": 5,
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -8048,10 +7695,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 11,
+              "unit_id": 10,
               "unit": "ao",
               "word": "chaotic",
-              "word_index": 5,
+              "word_index": 6,
               "syllable_index": 1,
               "phonemes": [
                 "AA"
@@ -8059,10 +7706,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 12,
+              "unit_id": 11,
               "unit": "tic",
               "word": "chaotic",
-              "word_index": 5,
+              "word_index": 6,
               "syllable_index": 2,
               "phonemes": [
                 "T",
@@ -8075,7 +7722,7 @@
         },
         {
           "word": "world",
-          "word_index": 6,
+          "word_index": 7,
           "phonemes": [
             "W",
             "ER",
@@ -8086,10 +7733,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 13,
+              "unit_id": 12,
               "unit": "world",
               "word": "world",
-              "word_index": 6,
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
                 "W",
@@ -8106,8 +7753,8 @@
     {
       "id": 22,
       "zh": "命运却要我们危难中相爱",
-      "literal_en": "yet fate demands we fall in love amidst danger",
-      "text": "we fall in love amidst danger",
+      "literal_en": "Destiny, however, demands we fall in love amidst peril",
+      "text": "we fall in love amidst peril",
       "note_count": 11,
       "phrase_duration": 5.425,
       "unit_type": "syllable",
@@ -8191,26 +7838,26 @@
         },
         {
           "unit_id": 6,
-          "unit": "dan",
-          "word": "danger",
+          "unit": "pe",
+          "word": "peril",
           "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
-            "D",
-            "EY",
-            "N"
+            "P",
+            "EH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 7,
-          "unit": "ger",
-          "word": "danger",
+          "unit": "ril",
+          "word": "peril",
           "word_index": 5,
           "syllable_index": 1,
           "phonemes": [
-            "JH",
-            "ER"
+            "R",
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict"
         }
@@ -8359,40 +8006,40 @@
           ]
         },
         {
-          "word": "danger",
+          "word": "peril",
           "word_index": 5,
           "phonemes": [
-            "D",
-            "EY",
-            "N",
-            "JH",
-            "ER"
+            "P",
+            "EH",
+            "R",
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 2,
           "syllables": [
             {
               "unit_id": 6,
-              "unit": "dan",
-              "word": "danger",
+              "unit": "pe",
+              "word": "peril",
               "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
-                "D",
-                "EY",
-                "N"
+                "P",
+                "EH"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 7,
-              "unit": "ger",
-              "word": "danger",
+              "unit": "ril",
+              "word": "peril",
               "word_index": 5,
               "syllable_index": 1,
               "phonemes": [
-                "JH",
-                "ER"
+                "R",
+                "AH",
+                "L"
               ],
               "phoneme_source": "cmudict"
             }
@@ -8403,7 +8050,7 @@
     {
       "id": 23,
       "zh": "也许未来遥远在光年之外",
-      "literal_en": "Perhaps the future lies far away, beyond light years",
+      "literal_en": "Perhaps the future lies far away, beyond light-years",
       "text": "Perhaps the future lies far away beyond light years",
       "note_count": 11,
       "phrase_duration": 5.435,
@@ -8869,8 +8516,8 @@
     {
       "id": 24,
       "zh": "我愿守候未知里为你等待",
-      "literal_en": "I am willing to wait for you in the unknown",
-      "text": "willing to wait for you in unknown",
+      "literal_en": "I am willing to wait in the unknown for you",
+      "text": "willing to wait in unknown for you",
       "note_count": 11,
       "phrase_duration": 4.018,
       "unit_type": "syllable",
@@ -8928,9 +8575,46 @@
         },
         {
           "unit_id": 4,
+          "unit": "in",
+          "word": "in",
+          "word_index": 3,
+          "syllable_index": 0,
+          "phonemes": [
+            "IH",
+            "N"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 5,
+          "unit": "unk",
+          "word": "unknown",
+          "word_index": 4,
+          "syllable_index": 0,
+          "phonemes": [
+            "AH",
+            "N"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 6,
+          "unit": "nown",
+          "word": "unknown",
+          "word_index": 4,
+          "syllable_index": 1,
+          "phonemes": [
+            "N",
+            "OW",
+            "N"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 7,
           "unit": "for",
           "word": "for",
-          "word_index": 3,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "F",
@@ -8940,51 +8624,14 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 8,
           "unit": "you",
           "word": "you",
-          "word_index": 4,
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "Y",
             "UW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 6,
-          "unit": "in",
-          "word": "in",
-          "word_index": 5,
-          "syllable_index": 0,
-          "phonemes": [
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 7,
-          "unit": "unk",
-          "word": "unknown",
-          "word_index": 6,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH",
-            "N"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 8,
-          "unit": "nown",
-          "word": "unknown",
-          "word_index": 6,
-          "syllable_index": 1,
-          "phonemes": [
-            "N",
-            "OW",
-            "N"
           ],
           "phoneme_source": "cmudict"
         }
@@ -9081,8 +8728,72 @@
           ]
         },
         {
-          "word": "for",
+          "word": "in",
           "word_index": 3,
+          "phonemes": [
+            "IH",
+            "N"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 4,
+              "unit": "in",
+              "word": "in",
+              "word_index": 3,
+              "syllable_index": 0,
+              "phonemes": [
+                "IH",
+                "N"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "unknown",
+          "word_index": 4,
+          "phonemes": [
+            "AH",
+            "N",
+            "N",
+            "OW",
+            "N"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 2,
+          "syllables": [
+            {
+              "unit_id": 5,
+              "unit": "unk",
+              "word": "unknown",
+              "word_index": 4,
+              "syllable_index": 0,
+              "phonemes": [
+                "AH",
+                "N"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 6,
+              "unit": "nown",
+              "word": "unknown",
+              "word_index": 4,
+              "syllable_index": 1,
+              "phonemes": [
+                "N",
+                "OW",
+                "N"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "for",
+          "word_index": 5,
           "phonemes": [
             "F",
             "AO",
@@ -9092,10 +8803,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 4,
+              "unit_id": 7,
               "unit": "for",
               "word": "for",
-              "word_index": 3,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "F",
@@ -9108,7 +8819,7 @@
         },
         {
           "word": "you",
-          "word_index": 4,
+          "word_index": 6,
           "phonemes": [
             "Y",
             "UW"
@@ -9117,78 +8828,14 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 8,
               "unit": "you",
               "word": "you",
-              "word_index": 4,
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "Y",
                 "UW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "in",
-          "word_index": 5,
-          "phonemes": [
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 6,
-              "unit": "in",
-              "word": "in",
-              "word_index": 5,
-              "syllable_index": 0,
-              "phonemes": [
-                "IH",
-                "N"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "unknown",
-          "word_index": 6,
-          "phonemes": [
-            "AH",
-            "N",
-            "N",
-            "OW",
-            "N"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 2,
-          "syllables": [
-            {
-              "unit_id": 7,
-              "unit": "unk",
-              "word": "unknown",
-              "word_index": 6,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH",
-                "N"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 8,
-              "unit": "nown",
-              "word": "unknown",
-              "word_index": 6,
-              "syllable_index": 1,
-              "phonemes": [
-                "N",
-                "OW",
-                "N"
               ],
               "phoneme_source": "cmudict"
             }
@@ -9199,12 +8846,12 @@
     {
       "id": 25,
       "zh": "我没想到为了你我能疯狂到",
-      "literal_en": "I never expected that for you I could go so crazy",
-      "text": "I never expected for you I go so crazy",
+      "literal_en": "I never expected that for you I could go crazy enough to",
+      "text": "I never expected for you I go crazy",
       "note_count": 12,
       "phrase_duration": 5.438,
       "unit_type": "syllable",
-      "unit_count": 13,
+      "unit_count": 12,
       "units": [
         {
           "unit_id": 0,
@@ -9330,21 +8977,9 @@
         },
         {
           "unit_id": 10,
-          "unit": "so",
-          "word": "so",
-          "word_index": 7,
-          "syllable_index": 0,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 11,
           "unit": "cra",
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -9354,10 +8989,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
+          "unit_id": 11,
           "unit": "zy",
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 7,
           "syllable_index": 1,
           "phonemes": [
             "Z",
@@ -9582,32 +9217,8 @@
           ]
         },
         {
-          "word": "so",
-          "word_index": 7,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 10,
-              "unit": "so",
-              "word": "so",
-              "word_index": 7,
-              "syllable_index": 0,
-              "phonemes": [
-                "S",
-                "OW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 7,
           "phonemes": [
             "K",
             "R",
@@ -9619,10 +9230,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 10,
               "unit": "cra",
               "word": "crazy",
-              "word_index": 8,
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -9632,10 +9243,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 12,
+              "unit_id": 11,
               "unit": "zy",
               "word": "crazy",
-              "word_index": 8,
+              "word_index": 7,
               "syllable_index": 1,
               "phonemes": [
                 "Z",
@@ -9650,7 +9261,7 @@
     {
       "id": 26,
       "zh": "山崩海啸没有你根本不想逃",
-      "literal_en": "Mountains crumbling and seas raging, without you I don't even want to flee",
+      "literal_en": "Mountains collapsing and seas roaring, without you I simply don't want to flee",
       "text": "Mountains without you I want to flee",
       "note_count": 12,
       "phrase_duration": 5.536,
@@ -9986,8 +9597,8 @@
     {
       "id": 27,
       "zh": "我的大脑为了你已经疯狂到",
-      "literal_en": "My mind for you has already gone so crazy",
-      "text": "My mind for you has already gone so crazy",
+      "literal_en": "My brain has already gone crazy for you to the point that",
+      "text": "My brain already gone crazy for you to point",
       "note_count": 12,
       "phrase_duration": 5.406,
       "unit_type": "syllable",
@@ -10007,61 +9618,23 @@
         },
         {
           "unit_id": 1,
-          "unit": "mind",
-          "word": "mind",
+          "unit": "brain",
+          "word": "brain",
           "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
-            "M",
-            "AY",
-            "N",
-            "D"
+            "B",
+            "R",
+            "EY",
+            "N"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 2,
-          "unit": "for",
-          "word": "for",
-          "word_index": 2,
-          "syllable_index": 0,
-          "phonemes": [
-            "F",
-            "AO",
-            "R"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 3,
-          "unit": "you",
-          "word": "you",
-          "word_index": 3,
-          "syllable_index": 0,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 4,
-          "unit": "has",
-          "word": "has",
-          "word_index": 4,
-          "syllable_index": 0,
-          "phonemes": [
-            "HH",
-            "AE",
-            "Z"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 5,
           "unit": "al",
           "word": "already",
-          "word_index": 5,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "AO",
@@ -10070,10 +9643,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 3,
           "unit": "rea",
           "word": "already",
-          "word_index": 5,
+          "word_index": 2,
           "syllable_index": 1,
           "phonemes": [
             "R",
@@ -10082,10 +9655,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 4,
           "unit": "dy",
           "word": "already",
-          "word_index": 5,
+          "word_index": 2,
           "syllable_index": 2,
           "phonemes": [
             "D",
@@ -10094,10 +9667,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 5,
           "unit": "gone",
           "word": "gone",
-          "word_index": 6,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "G",
@@ -10107,22 +9680,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
-          "unit": "so",
-          "word": "so",
-          "word_index": 7,
-          "syllable_index": 0,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 10,
+          "unit_id": 6,
           "unit": "cra",
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -10132,14 +9693,65 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
+          "unit_id": 7,
           "unit": "zy",
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 4,
           "syllable_index": 1,
           "phonemes": [
             "Z",
             "IY"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 8,
+          "unit": "for",
+          "word": "for",
+          "word_index": 5,
+          "syllable_index": 0,
+          "phonemes": [
+            "F",
+            "AO",
+            "R"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 9,
+          "unit": "you",
+          "word": "you",
+          "word_index": 6,
+          "syllable_index": 0,
+          "phonemes": [
+            "Y",
+            "UW"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 10,
+          "unit": "to",
+          "word": "to",
+          "word_index": 7,
+          "syllable_index": 0,
+          "phonemes": [
+            "T",
+            "UW"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 11,
+          "unit": "point",
+          "word": "point",
+          "word_index": 8,
+          "syllable_index": 0,
+          "phonemes": [
+            "P",
+            "OY",
+            "N",
+            "T"
           ],
           "phoneme_source": "cmudict"
         }
@@ -10170,104 +9782,28 @@
           ]
         },
         {
-          "word": "mind",
+          "word": "brain",
           "word_index": 1,
           "phonemes": [
-            "M",
-            "AY",
-            "N",
-            "D"
+            "B",
+            "R",
+            "EY",
+            "N"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 1,
-              "unit": "mind",
-              "word": "mind",
+              "unit": "brain",
+              "word": "brain",
               "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AY",
-                "N",
-                "D"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "for",
-          "word_index": 2,
-          "phonemes": [
-            "F",
-            "AO",
-            "R"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 2,
-              "unit": "for",
-              "word": "for",
-              "word_index": 2,
-              "syllable_index": 0,
-              "phonemes": [
-                "F",
-                "AO",
-                "R"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "you",
-          "word_index": 3,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 3,
-              "unit": "you",
-              "word": "you",
-              "word_index": 3,
-              "syllable_index": 0,
-              "phonemes": [
-                "Y",
-                "UW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "has",
-          "word_index": 4,
-          "phonemes": [
-            "HH",
-            "AE",
-            "Z"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 4,
-              "unit": "has",
-              "word": "has",
-              "word_index": 4,
-              "syllable_index": 0,
-              "phonemes": [
-                "HH",
-                "AE",
-                "Z"
+                "B",
+                "R",
+                "EY",
+                "N"
               ],
               "phoneme_source": "cmudict"
             }
@@ -10275,7 +9811,7 @@
         },
         {
           "word": "already",
-          "word_index": 5,
+          "word_index": 2,
           "phonemes": [
             "AO",
             "L",
@@ -10288,10 +9824,10 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 2,
               "unit": "al",
               "word": "already",
-              "word_index": 5,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "AO",
@@ -10300,10 +9836,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 6,
+              "unit_id": 3,
               "unit": "rea",
               "word": "already",
-              "word_index": 5,
+              "word_index": 2,
               "syllable_index": 1,
               "phonemes": [
                 "R",
@@ -10312,10 +9848,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 4,
               "unit": "dy",
               "word": "already",
-              "word_index": 5,
+              "word_index": 2,
               "syllable_index": 2,
               "phonemes": [
                 "D",
@@ -10327,7 +9863,7 @@
         },
         {
           "word": "gone",
-          "word_index": 6,
+          "word_index": 3,
           "phonemes": [
             "G",
             "AO",
@@ -10337,10 +9873,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 8,
+              "unit_id": 5,
               "unit": "gone",
               "word": "gone",
-              "word_index": 6,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "G",
@@ -10352,32 +9888,8 @@
           ]
         },
         {
-          "word": "so",
-          "word_index": 7,
-          "phonemes": [
-            "S",
-            "OW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 9,
-              "unit": "so",
-              "word": "so",
-              "word_index": 7,
-              "syllable_index": 0,
-              "phonemes": [
-                "S",
-                "OW"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "crazy",
-          "word_index": 8,
+          "word_index": 4,
           "phonemes": [
             "K",
             "R",
@@ -10389,10 +9901,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 6,
               "unit": "cra",
               "word": "crazy",
-              "word_index": 8,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -10402,14 +9914,116 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 11,
+              "unit_id": 7,
               "unit": "zy",
               "word": "crazy",
-              "word_index": 8,
+              "word_index": 4,
               "syllable_index": 1,
               "phonemes": [
                 "Z",
                 "IY"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "for",
+          "word_index": 5,
+          "phonemes": [
+            "F",
+            "AO",
+            "R"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 8,
+              "unit": "for",
+              "word": "for",
+              "word_index": 5,
+              "syllable_index": 0,
+              "phonemes": [
+                "F",
+                "AO",
+                "R"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "you",
+          "word_index": 6,
+          "phonemes": [
+            "Y",
+            "UW"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 9,
+              "unit": "you",
+              "word": "you",
+              "word_index": 6,
+              "syllable_index": 0,
+              "phonemes": [
+                "Y",
+                "UW"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "to",
+          "word_index": 7,
+          "phonemes": [
+            "T",
+            "UW"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 10,
+              "unit": "to",
+              "word": "to",
+              "word_index": 7,
+              "syllable_index": 0,
+              "phonemes": [
+                "T",
+                "UW"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "point",
+          "word_index": 8,
+          "phonemes": [
+            "P",
+            "OY",
+            "N",
+            "T"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 11,
+              "unit": "point",
+              "word": "point",
+              "word_index": 8,
+              "syllable_index": 0,
+              "phonemes": [
+                "P",
+                "OY",
+                "N",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
@@ -10420,8 +10034,8 @@
     {
       "id": 28,
       "zh": "脉搏心跳没有你根本不重",
-      "literal_en": "Pulse and heartbeat, without you simply aren't important",
-      "text": "Pulse heartbeat without you simply aren't important",
+      "literal_en": "Pulse and heartbeat, without you, are simply not important",
+      "text": "Pulse heartbeat without you simply not important",
       "note_count": 11,
       "phrase_duration": 3.852,
       "unit_type": "syllable",
@@ -10533,15 +10147,13 @@
         },
         {
           "unit_id": 8,
-          "unit": "aren't",
-          "word": "aren't",
+          "unit": "not",
+          "word": "not",
           "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
-            "AA",
-            "R",
-            "AH",
             "N",
+            "AA",
             "T"
           ],
           "phoneme_source": "cmudict"
@@ -10766,13 +10378,11 @@
           ]
         },
         {
-          "word": "aren't",
+          "word": "not",
           "word_index": 5,
           "phonemes": [
-            "AA",
-            "R",
-            "AH",
             "N",
+            "AA",
             "T"
           ],
           "phoneme_source": "cmudict",
@@ -10780,15 +10390,13 @@
           "syllables": [
             {
               "unit_id": 8,
-              "unit": "aren't",
-              "word": "aren't",
+              "unit": "not",
+              "word": "not",
               "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
-                "AA",
-                "R",
-                "AH",
                 "N",
+                "AA",
                 "T"
               ],
               "phoneme_source": "cmudict"
@@ -11083,12 +10691,12 @@
     {
       "id": 30,
       "zh": "是醒不来的梦乱世",
-      "literal_en": "Is a dream I cannot wake from, in a chaotic world",
-      "text": "dream I can't wake from in chaotic world",
+      "literal_en": "Is a dream that cannot be woken from, chaotic times",
+      "text": "dream can't woken from chaotic times",
       "note_count": 8,
       "phrase_duration": 7.906,
       "unit_type": "syllable",
-      "unit_count": 10,
+      "unit_count": 9,
       "units": [
         {
           "unit_id": 0,
@@ -11106,20 +10714,9 @@
         },
         {
           "unit_id": 1,
-          "unit": "i",
-          "word": "I",
-          "word_index": 1,
-          "syllable_index": 0,
-          "phonemes": [
-            "AY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 2,
           "unit": "can't",
           "word": "can't",
-          "word_index": 2,
+          "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -11130,15 +10727,27 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 3,
-          "unit": "wake",
-          "word": "wake",
-          "word_index": 3,
+          "unit_id": 2,
+          "unit": "wo",
+          "word": "woken",
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "W",
-            "EY",
-            "K"
+            "OW"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 3,
+          "unit": "ken",
+          "word": "woken",
+          "word_index": 2,
+          "syllable_index": 1,
+          "phonemes": [
+            "K",
+            "AH",
+            "N"
           ],
           "phoneme_source": "cmudict"
         },
@@ -11146,7 +10755,7 @@
           "unit_id": 4,
           "unit": "from",
           "word": "from",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "F",
@@ -11158,21 +10767,9 @@
         },
         {
           "unit_id": 5,
-          "unit": "in",
-          "word": "in",
-          "word_index": 5,
-          "syllable_index": 0,
-          "phonemes": [
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 6,
           "unit": "ch",
           "word": "chaotic",
-          "word_index": 6,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -11181,10 +10778,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 6,
           "unit": "ao",
           "word": "chaotic",
-          "word_index": 6,
+          "word_index": 4,
           "syllable_index": 1,
           "phonemes": [
             "AA"
@@ -11192,10 +10789,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 7,
           "unit": "tic",
           "word": "chaotic",
-          "word_index": 6,
+          "word_index": 4,
           "syllable_index": 2,
           "phonemes": [
             "T",
@@ -11205,16 +10802,16 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
-          "unit": "world",
-          "word": "world",
-          "word_index": 7,
+          "unit_id": 8,
+          "unit": "times",
+          "word": "times",
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
-            "W",
-            "ER",
-            "L",
-            "D"
+            "T",
+            "AY",
+            "M",
+            "Z"
           ],
           "phoneme_source": "cmudict"
         }
@@ -11249,30 +10846,8 @@
           ]
         },
         {
-          "word": "I",
-          "word_index": 1,
-          "phonemes": [
-            "AY"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 1,
-              "unit": "i",
-              "word": "I",
-              "word_index": 1,
-              "syllable_index": 0,
-              "phonemes": [
-                "AY"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "can't",
-          "word_index": 2,
+          "word_index": 1,
           "phonemes": [
             "K",
             "AE",
@@ -11283,10 +10858,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 2,
+              "unit_id": 1,
               "unit": "can't",
               "word": "can't",
-              "word_index": 2,
+              "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -11299,26 +10874,40 @@
           ]
         },
         {
-          "word": "wake",
-          "word_index": 3,
+          "word": "woken",
+          "word_index": 2,
           "phonemes": [
             "W",
-            "EY",
-            "K"
+            "OW",
+            "K",
+            "AH",
+            "N"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 1,
+          "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 3,
-              "unit": "wake",
-              "word": "wake",
-              "word_index": 3,
+              "unit_id": 2,
+              "unit": "wo",
+              "word": "woken",
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "W",
-                "EY",
-                "K"
+                "OW"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 3,
+              "unit": "ken",
+              "word": "woken",
+              "word_index": 2,
+              "syllable_index": 1,
+              "phonemes": [
+                "K",
+                "AH",
+                "N"
               ],
               "phoneme_source": "cmudict"
             }
@@ -11326,7 +10915,7 @@
         },
         {
           "word": "from",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "F",
             "R",
@@ -11340,7 +10929,7 @@
               "unit_id": 4,
               "unit": "from",
               "word": "from",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "F",
@@ -11353,32 +10942,8 @@
           ]
         },
         {
-          "word": "in",
-          "word_index": 5,
-          "phonemes": [
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 5,
-              "unit": "in",
-              "word": "in",
-              "word_index": 5,
-              "syllable_index": 0,
-              "phonemes": [
-                "IH",
-                "N"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "chaotic",
-          "word_index": 6,
+          "word_index": 4,
           "phonemes": [
             "K",
             "EY",
@@ -11391,10 +10956,10 @@
           "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 6,
+              "unit_id": 5,
               "unit": "ch",
               "word": "chaotic",
-              "word_index": 6,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -11403,10 +10968,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 6,
               "unit": "ao",
               "word": "chaotic",
-              "word_index": 6,
+              "word_index": 4,
               "syllable_index": 1,
               "phonemes": [
                 "AA"
@@ -11414,10 +10979,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 8,
+              "unit_id": 7,
               "unit": "tic",
               "word": "chaotic",
-              "word_index": 6,
+              "word_index": 4,
               "syllable_index": 2,
               "phonemes": [
                 "T",
@@ -11429,28 +10994,28 @@
           ]
         },
         {
-          "word": "world",
-          "word_index": 7,
+          "word": "times",
+          "word_index": 5,
           "phonemes": [
-            "W",
-            "ER",
-            "L",
-            "D"
+            "T",
+            "AY",
+            "M",
+            "Z"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 9,
-              "unit": "world",
-              "word": "world",
-              "word_index": 7,
+              "unit_id": 8,
+              "unit": "times",
+              "word": "times",
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
-                "W",
-                "ER",
-                "L",
-                "D"
+                "T",
+                "AY",
+                "M",
+                "Z"
               ],
               "phoneme_source": "cmudict"
             }
@@ -11461,34 +11026,34 @@
     {
       "id": 31,
       "zh": "以外是纯粹的相拥",
-      "literal_en": "Outside is a pure embrace",
-      "text": "Outside is a pure embrace",
+      "literal_en": "Beyond is a pure embrace",
+      "text": "Beyond is pure embrace",
       "note_count": 9,
       "phrase_duration": 7.77,
       "unit_type": "syllable",
-      "unit_count": 7,
+      "unit_count": 6,
       "units": [
         {
           "unit_id": 0,
-          "unit": "out",
-          "word": "Outside",
+          "unit": "bey",
+          "word": "Beyond",
           "word_index": 0,
           "syllable_index": 0,
           "phonemes": [
-            "AW",
-            "T"
+            "B",
+            "IH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 1,
-          "unit": "side",
-          "word": "Outside",
+          "unit": "ond",
+          "word": "Beyond",
           "word_index": 0,
           "syllable_index": 1,
           "phonemes": [
-            "S",
-            "AY",
+            "AA",
+            "N",
             "D"
           ],
           "phoneme_source": "cmudict"
@@ -11507,20 +11072,9 @@
         },
         {
           "unit_id": 3,
-          "unit": "a",
-          "word": "a",
-          "word_index": 2,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 4,
           "unit": "pure",
           "word": "pure",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "P",
@@ -11531,10 +11085,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 4,
           "unit": "emb",
           "word": "embrace",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "EH",
@@ -11544,10 +11098,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 5,
           "unit": "race",
           "word": "embrace",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 1,
           "phonemes": [
             "R",
@@ -11559,13 +11113,13 @@
       ],
       "tokens": [
         {
-          "word": "Outside",
+          "word": "Beyond",
           "word_index": 0,
           "phonemes": [
-            "AW",
-            "T",
-            "S",
-            "AY",
+            "B",
+            "IH",
+            "AA",
+            "N",
             "D"
           ],
           "phoneme_source": "cmudict",
@@ -11573,25 +11127,25 @@
           "syllables": [
             {
               "unit_id": 0,
-              "unit": "out",
-              "word": "Outside",
+              "unit": "bey",
+              "word": "Beyond",
               "word_index": 0,
               "syllable_index": 0,
               "phonemes": [
-                "AW",
-                "T"
+                "B",
+                "IH"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 1,
-              "unit": "side",
-              "word": "Outside",
+              "unit": "ond",
+              "word": "Beyond",
               "word_index": 0,
               "syllable_index": 1,
               "phonemes": [
-                "S",
-                "AY",
+                "AA",
+                "N",
                 "D"
               ],
               "phoneme_source": "cmudict"
@@ -11623,30 +11177,8 @@
           ]
         },
         {
-          "word": "a",
-          "word_index": 2,
-          "phonemes": [
-            "AH"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 3,
-              "unit": "a",
-              "word": "a",
-              "word_index": 2,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "pure",
-          "word_index": 3,
+          "word_index": 2,
           "phonemes": [
             "P",
             "Y",
@@ -11657,10 +11189,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 4,
+              "unit_id": 3,
               "unit": "pure",
               "word": "pure",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "P",
@@ -11674,7 +11206,7 @@
         },
         {
           "word": "embrace",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "EH",
             "M",
@@ -11687,10 +11219,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 4,
               "unit": "emb",
               "word": "embrace",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "EH",
@@ -11700,10 +11232,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 6,
+              "unit_id": 5,
               "unit": "race",
               "word": "embrace",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 1,
               "phonemes": [
                 "R",
@@ -11719,8 +11251,8 @@
     {
       "id": 32,
       "zh": "我没想到为了你我能疯狂到山崩海啸",
-      "literal_en": "I never expected that for you I could go so crazy as to see mountains crumble and seas rage",
-      "text": "I for you I as to see mountains crumble seas rage",
+      "literal_en": "I never expected that for you I could go crazy enough to mountains collapsing and seas roaring",
+      "text": "I for you I to mountains collapsing seas roaring",
       "note_count": 16,
       "phrase_duration": 6.869,
       "unit_type": "syllable",
@@ -11775,21 +11307,9 @@
         },
         {
           "unit_id": 4,
-          "unit": "as",
-          "word": "as",
-          "word_index": 4,
-          "syllable_index": 0,
-          "phonemes": [
-            "AE",
-            "Z"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 5,
           "unit": "to",
           "word": "to",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "T",
@@ -11798,22 +11318,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
-          "unit": "see",
-          "word": "see",
-          "word_index": 6,
-          "syllable_index": 0,
-          "phonemes": [
-            "S",
-            "IY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 7,
+          "unit_id": 5,
           "unit": "moun",
           "word": "mountains",
-          "word_index": 7,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "M",
@@ -11823,10 +11331,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 6,
           "unit": "tains",
           "word": "mountains",
-          "word_index": 7,
+          "word_index": 5,
           "syllable_index": 1,
           "phonemes": [
             "T",
@@ -11837,37 +11345,48 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
-          "unit": "cru",
-          "word": "crumble",
-          "word_index": 8,
+          "unit_id": 7,
+          "unit": "col",
+          "word": "collapsing",
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "K",
-            "R",
-            "AH",
-            "M"
+            "AH"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 8,
+          "unit": "lap",
+          "word": "collapsing",
+          "word_index": 6,
+          "syllable_index": 1,
+          "phonemes": [
+            "L",
+            "AE",
+            "P"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 9,
+          "unit": "sing",
+          "word": "collapsing",
+          "word_index": 6,
+          "syllable_index": 2,
+          "phonemes": [
+            "S",
+            "IH",
+            "NG"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 10,
-          "unit": "mble",
-          "word": "crumble",
-          "word_index": 8,
-          "syllable_index": 1,
-          "phonemes": [
-            "B",
-            "AH",
-            "L"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 11,
           "unit": "seas",
           "word": "seas",
-          "word_index": 9,
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
             "S",
@@ -11877,15 +11396,27 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
-          "unit": "rage",
-          "word": "rage",
-          "word_index": 10,
+          "unit_id": 11,
+          "unit": "roa",
+          "word": "roaring",
+          "word_index": 8,
           "syllable_index": 0,
           "phonemes": [
             "R",
-            "EY",
-            "JH"
+            "AO"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 12,
+          "unit": "ring",
+          "word": "roaring",
+          "word_index": 8,
+          "syllable_index": 1,
+          "phonemes": [
+            "R",
+            "IH",
+            "NG"
           ],
           "phoneme_source": "cmudict"
         }
@@ -11986,32 +11517,8 @@
           ]
         },
         {
-          "word": "as",
-          "word_index": 4,
-          "phonemes": [
-            "AE",
-            "Z"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 4,
-              "unit": "as",
-              "word": "as",
-              "word_index": 4,
-              "syllable_index": 0,
-              "phonemes": [
-                "AE",
-                "Z"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "to",
-          "word_index": 5,
+          "word_index": 4,
           "phonemes": [
             "T",
             "UW"
@@ -12020,10 +11527,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 5,
+              "unit_id": 4,
               "unit": "to",
               "word": "to",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "T",
@@ -12034,32 +11541,8 @@
           ]
         },
         {
-          "word": "see",
-          "word_index": 6,
-          "phonemes": [
-            "S",
-            "IY"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 6,
-              "unit": "see",
-              "word": "see",
-              "word_index": 6,
-              "syllable_index": 0,
-              "phonemes": [
-                "S",
-                "IY"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "mountains",
-          "word_index": 7,
+          "word_index": 5,
           "phonemes": [
             "M",
             "AW",
@@ -12073,10 +11556,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 7,
+              "unit_id": 5,
               "unit": "moun",
               "word": "mountains",
-              "word_index": 7,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "M",
@@ -12086,10 +11569,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 8,
+              "unit_id": 6,
               "unit": "tains",
               "word": "mountains",
-              "word_index": 7,
+              "word_index": 5,
               "syllable_index": 1,
               "phonemes": [
                 "T",
@@ -12102,44 +11585,56 @@
           ]
         },
         {
-          "word": "crumble",
-          "word_index": 8,
+          "word": "collapsing",
+          "word_index": 6,
           "phonemes": [
             "K",
-            "R",
             "AH",
-            "M",
-            "B",
-            "AH",
-            "L"
+            "L",
+            "AE",
+            "P",
+            "S",
+            "IH",
+            "NG"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 2,
+          "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 9,
-              "unit": "cru",
-              "word": "crumble",
-              "word_index": 8,
+              "unit_id": 7,
+              "unit": "col",
+              "word": "collapsing",
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "K",
-                "R",
-                "AH",
-                "M"
+                "AH"
               ],
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 10,
-              "unit": "mble",
-              "word": "crumble",
-              "word_index": 8,
+              "unit_id": 8,
+              "unit": "lap",
+              "word": "collapsing",
+              "word_index": 6,
               "syllable_index": 1,
               "phonemes": [
-                "B",
-                "AH",
-                "L"
+                "L",
+                "AE",
+                "P"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 9,
+              "unit": "sing",
+              "word": "collapsing",
+              "word_index": 6,
+              "syllable_index": 2,
+              "phonemes": [
+                "S",
+                "IH",
+                "NG"
               ],
               "phoneme_source": "cmudict"
             }
@@ -12147,7 +11642,7 @@
         },
         {
           "word": "seas",
-          "word_index": 9,
+          "word_index": 7,
           "phonemes": [
             "S",
             "IY",
@@ -12157,10 +11652,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
+              "unit_id": 10,
               "unit": "seas",
               "word": "seas",
-              "word_index": 9,
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
                 "S",
@@ -12172,26 +11667,40 @@
           ]
         },
         {
-          "word": "rage",
-          "word_index": 10,
+          "word": "roaring",
+          "word_index": 8,
           "phonemes": [
             "R",
-            "EY",
-            "JH"
+            "AO",
+            "R",
+            "IH",
+            "NG"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 1,
+          "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 12,
-              "unit": "rage",
-              "word": "rage",
-              "word_index": 10,
+              "unit_id": 11,
+              "unit": "roa",
+              "word": "roaring",
+              "word_index": 8,
               "syllable_index": 0,
               "phonemes": [
                 "R",
-                "EY",
-                "JH"
+                "AO"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 12,
+              "unit": "ring",
+              "word": "roaring",
+              "word_index": 8,
+              "syllable_index": 1,
+              "phonemes": [
+                "R",
+                "IH",
+                "NG"
               ],
               "phoneme_source": "cmudict"
             }
@@ -12202,12 +11711,12 @@
     {
       "id": 33,
       "zh": "没有你根本不想逃我的大脑为了你已经疯狂",
-      "literal_en": "Without you I don't even want to flee, my mind for you has already gone crazy",
-      "text": "Without you I don't even want to flee my mind for you has gone crazy",
+      "literal_en": "Without you I simply don't want to flee, my brain has already gone crazy for you",
+      "text": "Without you I don't want to flee my brain has gone crazy for you",
       "note_count": 19,
       "phrase_duration": 7.94,
       "unit_type": "syllable",
-      "unit_count": 18,
+      "unit_count": 16,
       "units": [
         {
           "unit_id": 0,
@@ -12273,33 +11782,9 @@
         },
         {
           "unit_id": 5,
-          "unit": "e",
-          "word": "even",
-          "word_index": 4,
-          "syllable_index": 0,
-          "phonemes": [
-            "IY"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 6,
-          "unit": "ven",
-          "word": "even",
-          "word_index": 4,
-          "syllable_index": 1,
-          "phonemes": [
-            "V",
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 7,
           "unit": "want",
           "word": "want",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "W",
@@ -12310,10 +11795,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 6,
           "unit": "to",
           "word": "to",
-          "word_index": 6,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "T",
@@ -12322,10 +11807,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 7,
           "unit": "flee",
           "word": "flee",
-          "word_index": 7,
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "F",
@@ -12335,10 +11820,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 10,
+          "unit_id": 8,
           "unit": "my",
           "word": "my",
-          "word_index": 8,
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
             "M",
@@ -12347,49 +11832,24 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
-          "unit": "mind",
-          "word": "mind",
-          "word_index": 9,
+          "unit_id": 9,
+          "unit": "brain",
+          "word": "brain",
+          "word_index": 8,
           "syllable_index": 0,
           "phonemes": [
-            "M",
-            "AY",
-            "N",
-            "D"
+            "B",
+            "R",
+            "EY",
+            "N"
           ],
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
-          "unit": "for",
-          "word": "for",
-          "word_index": 10,
-          "syllable_index": 0,
-          "phonemes": [
-            "F",
-            "AO",
-            "R"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 13,
-          "unit": "you",
-          "word": "you",
-          "word_index": 11,
-          "syllable_index": 0,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 14,
+          "unit_id": 10,
           "unit": "has",
           "word": "has",
-          "word_index": 12,
+          "word_index": 9,
           "syllable_index": 0,
           "phonemes": [
             "HH",
@@ -12399,10 +11859,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 15,
+          "unit_id": 11,
           "unit": "gone",
           "word": "gone",
-          "word_index": 13,
+          "word_index": 10,
           "syllable_index": 0,
           "phonemes": [
             "G",
@@ -12412,10 +11872,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 16,
+          "unit_id": 12,
           "unit": "cra",
           "word": "crazy",
-          "word_index": 14,
+          "word_index": 11,
           "syllable_index": 0,
           "phonemes": [
             "K",
@@ -12425,14 +11885,39 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 17,
+          "unit_id": 13,
           "unit": "zy",
           "word": "crazy",
-          "word_index": 14,
+          "word_index": 11,
           "syllable_index": 1,
           "phonemes": [
             "Z",
             "IY"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 14,
+          "unit": "for",
+          "word": "for",
+          "word_index": 12,
+          "syllable_index": 0,
+          "phonemes": [
+            "F",
+            "AO",
+            "R"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 15,
+          "unit": "you",
+          "word": "you",
+          "word_index": 13,
+          "syllable_index": 0,
+          "phonemes": [
+            "Y",
+            "UW"
           ],
           "phoneme_source": "cmudict"
         }
@@ -12553,46 +12038,8 @@
           ]
         },
         {
-          "word": "even",
-          "word_index": 4,
-          "phonemes": [
-            "IY",
-            "V",
-            "IH",
-            "N"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 2,
-          "syllables": [
-            {
-              "unit_id": 5,
-              "unit": "e",
-              "word": "even",
-              "word_index": 4,
-              "syllable_index": 0,
-              "phonemes": [
-                "IY"
-              ],
-              "phoneme_source": "cmudict"
-            },
-            {
-              "unit_id": 6,
-              "unit": "ven",
-              "word": "even",
-              "word_index": 4,
-              "syllable_index": 1,
-              "phonemes": [
-                "V",
-                "IH",
-                "N"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "want",
-          "word_index": 5,
+          "word_index": 4,
           "phonemes": [
             "W",
             "AA",
@@ -12603,10 +12050,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 7,
+              "unit_id": 5,
               "unit": "want",
               "word": "want",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "W",
@@ -12620,7 +12067,7 @@
         },
         {
           "word": "to",
-          "word_index": 6,
+          "word_index": 5,
           "phonemes": [
             "T",
             "UW"
@@ -12629,10 +12076,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 8,
+              "unit_id": 6,
               "unit": "to",
               "word": "to",
-              "word_index": 6,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "T",
@@ -12644,7 +12091,7 @@
         },
         {
           "word": "flee",
-          "word_index": 7,
+          "word_index": 6,
           "phonemes": [
             "F",
             "L",
@@ -12654,10 +12101,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 9,
+              "unit_id": 7,
               "unit": "flee",
               "word": "flee",
-              "word_index": 7,
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "F",
@@ -12670,7 +12117,7 @@
         },
         {
           "word": "my",
-          "word_index": 8,
+          "word_index": 7,
           "phonemes": [
             "M",
             "AY"
@@ -12679,10 +12126,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 8,
               "unit": "my",
               "word": "my",
-              "word_index": 8,
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
                 "M",
@@ -12693,78 +12140,28 @@
           ]
         },
         {
-          "word": "mind",
-          "word_index": 9,
+          "word": "brain",
+          "word_index": 8,
           "phonemes": [
-            "M",
-            "AY",
-            "N",
-            "D"
+            "B",
+            "R",
+            "EY",
+            "N"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
-              "unit": "mind",
-              "word": "mind",
-              "word_index": 9,
+              "unit_id": 9,
+              "unit": "brain",
+              "word": "brain",
+              "word_index": 8,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AY",
-                "N",
-                "D"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "for",
-          "word_index": 10,
-          "phonemes": [
-            "F",
-            "AO",
-            "R"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 12,
-              "unit": "for",
-              "word": "for",
-              "word_index": 10,
-              "syllable_index": 0,
-              "phonemes": [
-                "F",
-                "AO",
-                "R"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
-          "word": "you",
-          "word_index": 11,
-          "phonemes": [
-            "Y",
-            "UW"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 13,
-              "unit": "you",
-              "word": "you",
-              "word_index": 11,
-              "syllable_index": 0,
-              "phonemes": [
-                "Y",
-                "UW"
+                "B",
+                "R",
+                "EY",
+                "N"
               ],
               "phoneme_source": "cmudict"
             }
@@ -12772,7 +12169,7 @@
         },
         {
           "word": "has",
-          "word_index": 12,
+          "word_index": 9,
           "phonemes": [
             "HH",
             "AE",
@@ -12782,10 +12179,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 14,
+              "unit_id": 10,
               "unit": "has",
               "word": "has",
-              "word_index": 12,
+              "word_index": 9,
               "syllable_index": 0,
               "phonemes": [
                 "HH",
@@ -12798,7 +12195,7 @@
         },
         {
           "word": "gone",
-          "word_index": 13,
+          "word_index": 10,
           "phonemes": [
             "G",
             "AO",
@@ -12808,10 +12205,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 15,
+              "unit_id": 11,
               "unit": "gone",
               "word": "gone",
-              "word_index": 13,
+              "word_index": 10,
               "syllable_index": 0,
               "phonemes": [
                 "G",
@@ -12824,7 +12221,7 @@
         },
         {
           "word": "crazy",
-          "word_index": 14,
+          "word_index": 11,
           "phonemes": [
             "K",
             "R",
@@ -12836,10 +12233,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 16,
+              "unit_id": 12,
               "unit": "cra",
               "word": "crazy",
-              "word_index": 14,
+              "word_index": 11,
               "syllable_index": 0,
               "phonemes": [
                 "K",
@@ -12849,14 +12246,64 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 17,
+              "unit_id": 13,
               "unit": "zy",
               "word": "crazy",
-              "word_index": 14,
+              "word_index": 11,
               "syllable_index": 1,
               "phonemes": [
                 "Z",
                 "IY"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "for",
+          "word_index": 12,
+          "phonemes": [
+            "F",
+            "AO",
+            "R"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 14,
+              "unit": "for",
+              "word": "for",
+              "word_index": 12,
+              "syllable_index": 0,
+              "phonemes": [
+                "F",
+                "AO",
+                "R"
+              ],
+              "phoneme_source": "cmudict"
+            }
+          ]
+        },
+        {
+          "word": "you",
+          "word_index": 13,
+          "phonemes": [
+            "Y",
+            "UW"
+          ],
+          "phoneme_source": "cmudict",
+          "syllable_count": 1,
+          "syllables": [
+            {
+              "unit_id": 15,
+              "unit": "you",
+              "word": "you",
+              "word_index": 13,
+              "syllable_index": 0,
+              "phonemes": [
+                "Y",
+                "UW"
               ],
               "phoneme_source": "cmudict"
             }
@@ -12867,8 +12314,8 @@
     {
       "id": 34,
       "zh": "到脉搏心跳没有你根本不重要",
-      "literal_en": "To the point where pulse and heartbeat, without you, simply don't matter",
-      "text": "To point where pulse heartbeat without you simply don't matter",
+      "literal_en": "To the point that pulse and heartbeat, without you, are simply not important",
+      "text": "To point pulse heartbeat without you simply not important",
       "note_count": 13,
       "phrase_duration": 7.301,
       "unit_type": "syllable",
@@ -12902,22 +12349,9 @@
         },
         {
           "unit_id": 2,
-          "unit": "where",
-          "word": "where",
-          "word_index": 2,
-          "syllable_index": 0,
-          "phonemes": [
-            "W",
-            "EH",
-            "R"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 3,
           "unit": "pulse",
           "word": "pulse",
-          "word_index": 3,
+          "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
             "P",
@@ -12928,10 +12362,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 4,
+          "unit_id": 3,
           "unit": "heart",
           "word": "heartbeat",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "HH",
@@ -12942,10 +12376,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 5,
+          "unit_id": 4,
           "unit": "beat",
           "word": "heartbeat",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 1,
           "phonemes": [
             "B",
@@ -12955,10 +12389,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 6,
+          "unit_id": 5,
           "unit": "wit",
           "word": "without",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "W",
@@ -12967,10 +12401,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 7,
+          "unit_id": 6,
           "unit": "hout",
           "word": "without",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 1,
           "phonemes": [
             "TH",
@@ -12980,10 +12414,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 7,
           "unit": "you",
           "word": "you",
-          "word_index": 6,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "Y",
@@ -12992,10 +12426,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 8,
           "unit": "simp",
           "word": "simply",
-          "word_index": 7,
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "S",
@@ -13006,10 +12440,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 10,
+          "unit_id": 9,
           "unit": "ly",
           "word": "simply",
-          "word_index": 7,
+          "word_index": 6,
           "syllable_index": 1,
           "phonemes": [
             "L",
@@ -13018,40 +12452,54 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
-          "unit": "don't",
-          "word": "don't",
-          "word_index": 8,
+          "unit_id": 10,
+          "unit": "not",
+          "word": "not",
+          "word_index": 7,
           "syllable_index": 0,
           "phonemes": [
-            "D",
-            "OW",
             "N",
+            "AA",
             "T"
           ],
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 12,
-          "unit": "mat",
-          "word": "matter",
-          "word_index": 9,
+          "unit_id": 11,
+          "unit": "im",
+          "word": "important",
+          "word_index": 8,
           "syllable_index": 0,
           "phonemes": [
-            "M",
-            "AE"
+            "IH",
+            "M"
+          ],
+          "phoneme_source": "cmudict"
+        },
+        {
+          "unit_id": 12,
+          "unit": "por",
+          "word": "important",
+          "word_index": 8,
+          "syllable_index": 1,
+          "phonemes": [
+            "P",
+            "AO",
+            "R"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 13,
-          "unit": "ter",
-          "word": "matter",
-          "word_index": 9,
-          "syllable_index": 1,
+          "unit": "tant",
+          "word": "important",
+          "word_index": 8,
+          "syllable_index": 2,
           "phonemes": [
             "T",
-            "ER"
+            "AH",
+            "N",
+            "T"
           ],
           "phoneme_source": "cmudict"
         }
@@ -13110,34 +12558,8 @@
           ]
         },
         {
-          "word": "where",
-          "word_index": 2,
-          "phonemes": [
-            "W",
-            "EH",
-            "R"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 2,
-              "unit": "where",
-              "word": "where",
-              "word_index": 2,
-              "syllable_index": 0,
-              "phonemes": [
-                "W",
-                "EH",
-                "R"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "pulse",
-          "word_index": 3,
+          "word_index": 2,
           "phonemes": [
             "P",
             "AH",
@@ -13148,10 +12570,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 3,
+              "unit_id": 2,
               "unit": "pulse",
               "word": "pulse",
-              "word_index": 3,
+              "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
                 "P",
@@ -13165,7 +12587,7 @@
         },
         {
           "word": "heartbeat",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "HH",
             "AA",
@@ -13179,10 +12601,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 4,
+              "unit_id": 3,
               "unit": "heart",
               "word": "heartbeat",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "HH",
@@ -13193,10 +12615,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 5,
+              "unit_id": 4,
               "unit": "beat",
               "word": "heartbeat",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 1,
               "phonemes": [
                 "B",
@@ -13209,7 +12631,7 @@
         },
         {
           "word": "without",
-          "word_index": 5,
+          "word_index": 4,
           "phonemes": [
             "W",
             "IH",
@@ -13221,10 +12643,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 6,
+              "unit_id": 5,
               "unit": "wit",
               "word": "without",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "W",
@@ -13233,10 +12655,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 7,
+              "unit_id": 6,
               "unit": "hout",
               "word": "without",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 1,
               "phonemes": [
                 "TH",
@@ -13249,7 +12671,7 @@
         },
         {
           "word": "you",
-          "word_index": 6,
+          "word_index": 5,
           "phonemes": [
             "Y",
             "UW"
@@ -13258,10 +12680,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 8,
+              "unit_id": 7,
               "unit": "you",
               "word": "you",
-              "word_index": 6,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "Y",
@@ -13273,7 +12695,7 @@
         },
         {
           "word": "simply",
-          "word_index": 7,
+          "word_index": 6,
           "phonemes": [
             "S",
             "IH",
@@ -13286,10 +12708,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 9,
+              "unit_id": 8,
               "unit": "simp",
               "word": "simply",
-              "word_index": 7,
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "S",
@@ -13300,10 +12722,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 10,
+              "unit_id": 9,
               "unit": "ly",
               "word": "simply",
-              "word_index": 7,
+              "word_index": 6,
               "syllable_index": 1,
               "phonemes": [
                 "L",
@@ -13314,27 +12736,25 @@
           ]
         },
         {
-          "word": "don't",
-          "word_index": 8,
+          "word": "not",
+          "word_index": 7,
           "phonemes": [
-            "D",
-            "OW",
             "N",
+            "AA",
             "T"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 11,
-              "unit": "don't",
-              "word": "don't",
-              "word_index": 8,
+              "unit_id": 10,
+              "unit": "not",
+              "word": "not",
+              "word_index": 7,
               "syllable_index": 0,
               "phonemes": [
-                "D",
-                "OW",
                 "N",
+                "AA",
                 "T"
               ],
               "phoneme_source": "cmudict"
@@ -13342,38 +12762,58 @@
           ]
         },
         {
-          "word": "matter",
-          "word_index": 9,
+          "word": "important",
+          "word_index": 8,
           "phonemes": [
+            "IH",
             "M",
-            "AE",
+            "P",
+            "AO",
+            "R",
             "T",
-            "ER"
+            "AH",
+            "N",
+            "T"
           ],
           "phoneme_source": "cmudict",
-          "syllable_count": 2,
+          "syllable_count": 3,
           "syllables": [
             {
-              "unit_id": 12,
-              "unit": "mat",
-              "word": "matter",
-              "word_index": 9,
+              "unit_id": 11,
+              "unit": "im",
+              "word": "important",
+              "word_index": 8,
               "syllable_index": 0,
               "phonemes": [
-                "M",
-                "AE"
+                "IH",
+                "M"
+              ],
+              "phoneme_source": "cmudict"
+            },
+            {
+              "unit_id": 12,
+              "unit": "por",
+              "word": "important",
+              "word_index": 8,
+              "syllable_index": 1,
+              "phonemes": [
+                "P",
+                "AO",
+                "R"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 13,
-              "unit": "ter",
-              "word": "matter",
-              "word_index": 9,
-              "syllable_index": 1,
+              "unit": "tant",
+              "word": "important",
+              "word_index": 8,
+              "syllable_index": 2,
               "phonemes": [
                 "T",
-                "ER"
+                "AH",
+                "N",
+                "T"
               ],
               "phoneme_source": "cmudict"
             }
@@ -13384,8 +12824,8 @@
     {
       "id": 35,
       "zh": "相遇乱世以外",
-      "literal_en": "Meeting outside the chaotic world",
-      "text": "Meeting outside world",
+      "literal_en": "Meeting beyond the chaotic times",
+      "text": "Meeting beyond times",
       "note_count": 7,
       "phrase_duration": 5.552,
       "unit_type": "syllable",
@@ -13418,40 +12858,40 @@
         },
         {
           "unit_id": 2,
-          "unit": "out",
-          "word": "outside",
+          "unit": "bey",
+          "word": "beyond",
           "word_index": 1,
           "syllable_index": 0,
           "phonemes": [
-            "AW",
-            "T"
+            "B",
+            "IH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 3,
-          "unit": "side",
-          "word": "outside",
+          "unit": "ond",
+          "word": "beyond",
           "word_index": 1,
           "syllable_index": 1,
           "phonemes": [
-            "S",
-            "AY",
+            "AA",
+            "N",
             "D"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 4,
-          "unit": "world",
-          "word": "world",
+          "unit": "times",
+          "word": "times",
           "word_index": 2,
           "syllable_index": 0,
           "phonemes": [
-            "W",
-            "ER",
-            "L",
-            "D"
+            "T",
+            "AY",
+            "M",
+            "Z"
           ],
           "phoneme_source": "cmudict"
         }
@@ -13498,13 +12938,13 @@
           ]
         },
         {
-          "word": "outside",
+          "word": "beyond",
           "word_index": 1,
           "phonemes": [
-            "AW",
-            "T",
-            "S",
-            "AY",
+            "B",
+            "IH",
+            "AA",
+            "N",
             "D"
           ],
           "phoneme_source": "cmudict",
@@ -13512,25 +12952,25 @@
           "syllables": [
             {
               "unit_id": 2,
-              "unit": "out",
-              "word": "outside",
+              "unit": "bey",
+              "word": "beyond",
               "word_index": 1,
               "syllable_index": 0,
               "phonemes": [
-                "AW",
-                "T"
+                "B",
+                "IH"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 3,
-              "unit": "side",
-              "word": "outside",
+              "unit": "ond",
+              "word": "beyond",
               "word_index": 1,
               "syllable_index": 1,
               "phonemes": [
-                "S",
-                "AY",
+                "AA",
+                "N",
                 "D"
               ],
               "phoneme_source": "cmudict"
@@ -13538,28 +12978,28 @@
           ]
         },
         {
-          "word": "world",
+          "word": "times",
           "word_index": 2,
           "phonemes": [
-            "W",
-            "ER",
-            "L",
-            "D"
+            "T",
+            "AY",
+            "M",
+            "Z"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 1,
           "syllables": [
             {
               "unit_id": 4,
-              "unit": "world",
-              "word": "world",
+              "unit": "times",
+              "word": "times",
               "word_index": 2,
               "syllable_index": 0,
               "phonemes": [
-                "W",
-                "ER",
-                "L",
-                "D"
+                "T",
+                "AY",
+                "M",
+                "Z"
               ],
               "phoneme_source": "cmudict"
             }
@@ -13961,8 +13401,8 @@
     {
       "id": 37,
       "zh": "乱世以外危难中",
-      "literal_en": "Outside the chaotic times, amidst danger",
-      "text": "Outside chaotic times amidst danger",
+      "literal_en": "Outside the chaotic times, amidst peril",
+      "text": "Outside chaotic times amidst peril",
       "note_count": 8,
       "phrase_duration": 7.688,
       "unit_type": "syllable",
@@ -14071,26 +13511,26 @@
         },
         {
           "unit_id": 8,
-          "unit": "dan",
-          "word": "danger",
+          "unit": "pe",
+          "word": "peril",
           "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
-            "D",
-            "EY",
-            "N"
+            "P",
+            "EH"
           ],
           "phoneme_source": "cmudict"
         },
         {
           "unit_id": 9,
-          "unit": "ger",
-          "word": "danger",
+          "unit": "ril",
+          "word": "peril",
           "word_index": 4,
           "syllable_index": 1,
           "phonemes": [
-            "JH",
-            "ER"
+            "R",
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict"
         }
@@ -14259,40 +13699,40 @@
           ]
         },
         {
-          "word": "danger",
+          "word": "peril",
           "word_index": 4,
           "phonemes": [
-            "D",
-            "EY",
-            "N",
-            "JH",
-            "ER"
+            "P",
+            "EH",
+            "R",
+            "AH",
+            "L"
           ],
           "phoneme_source": "cmudict",
           "syllable_count": 2,
           "syllables": [
             {
               "unit_id": 8,
-              "unit": "dan",
-              "word": "danger",
+              "unit": "pe",
+              "word": "peril",
               "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
-                "D",
-                "EY",
-                "N"
+                "P",
+                "EH"
               ],
               "phoneme_source": "cmudict"
             },
             {
               "unit_id": 9,
-              "unit": "ger",
-              "word": "danger",
+              "unit": "ril",
+              "word": "peril",
               "word_index": 4,
               "syllable_index": 1,
               "phonemes": [
-                "JH",
-                "ER"
+                "R",
+                "AH",
+                "L"
               ],
               "phoneme_source": "cmudict"
             }
@@ -14303,12 +13743,12 @@
     {
       "id": 38,
       "zh": "相爱我没想到",
-      "literal_en": "I never expected us to love each other",
-      "text": "I never expected us to love each other",
+      "literal_en": "I never expected to love each other",
+      "text": "I never expected to love each other",
       "note_count": 8,
       "phrase_duration": 3.689,
       "unit_type": "syllable",
-      "unit_count": 12,
+      "unit_count": 11,
       "units": [
         {
           "unit_id": 0,
@@ -14386,21 +13826,9 @@
         },
         {
           "unit_id": 6,
-          "unit": "us",
-          "word": "us",
-          "word_index": 3,
-          "syllable_index": 0,
-          "phonemes": [
-            "AH",
-            "S"
-          ],
-          "phoneme_source": "cmudict"
-        },
-        {
-          "unit_id": 7,
           "unit": "to",
           "word": "to",
-          "word_index": 4,
+          "word_index": 3,
           "syllable_index": 0,
           "phonemes": [
             "T",
@@ -14409,10 +13837,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 8,
+          "unit_id": 7,
           "unit": "love",
           "word": "love",
-          "word_index": 5,
+          "word_index": 4,
           "syllable_index": 0,
           "phonemes": [
             "L",
@@ -14422,10 +13850,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 9,
+          "unit_id": 8,
           "unit": "each",
           "word": "each",
-          "word_index": 6,
+          "word_index": 5,
           "syllable_index": 0,
           "phonemes": [
             "IY",
@@ -14434,10 +13862,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 10,
+          "unit_id": 9,
           "unit": "ot",
           "word": "other",
-          "word_index": 7,
+          "word_index": 6,
           "syllable_index": 0,
           "phonemes": [
             "AH"
@@ -14445,10 +13873,10 @@
           "phoneme_source": "cmudict"
         },
         {
-          "unit_id": 11,
+          "unit_id": 10,
           "unit": "her",
           "word": "other",
-          "word_index": 7,
+          "word_index": 6,
           "syllable_index": 1,
           "phonemes": [
             "DH",
@@ -14577,32 +14005,8 @@
           ]
         },
         {
-          "word": "us",
-          "word_index": 3,
-          "phonemes": [
-            "AH",
-            "S"
-          ],
-          "phoneme_source": "cmudict",
-          "syllable_count": 1,
-          "syllables": [
-            {
-              "unit_id": 6,
-              "unit": "us",
-              "word": "us",
-              "word_index": 3,
-              "syllable_index": 0,
-              "phonemes": [
-                "AH",
-                "S"
-              ],
-              "phoneme_source": "cmudict"
-            }
-          ]
-        },
-        {
           "word": "to",
-          "word_index": 4,
+          "word_index": 3,
           "phonemes": [
             "T",
             "UW"
@@ -14611,10 +14015,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 7,
+              "unit_id": 6,
               "unit": "to",
               "word": "to",
-              "word_index": 4,
+              "word_index": 3,
               "syllable_index": 0,
               "phonemes": [
                 "T",
@@ -14626,7 +14030,7 @@
         },
         {
           "word": "love",
-          "word_index": 5,
+          "word_index": 4,
           "phonemes": [
             "L",
             "AH",
@@ -14636,10 +14040,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 8,
+              "unit_id": 7,
               "unit": "love",
               "word": "love",
-              "word_index": 5,
+              "word_index": 4,
               "syllable_index": 0,
               "phonemes": [
                 "L",
@@ -14652,7 +14056,7 @@
         },
         {
           "word": "each",
-          "word_index": 6,
+          "word_index": 5,
           "phonemes": [
             "IY",
             "CH"
@@ -14661,10 +14065,10 @@
           "syllable_count": 1,
           "syllables": [
             {
-              "unit_id": 9,
+              "unit_id": 8,
               "unit": "each",
               "word": "each",
-              "word_index": 6,
+              "word_index": 5,
               "syllable_index": 0,
               "phonemes": [
                 "IY",
@@ -14676,7 +14080,7 @@
         },
         {
           "word": "other",
-          "word_index": 7,
+          "word_index": 6,
           "phonemes": [
             "AH",
             "DH",
@@ -14686,10 +14090,10 @@
           "syllable_count": 2,
           "syllables": [
             {
-              "unit_id": 10,
+              "unit_id": 9,
               "unit": "ot",
               "word": "other",
-              "word_index": 7,
+              "word_index": 6,
               "syllable_index": 0,
               "phonemes": [
                 "AH"
@@ -14697,10 +14101,10 @@
               "phoneme_source": "cmudict"
             },
             {
-              "unit_id": 11,
+              "unit_id": 10,
               "unit": "her",
               "word": "other",
-              "word_index": 7,
+              "word_index": 6,
               "syllable_index": 1,
               "phonemes": [
                 "DH",

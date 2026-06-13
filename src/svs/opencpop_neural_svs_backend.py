@@ -109,6 +109,13 @@ def _alias_file(source: Path, target: Path) -> str:
     return "copy"
 
 
+def _clear_runtime_checkpoints(directory: Path, keep: Path) -> None:
+    for candidate in directory.glob("model_ckpt_steps_*.ckpt"):
+        if candidate.resolve() == keep.resolve():
+            continue
+        candidate.unlink()
+
+
 def _stage_configs_and_checkpoints(config: dict) -> dict:
     pretrained = _pretrained(config)
     ds_cfg = _diffsinger_config(config)
@@ -116,8 +123,10 @@ def _stage_configs_and_checkpoints(config: dict) -> dict:
     if not root.exists():
         raise FileNotFoundError(f"DiffSinger source root does not exist: {root}")
 
-    acoustic_exp = str(ds_cfg.get("acoustic_exp_name", "yiyutongsheng_acoustic"))
-    vocoder_exp = str(ds_cfg.get("vocoder_exp_name", "yiyutongsheng_vocoder"))
+    configured_acoustic_exp = str(ds_cfg.get("acoustic_exp_name", "yiyutongsheng_acoustic"))
+    configured_vocoder_exp = str(ds_cfg.get("vocoder_exp_name", "yiyutongsheng_vocoder"))
+    acoustic_exp = f"{configured_acoustic_exp}_runtime"
+    vocoder_exp = f"{configured_vocoder_exp}_runtime"
     acoustic_dir = root / "checkpoints" / acoustic_exp
     vocoder_dir = root / "checkpoints" / vocoder_exp
     acoustic_dir.mkdir(parents=True, exist_ok=True)
@@ -128,8 +137,12 @@ def _stage_configs_and_checkpoints(config: dict) -> dict:
     vocoder_ckpt = _resolve(config, pretrained.get("vocoder_checkpoint", "checkpoints/diffsinger/vocoder.ckpt"))
     vocoder_config = _resolve(config, pretrained.get("vocoder_config", "checkpoints/diffsinger/vocoder.yaml"))
 
-    acoustic_link_type = _alias_file(acoustic_ckpt, acoustic_dir / "model_ckpt_steps_100000.ckpt")
-    vocoder_link_type = _alias_file(vocoder_ckpt, vocoder_dir / "model_ckpt_steps_100000.ckpt")
+    acoustic_runtime_ckpt = acoustic_dir / "model_ckpt_steps_100000.ckpt"
+    vocoder_runtime_ckpt = vocoder_dir / "model_ckpt_steps_100000.ckpt"
+    _clear_runtime_checkpoints(acoustic_dir, acoustic_runtime_ckpt)
+    _clear_runtime_checkpoints(vocoder_dir, vocoder_runtime_ckpt)
+    acoustic_link_type = _alias_file(acoustic_ckpt, acoustic_runtime_ckpt)
+    vocoder_link_type = _alias_file(vocoder_ckpt, vocoder_runtime_ckpt)
 
     acoustic_payload = _read_yaml(acoustic_config)
     overrides = ds_cfg.get("hparams_override", {}) if isinstance(ds_cfg.get("hparams_override", {}), dict) else {}
@@ -146,6 +159,8 @@ def _stage_configs_and_checkpoints(config: dict) -> dict:
 
     return {
         "diffsinger_root": str(root),
+        "configured_acoustic_exp_name": configured_acoustic_exp,
+        "configured_vocoder_exp_name": configured_vocoder_exp,
         "acoustic_exp_name": acoustic_exp,
         "vocoder_exp_name": vocoder_exp,
         "acoustic_dir": str(acoustic_dir),
@@ -169,6 +184,9 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
     normalize = bool(ds_cfg.get("normalize_output", True))
     infer_class = str(ds_cfg.get("infer_class", "e2e"))
     timeout = int(config.get("svs", {}).get("inference_timeout_sec", 1800))
+    max_phrases = config.get("svs", {}).get("max_phrases")
+    start_phrase = int(config.get("svs", {}).get("start_phrase", 1) or 1)
+    assembly_mode = str(config.get("svs", {}).get("assembly_mode", "timeline") or "timeline")
 
     root = Path(staged["diffsinger_root"])
     command = [
@@ -188,7 +206,15 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
         infer_class,
         "--device",
         device,
+        "--segments-dir",
+        str(output_audio.parent / "segments"),
+        "--start-phrase",
+        str(start_phrase),
+        "--assembly-mode",
+        assembly_mode,
     ]
+    if max_phrases is not None:
+        command.extend(["--max-phrases", str(int(max_phrases))])
     if normalize:
         command.append("--normalize")
 
@@ -204,13 +230,34 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
         timeout=timeout,
     )
 
+    runner_report = None
+    for line in reversed(result.stdout.splitlines()):
+        text = line.strip()
+        if not text.startswith("{"):
+            continue
+        try:
+            runner_report = json.loads(text)
+            break
+        except json.JSONDecodeError:
+            continue
+
     return {
         "command": command,
         "returncode": result.returncode,
         "stdout": result.stdout,
         "stderr": result.stderr,
         "timeout_sec": timeout,
+        "runner_report": runner_report,
     }
+
+
+def _has_diffsinger_input(payload: Any) -> bool:
+    if not isinstance(payload, dict):
+        return False
+    inputs = payload.get("diffsinger_inputs")
+    if isinstance(inputs, list):
+        return any(isinstance(item, dict) and bool(item.get("ph_seq")) for item in inputs)
+    return bool(payload.get("ph_seq"))
 
 
 def build_neural_svs_render_plan(config: dict) -> dict:
@@ -260,8 +307,8 @@ def build_neural_svs_render_plan(config: dict) -> dict:
     if not input_json.exists():
         raise FileNotFoundError(f"Missing DiffSinger input JSON: {input_json}")
     payload = _read_json(input_json, {})
-    if not payload.get("ph_seq"):
-        raise RuntimeError(f"DiffSinger input JSON has empty ph_seq: {input_json}")
+    if not _has_diffsinger_input(payload):
+        raise RuntimeError(f"DiffSinger input JSON has no valid phrase inputs: {input_json}")
 
     staged = _stage_configs_and_checkpoints(config)
     run_result = _run_inference_subprocess(config, staged, input_json, output_audio)
@@ -277,6 +324,7 @@ def build_neural_svs_render_plan(config: dict) -> dict:
         "diffsinger_input": str(input_json),
         "staged": staged,
         "run": run_result,
+        "assembly_mode": run_result.get("runner_report", {}).get("assembly_mode") if isinstance(run_result.get("runner_report"), dict) else None,
         "warnings": list(dict.fromkeys(warnings)),
     }
     _write_json(report_path, report)

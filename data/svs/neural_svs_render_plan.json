@@ -1,18 +1,30 @@
 {
   "format": "neural_svs_render_plan.v2",
-  "dry_run": true,
-  "executed": false,
-  "audio_generated": false,
-  "status": "planned_not_executed",
+  "dry_run": false,
+  "executed": true,
+  "audio_generated": true,
+  "status": "success",
+  "backend": "diffsinger_opencpop",
+  "language": "zh",
+  "dataset": "opencpop",
+  "song_id": "2001",
   "score_input": "D:\\YiYuTongSheng\\data\\svs\\opencpop_svs_score.json",
   "diffsinger_input": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_opencpop\\diffsinger_input_2001.json",
-  "planned_output_audio": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
-  "warnings": [
-    "OpenCpop segments directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['segments', 'segment', 'labs', 'labels']",
-    "OpenCpop transcriptions directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['transcriptions', 'transcription', 'lyrics', 'texts']",
-    "OpenCpop metadata directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['metadata', 'meta', 'annotations', 'annotation']",
-    "OpenCpop item 2001 missing lyric/transcription file in dataset root D:\\YiYuTongSheng\\data\\dataset\\opencpop.",
-    "Strict dataset source is enabled; no legacy lyrics_zh.txt or phrase_map.json fallback was used."
-  ],
-  "why_not_rendered": "svs.execute_model is false or svs.dry_run is true."
+  "checkpoint_status": "D:\\YiYuTongSheng\\data\\svs\\checkpoint_status.json",
+  "output_audio": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+  "infer_report": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_infer_report.json",
+  "staged": {
+    "diffsinger_root": "D:\\YiYuTongSheng\\external\\DiffSinger",
+    "configured_acoustic_exp_name": "yiyutongsheng_acoustic",
+    "configured_vocoder_exp_name": "yiyutongsheng_vocoder",
+    "acoustic_exp_name": "yiyutongsheng_acoustic_runtime",
+    "vocoder_exp_name": "yiyutongsheng_vocoder_runtime",
+    "acoustic_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime",
+    "vocoder_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime",
+    "acoustic_checkpoint_link": "existing",
+    "vocoder_checkpoint_link": "existing",
+    "acoustic_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime\\config.yaml",
+    "vocoder_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime\\config.yaml"
+  },
+  "warnings": []
 }

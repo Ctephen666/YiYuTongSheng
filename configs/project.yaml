@@ -88,6 +88,9 @@ svs:
   language: "zh"
   device: "auto"
   inference_timeout_sec: 1800
+  max_phrases: null
+  start_phrase: 1
+  assembly_mode: "timeline"
   pretrained:
     acoustic_checkpoint: "checkpoints/diffsinger/acoustic.ckpt"
     acoustic_config: "checkpoints/diffsinger/acoustic.yaml"

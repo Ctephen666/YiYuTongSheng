@@ -40,11 +40,5 @@
       "vocoder_ckpt": "checkpoints/yiyutongsheng_vocoder"
     }
   },
-  "warnings": [
-    "OpenCpop segments directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['segments', 'segment', 'labs', 'labels']",
-    "OpenCpop transcriptions directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['transcriptions', 'transcription', 'lyrics', 'texts']",
-    "OpenCpop metadata directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['metadata', 'meta', 'annotations', 'annotation']",
-    "OpenCpop item 2001 missing lyric/transcription file in dataset root D:\\YiYuTongSheng\\data\\dataset\\opencpop.",
-    "Strict dataset source is enabled; no legacy lyrics_zh.txt or phrase_map.json fallback was used."
-  ]
+  "warnings": []
 }

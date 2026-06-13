@@ -1,15 +1,15 @@
 {
   "source": "opencpop_midi",
-  "midi": "data/dataset/opencpop/midis/2001.midi",
+  "midi": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\midis\\2001.midi",
   "note_count": 429,
   "phrases": [
     {
       "id": 1,
       "start": 12.514201,
-      "end": 16.171871,
-      "duration": 3.65767,
+      "end": 22.065335,
+      "duration": 9.551134,
       "note_start": 0,
-      "note_end": 10,
+      "note_end": 18,
       "notes": [
         {
           "pitch": "G#4",
@@ -90,17 +90,7 @@
           "end": 16.171871,
           "duration": 0.521307,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "start": 16.632098,
-      "end": 22.065335,
-      "duration": 5.433237,
-      "note_start": 10,
-      "note_end": 18,
-      "notes": [
+        },
         {
           "pitch": "B3",
           "midi": 59,
@@ -168,12 +158,12 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "start": 23.444596,
-      "end": 27.061072,
-      "duration": 3.616476,
+      "end": 32.877832,
+      "duration": 9.433236,
       "note_start": 18,
-      "note_end": 28,
+      "note_end": 36,
       "notes": [
         {
           "pitch": "G#4",
@@ -254,17 +244,7 @@
           "end": 27.061072,
           "duration": 0.555398,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "start": 27.55539,
-      "end": 32.877832,
-      "duration": 5.322442,
-      "note_start": 28,
-      "note_end": 36,
-      "notes": [
+        },
         {
           "pitch": "B3",
           "midi": 59,
@@ -332,12 +312,12 @@
       ]
     },
     {
-      "id": 5,
+      "id": 3,
       "start": 33.988627,
-      "end": 38.742887,
-      "duration": 4.75426,
+      "end": 43.112204,
+      "duration": 9.123577,
       "note_start": 36,
-      "note_end": 56,
+      "note_end": 68,
       "notes": [
         {
           "pitch": "C#4",
@@ -498,17 +478,7 @@
           "end": 38.742887,
           "duration": 0.278409,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "start": 39.122149,
-      "end": 43.112204,
-      "duration": 3.990055,
-      "note_start": 56,
-      "note_end": 68,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -608,7 +578,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 4,
       "start": 44.892033,
       "end": 49.700271,
       "duration": 4.808238,
@@ -706,7 +676,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 5,
       "start": 50.333793,
       "end": 54.853679,
       "duration": 4.519886,
@@ -804,7 +774,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 6,
       "start": 55.856519,
       "end": 60.534075,
       "duration": 4.677556,
@@ -902,12 +872,12 @@
       ]
     },
     {
-      "id": 10,
+      "id": 7,
       "start": 61.26987,
-      "end": 64.941744,
-      "duration": 3.671874,
+      "end": 69.502822,
+      "duration": 8.232952,
       "note_start": 101,
-      "note_end": 112,
+      "note_end": 124,
       "notes": [
         {
           "pitch": "E4",
@@ -996,17 +966,7 @@
           "end": 64.941744,
           "duration": 0.274148,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "start": 65.30538,
-      "end": 72.086629,
-      "duration": 6.781249,
-      "note_start": 112,
-      "note_end": 128,
-      "notes": [
+        },
         {
           "pitch": "A4",
           "midi": 69,
@@ -1102,7 +1062,17 @@
           "end": 69.502822,
           "duration": 0.382102,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 70.80964,
+      "end": 75.228673,
+      "duration": 4.419033,
+      "note_start": 124,
+      "note_end": 137,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -1134,17 +1104,7 @@
           "end": 72.086629,
           "duration": 0.242898,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "start": 72.139185,
-      "end": 77.562479,
-      "duration": 5.423294,
-      "note_start": 128,
-      "note_end": 141,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -1216,7 +1176,17 @@
           "end": 75.228673,
           "duration": 0.634943,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 76.22015,
+      "end": 80.444581,
+      "duration": 4.224431,
+      "note_start": 137,
+      "note_end": 149,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -1248,17 +1218,7 @@
           "end": 77.562479,
           "duration": 0.264204,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "start": 77.609354,
-      "end": 83.619296,
-      "duration": 6.009942,
-      "note_start": 141,
-      "note_end": 156,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -1322,7 +1282,17 @@
           "end": 80.444581,
           "duration": 0.431818,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 81.714467,
+      "end": 86.017023,
+      "duration": 4.302556,
+      "note_start": 149,
+      "note_end": 161,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -1378,17 +1348,7 @@
           "end": 83.619296,
           "duration": 0.186079,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "start": 83.761341,
-      "end": 86.017023,
-      "duration": 2.255682,
-      "note_start": 156,
-      "note_end": 161,
-      "notes": [
+        },
         {
           "pitch": "B4",
           "midi": 71,
@@ -1432,12 +1392,12 @@
       ]
     },
     {
-      "id": 15,
+      "id": 11,
       "start": 88.836624,
-      "end": 92.529805,
-      "duration": 3.693181,
+      "end": 95.04827,
+      "duration": 6.211646,
       "note_start": 161,
-      "note_end": 171,
+      "note_end": 175,
       "notes": [
         {
           "pitch": "G#4",
@@ -1518,17 +1478,7 @@
           "end": 92.529805,
           "duration": 0.5625,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "start": 92.957362,
-      "end": 98.294008,
-      "duration": 5.336646,
-      "note_start": 171,
-      "note_end": 179,
-      "notes": [
+        },
         {
           "pitch": "B3",
           "midi": 59,
@@ -1560,7 +1510,17 @@
           "end": 95.04827,
           "duration": 0.701704,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 95.654804,
+      "end": 98.294008,
+      "duration": 2.639204,
+      "note_start": 175,
+      "note_end": 179,
+      "notes": [
         {
           "pitch": "B3",
           "midi": 59,
@@ -1596,12 +1556,12 @@
       ]
     },
     {
-      "id": 17,
+      "id": 13,
       "start": 99.755655,
-      "end": 104.480086,
-      "duration": 4.724431,
+      "end": 105.849404,
+      "duration": 6.093749,
       "note_start": 179,
-      "note_end": 193,
+      "note_end": 195,
       "notes": [
         {
           "pitch": "G#4",
@@ -1714,17 +1674,7 @@
           "end": 104.480086,
           "duration": 0.252841,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "start": 104.573836,
-      "end": 108.866448,
-      "duration": 4.292612,
-      "note_start": 193,
-      "note_end": 200,
-      "notes": [
+        },
         {
           "pitch": "B3",
           "midi": 59,
@@ -1740,7 +1690,17 @@
           "end": 105.849404,
           "duration": 0.585227,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 106.597983,
+      "end": 108.866448,
+      "duration": 2.268465,
+      "note_start": 195,
+      "note_end": 200,
+      "notes": [
         {
           "pitch": "B3",
           "midi": 59,
@@ -1784,12 +1744,12 @@
       ]
     },
     {
-      "id": 19,
+      "id": 15,
       "start": 110.271277,
-      "end": 115.100822,
-      "duration": 4.829545,
+      "end": 119.705934,
+      "duration": 9.434657,
       "note_start": 200,
-      "note_end": 222,
+      "note_end": 233,
       "notes": [
         {
           "pitch": "C#4",
@@ -1966,17 +1926,7 @@
           "end": 115.100822,
           "duration": 0.346591,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "start": 115.448833,
-      "end": 119.705934,
-      "duration": 4.257101,
-      "note_start": 222,
-      "note_end": 233,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -2068,7 +2018,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 16,
       "start": 121.244286,
       "end": 126.053944,
       "duration": 4.809658,
@@ -2166,7 +2116,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": 17,
       "start": 126.693148,
       "end": 131.156215,
       "duration": 4.463067,
@@ -2264,12 +2214,12 @@
       ]
     },
     {
-      "id": 23,
+      "id": 18,
       "start": 132.186044,
-      "end": 137.213032,
-      "duration": 5.026988,
+      "end": 145.880643,
+      "duration": 13.694599,
       "note_start": 255,
-      "note_end": 266,
+      "note_end": 289,
       "notes": [
         {
           "pitch": "E4",
@@ -2358,17 +2308,7 @@
           "end": 137.213032,
           "duration": 1.580965,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "start": 137.609338,
-      "end": 141.33661,
-      "duration": 3.727272,
-      "note_start": 266,
-      "note_end": 277,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -2456,17 +2396,7 @@
           "end": 141.33661,
           "duration": 0.315341,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "start": 141.651951,
-      "end": 145.880643,
-      "duration": 4.228692,
-      "note_start": 277,
-      "note_end": 289,
-      "notes": [
+        },
         {
           "pitch": "A4",
           "midi": 69,
@@ -2566,7 +2496,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 19,
       "start": 147.134904,
       "end": 151.428937,
       "duration": 4.294033,
@@ -2672,7 +2602,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": 20,
       "start": 152.607914,
       "end": 156.85081,
       "duration": 4.242896,
@@ -2778,12 +2708,12 @@
       ]
     },
     {
-      "id": 28,
+      "id": 21,
       "start": 158.041151,
-      "end": 161.704502,
-      "duration": 3.663351,
+      "end": 162.299673,
+      "duration": 4.258522,
       "note_start": 313,
-      "note_end": 324,
+      "note_end": 325,
       "notes": [
         {
           "pitch": "A4",
@@ -2872,17 +2802,7 @@
           "end": 161.704502,
           "duration": 0.37642,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "start": 161.798252,
-      "end": 168.455921,
-      "duration": 6.657669,
-      "note_start": 324,
-      "note_end": 332,
-      "notes": [
+        },
         {
           "pitch": "D#4",
           "midi": 63,
@@ -2890,7 +2810,17 @@
           "end": 162.299673,
           "duration": 0.50142,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 164.058195,
+      "end": 164.964445,
+      "duration": 0.90625,
+      "note_start": 325,
+      "note_end": 327,
+      "notes": [
         {
           "pitch": "E4",
           "midi": 64,
@@ -2906,7 +2836,17 @@
           "end": 164.964445,
           "duration": 0.401989,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 165.627797,
+      "end": 168.455921,
+      "duration": 2.828124,
+      "note_start": 327,
+      "note_end": 332,
+      "notes": [
         {
           "pitch": "E4",
           "midi": 64,
@@ -2950,12 +2890,12 @@
       ]
     },
     {
-      "id": 30,
+      "id": 24,
       "start": 169.714443,
-      "end": 177.482907,
-      "duration": 7.768464,
+      "end": 174.043988,
+      "duration": 4.329545,
       "note_start": 332,
-      "note_end": 340,
+      "note_end": 338,
       "notes": [
         {
           "pitch": "E4",
@@ -3004,7 +2944,17 @@
           "end": 174.043988,
           "duration": 1.25,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 176.495692,
+      "end": 179.168986,
+      "duration": 2.673294,
+      "note_start": 338,
+      "note_end": 343,
+      "notes": [
         {
           "pitch": "E4",
           "midi": 64,
@@ -3020,17 +2970,7 @@
           "end": 177.482907,
           "duration": 0.602273,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "start": 177.580919,
-      "end": 184.847962,
-      "duration": 7.267043,
-      "note_start": 340,
-      "note_end": 349,
-      "notes": [
+        },
         {
           "pitch": "B3",
           "midi": 59,
@@ -3054,7 +2994,17 @@
           "end": 179.168986,
           "duration": 0.262784,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 180.542565,
+      "end": 189.507052,
+      "duration": 8.964487,
+      "note_start": 343,
+      "note_end": 361,
+      "notes": [
         {
           "pitch": "E4",
           "midi": 64,
@@ -3102,17 +3052,7 @@
           "end": 184.847962,
           "duration": 1.197443,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "start": 185.27836,
-      "end": 192.093699,
-      "duration": 6.815339,
-      "note_start": 349,
-      "note_end": 365,
-      "notes": [
+        },
         {
           "pitch": "A4",
           "midi": 69,
@@ -3208,7 +3148,17 @@
           "end": 189.507052,
           "duration": 0.396307,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 190.781199,
+      "end": 194.998528,
+      "duration": 4.217329,
+      "note_start": 361,
+      "note_end": 373,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -3240,17 +3190,7 @@
           "end": 192.093699,
           "duration": 0.245739,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "start": 192.168983,
-      "end": 199.987163,
-      "duration": 7.81818,
-      "note_start": 365,
-      "note_end": 384,
-      "notes": [
+        },
         {
           "pitch": "E4",
           "midi": 64,
@@ -3314,7 +3254,17 @@
           "end": 194.998528,
           "duration": 0.495739,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 196.213016,
+      "end": 200.396253,
+      "duration": 4.183237,
+      "note_start": 373,
+      "note_end": 385,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -3402,17 +3352,7 @@
           "end": 199.987163,
           "duration": 0.474432,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "start": 200.061026,
-      "end": 205.900513,
-      "duration": 5.839487,
-      "note_start": 384,
-      "note_end": 397,
-      "notes": [
+        },
         {
           "pitch": "C#4",
           "midi": 61,
@@ -3420,7 +3360,17 @@
           "end": 200.396253,
           "duration": 0.335227,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 201.708753,
+      "end": 205.900513,
+      "duration": 4.19176,
+      "note_start": 385,
+      "note_end": 397,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -3520,7 +3470,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 30,
       "start": 207.474376,
       "end": 211.982898,
       "duration": 4.508522,
@@ -3586,12 +3536,12 @@
       ]
     },
     {
-      "id": 36,
+      "id": 31,
       "start": 212.964432,
-      "end": 219.02551,
-      "duration": 6.061078,
+      "end": 217.518408,
+      "duration": 4.553976,
       "note_start": 404,
-      "note_end": 413,
+      "note_end": 411,
       "notes": [
         {
           "pitch": "E4",
@@ -3648,7 +3598,17 @@
           "end": 217.518408,
           "duration": 0.359375,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 218.421817,
+      "end": 222.882043,
+      "duration": 4.460226,
+      "note_start": 411,
+      "note_end": 418,
+      "notes": [
         {
           "pitch": "D#4",
           "midi": 63,
@@ -3664,17 +3624,7 @@
           "end": 219.02551,
           "duration": 0.284091,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "start": 219.096532,
-      "end": 226.847951,
-      "duration": 7.751419,
-      "note_start": 413,
-      "note_end": 421,
-      "notes": [
+        },
         {
           "pitch": "B4",
           "midi": 71,
@@ -3714,7 +3664,17 @@
           "end": 222.882043,
           "duration": 0.335227,
           "velocity": 110
-        },
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 223.928918,
+      "end": 228.34653,
+      "duration": 4.417612,
+      "note_start": 418,
+      "note_end": 425,
+      "notes": [
         {
           "pitch": "E4",
           "midi": 64,
@@ -3738,17 +3698,7 @@
           "end": 226.847951,
           "duration": 0.276989,
           "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 38,
-      "start": 226.926076,
-      "end": 230.420393,
-      "duration": 3.494317,
-      "note_start": 421,
-      "note_end": 429,
-      "notes": [
+        },
         {
           "pitch": "G#4",
           "midi": 68,
@@ -3780,7 +3730,17 @@
           "end": 228.34653,
           "duration": 0.28267,
           "velocity": 100
-        },
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 228.957325,
+      "end": 230.420393,
+      "duration": 1.463068,
+      "note_start": 425,
+      "note_end": 429,
+      "notes": [
         {
           "pitch": "A4",
           "midi": 69,
@@ -3815,5 +3775,6 @@
         }
       ]
     }
-  ]
+  ],
+  "warnings": []
 }

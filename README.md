@@ -1,84 +1,108 @@
 # YiYuTongSheng
 
-YiYuTongSheng is a course-project prototype for a Chinese-song-to-English-vocal pipeline.
+YiYuTongSheng is currently configured for OpenCpop Chinese SVS inference with DiffSinger.
 
-The current baseline is intentionally narrow:
+The default path is no longer the old English translation + MeloTTS mock/baseline path. The default target language is `zh`, and the main pipeline uses OpenCpop dataset files only when `dataset.strict_dataset_source: true`.
 
-```text
-OpenCpop MIDI + translated/singable English lyrics + MeloTTS + MIDI phrase timing alignment
-```
+## Default Dataset
 
-OpenUtau, DiffSinger, RVC/SVC, mix, evaluate, and old F0 extraction modules have been removed from the main code path.
-
-## Pipeline
-
-`python app.py --step all --target-language en` runs only:
+`configs/project.yaml` expects OpenCpop under:
 
 ```text
-melody -> lyrics -> phoneme -> alignment -> svs
+data/dataset/opencpop
 ```
 
-Individual stages are also supported:
+Default song id:
+
+```text
+2001
+```
+
+Important config keys:
+
+```yaml
+dataset:
+  name: opencpop
+  root: data/dataset/opencpop
+  strict_dataset_source: true
+  default_song_id: "2001"
+```
+
+When strict mode is enabled, legacy files such as `data/lyrics/lyrics_zh.txt` and `data/lyrics/phrase_map.json` are not used as fallback. Missing OpenCpop files are reported as warnings and empty JSON structures, not mock lyrics.
+
+## Current Flow
+
+```text
+opencpop_loader
+-> melody extraction from OpenCpop MIDI
+-> lyrics extraction from OpenCpop dataset/TextGrid
+-> Chinese phoneme/pinyin preparation
+-> Chinese note alignment
+-> opencpop_svs_score.json
+-> diffsinger phoneme-level input JSON
+-> diffsinger_opencpop_export_plan.json
+-> checkpoint_status.json
+-> DiffSinger subprocess inference
+-> neural_svs_render_plan.json
+-> target_language_vocal.wav
+```
+
+The SVS stage executes local DiffSinger inference when `svs.execute_model: true` and `svs.dry_run: false`. It does not use the old English translation + MeloTTS path.
+
+## Run
 
 ```bash
-python app.py --step melody --target-language en
-python app.py --step lyrics --target-language en
-python app.py --step phoneme --target-language en
-python app.py --step alignment --target-language en
-python app.py --step svs --target-language en
+python app.py --step all --target-language zh --opencpop-id 2001
 ```
 
-## Setup
+Useful individual stages:
 
 ```bash
-conda create -n yiyu_svc python=3.10 -y
-conda activate yiyu_svc
-pip install -r requirements.txt
-
-# MeloTTS install
-pip install git+https://github.com/myshell-ai/MeloTTS.git
-python -m unidic download
+python app.py --step melody --target-language zh --opencpop-id 2001
+python app.py --step lyrics --target-language zh --opencpop-id 2001
+python app.py --step phoneme --target-language zh --opencpop-id 2001
+python app.py --step alignment --target-language zh --opencpop-id 2001
+python app.py --step svs --target-language zh --opencpop-id 2001
 ```
 
-## MeloTTS + OpenCpop MIDI Baseline
+`--target-language en` is intentionally disabled in this branch. It logs a warning and skips the old English/MeloTTS pipeline.
 
-Inputs:
+## Inference Outputs
 
 ```text
-data/dataset/opencpop/midis/2001.midi
-data/lyrics/lyrics_zh.txt
-data/lyrics/phrase_map.json   # optional, can provide note_start/note_end
-```
-
-Run:
-
-```bash
-python app.py --step all --target-language en
-```
-
-Outputs:
-
-```text
-data/score/melody.mid
+data/dataset_manifest/opencpop_dataset_manifest.json
+data/dataset_manifest/opencpop_item_2001.json
 data/score/melody_notes.json
+data/lyrics/lyrics_zh_phrases.json
+data/phoneme/phonemes_zh.json
+data/alignment/zh_note_alignment.json
+data/svs/opencpop_svs_score.json
+data/svs/diffsinger_opencpop_export_plan.json
+data/svs/diffsinger_opencpop/diffsinger_input_2001.json
+data/svs/diffsinger_opencpop/phonemes_2001.tsv
+data/svs/diffsinger_opencpop/notes_2001.csv
+data/svs/checkpoint_status.json
+data/svs/diffsinger_infer_report.json
+data/svs/neural_svs_render_plan.json
 data/svs/target_language_vocal.wav
-data/svs/melotts_render_report.json
 ```
 
-## Stage Summary
+## Model Assets
 
-- `melody`: imports the configured OpenCpop MIDI and writes phrase-level melody notes.
-- `lyrics`: keeps the existing phrase mapping, translation, and singable lyric generation flow.
-- `phoneme`: converts selected English lyrics to syllable-level phoneme units.
-- `alignment`: aligns English syllable groups to MIDI phrase notes.
-- `svs`: renders each phrase with MeloTTS, stretches it to the MIDI phrase duration, and places it on the final timeline.
+Place pretrained DiffSinger assets under `checkpoints/`:
 
-Unused legacy Python modules for preprocess, old melody extraction, OpenUtau rendering, RVC/SVC, mix, and evaluate have been removed.
+```yaml
+svs:
+  pretrained:
+    acoustic_checkpoint: checkpoints/diffsinger/acoustic.ckpt
+    acoustic_config: checkpoints/diffsinger/acoustic.yaml
+    variance_checkpoint: checkpoints/diffsinger/variance.ckpt
+    variance_config: checkpoints/diffsinger/variance.yaml
+    vocoder_checkpoint: checkpoints/diffsinger/vocoder.ckpt
+    vocoder_config: checkpoints/diffsinger/vocoder.yaml
+    phoneme_dictionary: checkpoints/diffsinger/zh_phoneme_dict.json
+  diffsinger:
+    root: external/DiffSinger
+```
 
-## Current Limits
-
-- This is a MeloTTS phrase-level timing alignment baseline.
-- It is not full note-level SVS.
-- It does not do RVC voice conversion.
-- It does not do note-level F0 replacement.
-- A future version can replace this with WORLD F0 replacement or a real SVS backend.
+`zh_phoneme_dict.json` is supported directly. If the config points at `.txt` but only `.json` exists, the checkpoint checker and exporter auto-adapt to the JSON dictionary.

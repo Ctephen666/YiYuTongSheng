@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import json
 import shutil
 from pathlib import Path
+from typing import Any
 
 from src.common.io_utils import ensure_parent, path_from_config, should_write
 from src.common.json_utils import read_json, write_json
@@ -23,8 +25,56 @@ class OpenCpopMidiImporter:
     def __init__(self, config: dict):
         self.config = config
 
+    def _project_root(self) -> Path:
+        return Path(self.config.get("_project_root", ".")).resolve()
+
+    def _resolve(self, value: str | Path) -> Path:
+        path = Path(value)
+        if path.is_absolute():
+            return path
+        return self._project_root() / path
+
+    def _config_path(self, key: str, default: str | None = None) -> Path:
+        outputs = self.config.get("outputs", {}) if isinstance(self.config.get("outputs", {}), dict) else {}
+        paths = self.config.get("paths", {}) if isinstance(self.config.get("paths", {}), dict) else {}
+        value = outputs.get(key) or paths.get(key) or default
+        if value is None:
+            return path_from_config(self.config, key)
+        return self._resolve(value)
+
     def _path_label(self, key: str) -> str:
-        return str(self.config.get("paths", {}).get(key, key))
+        outputs = self.config.get("outputs", {}) if isinstance(self.config.get("outputs", {}), dict) else {}
+        paths = self.config.get("paths", {}) if isinstance(self.config.get("paths", {}), dict) else {}
+        return str(outputs.get(key) or paths.get(key) or key)
+
+    def _strict(self) -> bool:
+        return bool(self.config.get("dataset", {}).get("strict_dataset_source", True))
+
+    def _load_item(self) -> dict:
+        item_path = self._config_path("opencpop_item", "data/dataset_manifest/opencpop_item_2001.json")
+        if not item_path.exists():
+            return {}
+        try:
+            return json.loads(item_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return {}
+
+    def _select_midi_path(self) -> tuple[Path | None, str, list[str]]:
+        warnings: list[str] = []
+        item = self._load_item()
+        item_midi = str(item.get("midi_path") or "").strip() if isinstance(item, dict) else ""
+        if item_midi:
+            return Path(item_midi), item_midi, warnings
+
+        if self._strict():
+            warnings.append(
+                "Strict dataset source is enabled; OpenCpop item has no midi_path and paths.opencpop_midi fallback was not used."
+            )
+            return None, "", warnings
+
+        fallback = self._config_path("opencpop_midi", "data/dataset/opencpop/midis/2001.midi")
+        warnings.append("Strict dataset source is disabled; using paths.opencpop_midi fallback.")
+        return fallback, self._path_label("opencpop_midi"), warnings
 
     def _load_pretty_midi(self):
         try:
@@ -64,7 +114,10 @@ class OpenCpopMidiImporter:
         return notes
 
     def _phrase_map_slices(self, notes: list[dict]) -> list[tuple[int, int, int]]:
-        phrase_map_path = path_from_config(self.config, "phrase_map")
+        if self._strict():
+            return []
+
+        phrase_map_path = self._config_path("phrase_map", "data/lyrics/phrase_map.json")
         phrase_map = read_json(phrase_map_path, default={})
         phrases = phrase_map.get("phrases", []) if isinstance(phrase_map, dict) else []
 
@@ -128,14 +181,41 @@ class OpenCpopMidiImporter:
             "notes": phrase_notes,
         }
 
+    def _write_empty_melody(self, midi_label: str, warnings: list[str]) -> dict:
+        melody_notes = self._config_path("melody_notes", "data/score/melody_notes.json")
+        write_json(
+            melody_notes,
+            {
+                "source": "opencpop_midi_missing",
+                "midi": midi_label,
+                "note_count": 0,
+                "phrases": [],
+                "warnings": warnings,
+            },
+            self.config,
+        )
+        return {
+            "status": "warning",
+            "outputs": {"melody_notes": str(melody_notes)},
+            "warnings": warnings,
+            "message": "OpenCpop MIDI was not available; wrote empty melody structure so downstream validation can report the missing input.",
+        }
+
     def run(self) -> dict:
-        midi_path = path_from_config(self.config, "opencpop_midi")
+        midi_path, midi_label, warnings = self._select_midi_path()
+        if midi_path is None:
+            return self._write_empty_melody(midi_label, warnings)
+
         if not midi_path.exists():
-            raise FileNotFoundError(f"Missing OpenCpop MIDI: {self._path_label('opencpop_midi')}")
+            warnings.append(f"Missing OpenCpop MIDI in dataset: {midi_path}")
+            if self._strict():
+                return self._write_empty_melody(str(midi_path), warnings)
+            raise FileNotFoundError(f"Missing OpenCpop MIDI: {midi_path}")
 
         notes = self._load_notes(midi_path)
         if not notes:
-            raise RuntimeError(f"OpenCpop MIDI contains no non-drum notes: {midi_path}")
+            warnings.append(f"OpenCpop MIDI contains no non-drum notes: {midi_path}")
+            return self._write_empty_melody(str(midi_path), warnings)
 
         slices = self._phrase_map_slices(notes) or self._auto_slices(notes)
         phrases = [
@@ -145,30 +225,33 @@ class OpenCpopMidiImporter:
         ]
 
         if not phrases:
-            raise RuntimeError(f"OpenCpop MIDI produced no phrases: {midi_path}")
+            warnings.append(f"OpenCpop MIDI produced no phrases: {midi_path}")
+            return self._write_empty_melody(str(midi_path), warnings)
 
-        melody_midi = path_from_config(self.config, "melody_midi")
+        melody_midi = self._config_path("melody_midi", "data/score/melody.mid")
         if should_write(melody_midi, self.config):
             ensure_parent(melody_midi)
             shutil.copyfile(midi_path, melody_midi)
 
-        melody_notes = path_from_config(self.config, "melody_notes")
+        melody_notes = self._config_path("melody_notes", "data/score/melody_notes.json")
         write_json(
             melody_notes,
             {
                 "source": "opencpop_midi",
-                "midi": self._path_label("opencpop_midi"),
+                "midi": str(midi_path),
                 "note_count": len(notes),
                 "phrases": phrases,
+                "warnings": warnings,
             },
             self.config,
         )
 
         return {
-            "status": "success",
+            "status": "success" if not warnings else "warning",
             "outputs": {
                 "melody_midi": str(melody_midi),
                 "melody_notes": str(melody_notes),
             },
+            "warnings": warnings,
             "message": f"Imported {len(notes)} MIDI notes into {len(phrases)} phrases.",
         }

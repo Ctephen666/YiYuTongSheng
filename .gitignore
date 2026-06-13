@@ -10,7 +10,14 @@ env/
 data/**/*.wav
 data/**/*.mid
 data/**/*.musicxml
+data/dataset_manifest/*.json
+data/svs/*.wav
+data/svs/diffsinger_opencpop/
 outputs/logs/*.log
+
+checkpoints/**/*
+!checkpoints/README.md
+external/
 
 !data/raw/.gitkeep
 !data/stems/.gitkeep
@@ -21,3 +28,14 @@ outputs/logs/*.log
 !data/svs/.gitkeep
 !data/rvc/.gitkeep
 !data/final/.gitkeep
+# Model weights and large model artifacts
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.bin
+*.onnx
+*.h5
+*.pkl
+*.npz
+

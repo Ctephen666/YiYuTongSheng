@@ -1,0 +1,18 @@
+{
+  "format": "neural_svs_render_plan.v2",
+  "dry_run": true,
+  "executed": false,
+  "audio_generated": false,
+  "status": "planned_not_executed",
+  "score_input": "D:\\YiYuTongSheng\\data\\svs\\opencpop_svs_score.json",
+  "diffsinger_input": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_opencpop\\diffsinger_input_2001.json",
+  "planned_output_audio": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+  "warnings": [
+    "OpenCpop segments directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['segments', 'segment', 'labs', 'labels']",
+    "OpenCpop transcriptions directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['transcriptions', 'transcription', 'lyrics', 'texts']",
+    "OpenCpop metadata directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['metadata', 'meta', 'annotations', 'annotation']",
+    "OpenCpop item 2001 missing lyric/transcription file in dataset root D:\\YiYuTongSheng\\data\\dataset\\opencpop.",
+    "Strict dataset source is enabled; no legacy lyrics_zh.txt or phrase_map.json fallback was used."
+  ],
+  "why_not_rendered": "svs.execute_model is false or svs.dry_run is true."
+}

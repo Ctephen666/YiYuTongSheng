@@ -1,0 +1,53 @@
+{
+  "format": "checkpoint_status.v2",
+  "dry_run": false,
+  "downloaded": false,
+  "ready": true,
+  "checks": [
+    {
+      "name": "acoustic_checkpoint",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\acoustic.ckpt",
+      "exists": true
+    },
+    {
+      "name": "acoustic_config",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\acoustic.yaml",
+      "exists": true
+    },
+    {
+      "name": "variance_checkpoint",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\variance.ckpt",
+      "exists": true
+    },
+    {
+      "name": "variance_config",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\variance.yaml",
+      "exists": true
+    },
+    {
+      "name": "vocoder_checkpoint",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\vocoder.ckpt",
+      "exists": true
+    },
+    {
+      "name": "vocoder_config",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\vocoder.yaml",
+      "exists": true
+    },
+    {
+      "name": "phoneme_dictionary",
+      "path": "D:\\YiYuTongSheng\\checkpoints\\diffsinger\\zh_phoneme_dict.json",
+      "exists": true,
+      "phone_count": 60,
+      "phone_format": "json_list"
+    },
+    {
+      "name": "diffsinger.root",
+      "path": "D:\\YiYuTongSheng\\external\\DiffSinger",
+      "exists": true,
+      "missing_subdirs": []
+    }
+  ],
+  "warnings": [],
+  "next_action": "Ready for DiffSinger inference."
+}

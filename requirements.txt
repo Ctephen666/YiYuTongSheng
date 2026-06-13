@@ -1,4 +1,4 @@
-numpy
+numpy==1.24.4
 pyyaml
 soundfile
 librosa
@@ -11,3 +11,8 @@ praatio
 openai
 pyworld
 scipy
+einops
+pyloudnorm
+h5py
+pycwt==0.3.0a22
+matplotlib==3.7.5

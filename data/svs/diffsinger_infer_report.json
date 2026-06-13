@@ -1,0 +1,51 @@
+{
+  "format": "diffsinger_infer_report.v1",
+  "status": "failed",
+  "audio_generated": false,
+  "output_audio": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+  "score_input": "D:\\YiYuTongSheng\\data\\svs\\opencpop_svs_score.json",
+  "diffsinger_input": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_opencpop\\diffsinger_input_2001.json",
+  "staged": {
+    "diffsinger_root": "D:\\YiYuTongSheng\\external\\DiffSinger",
+    "acoustic_exp_name": "yiyutongsheng_acoustic",
+    "vocoder_exp_name": "yiyutongsheng_vocoder",
+    "acoustic_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic",
+    "vocoder_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder",
+    "acoustic_checkpoint_link": "hardlink",
+    "vocoder_checkpoint_link": "hardlink",
+    "acoustic_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic\\config.yaml",
+    "vocoder_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder\\config.yaml"
+  },
+  "run": {
+    "command": [
+      "D:\\Anaconda_envs\\envs\\rvc\\python.exe",
+      "D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py",
+      "--diffsinger-root",
+      "D:\\YiYuTongSheng\\external\\DiffSinger",
+      "--config",
+      "checkpoints/yiyutongsheng_acoustic/config.yaml",
+      "--exp-name",
+      "yiyutongsheng_acoustic",
+      "--input-json",
+      "D:\\YiYuTongSheng\\data\\svs\\diffsinger_opencpop\\diffsinger_input_2001.json",
+      "--output-wav",
+      "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+      "--infer-class",
+      "e2e",
+      "--device",
+      "auto",
+      "--normalize"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:22: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:22: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\librosa\\util\\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  from pkg_resources import resource_filename\nTraceback (most recent call last):\n  File \"D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py\", line 149, in <module>\n    main()\n  File \"D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py\", line 114, in main\n    set_hparams(\n  File \"D:\\YiYuTongSheng\\external\\DiffSinger\\utils\\hparams.py\", line 83, in set_hparams\n    hparams_.update(load_config(args.config))\n  File \"D:\\YiYuTongSheng\\external\\DiffSinger\\utils\\hparams.py\", line 60, in load_config\n    override_config(ret_hparams, load_config(c))\n  File \"D:\\YiYuTongSheng\\external\\DiffSinger\\utils\\hparams.py\", line 49, in load_config\n    hparams_ = yaml.safe_load(f)\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\__init__.py\", line 125, in safe_load\n    return load(stream, SafeLoader)\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\__init__.py\", line 79, in load\n    loader = Loader(stream)\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\loader.py\", line 34, in __init__\n    Reader.__init__(self, stream)\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\reader.py\", line 85, in __init__\n    self.determine_encoding()\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\reader.py\", line 124, in determine_encoding\n    self.update_raw()\n  File \"D:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\yaml\\reader.py\", line 178, in update_raw\n    data = self.stream.read(size)\nUnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 581: illegal multibyte sequence\n",
+    "timeout_sec": 1800
+  },
+  "warnings": [
+    "OpenCpop segments directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['segments', 'segment', 'labs', 'labels']",
+    "OpenCpop transcriptions directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['transcriptions', 'transcription', 'lyrics', 'texts']",
+    "OpenCpop metadata directory not found under D:\\YiYuTongSheng\\data\\dataset\\opencpop; candidates=['metadata', 'meta', 'annotations', 'annotation']",
+    "OpenCpop item 2001 missing lyric/transcription file in dataset root D:\\YiYuTongSheng\\data\\dataset\\opencpop.",
+    "Strict dataset source is enabled; no legacy lyrics_zh.txt or phrase_map.json fallback was used."
+  ]
+}

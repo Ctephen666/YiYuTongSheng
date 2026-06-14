@@ -12,6 +12,7 @@ from src.web.schemas import ApiResponse, RunRequest
 from src.web.services import (
     PROJECT_ROOT,
     audio_list,
+    build_evaluate_command,
     build_full_pipeline_commands,
     build_score_command,
     build_svc_command,
@@ -19,6 +20,7 @@ from src.web.services import (
     current_score,
     job_manager,
     latest_log,
+    latest_evaluate_report,
     latest_reports,
     load_web_config,
     open_output_directory,
@@ -100,6 +102,13 @@ def api_logs_latest():
     return api_ok(latest_log())
 
 
+@app.get("/api/evaluate/report")
+def api_evaluate_report():
+    report = latest_evaluate_report()
+    warnings = [report["warning"]] if report.get("warning") else []
+    return api_ok(report, warnings)
+
+
 @app.get("/api/jobs")
 def api_jobs():
     return api_ok({"jobs": job_manager.list()})
@@ -138,6 +147,11 @@ def api_run_svc(request: RunRequest):
 @app.post("/api/run/full")
 def api_run_full(request: RunRequest):
     return _start_job("full", build_full_pipeline_commands(request))
+
+
+@app.post("/api/run/evaluate")
+def api_run_evaluate(request: RunRequest):
+    return _start_job("evaluate", [build_evaluate_command(request)])
 
 
 @app.post("/api/open-output-directory")

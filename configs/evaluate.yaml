@@ -1,0 +1,41 @@
+paths:
+  opencpop_root: data/dataset/opencpop
+  svs_dir: data/svs
+  svc_dir: data/svc
+  evaluate_dir: data/evaluate
+
+inputs:
+  song_id: "2001"
+  reference_wav: data/dataset/opencpop/wavs/2001.wav
+  svs_wav: data/svs/target_language_vocal.wav
+  svc_wav: data/svc/converted_target_voice.wav
+  final_wav: data/svc/final_mix.wav
+  score_json: data/svs/opencpop_svs_score.json
+  svs_report_json: data/svs/diffsinger_infer_report.json
+  svc_report_json: data/svc/rvc_convert_report.json
+
+metrics:
+  audio_quality: true
+  pitch_preservation: true
+  intelligibility: true
+  speaker_similarity: true
+  overall_score: true
+
+pitch:
+  extractor: auto
+  frame_ms: 20
+  min_f0: 50
+  max_f0: 1100
+
+text:
+  use_asr: false
+  reference_from_score: true
+
+speaker:
+  enabled: false
+  model: auto
+  target_reference_dir: data/svc/target_voice_reference
+
+output:
+  json_report: data/evaluate/evaluate_report.json
+  markdown_report: data/evaluate/evaluate_report.md

@@ -1,0 +1,158 @@
+{
+  "format": "yiyutongsheng_evaluate_report.v1",
+  "status": "success",
+  "inputs": {
+    "song_id": "D:\\YiYuTongSheng\\2001",
+    "reference_wav": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\wavs\\2001.wav",
+    "svs_wav": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+    "svc_wav": "D:\\YiYuTongSheng\\data\\svc\\converted_target_voice.wav",
+    "final_wav": "D:\\YiYuTongSheng\\data\\svc\\final_mix.wav",
+    "score_json": "D:\\YiYuTongSheng\\data\\svs\\opencpop_svs_score.json",
+    "svs_report_json": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_infer_report.json",
+    "svc_report_json": "D:\\YiYuTongSheng\\data\\svc\\rvc_convert_report.json"
+  },
+  "audio_quality": {
+    "reference": {
+      "path": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\wavs\\2001.wav",
+      "exists": true,
+      "duration_sec": 235.2587755102041,
+      "sample_rate": 44100,
+      "channels": 1,
+      "peak": 0.24691009521484375,
+      "rms": 0.03569202125072479,
+      "clipping_ratio": 0.0,
+      "silence_ratio": 0.17308509733911417,
+      "zero_crossing_rate": 0.06113440394813989,
+      "spectral_centroid": 0.0,
+      "high_freq_ratio": 0.0,
+      "low_freq_ratio": 0.0,
+      "nan_or_inf": false,
+      "is_valid_audio": true,
+      "warnings": []
+    },
+    "svs": {
+      "path": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+      "exists": true,
+      "duration_sec": 230.46,
+      "sample_rate": 40000,
+      "channels": 1,
+      "peak": 0.84912109375,
+      "rms": 0.12577015161514282,
+      "clipping_ratio": 0.0,
+      "silence_ratio": 0.0,
+      "zero_crossing_rate": 0.05697279972368304,
+      "spectral_centroid": 1412.317596832555,
+      "high_freq_ratio": 0.0014651193575144729,
+      "low_freq_ratio": 0.4405957431759759,
+      "nan_or_inf": false,
+      "is_valid_audio": true,
+      "warnings": []
+    },
+    "svc": {
+      "path": "D:\\YiYuTongSheng\\data\\svc\\converted_target_voice.wav",
+      "exists": true,
+      "duration_sec": 230.46,
+      "sample_rate": 40000,
+      "channels": 1,
+      "peak": 0.84912109375,
+      "rms": 0.12577015161514282,
+      "clipping_ratio": 0.0,
+      "silence_ratio": 0.0,
+      "zero_crossing_rate": 0.05697279972368304,
+      "spectral_centroid": 1412.317596832555,
+      "high_freq_ratio": 0.0014651193575144729,
+      "low_freq_ratio": 0.4405957431759759,
+      "nan_or_inf": false,
+      "is_valid_audio": true,
+      "warnings": []
+    },
+    "final": {
+      "path": "D:\\YiYuTongSheng\\data\\svc\\final_mix.wav",
+      "exists": false,
+      "duration_sec": null,
+      "sample_rate": null,
+      "channels": null,
+      "peak": null,
+      "rms": null,
+      "clipping_ratio": null,
+      "silence_ratio": null,
+      "zero_crossing_rate": null,
+      "spectral_centroid": null,
+      "high_freq_ratio": null,
+      "low_freq_ratio": null,
+      "nan_or_inf": null,
+      "is_valid_audio": false,
+      "warnings": [
+        "Audio file not found: D:\\YiYuTongSheng\\data\\svc\\final_mix.wav"
+      ]
+    }
+  },
+  "pitch_preservation": {
+    "source_path": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
+    "converted_path": "D:\\YiYuTongSheng\\data\\svc\\converted_target_voice.wav",
+    "f0_rmse_hz": 0.0,
+    "f0_rmse_cents": 0.0,
+    "f0_mae_hz": 0.0,
+    "f0_mae_cents": 0.0,
+    "f0_correlation": 1.0,
+    "voiced_unvoiced_accuracy": 1.0,
+    "voiced_frame_count": 7585,
+    "compared_frame_count": 11524,
+    "source_f0_mean": 397.47189940601567,
+    "converted_f0_mean": 397.47189940601567,
+    "source_f0_min": 46.00340270996094,
+    "source_f0_max": 862.4605712890625,
+    "converted_f0_min": 46.00340270996094,
+    "converted_f0_max": 862.4605712890625,
+    "warnings": []
+  },
+  "intelligibility": {
+    "reference_text": "感受停在我发端的指尖感受停在我发端的指尖如何瞬间冻结时间如何瞬间冻结时间记住望着我坚定的双眼记住望着我坚定的双眼也许已经没有明天也许已经没有明天面对浩瀚的星海我们微小得像尘埃面对浩瀚瀚的星海海海我们微小得像尘埃埃埃漂浮在一片无奈漂浮在在在一一片片片无奈缘份让我们相遇乱世以外缘份让我们相遇乱世以外命运却要我们危难中相爱命运却要我们危难中相爱也许未来遥远在光年之外也许未来遥远在光年之外我愿守候未知里为你等待我愿守候未知里为你等待我没想到为了你我能疯狂到山崩海啸我没想到为了你我能疯狂到山崩海啸没有你根本不想逃我的大脑没有你根本本不想逃我的大脑为了你已经疯狂到脉搏心跳没有你为了你已经疯狂到脉搏心跳没有你根本不重要根本不重要一双围在我胸口的臂弯一双围在我胸口的臂弯足够抵挡天旋地转足够抵挡天旋地转一种执迷不放手的倔强足以一种执迷不放手的倔强强强足以点燃所有希望点燃所有希望望宇宙磅礡而冷漠我们的爱微小却闪烁宇宙磅磅礴而冷冷漠漠漠我们的爱微小却闪烁烁烁颠簸却如此忘我颠簸簸簸却如此此此忘我缘分让我们相遇乱世以外缘分让我们相遇乱世以外命运却要我们危难中相爱命运却要我们危难中相爱也许未来遥远在光年之外也许未来遥远在光年之外我愿守候未知里为你等待我愿守候未知里为你等待我没想到为了你我能疯狂到我没想到为了你我能疯狂到山崩海啸没有你根本不想逃山崩海啸没有你根本不想逃我的大脑为了你已经疯狂到我的大脑为了你已经疯狂到脉搏心跳没有你根本不重脉搏心跳没有你根本不重要也许航道以外要也许航道以外外是醒不来的梦乱世是醒不来的梦乱世以外是纯粹的相拥以外外是纯粹的相拥我没想到为了你我能疯狂到山崩海啸我没想到为了你我能疯狂到山崩海啸没有你根本不想逃我的大脑为了你已经疯狂没有你根本不想逃我的大脑为了你已经疯狂到脉搏心跳没有你根本不重要到脉搏心跳没有你根本不重要相遇乱世以外相遇乱世以外外危难中相爱相遇危难中相爱爱爱相遇乱世以外危难中乱世以外外危难中相爱我没想到相爱爱爱我没想到",
+    "recognized_text": null,
+    "cer": null,
+    "wer": null,
+    "asr_available": false,
+    "warnings": [
+      "ASR not available; intelligibility metric skipped."
+    ]
+  },
+  "speaker_similarity": {
+    "speaker_similarity_to_target": null,
+    "speaker_similarity_to_source": null,
+    "speaker_embedding_available": false,
+    "target_reference_count": 0,
+    "source_reference_path": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\wavs\\2001.wav",
+    "converted_path": "D:\\YiYuTongSheng\\data\\svc\\converted_target_voice.wav",
+    "target_embedding_path": "data\\svc\\target_voice_reference\\target_embedding.npy",
+    "source_embedding_path": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\wavs\\2001.embedding.npy",
+    "converted_embedding_path": "D:\\YiYuTongSheng\\data\\svc\\converted_target_voice.embedding.npy",
+    "warnings": [
+      "Speaker embedding model not available; speaker similarity skipped."
+    ]
+  },
+  "overall": {
+    "score": 93.254,
+    "level": "excellent",
+    "category_scores": {
+      "audio_quality": 86.508,
+      "pitch_preservation": 100.0,
+      "intelligibility": null,
+      "speaker_similarity": null
+    },
+    "available_categories": [
+      "audio_quality",
+      "pitch_preservation"
+    ],
+    "skipped_categories": [
+      "intelligibility",
+      "speaker_similarity"
+    ],
+    "warnings": []
+  },
+  "warnings": [
+    "Audio file not found: D:\\YiYuTongSheng\\data\\svc\\final_mix.wav",
+    "ASR not available; intelligibility metric skipped.",
+    "Speaker embedding model not available; speaker similarity skipped."
+  ],
+  "errors": []
+}

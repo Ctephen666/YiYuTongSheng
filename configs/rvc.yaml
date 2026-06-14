@@ -1,5 +1,0 @@
-rvc:
-  model_path: "models/rvc/TODO_model.pth"
-  index_path: "models/rvc/TODO_index.index"
-  pitch_shift: 0
-  f0_method: "rmvpe"

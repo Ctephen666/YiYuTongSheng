@@ -158,6 +158,36 @@ function renderReports(data) {
   renderPhrases(data.segments || []);
 }
 
+function renderEvaluate(data) {
+  const node = byId("evaluateCard");
+  const report = data.report || null;
+  if (!data.exists || !report) {
+    node.innerHTML = `<div class="warning">${data.warning || "尚未评估"}</div>`;
+    return;
+  }
+  const overall = report.overall || {};
+  const scores = overall.category_scores || {};
+  const text = report.intelligibility || {};
+  const speaker = report.speaker_similarity || {};
+  const warnings = report.warnings || [];
+  const level = overall.level || "unknown";
+  node.innerHTML = `
+    <div class="score-badge level-${level}">
+      <span>${valueText(overall.score)}</span>
+      <strong>${level}</strong>
+    </div>
+    <dl class="evaluate-grid">
+      <dt>音频质量</dt><dd>${valueText(scores.audio_quality)}</dd>
+      <dt>音准保持</dt><dd>${valueText(scores.pitch_preservation)}</dd>
+      <dt>歌词清晰度 CER</dt><dd>${valueText(text.cer)}</dd>
+      <dt>音色相似度</dt><dd>${valueText(speaker.speaker_similarity_to_target)}</dd>
+      <dt>可用类别</dt><dd>${valueText(overall.available_categories)}</dd>
+      <dt>跳过类别</dt><dd>${valueText(overall.skipped_categories)}</dd>
+    </dl>
+    ${warnings.length ? `<div class="warning">${warnings.slice(0, 3).map(valueText).join("<br>")}</div>` : ""}
+  `;
+}
+
 function renderPhrases(segments) {
   const maxEnd = Math.max(1, ...segments.map((item) => Number(item.end || 0)));
   byId("phraseTimeline").innerHTML = segments.slice(0, 80).map((item) => {
@@ -188,18 +218,20 @@ function renderPhrases(segments) {
 }
 
 async function refreshAll() {
-  const [status, jobs, audio, reports, logs] = await Promise.all([
+  const [status, jobs, audio, reports, logs, evaluate] = await Promise.all([
     api("/api/status"),
     api("/api/jobs"),
     api(`/api/audio/list?song_id=${encodeURIComponent(selectedSong())}`),
     api("/api/reports/latest"),
     api("/api/logs/latest"),
+    api("/api/evaluate/report"),
   ]);
   const active = status.data.active_jobs || [];
   setStatus(active.length ? `${active.length} job running` : "Ready", active.length ? "status-running" : "status-success");
   renderJobs(jobs.data.jobs || []);
   renderAudio(audio.data.audio || []);
   renderReports(reports.data || {});
+  renderEvaluate(evaluate.data || {});
   byId("logPath").textContent = logs.data.path || "";
   byId("logContent").textContent = logs.data.content || "";
 }
@@ -214,6 +246,7 @@ function bindEvents() {
   byId("runSvs").addEventListener("click", () => runTask("/api/run/svs"));
   byId("runSvc").addEventListener("click", () => runTask("/api/run/svc"));
   byId("runFull").addEventListener("click", () => runTask("/api/run/full"));
+  byId("runEvaluate").addEventListener("click", () => runTask("/api/run/evaluate"));
   byId("refreshAll").addEventListener("click", refreshAll);
   byId("refreshReports").addEventListener("click", refreshAll);
   byId("openOutput").addEventListener("click", async () => {

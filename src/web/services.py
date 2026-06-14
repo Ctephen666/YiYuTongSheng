@@ -325,6 +325,14 @@ def latest_log() -> dict:
     return {"path": str(path), "content": text[-20000:]}
 
 
+def latest_evaluate_report() -> dict:
+    path = PROJECT_ROOT / "data" / "evaluate" / "evaluate_report.json"
+    data, error = _safe_read_json(path)
+    if error:
+        return {"exists": False, "path": str(path), "report": None, "warning": "尚未评估或报告不存在。"}
+    return {"exists": True, "path": str(path), "report": data, "warning": None}
+
+
 def build_score_command(request: RunRequest) -> list[str]:
     return [sys.executable, "tools/run_web_task.py", "score", "--song-id", request.song_id]
 
@@ -370,6 +378,23 @@ def build_svc_command(request: RunRequest) -> list[str]:
     if request.index_file:
         command.extend(["--index-file", request.index_file])
     return command
+
+
+def build_evaluate_command(request: RunRequest) -> list[str]:
+    return [
+        sys.executable,
+        "tools/run_evaluate.py",
+        "--config",
+        "configs/evaluate.yaml",
+        "--song-id",
+        request.song_id,
+        "--svs-wav",
+        "data/svs/target_language_vocal.wav",
+        "--svc-wav",
+        "data/svc/converted_target_voice.wav",
+        "--out-dir",
+        "data/evaluate",
+    ]
 
 
 def build_full_pipeline_commands(request: RunRequest) -> list[list[str]]:

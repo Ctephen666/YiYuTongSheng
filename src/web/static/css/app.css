@@ -181,7 +181,7 @@ button:hover { filter: brightness(1.12); }
   gap: 10px;
 }
 
-.job, .audio-item, .report-card {
+.job, .audio-item, .report-card, .evaluate-card {
   background: var(--panel-2);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -212,6 +212,48 @@ audio {
 
 .report-card dt { color: var(--muted); }
 .report-card dd { margin: 0; word-break: break-all; }
+
+.score-badge {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.score-badge span {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.score-badge strong {
+  text-transform: uppercase;
+}
+
+.level-excellent { background: #16a34a; }
+.level-good { background: #2563eb; }
+.level-fair { background: #d97706; }
+.level-poor, .level-unknown { background: #dc2626; }
+
+.evaluate-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 8px 12px;
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.evaluate-grid dt {
+  color: var(--muted);
+}
+
+.evaluate-grid dd {
+  margin: 0;
+  word-break: break-all;
+}
 
 .timeline {
   display: grid;

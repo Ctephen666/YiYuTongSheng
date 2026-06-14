@@ -8,14 +8,22 @@
   "staged": {
     "diffsinger_root": "D:\\YiYuTongSheng\\external\\DiffSinger",
     "configured_acoustic_exp_name": "yiyutongsheng_acoustic",
+    "configured_variance_exp_name": "yiyutongsheng_variance",
     "configured_vocoder_exp_name": "yiyutongsheng_vocoder",
     "acoustic_exp_name": "yiyutongsheng_acoustic_runtime",
+    "variance_exp_name": "yiyutongsheng_variance_runtime",
     "vocoder_exp_name": "yiyutongsheng_vocoder_runtime",
     "acoustic_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime",
+    "variance_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime",
     "vocoder_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime",
+    "acoustic_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime\\model_ckpt_steps_320000.ckpt",
+    "variance_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime\\model_ckpt_steps_160000.ckpt",
+    "vocoder_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime\\model_ckpt_steps_280000.ckpt",
     "acoustic_checkpoint_link": "existing",
+    "variance_checkpoint_link": "existing",
     "vocoder_checkpoint_link": "existing",
     "acoustic_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime\\config.yaml",
+    "variance_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime\\config.yaml",
     "vocoder_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime\\config.yaml"
   },
   "run": {
@@ -33,7 +41,7 @@
       "--output-wav",
       "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
       "--infer-class",
-      "e2e",
+      "cascade",
       "--device",
       "auto",
       "--segments-dir",
@@ -42,23 +50,59 @@
       "1",
       "--assembly-mode",
       "timeline",
+      "--f0-fallback-config",
+      "{\"enabled\": true, \"naturalize\": true, \"transition_ms\": 50, \"vibrato_enabled\": true, \"vibrato_threshold_sec\": 0.35, \"vibrato_rate_hz\": 5.5, \"vibrato_depth_cents\": 15, \"vibrato_delay_sec\": 0.15, \"vibrato_fade_sec\": 0.08, \"tail_fall_enabled\": true, \"tail_fall_ms\": 150, \"tail_fall_cents\": 20, \"jitter_enabled\": true, \"jitter_cents\": 2, \"random_seed\": 1234}",
       "--normalize"
     ],
     "returncode": 0,
-    "stdout": "| Hparams chains:  ['configs/config_base.yaml', 'configs/tts/base.yaml', 'configs/tts/fs2.yaml', 'configs/tts/base_zh.yaml', 'configs/singing/base.yaml', 'usr\\\\configs\\\\base.yaml', 'usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml', 'checkpoints/yiyutongsheng_acoustic_runtime/config.yaml']\n| Hparams: \n\u001b[;33;mK_step\u001b[0m: 1000, \u001b[;33;maccumulate_grad_batches\u001b[0m: 1, \u001b[;33;maudio_num_mel_bins\u001b[0m: 80, \u001b[;33;maudio_sample_rate\u001b[0m: 24000, \u001b[;33;mbase_config\u001b[0m: ['usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml'], \n\u001b[;33;mbinarization_args\u001b[0m: {'shuffle': False, 'with_align': True, 'with_f0': True, 'with_f0cwt': True, 'with_spk_embed': False, 'with_txt': True, 'with_wav': True}, \u001b[;33;mbinarizer_cls\u001b[0m: data_gen.singing.binarize.OpencpopBinarizer, \u001b[;33;mbinary_data_dir\u001b[0m: data/binary/opencpop-midi-dp, \u001b[;33;mcheck_val_every_n_epoch\u001b[0m: 10, \u001b[;33;mclip_grad_norm\u001b[0m: 1, \n\u001b[;33;mcontent_cond_steps\u001b[0m: [], \u001b[;33;mcwt_add_f0_loss\u001b[0m: False, \u001b[;33;mcwt_hidden_size\u001b[0m: 128, \u001b[;33;mcwt_layers\u001b[0m: 2, \u001b[;33;mcwt_loss\u001b[0m: l1, \n\u001b[;33;mcwt_std_scale\u001b[0m: 0.8, \u001b[;33;mdatasets\u001b[0m: ['opencpop'], \u001b[;33;mdebug\u001b[0m: False, \u001b[;33;mdec_ffn_kernel_size\u001b[0m: 9, \u001b[;33;mdec_layers\u001b[0m: 4, \n\u001b[;33;mdecay_steps\u001b[0m: 50000, \u001b[;33;mdecoder_type\u001b[0m: fft, \u001b[;33;mdict_dir\u001b[0m: , \u001b[;33;mdiff_decoder_type\u001b[0m: wavenet, \u001b[;33;mdiff_loss_type\u001b[0m: l1, \n\u001b[;33;mdilation_cycle_length\u001b[0m: 4, \u001b[;33;mdropout\u001b[0m: 0.1, \u001b[;33;mds_workers\u001b[0m: 4, \u001b[;33;mdur_enc_hidden_stride_kernel\u001b[0m: ['0,2,3', '0,2,3', '0,1,3'], \u001b[;33;mdur_loss\u001b[0m: mse, \n\u001b[;33;mdur_predictor_kernel\u001b[0m: 3, \u001b[;33;mdur_predictor_layers\u001b[0m: 5, \u001b[;33;menc_ffn_kernel_size\u001b[0m: 9, \u001b[;33;menc_layers\u001b[0m: 4, \u001b[;33;mencoder_K\u001b[0m: 8, \n\u001b[;33;mencoder_type\u001b[0m: fft, \u001b[;33;mendless_ds\u001b[0m: True, \u001b[;33;mffn_act\u001b[0m: gelu, \u001b[;33;mffn_padding\u001b[0m: SAME, \u001b[;33;mfft_size\u001b[0m: 512, \n\u001b[;33;mfmax\u001b[0m: 12000, \u001b[;33;mfmin\u001b[0m: 30, \u001b[;33;mfs2_ckpt\u001b[0m: , \u001b[;33;mgaussian_start\u001b[0m: True, \u001b[;33;mgen_dir_name\u001b[0m: , \n\u001b[;33;mgen_tgt_spk_id\u001b[0m: -1, \u001b[;33;mhidden_size\u001b[0m: 256, \u001b[;33;mhop_size\u001b[0m: 128, \u001b[;33;minfer\u001b[0m: False, \u001b[;33;mkeep_bins\u001b[0m: 80, \n\u001b[;33;mlambda_commit\u001b[0m: 0.25, \u001b[;33;mlambda_energy\u001b[0m: 0.0, \u001b[;33;mlambda_f0\u001b[0m: 0.0, \u001b[;33;mlambda_ph_dur\u001b[0m: 1.0, \u001b[;33;mlambda_sent_dur\u001b[0m: 1.0, \n\u001b[;33;mlambda_uv\u001b[0m: 0.0, \u001b[;33;mlambda_word_dur\u001b[0m: 1.0, \u001b[;33;mload_ckpt\u001b[0m: , \u001b[;33;mlog_interval\u001b[0m: 100, \u001b[;33;mloud_norm\u001b[0m: False, \n\u001b[;33;mlr\u001b[0m: 0.001, \u001b[;33;mmax_beta\u001b[0m: 0.02, \u001b[;33;mmax_epochs\u001b[0m: 1000, \u001b[;33;mmax_eval_sentences\u001b[0m: 1, \u001b[;33;mmax_eval_tokens\u001b[0m: 60000, \n\u001b[;33;mmax_frames\u001b[0m: 8000, \u001b[;33;mmax_input_tokens\u001b[0m: 1550, \u001b[;33;mmax_sentences\u001b[0m: 48, \u001b[;33;mmax_tokens\u001b[0m: 36000, \u001b[;33;mmax_updates\u001b[0m: 320000, \n\u001b[;33;mmel_loss\u001b[0m: ssim:0.5|l1:0.5, \u001b[;33;mmel_vmax\u001b[0m: 1.5, \u001b[;33;mmel_vmin\u001b[0m: -6.0, \u001b[;33;mmin_level_db\u001b[0m: -120, \u001b[;33;mnorm_type\u001b[0m: gn, \n\u001b[;33;mnum_ckpt_keep\u001b[0m: 3, \u001b[;33;mnum_heads\u001b[0m: 2, \u001b[;33;mnum_sanity_val_steps\u001b[0m: 1, \u001b[;33;mnum_spk\u001b[0m: 1, \u001b[;33;mnum_test_samples\u001b[0m: 0, \n\u001b[;33;mnum_valid_plots\u001b[0m: 10, \u001b[;33;moptimizer_adam_beta1\u001b[0m: 0.9, \u001b[;33;moptimizer_adam_beta2\u001b[0m: 0.98, \u001b[;33;mout_wav_norm\u001b[0m: False, \u001b[;33;mpe_ckpt\u001b[0m: checkpoints/0102_xiaoma_pe, \n\u001b[;33;mpe_enable\u001b[0m: False, \u001b[;33;mpitch_ar\u001b[0m: False, \u001b[;33;mpitch_enc_hidden_stride_kernel\u001b[0m: ['0,2,5', '0,2,5', '0,2,5'], \u001b[;33;mpitch_extractor\u001b[0m: parselmouth, \u001b[;33;mpitch_loss\u001b[0m: l1, \n\u001b[;33;mpitch_norm\u001b[0m: log, \u001b[;33;mpitch_type\u001b[0m: frame, \u001b[;33;mpndm_speedup\u001b[0m: 40, \u001b[;33;mpre_align_args\u001b[0m: {'allow_no_txt': False, 'denoise': False, 'forced_align': 'mfa', 'txt_processor': 'zh_g2pM', 'use_sox': True, 'use_tone': False}, \u001b[;33;mpre_align_cls\u001b[0m: data_gen.singing.pre_align.SingingPreAlign, \n\u001b[;33;mpredictor_dropout\u001b[0m: 0.5, \u001b[;33;mpredictor_grad\u001b[0m: 0.1, \u001b[;33;mpredictor_hidden\u001b[0m: -1, \u001b[;33;mpredictor_kernel\u001b[0m: 5, \u001b[;33;mpredictor_layers\u001b[0m: 5, \n\u001b[;33;mprenet_dropout\u001b[0m: 0.5, \u001b[;33;mprenet_hidden_size\u001b[0m: 256, \u001b[;33;mpretrain_fs_ckpt\u001b[0m: , \u001b[;33;mprocessed_data_dir\u001b[0m: xxx, \u001b[;33;mprofile_infer\u001b[0m: False, \n\u001b[;33;mraw_data_dir\u001b[0m: data/raw/opencpop/segments, \u001b[;33;mref_norm_layer\u001b[0m: bn, \u001b[;33;mrel_pos\u001b[0m: True, \u001b[;33;mreset_phone_dict\u001b[0m: True, \u001b[;33;mresidual_channels\u001b[0m: 256, \n\u001b[;33;mresidual_layers\u001b[0m: 20, \u001b[;33;msave_best\u001b[0m: False, \u001b[;33;msave_ckpt\u001b[0m: True, \u001b[;33;msave_codes\u001b[0m: ['configs', 'modules', 'tasks', 'utils', 'usr'], \u001b[;33;msave_f0\u001b[0m: True, \n\u001b[;33;msave_gt\u001b[0m: False, \u001b[;33;mschedule_type\u001b[0m: linear, \u001b[;33;mseed\u001b[0m: 1234, \u001b[;33;msort_by_len\u001b[0m: True, \u001b[;33;mspec_max\u001b[0m: [-0.79453, -0.81116, -0.61631, -0.30679, -0.13863, -0.050652, -0.11563, -0.10679, -0.091068, -0.062174, -0.075302, -0.072217, -0.063815, -0.073299, 0.007361, -0.072508, -0.050234, -0.16534, -0.26928, -0.20782, -0.20823, -0.11702, -0.070128, -0.065868, -0.012675, 0.0015121, -0.089902, -0.21392, -0.23789, -0.28922, -0.30405, -0.23029, -0.22088, -0.21542, -0.29367, -0.30137, -0.38281, -0.4359, -0.28681, -0.46855, -0.57485, -0.47022, -0.54266, -0.44848, -0.6412, -0.687, -0.6486, -0.76436, -0.49971, -0.71068, -0.69724, -0.61487, -0.55843, -0.69773, -0.57502, -0.70919, -0.82431, -0.84213, -0.90431, -0.8284, -0.77945, -0.82758, -0.87699, -1.0532, -1.0766, -1.1198, -1.0185, -0.98983, -1.0001, -1.0756, -1.0024, -1.0304, -1.0579, -1.0188, -1.05, -1.0842, -1.0923, -1.1223, -1.2381, -1.6467], \n\u001b[;33;mspec_min\u001b[0m: [-6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0], \u001b[;33;mspk_cond_steps\u001b[0m: [], \u001b[;33;mstop_token_weight\u001b[0m: 5.0, \u001b[;33;mtask_cls\u001b[0m: usr.diffsinger_task.DiffSingerMIDITask, \u001b[;33;mtest_ids\u001b[0m: [], \n\u001b[;33;mtest_input_dir\u001b[0m: , \u001b[;33;mtest_num\u001b[0m: 0, \u001b[;33;mtest_prefixes\u001b[0m: ['2044', '2086', '2092', '2093', '2100'], \u001b[;33;mtest_set_name\u001b[0m: test, \u001b[;33;mtimesteps\u001b[0m: 1000, \n\u001b[;33;mtrain_set_name\u001b[0m: train, \u001b[;33;muse_denoise\u001b[0m: False, \u001b[;33;muse_energy_embed\u001b[0m: False, \u001b[;33;muse_gt_dur\u001b[0m: False, \u001b[;33;muse_gt_f0\u001b[0m: False, \n\u001b[;33;muse_midi\u001b[0m: True, \u001b[;33;muse_nsf\u001b[0m: False, \u001b[;33;muse_pitch_embed\u001b[0m: False, \u001b[;33;muse_pos_embed\u001b[0m: True, \u001b[;33;muse_spk_embed\u001b[0m: False, \n\u001b[;33;muse_spk_id\u001b[0m: False, \u001b[;33;muse_split_spk_id\u001b[0m: False, \u001b[;33;muse_uv\u001b[0m: True, \u001b[;33;muse_var_enc\u001b[0m: False, \u001b[;33;mval_check_interval\u001b[0m: 2000, \n\u001b[;33;mvalid_num\u001b[0m: 0, \u001b[;33;mvalid_set_name\u001b[0m: valid, \u001b[;33;mvalidate\u001b[0m: False, \u001b[;33;mvocoder\u001b[0m: vocoders.hifigan.HifiGAN, \u001b[;33;mvocoder_ckpt\u001b[0m: checkpoints/yiyutongsheng_vocoder_runtime, \n\u001b[;33;mwarmup_updates\u001b[0m: 2000, \u001b[;33;mwav2spec_eps\u001b[0m: 1e-6, \u001b[;33;mweight_decay\u001b[0m: 0, \u001b[;33;mwin_size\u001b[0m: 512, \u001b[;33;mwork_dir\u001b[0m: checkpoints/yiyutongsheng_acoustic_runtime, \n\n| auto infer-class switch: requested infer_class=e2e, but hparams.base_config looks cascade/opencs: ['usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml']; using cascade instead\n| load 'model' from 'checkpoints/yiyutongsheng_acoustic_runtime\\model_ckpt_steps_100000.ckpt'.\n| load HifiGAN:  checkpoints/yiyutongsheng_vocoder_runtime\\model_ckpt_steps_100000.ckpt\nRemoving weight norm...\n20 20 20\nPass word-notes check.\n===> gaussion start.\n16 16 16\nPass word-notes check.\n===> gaussion start.\n20 20 20\nPass word-notes check.\n===> gaussion start.\n16 16 16\nPass word-notes check.\n===> gaussion start.\n34 34 34\nPass word-notes check.\n===> gaussion start.\n19 19 19\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n21 21 21\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n32 32 32\nPass word-notes check.\n===> gaussion start.\n25 25 25\nPass word-notes check.\n===> gaussion start.\n30 30 30\nPass word-notes check.\n===> gaussion start.\n10 10 10\nPass word-notes check.\n===> gaussion start.\n20 20 20\nPass word-notes check.\n===> gaussion start.\n16 16 16\nPass word-notes check.\n===> gaussion start.\n26 26 26\nPass word-notes check.\n===> gaussion start.\n13 13 13\nPass word-notes check.\n===> gaussion start.\n36 36 36\nPass word-notes check.\n===> gaussion start.\n18 18 18\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n21 21 21\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n24 24 24\nPass word-notes check.\n===> gaussion start.\n24 24 24\nPass word-notes check.\n===> gaussion start.\n24 24 24\nPass word-notes check.\n===> gaussion start.\n22 22 22\nPass word-notes check.\n===> gaussion start.\n15 15 15\nPass word-notes check.\n===> gaussion start.\n16 16 16\nPass word-notes check.\n===> gaussion start.\n17 17 17\nPass word-notes check.\n===> gaussion start.\n32 32 32\nPass word-notes check.\n===> gaussion start.\n38 38 38\nPass word-notes check.\n===> gaussion start.\n26 26 26\nPass word-notes check.\n===> gaussion start.\n13 13 13\nPass word-notes check.\n===> gaussion start.\n15 15 15\nPass word-notes check.\n===> gaussion start.\n15 15 15\nPass word-notes check.\n===> gaussion start.\n13 13 13\nPass word-notes check.\n===> gaussion start.\n{\"status\": \"success\", \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\target_language_vocal.wav\", \"sample_rate\": 24000, \"infer_class_requested\": \"e2e\", \"infer_class\": \"cascade\", \"infer_class_auto_switched\": true, \"infer_class_switch_reason\": \"requested infer_class=e2e, but hparams.base_config looks cascade/opencs: ['usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml']; using cascade instead\", \"exp_name\": \"yiyutongsheng_acoustic_runtime\", \"input_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\diffsinger_opencpop\\\\diffsinger_input_2001.json\", \"input_format\": \"diffsinger_inputs\", \"phrase_count_total\": 38, \"phrase_count_inferred\": 38, \"start_phrase\": 1, \"max_phrases\": null, \"assembly_mode\": \"timeline\", \"normalize_output\": true, \"duration_sec\": 230.49141666666668, \"segments_dir\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\", \"segments\": [{\"item_name\": \"opencpop_2001_phrase_001\", \"phrase_id\": 1, \"start\": 12.47841, \"end\": 16.27171, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.wav\", \"phoneme_count\": 20, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_002\", \"phrase_id\": 2, \"start\": 16.55634, \"end\": 22.15201, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.wav\", \"phoneme_count\": 16, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_003\", \"phrase_id\": 3, \"start\": 23.33113, \"end\": 27.14866, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.wav\", \"phoneme_count\": 20, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_004\", \"phrase_id\": 4, \"start\": 27.46611, \"end\": 32.86797, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.wav\", \"phoneme_count\": 16, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_005\", \"phrase_id\": 5, \"start\": 33.97518, \"end\": 38.76753, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.wav\", \"phoneme_count\": 34, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_006\", \"phrase_id\": 6, \"start\": 39.06457, \"end\": 43.39977, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.wav\", \"phoneme_count\": 19, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_007\", \"phrase_id\": 7, \"start\": 44.8147, \"end\": 49.84653, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_008\", \"phrase_id\": 8, \"start\": 50.3095, \"end\": 55.06223, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.wav\", \"phoneme_count\": 21, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_009\", \"phrase_id\": 9, \"start\": 55.7377, \"end\": 60.59378, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_010\", \"phrase_id\": 10, \"start\": 61.18378, \"end\": 64.98443, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_011\", \"phrase_id\": 11, \"start\": 65.19451, \"end\": 72.03509, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.wav\", \"phoneme_count\": 32, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_012\", \"phrase_id\": 12, \"start\": 72.03509, \"end\": 77.57073, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.wav\", \"phoneme_count\": 25, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_013\", \"phrase_id\": 13, \"start\": 77.57073, \"end\": 83.5979, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.wav\", \"phoneme_count\": 30, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_014\", \"phrase_id\": 14, \"start\": 83.74217, \"end\": 86.21221, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.wav\", \"phoneme_count\": 10, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_015\", \"phrase_id\": 15, \"start\": 88.81514, \"end\": 92.58436, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.wav\", \"phoneme_count\": 20, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_016\", \"phrase_id\": 16, \"start\": 92.82762, \"end\": 98.29112, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.wav\", \"phoneme_count\": 16, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_017\", \"phrase_id\": 17, \"start\": 99.7639, \"end\": 104.4738, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.wav\", \"phoneme_count\": 26, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_018\", \"phrase_id\": 18, \"start\": 104.54605, \"end\": 109.01788, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.wav\", \"phoneme_count\": 13, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_019\", \"phrase_id\": 19, \"start\": 110.2519, \"end\": 115.12832, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.wav\", \"phoneme_count\": 36, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_020\", \"phrase_id\": 20, \"start\": 115.4605, \"end\": 119.82472, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.wav\", \"phoneme_count\": 18, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_021\", \"phrase_id\": 21, \"start\": 121.18199, \"end\": 126.22364, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_022\", \"phrase_id\": 22, \"start\": 126.68117, \"end\": 131.29641, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.wav\", \"phoneme_count\": 21, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_023\", \"phrase_id\": 23, \"start\": 132.10616, \"end\": 137.20515, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_024\", \"phrase_id\": 24, \"start\": 137.541, \"end\": 141.40466, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_025\", \"phrase_id\": 25, \"start\": 141.559, \"end\": 145.87626, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.wav\", \"phoneme_count\": 24, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_026\", \"phrase_id\": 26, \"start\": 146.99698, \"end\": 151.40276, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.wav\", \"phoneme_count\": 24, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_027\", \"phrase_id\": 27, \"start\": 152.53254, \"end\": 156.90159, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.wav\", \"phoneme_count\": 24, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_028\", \"phrase_id\": 28, \"start\": 157.93827, \"end\": 161.78984, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.wav\", \"phoneme_count\": 22, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_029\", \"phrase_id\": 29, \"start\": 161.78984, \"end\": 168.50662, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.wav\", \"phoneme_count\": 15, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_030\", \"phrase_id\": 30, \"start\": 169.54354, \"end\": 177.44916, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.wav\", \"phoneme_count\": 16, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_031\", \"phrase_id\": 31, \"start\": 177.44916, \"end\": 184.95499, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.wav\", \"phoneme_count\": 17, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_032\", \"phrase_id\": 32, \"start\": 185.21924, \"end\": 192.08807, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.wav\", \"phoneme_count\": 32, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_033\", \"phrase_id\": 33, \"start\": 192.08807, \"end\": 200.02843, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.wav\", \"phoneme_count\": 38, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_034\", \"phrase_id\": 34, \"start\": 200.02843, \"end\": 205.919, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.wav\", \"phoneme_count\": 26, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_035\", \"phrase_id\": 35, \"start\": 207.32931, \"end\": 212.02498, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.wav\", \"phoneme_count\": 13, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_036\", \"phrase_id\": 36, \"start\": 212.88081, \"end\": 219.11413, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.wav\", \"phoneme_count\": 15, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_037\", \"phrase_id\": 37, \"start\": 219.11413, \"end\": 226.80215, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.wav\", \"phoneme_count\": 15, \"normalized\": false}, {\"item_name\": \"opencpop_2001_phrase_038\", \"phrase_id\": 38, \"start\": 226.80215, \"end\": 230.49141, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.wav\", \"phoneme_count\": 13, \"normalized\": false}]}\n",
-    "stderr": "D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:23: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:23: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\librosa\\util\\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  from pkg_resources import resource_filename\nD:\\YiYuTongSheng\\external\\DiffSinger\\utils\\__init__.py:193: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.\n  state_dict = torch.load(checkpoint_path, map_location=\"cpu\")[\"state_dict\"]\nD:\\YiYuTongSheng\\external\\DiffSinger\\inference\\svs\\base_svs_infer.py:76: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.\n  ckpt_dict = torch.load(ckpt, map_location=\"cpu\")\nD:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\torch\\nn\\utils\\weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n  WeightNorm.apply(module, name, dim)\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:   4%|▍         | 1/25 [00:00<00:05,  4.67it/s]\nsample time step:  24%|██▍       | 6/25 [00:00<00:00, 22.20it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 31.43it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 37.10it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 40.56it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 34.72it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 33.30it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 40.56it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 43.47it/s]\nsample time step:  80%|████████  | 20/25 [00:00<00:00, 46.82it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 45.65it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.19it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.75it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.54it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.79it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.58it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 33.77it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 44.44it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.02it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.74it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.03it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.39it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.08it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.12it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.33it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.00it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  12%|█▏        | 3/25 [00:00<00:00, 29.91it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.08it/s]\nsample time step:  60%|██████    | 15/25 [00:00<00:00, 46.74it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 48.54it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.05it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.68it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.40it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.17it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.31it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.17it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.19it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 44.47it/s]\nsample time step:  60%|██████    | 15/25 [00:00<00:00, 48.15it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 49.77it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.49it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.20it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.12it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.79it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.00it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.71it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.91it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.73it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.40it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.69it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.39it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.95it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.93it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.74it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.92it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.77it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.54it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.90it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.38it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.82it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.49it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.20it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.13it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.70it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.98it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.67it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.05it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.17it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.97it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.27it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.94it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.09it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 44.21it/s]\nsample time step:  60%|██████    | 15/25 [00:00<00:00, 47.63it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 49.26it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.02it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.34it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.67it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.46it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.80it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.53it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 43.22it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.47it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.18it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 50.74it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.97it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.35it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.98it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.44it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.68it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.55it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.82it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.28it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.83it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.28it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.97it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.86it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.42it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.95it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.06it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.89it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.20it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.48it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 46.15it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 47.44it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 48.33it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.66it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.55it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.50it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.21it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.36it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.21it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 43.06it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.33it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.03it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 50.83it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.91it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.86it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.59it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.10it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.28it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.07it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.20it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.00it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.82it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.06it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.81it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.99it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.94it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.39it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.88it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.59it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.20it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.16it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.86it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.23it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.92it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.14it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.60it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.43it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.44it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.34it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.01it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.64it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.39it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.68it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.52it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.71it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.66it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.45it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.80it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.54it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.92it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.77it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.44it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.36it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.39it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.61it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.48it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.06it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.16it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.03it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 42.91it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.12it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.12it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 50.91it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 50.03it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.27it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.14it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.67it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.83it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.58it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.48it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.23it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.73it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.76it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.66it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.55it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.31it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.99it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.23it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.13it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.61it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.68it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.66it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.13it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.70it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.56it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 44.97it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.65it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 48.86it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.69it/s]\n",
+    "stdout": "| Hparams chains:  ['configs/config_base.yaml', 'configs/tts/base.yaml', 'configs/tts/fs2.yaml', 'configs/tts/base_zh.yaml', 'configs/singing/base.yaml', 'usr\\\\configs\\\\base.yaml', 'usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml', 'checkpoints/yiyutongsheng_acoustic_runtime/config.yaml']\n| Hparams: \n\u001b[;33;mK_step\u001b[0m: 1000, \u001b[;33;maccumulate_grad_batches\u001b[0m: 1, \u001b[;33;maudio_num_mel_bins\u001b[0m: 80, \u001b[;33;maudio_sample_rate\u001b[0m: 24000, \u001b[;33;mbase_config\u001b[0m: ['usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml'], \n\u001b[;33;mbinarization_args\u001b[0m: {'shuffle': False, 'with_align': True, 'with_f0': True, 'with_f0cwt': True, 'with_spk_embed': False, 'with_txt': True, 'with_wav': True}, \u001b[;33;mbinarizer_cls\u001b[0m: data_gen.singing.binarize.OpencpopBinarizer, \u001b[;33;mbinary_data_dir\u001b[0m: data/binary/opencpop-midi-dp, \u001b[;33;mcheck_val_every_n_epoch\u001b[0m: 10, \u001b[;33;mclip_grad_norm\u001b[0m: 1, \n\u001b[;33;mcontent_cond_steps\u001b[0m: [], \u001b[;33;mcwt_add_f0_loss\u001b[0m: False, \u001b[;33;mcwt_hidden_size\u001b[0m: 128, \u001b[;33;mcwt_layers\u001b[0m: 2, \u001b[;33;mcwt_loss\u001b[0m: l1, \n\u001b[;33;mcwt_std_scale\u001b[0m: 0.8, \u001b[;33;mdatasets\u001b[0m: ['opencpop'], \u001b[;33;mdebug\u001b[0m: False, \u001b[;33;mdec_ffn_kernel_size\u001b[0m: 9, \u001b[;33;mdec_layers\u001b[0m: 4, \n\u001b[;33;mdecay_steps\u001b[0m: 50000, \u001b[;33;mdecoder_type\u001b[0m: fft, \u001b[;33;mdict_dir\u001b[0m: , \u001b[;33;mdiff_decoder_type\u001b[0m: wavenet, \u001b[;33;mdiff_loss_type\u001b[0m: l1, \n\u001b[;33;mdilation_cycle_length\u001b[0m: 4, \u001b[;33;mdropout\u001b[0m: 0.1, \u001b[;33;mds_workers\u001b[0m: 4, \u001b[;33;mdur_enc_hidden_stride_kernel\u001b[0m: ['0,2,3', '0,2,3', '0,1,3'], \u001b[;33;mdur_loss\u001b[0m: mse, \n\u001b[;33;mdur_predictor_kernel\u001b[0m: 3, \u001b[;33;mdur_predictor_layers\u001b[0m: 5, \u001b[;33;menc_ffn_kernel_size\u001b[0m: 9, \u001b[;33;menc_layers\u001b[0m: 4, \u001b[;33;mencoder_K\u001b[0m: 8, \n\u001b[;33;mencoder_type\u001b[0m: fft, \u001b[;33;mendless_ds\u001b[0m: True, \u001b[;33;mffn_act\u001b[0m: gelu, \u001b[;33;mffn_padding\u001b[0m: SAME, \u001b[;33;mfft_size\u001b[0m: 512, \n\u001b[;33;mfmax\u001b[0m: 12000, \u001b[;33;mfmin\u001b[0m: 30, \u001b[;33;mfs2_ckpt\u001b[0m: checkpoints/yiyutongsheng_variance_runtime, \u001b[;33;mgaussian_start\u001b[0m: True, \u001b[;33;mgen_dir_name\u001b[0m: , \n\u001b[;33;mgen_tgt_spk_id\u001b[0m: -1, \u001b[;33;mhidden_size\u001b[0m: 256, \u001b[;33;mhop_size\u001b[0m: 128, \u001b[;33;minfer\u001b[0m: False, \u001b[;33;mkeep_bins\u001b[0m: 80, \n\u001b[;33;mlambda_commit\u001b[0m: 0.25, \u001b[;33;mlambda_energy\u001b[0m: 0.0, \u001b[;33;mlambda_f0\u001b[0m: 0.0, \u001b[;33;mlambda_ph_dur\u001b[0m: 1.0, \u001b[;33;mlambda_sent_dur\u001b[0m: 1.0, \n\u001b[;33;mlambda_uv\u001b[0m: 0.0, \u001b[;33;mlambda_word_dur\u001b[0m: 1.0, \u001b[;33;mload_ckpt\u001b[0m: , \u001b[;33;mlog_interval\u001b[0m: 100, \u001b[;33;mloud_norm\u001b[0m: False, \n\u001b[;33;mlr\u001b[0m: 0.001, \u001b[;33;mmax_beta\u001b[0m: 0.02, \u001b[;33;mmax_epochs\u001b[0m: 1000, \u001b[;33;mmax_eval_sentences\u001b[0m: 1, \u001b[;33;mmax_eval_tokens\u001b[0m: 60000, \n\u001b[;33;mmax_frames\u001b[0m: 8000, \u001b[;33;mmax_input_tokens\u001b[0m: 1550, \u001b[;33;mmax_sentences\u001b[0m: 48, \u001b[;33;mmax_tokens\u001b[0m: 36000, \u001b[;33;mmax_updates\u001b[0m: 320000, \n\u001b[;33;mmel_loss\u001b[0m: ssim:0.5|l1:0.5, \u001b[;33;mmel_vmax\u001b[0m: 1.5, \u001b[;33;mmel_vmin\u001b[0m: -6.0, \u001b[;33;mmin_level_db\u001b[0m: -120, \u001b[;33;mnorm_type\u001b[0m: gn, \n\u001b[;33;mnum_ckpt_keep\u001b[0m: 3, \u001b[;33;mnum_heads\u001b[0m: 2, \u001b[;33;mnum_sanity_val_steps\u001b[0m: 1, \u001b[;33;mnum_spk\u001b[0m: 1, \u001b[;33;mnum_test_samples\u001b[0m: 0, \n\u001b[;33;mnum_valid_plots\u001b[0m: 10, \u001b[;33;moptimizer_adam_beta1\u001b[0m: 0.9, \u001b[;33;moptimizer_adam_beta2\u001b[0m: 0.98, \u001b[;33;mout_wav_norm\u001b[0m: False, \u001b[;33;mpe_ckpt\u001b[0m: checkpoints/0102_xiaoma_pe, \n\u001b[;33;mpe_enable\u001b[0m: True, \u001b[;33;mpitch_ar\u001b[0m: False, \u001b[;33;mpitch_enc_hidden_stride_kernel\u001b[0m: ['0,2,5', '0,2,5', '0,2,5'], \u001b[;33;mpitch_extractor\u001b[0m: parselmouth, \u001b[;33;mpitch_loss\u001b[0m: l1, \n\u001b[;33;mpitch_norm\u001b[0m: log, \u001b[;33;mpitch_type\u001b[0m: frame, \u001b[;33;mpndm_speedup\u001b[0m: 40, \u001b[;33;mpre_align_args\u001b[0m: {'allow_no_txt': False, 'denoise': False, 'forced_align': 'mfa', 'txt_processor': 'zh_g2pM', 'use_sox': True, 'use_tone': False}, \u001b[;33;mpre_align_cls\u001b[0m: data_gen.singing.pre_align.SingingPreAlign, \n\u001b[;33;mpredictor_dropout\u001b[0m: 0.5, \u001b[;33;mpredictor_grad\u001b[0m: 0.1, \u001b[;33;mpredictor_hidden\u001b[0m: -1, \u001b[;33;mpredictor_kernel\u001b[0m: 5, \u001b[;33;mpredictor_layers\u001b[0m: 5, \n\u001b[;33;mprenet_dropout\u001b[0m: 0.5, \u001b[;33;mprenet_hidden_size\u001b[0m: 256, \u001b[;33;mpretrain_fs_ckpt\u001b[0m: checkpoints/yiyutongsheng_variance_runtime, \u001b[;33;mprocessed_data_dir\u001b[0m: xxx, \u001b[;33;mprofile_infer\u001b[0m: False, \n\u001b[;33;mraw_data_dir\u001b[0m: data/raw/opencpop/segments, \u001b[;33;mref_norm_layer\u001b[0m: bn, \u001b[;33;mrel_pos\u001b[0m: True, \u001b[;33;mreset_phone_dict\u001b[0m: True, \u001b[;33;mresidual_channels\u001b[0m: 256, \n\u001b[;33;mresidual_layers\u001b[0m: 20, \u001b[;33;msave_best\u001b[0m: False, \u001b[;33;msave_ckpt\u001b[0m: True, \u001b[;33;msave_codes\u001b[0m: ['configs', 'modules', 'tasks', 'utils', 'usr'], \u001b[;33;msave_f0\u001b[0m: True, \n\u001b[;33;msave_gt\u001b[0m: False, \u001b[;33;mschedule_type\u001b[0m: linear, \u001b[;33;mseed\u001b[0m: 1234, \u001b[;33;msort_by_len\u001b[0m: True, \u001b[;33;mspec_max\u001b[0m: [-0.79453, -0.81116, -0.61631, -0.30679, -0.13863, -0.050652, -0.11563, -0.10679, -0.091068, -0.062174, -0.075302, -0.072217, -0.063815, -0.073299, 0.007361, -0.072508, -0.050234, -0.16534, -0.26928, -0.20782, -0.20823, -0.11702, -0.070128, -0.065868, -0.012675, 0.0015121, -0.089902, -0.21392, -0.23789, -0.28922, -0.30405, -0.23029, -0.22088, -0.21542, -0.29367, -0.30137, -0.38281, -0.4359, -0.28681, -0.46855, -0.57485, -0.47022, -0.54266, -0.44848, -0.6412, -0.687, -0.6486, -0.76436, -0.49971, -0.71068, -0.69724, -0.61487, -0.55843, -0.69773, -0.57502, -0.70919, -0.82431, -0.84213, -0.90431, -0.8284, -0.77945, -0.82758, -0.87699, -1.0532, -1.0766, -1.1198, -1.0185, -0.98983, -1.0001, -1.0756, -1.0024, -1.0304, -1.0579, -1.0188, -1.05, -1.0842, -1.0923, -1.1223, -1.2381, -1.6467], \n\u001b[;33;mspec_min\u001b[0m: [-6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0, -6.0], \u001b[;33;mspk_cond_steps\u001b[0m: [], \u001b[;33;mstop_token_weight\u001b[0m: 5.0, \u001b[;33;mtask_cls\u001b[0m: usr.diffsinger_task.DiffSingerMIDITask, \u001b[;33;mtest_ids\u001b[0m: [], \n\u001b[;33;mtest_input_dir\u001b[0m: , \u001b[;33;mtest_num\u001b[0m: 0, \u001b[;33;mtest_prefixes\u001b[0m: ['2044', '2086', '2092', '2093', '2100'], \u001b[;33;mtest_set_name\u001b[0m: test, \u001b[;33;mtimesteps\u001b[0m: 1000, \n\u001b[;33;mtrain_set_name\u001b[0m: train, \u001b[;33;muse_denoise\u001b[0m: False, \u001b[;33;muse_energy_embed\u001b[0m: False, \u001b[;33;muse_gt_dur\u001b[0m: False, \u001b[;33;muse_gt_f0\u001b[0m: False, \n\u001b[;33;muse_midi\u001b[0m: True, \u001b[;33;muse_nsf\u001b[0m: True, \u001b[;33;muse_pitch_embed\u001b[0m: False, \u001b[;33;muse_pos_embed\u001b[0m: True, \u001b[;33;muse_spk_embed\u001b[0m: False, \n\u001b[;33;muse_spk_id\u001b[0m: False, \u001b[;33;muse_split_spk_id\u001b[0m: False, \u001b[;33;muse_uv\u001b[0m: True, \u001b[;33;muse_var_enc\u001b[0m: False, \u001b[;33;mval_check_interval\u001b[0m: 2000, \n\u001b[;33;mvalid_num\u001b[0m: 0, \u001b[;33;mvalid_set_name\u001b[0m: valid, \u001b[;33;mvalidate\u001b[0m: False, \u001b[;33;mvocoder\u001b[0m: vocoders.hifigan.HifiGAN, \u001b[;33;mvocoder_ckpt\u001b[0m: checkpoints/yiyutongsheng_vocoder_runtime, \n\u001b[;33;mwarmup_updates\u001b[0m: 2000, \u001b[;33;mwav2spec_eps\u001b[0m: 1e-6, \u001b[;33;mweight_decay\u001b[0m: 0, \u001b[;33;mwin_size\u001b[0m: 512, \u001b[;33;mwork_dir\u001b[0m: checkpoints/yiyutongsheng_acoustic_runtime, \n\n| cascade fs2_ckpt: checkpoints/yiyutongsheng_variance_runtime\n| load 'model' from 'checkpoints/yiyutongsheng_acoustic_runtime\\model_ckpt_steps_320000.ckpt'.\n| load HifiGAN:  checkpoints/yiyutongsheng_vocoder_runtime\\model_ckpt_steps_280000.ckpt\nRemoving weight norm...\nPass word-notes check.\n20 20 20\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n16 16 16\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n20 20 20\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n16 16 16\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n34 34 34\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n19 19 19\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n21 21 21\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n32 32 32\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n25 25 25\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n30 30 30\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n10 10 10\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n20 20 20\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n16 16 16\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n26 26 26\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n13 13 13\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n36 36 36\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n18 18 18\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n21 21 21\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n24 24 24\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n24 24 24\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n24 24 24\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n22 22 22\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n15 15 15\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n16 16 16\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n17 17 17\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n32 32 32\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n38 38 38\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n26 26 26\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n13 13 13\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n15 15 15\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n15 15 15\nPass word-notes check.\n===> gaussion start.\nPass word-notes check.\n13 13 13\nPass word-notes check.\n===> gaussion start.\n{\"status\": \"success\", \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\target_language_vocal.wav\", \"sample_rate\": 24000, \"infer_class_requested\": \"cascade\", \"infer_class\": \"cascade\", \"infer_class_auto_switched\": false, \"infer_class_switch_reason\": \"\", \"exp_name\": \"yiyutongsheng_acoustic_runtime\", \"hparams_summary\": {\"base_config\": [\"usr/configs/popcs_ds_beta6.yaml\", \"usr/configs/midi/cascade/opencs/opencpop_statis.yaml\"], \"work_dir\": \"checkpoints/yiyutongsheng_acoustic_runtime\", \"fs2_ckpt\": \"checkpoints/yiyutongsheng_variance_runtime\", \"pretrain_fs_ckpt\": \"checkpoints/yiyutongsheng_variance_runtime\", \"vocoder_ckpt\": \"checkpoints/yiyutongsheng_vocoder_runtime\", \"pe_enable\": true, \"use_nsf\": true, \"audio_sample_rate\": 24000, \"hop_size\": 128}, \"input_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\diffsinger_opencpop\\\\diffsinger_input_2001.json\", \"input_format\": \"diffsinger_inputs\", \"selected_input_types\": [\"word\"], \"f0_fallback_config\": {\"enabled\": true, \"naturalize\": true, \"transition_ms\": 50, \"vibrato_enabled\": true, \"vibrato_threshold_sec\": 0.35, \"vibrato_rate_hz\": 5.5, \"vibrato_depth_cents\": 15, \"vibrato_delay_sec\": 0.15, \"vibrato_fade_sec\": 0.08, \"tail_fall_enabled\": true, \"tail_fall_ms\": 150, \"tail_fall_cents\": 20, \"jitter_enabled\": true, \"jitter_cents\": 2, \"random_seed\": 1234}, \"phrase_count_total\": 38, \"phrase_count_inferred\": 38, \"start_phrase\": 1, \"max_phrases\": null, \"assembly_mode\": \"timeline\", \"normalize_output\": true, \"duration_sec\": 230.49141666666668, \"segments_dir\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\", \"segments\": [{\"item_name\": \"opencpop_2001_phrase_001\", \"phrase_id\": 1, \"input_type\": \"word\", \"start\": 12.47841, \"end\": 16.27171, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.wav\", \"normalized\": false, \"word_count\": 10, \"note_group_count\": 10, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.mel_stats.json\", \"mel_stats\": {\"min\": -5.667928695678711, \"max\": -0.8921656608581543, \"mean\": -3.103276252746582, \"std\": 0.7750789523124695, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 691, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_001.f0_natural.npy\", \"f0_stats\": {\"min\": 309.84832763671875, \"max\": 419.3408203125, \"mean\": 350.3145751953125, \"std\": 35.680763244628906, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 691]}}, {\"item_name\": \"opencpop_2001_phrase_002\", \"phrase_id\": 2, \"input_type\": \"word\", \"start\": 16.55634, \"end\": 22.15201, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.wav\", \"normalized\": false, \"word_count\": 8, \"note_group_count\": 8, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.mel_stats.json\", \"mel_stats\": {\"min\": -5.9115447998046875, \"max\": -0.6132049560546875, \"mean\": -3.129511594772339, \"std\": 0.7704002261161804, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 964, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_002.f0_natural.npy\", \"f0_stats\": {\"min\": 244.60890197753906, \"max\": 419.39825439453125, \"mean\": 314.5323791503906, \"std\": 71.65184783935547, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 964]}}, {\"item_name\": \"opencpop_2001_phrase_003\", \"phrase_id\": 3, \"input_type\": \"word\", \"start\": 23.33113, \"end\": 27.14866, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.wav\", \"normalized\": false, \"word_count\": 10, \"note_group_count\": 10, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.mel_stats.json\", \"mel_stats\": {\"min\": -5.701404094696045, \"max\": -0.8205752372741699, \"mean\": -3.04736590385437, \"std\": 0.7657457590103149, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 734, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_003.f0_natural.npy\", \"f0_stats\": {\"min\": 310.7677307128906, \"max\": 419.8175964355469, \"mean\": 350.9026184082031, \"std\": 36.030887603759766, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 734]}}, {\"item_name\": \"opencpop_2001_phrase_004\", \"phrase_id\": 4, \"input_type\": \"word\", \"start\": 27.46611, \"end\": 32.86797, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.wav\", \"normalized\": false, \"word_count\": 8, \"note_group_count\": 8, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.mel_stats.json\", \"mel_stats\": {\"min\": -5.7721405029296875, \"max\": -0.8158354759216309, \"mean\": -3.2083475589752197, \"std\": 0.7367072105407715, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 920, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_004.f0_natural.npy\", \"f0_stats\": {\"min\": 244.43109130859375, \"max\": 419.4440002441406, \"mean\": 313.2358703613281, \"std\": 72.51737976074219, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 920]}}, {\"item_name\": \"opencpop_2001_phrase_005\", \"phrase_id\": 5, \"input_type\": \"word\", \"start\": 33.97518, \"end\": 38.76753, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.wav\", \"normalized\": false, \"word_count\": 15, \"note_group_count\": 15, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.mel_stats.json\", \"mel_stats\": {\"min\": -5.655763626098633, \"max\": -0.636570930480957, \"mean\": -2.9308419227600098, \"std\": 0.7480626702308655, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_005.f0_natural.npy\", \"f0_stats\": {\"min\": 276.6695251464844, \"max\": 440.11383056640625, \"mean\": 347.1239929199219, \"std\": 57.12849426269531, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816]}}, {\"item_name\": \"opencpop_2001_phrase_006\", \"phrase_id\": 6, \"input_type\": \"word\", \"start\": 39.06457, \"end\": 43.39977, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.wav\", \"normalized\": false, \"word_count\": 7, \"note_group_count\": 7, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.mel_stats.json\", \"mel_stats\": {\"min\": -5.677192211151123, \"max\": -0.8020443916320801, \"mean\": -3.0281498432159424, \"std\": 0.7729485630989075, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 789, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_006.f0_natural.npy\", \"f0_stats\": {\"min\": 327.0401916503906, \"max\": 441.4620361328125, \"mean\": 379.8154296875, \"std\": 34.631065368652344, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 789]}}, {\"item_name\": \"opencpop_2001_phrase_007\", \"phrase_id\": 7, \"input_type\": \"word\", \"start\": 44.8147, \"end\": 49.84653, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.mel_stats.json\", \"mel_stats\": {\"min\": -5.560280799865723, \"max\": -0.48375463485717773, \"mean\": -2.978553533554077, \"std\": 0.7541998028755188, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 973, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_007.f0_natural.npy\", \"f0_stats\": {\"min\": 310.5510559082031, \"max\": 559.8634033203125, \"mean\": 458.8480529785156, \"std\": 95.59297180175781, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 973]}}, {\"item_name\": \"opencpop_2001_phrase_008\", \"phrase_id\": 8, \"input_type\": \"word\", \"start\": 50.3095, \"end\": 55.06223, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.mel_stats.json\", \"mel_stats\": {\"min\": -5.929368495941162, \"max\": -0.4635629653930664, \"mean\": -3.096890926361084, \"std\": 0.8373949527740479, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 885, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_008.f0_natural.npy\", \"f0_stats\": {\"min\": 329.01739501953125, \"max\": 498.6351013183594, \"mean\": 397.5586853027344, \"std\": 51.45441436767578, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 885]}}, {\"item_name\": \"opencpop_2001_phrase_009\", \"phrase_id\": 9, \"input_type\": \"word\", \"start\": 55.7377, \"end\": 60.59378, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.mel_stats.json\", \"mel_stats\": {\"min\": -5.209835052490234, \"max\": -0.46398115158081055, \"mean\": -2.873279571533203, \"std\": 0.7552770972251892, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 937, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_009.f0_natural.npy\", \"f0_stats\": {\"min\": 327.0824890136719, \"max\": 559.9841918945312, \"mean\": 455.3428955078125, \"std\": 91.40166473388672, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 937]}}, {\"item_name\": \"opencpop_2001_phrase_010\", \"phrase_id\": 10, \"input_type\": \"word\", \"start\": 61.18378, \"end\": 64.98443, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.mel_stats.json\", \"mel_stats\": {\"min\": -5.3799567222595215, \"max\": -0.6255545616149902, \"mean\": -2.8867290019989014, \"std\": 0.7815409898757935, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 669, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_010.f0_natural.npy\", \"f0_stats\": {\"min\": 329.01739501953125, \"max\": 498.1504821777344, \"mean\": 402.1277160644531, \"std\": 51.31024169921875, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 669]}}, {\"item_name\": \"opencpop_2001_phrase_011\", \"phrase_id\": 11, \"input_type\": \"word\", \"start\": 65.19451, \"end\": 72.03509, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.wav\", \"normalized\": false, \"word_count\": 16, \"note_group_count\": 16, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.mel_stats.json\", \"mel_stats\": {\"min\": -5.507985591888428, \"max\": -0.4176597595214844, \"mean\": -2.8576509952545166, \"std\": 0.7978266477584839, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1063, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_011.f0_natural.npy\", \"f0_stats\": {\"min\": 274.602294921875, \"max\": 494.8690490722656, \"mean\": 384.2043762207031, \"std\": 68.1595458984375, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1063]}}, {\"item_name\": \"opencpop_2001_phrase_012\", \"phrase_id\": 12, \"input_type\": \"word\", \"start\": 72.03509, \"end\": 77.57073, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.wav\", \"normalized\": false, \"word_count\": 12, \"note_group_count\": 12, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.mel_stats.json\", \"mel_stats\": {\"min\": -5.338503837585449, \"max\": -0.6922388076782227, \"mean\": -2.8702635765075684, \"std\": 0.8020309209823608, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 831, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_012.f0_natural.npy\", \"f0_stats\": {\"min\": 308.34625244140625, \"max\": 495.5397033691406, \"mean\": 380.8604736328125, \"std\": 69.67436981201172, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 831]}}, {\"item_name\": \"opencpop_2001_phrase_013\", \"phrase_id\": 13, \"input_type\": \"word\", \"start\": 77.57073, \"end\": 83.5979, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.wav\", \"normalized\": false, \"word_count\": 15, \"note_group_count\": 15, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.mel_stats.json\", \"mel_stats\": {\"min\": -5.570188522338867, \"max\": -0.5700383186340332, \"mean\": -2.8843042850494385, \"std\": 0.7786931395530701, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 899, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_013.f0_natural.npy\", \"f0_stats\": {\"min\": 274.5691223144531, \"max\": 495.5351257324219, \"mean\": 392.04156494140625, \"std\": 77.58724212646484, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 899]}}, {\"item_name\": \"opencpop_2001_phrase_014\", \"phrase_id\": 14, \"input_type\": \"word\", \"start\": 83.74217, \"end\": 86.21221, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.wav\", \"normalized\": false, \"word_count\": 5, \"note_group_count\": 5, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.mel_stats.json\", \"mel_stats\": {\"min\": -6.033474922180176, \"max\": -0.5541911125183105, \"mean\": -2.975008964538574, \"std\": 0.875220775604248, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 460, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_014.f0_natural.npy\", \"f0_stats\": {\"min\": 306.86376953125, \"max\": 498.5482482910156, \"mean\": 366.9704284667969, \"std\": 76.20142364501953, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 460]}}, {\"item_name\": \"opencpop_2001_phrase_015\", \"phrase_id\": 15, \"input_type\": \"word\", \"start\": 88.81514, \"end\": 92.58436, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.wav\", \"normalized\": false, \"word_count\": 10, \"note_group_count\": 10, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.mel_stats.json\", \"mel_stats\": {\"min\": -5.708728790283203, \"max\": -0.7232332229614258, \"mean\": -3.0416746139526367, \"std\": 0.8019159436225891, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 678, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_015.f0_natural.npy\", \"f0_stats\": {\"min\": 308.579345703125, \"max\": 419.2920837402344, \"mean\": 350.05963134765625, \"std\": 36.11555480957031, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 678]}}, {\"item_name\": \"opencpop_2001_phrase_016\", \"phrase_id\": 16, \"input_type\": \"word\", \"start\": 92.82762, \"end\": 98.29112, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.wav\", \"normalized\": false, \"word_count\": 8, \"note_group_count\": 8, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.mel_stats.json\", \"mel_stats\": {\"min\": -6.003262996673584, \"max\": -0.7718696594238281, \"mean\": -3.0974442958831787, \"std\": 0.7951524257659912, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 940, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_016.f0_natural.npy\", \"f0_stats\": {\"min\": 244.6168670654297, \"max\": 419.6129455566406, \"mean\": 309.9318542480469, \"std\": 71.26018524169922, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 940]}}, {\"item_name\": \"opencpop_2001_phrase_017\", \"phrase_id\": 17, \"input_type\": \"word\", \"start\": 99.7639, \"end\": 104.4738, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.wav\", \"normalized\": false, \"word_count\": 12, \"note_group_count\": 12, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.mel_stats.json\", \"mel_stats\": {\"min\": -6.004816055297852, \"max\": -0.6983866691589355, \"mean\": -3.0842788219451904, \"std\": 0.7831699848175049, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_017.f0_natural.npy\", \"f0_stats\": {\"min\": 243.7304229736328, \"max\": 416.6538391113281, \"mean\": 328.2364196777344, \"std\": 50.27134323120117, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816]}}, {\"item_name\": \"opencpop_2001_phrase_018\", \"phrase_id\": 18, \"input_type\": \"word\", \"start\": 104.54605, \"end\": 109.01788, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.wav\", \"normalized\": false, \"word_count\": 6, \"note_group_count\": 6, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.mel_stats.json\", \"mel_stats\": {\"min\": -5.389237880706787, \"max\": -0.6041412353515625, \"mean\": -2.9361228942871094, \"std\": 0.8054720163345337, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 768, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_018.f0_natural.npy\", \"f0_stats\": {\"min\": 244.65277099609375, \"max\": 419.18719482421875, \"mean\": 314.5130615234375, \"std\": 72.3182373046875, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 768]}}, {\"item_name\": \"opencpop_2001_phrase_019\", \"phrase_id\": 19, \"input_type\": \"word\", \"start\": 110.2519, \"end\": 115.12832, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.wav\", \"normalized\": false, \"word_count\": 16, \"note_group_count\": 16, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.mel_stats.json\", \"mel_stats\": {\"min\": -5.567890167236328, \"max\": -0.6106953620910645, \"mean\": -3.026170253753662, \"std\": 0.794655978679657, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_019.f0_natural.npy\", \"f0_stats\": {\"min\": 276.6695251464844, \"max\": 439.7421569824219, \"mean\": 345.9440002441406, \"std\": 56.3532829284668, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 816]}}, {\"item_name\": \"opencpop_2001_phrase_020\", \"phrase_id\": 20, \"input_type\": \"word\", \"start\": 115.4605, \"end\": 119.82472, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.wav\", \"normalized\": false, \"word_count\": 7, \"note_group_count\": 7, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.mel_stats.json\", \"mel_stats\": {\"min\": -5.801438331604004, \"max\": -0.6328272819519043, \"mean\": -3.078145980834961, \"std\": 0.8070452809333801, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 790, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_020.f0_natural.npy\", \"f0_stats\": {\"min\": 329.01739501953125, \"max\": 441.4554443359375, \"mean\": 378.4159851074219, \"std\": 34.281864166259766, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 790]}}, {\"item_name\": \"opencpop_2001_phrase_021\", \"phrase_id\": 21, \"input_type\": \"word\", \"start\": 121.18199, \"end\": 126.22364, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.mel_stats.json\", \"mel_stats\": {\"min\": -5.482450485229492, \"max\": -0.5294604301452637, \"mean\": -2.890136480331421, \"std\": 0.7430272698402405, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 977, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_021.f0_natural.npy\", \"f0_stats\": {\"min\": 310.5510559082031, \"max\": 559.8009643554688, \"mean\": 460.2652893066406, \"std\": 94.03628540039062, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 977]}}, {\"item_name\": \"opencpop_2001_phrase_022\", \"phrase_id\": 22, \"input_type\": \"word\", \"start\": 126.68117, \"end\": 131.29641, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.mel_stats.json\", \"mel_stats\": {\"min\": -5.925323486328125, \"max\": -0.46556615829467773, \"mean\": -2.973220109939575, \"std\": 0.8184789419174194, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 866, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_022.f0_natural.npy\", \"f0_stats\": {\"min\": 327.5318603515625, \"max\": 498.4226989746094, \"mean\": 395.23095703125, \"std\": 51.316917419433594, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 866]}}, {\"item_name\": \"opencpop_2001_phrase_023\", \"phrase_id\": 23, \"input_type\": \"word\", \"start\": 132.10616, \"end\": 137.20515, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.mel_stats.json\", \"mel_stats\": {\"min\": -5.011649131774902, \"max\": -0.48675537109375, \"mean\": -2.8355472087860107, \"std\": 0.7518234252929688, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 973, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_023.f0_natural.npy\", \"f0_stats\": {\"min\": 326.4356384277344, \"max\": 559.989013671875, \"mean\": 458.4931945800781, \"std\": 93.82460021972656, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 973]}}, {\"item_name\": \"opencpop_2001_phrase_024\", \"phrase_id\": 24, \"input_type\": \"word\", \"start\": 137.541, \"end\": 141.40466, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.mel_stats.json\", \"mel_stats\": {\"min\": -5.166454315185547, \"max\": -0.6890110969543457, \"mean\": -2.8642914295196533, \"std\": 0.7610791921615601, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 655, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_024.f0_natural.npy\", \"f0_stats\": {\"min\": 329.01739501953125, \"max\": 498.9405822753906, \"mean\": 403.35577392578125, \"std\": 51.52362823486328, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 655]}}, {\"item_name\": \"opencpop_2001_phrase_025\", \"phrase_id\": 25, \"input_type\": \"word\", \"start\": 141.559, \"end\": 145.87626, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.wav\", \"normalized\": false, \"word_count\": 12, \"note_group_count\": 12, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.mel_stats.json\", \"mel_stats\": {\"min\": -5.561264991760254, \"max\": -0.4450111389160156, \"mean\": -2.9234230518341064, \"std\": 0.8030810952186584, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 794, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_025.f0_natural.npy\", \"f0_stats\": {\"min\": 272.9328918457031, \"max\": 499.0149230957031, \"mean\": 381.9326171875, \"std\": 76.1609878540039, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 794]}}, {\"item_name\": \"opencpop_2001_phrase_026\", \"phrase_id\": 26, \"input_type\": \"word\", \"start\": 146.99698, \"end\": 151.40276, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.wav\", \"normalized\": false, \"word_count\": 12, \"note_group_count\": 12, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.mel_stats.json\", \"mel_stats\": {\"min\": -5.754096508026123, \"max\": -0.5391063690185547, \"mean\": -2.8617231845855713, \"std\": 0.8007221221923828, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 769, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_026.f0_natural.npy\", \"f0_stats\": {\"min\": 306.7156677246094, \"max\": 494.8722839355469, \"mean\": 392.04974365234375, \"std\": 72.57173156738281, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 769]}}, {\"item_name\": \"opencpop_2001_phrase_027\", \"phrase_id\": 27, \"input_type\": \"word\", \"start\": 152.53254, \"end\": 156.90159, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.wav\", \"normalized\": false, \"word_count\": 12, \"note_group_count\": 12, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.mel_stats.json\", \"mel_stats\": {\"min\": -6.047890663146973, \"max\": -0.4800095558166504, \"mean\": -2.9176747798919678, \"std\": 0.8094808459281921, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 823, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_027.f0_natural.npy\", \"f0_stats\": {\"min\": 273.33416748046875, \"max\": 494.86309814453125, \"mean\": 381.7121887207031, \"std\": 76.19740295410156, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 823]}}, {\"item_name\": \"opencpop_2001_phrase_028\", \"phrase_id\": 28, \"input_type\": \"word\", \"start\": 157.93827, \"end\": 161.78984, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.wav\", \"normalized\": false, \"word_count\": 11, \"note_group_count\": 11, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.mel_stats.json\", \"mel_stats\": {\"min\": -5.750134468078613, \"max\": -0.5217442512512207, \"mean\": -2.8937089443206787, \"std\": 0.833645761013031, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 695, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_028.f0_natural.npy\", \"f0_stats\": {\"min\": 325.4330749511719, \"max\": 497.8728332519531, \"mean\": 399.048828125, \"std\": 69.28705596923828, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 695]}}, {\"item_name\": \"opencpop_2001_phrase_029\", \"phrase_id\": 29, \"input_type\": \"word\", \"start\": 161.78984, \"end\": 168.50662, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.wav\", \"normalized\": false, \"word_count\": 7, \"note_group_count\": 7, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.mel_stats.json\", \"mel_stats\": {\"min\": -5.982196807861328, \"max\": -0.6542868614196777, \"mean\": -2.89607310295105, \"std\": 0.7935115098953247, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 855, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_029.f0_natural.npy\", \"f0_stats\": {\"min\": 244.79086303710938, \"max\": 332.3402404785156, \"mean\": 301.60394287109375, \"std\": 27.281848907470703, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 855]}}, {\"item_name\": \"opencpop_2001_phrase_030\", \"phrase_id\": 30, \"input_type\": \"word\", \"start\": 169.54354, \"end\": 177.44916, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.wav\", \"normalized\": false, \"word_count\": 8, \"note_group_count\": 8, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.mel_stats.json\", \"mel_stats\": {\"min\": -5.974754333496094, \"max\": -0.49918031692504883, \"mean\": -3.0164847373962402, \"std\": 0.7707008123397827, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1037, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_030.f0_natural.npy\", \"f0_stats\": {\"min\": 183.2890167236328, \"max\": 332.73675537109375, \"mean\": 258.42755126953125, \"std\": 51.30141830444336, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1037]}}, {\"item_name\": \"opencpop_2001_phrase_031\", \"phrase_id\": 31, \"input_type\": \"word\", \"start\": 177.44916, \"end\": 184.95499, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.wav\", \"normalized\": false, \"word_count\": 8, \"note_group_count\": 8, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.mel_stats.json\", \"mel_stats\": {\"min\": -5.7222113609313965, \"max\": -0.7162680625915527, \"mean\": -2.9135141372680664, \"std\": 0.8074551820755005, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1199, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_031.f0_natural.npy\", \"f0_stats\": {\"min\": 244.88934326171875, \"max\": 373.6343688964844, \"mean\": 331.482421875, \"std\": 35.926177978515625, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1199]}}, {\"item_name\": \"opencpop_2001_phrase_032\", \"phrase_id\": 32, \"input_type\": \"word\", \"start\": 185.21924, \"end\": 192.08807, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.wav\", \"normalized\": false, \"word_count\": 16, \"note_group_count\": 16, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.mel_stats.json\", \"mel_stats\": {\"min\": -5.702624320983887, \"max\": -0.33675146102905273, \"mean\": -2.8498878479003906, \"std\": 0.7978463172912598, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1058, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_032.f0_natural.npy\", \"f0_stats\": {\"min\": 275.2320556640625, \"max\": 499.0868835449219, \"mean\": 390.86492919921875, \"std\": 68.33580780029297, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1058]}}, {\"item_name\": \"opencpop_2001_phrase_033\", \"phrase_id\": 33, \"input_type\": \"word\", \"start\": 192.08807, \"end\": 200.02843, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.wav\", \"normalized\": false, \"word_count\": 19, \"note_group_count\": 19, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.mel_stats.json\", \"mel_stats\": {\"min\": -6.03652811050415, \"max\": -0.4970564842224121, \"mean\": -2.898655891418457, \"std\": 0.7955511212348938, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1199, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_033.f0_natural.npy\", \"f0_stats\": {\"min\": 308.43914794921875, \"max\": 495.5398254394531, \"mean\": 394.4797668457031, \"std\": 75.46094512939453, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1199]}}, {\"item_name\": \"opencpop_2001_phrase_034\", \"phrase_id\": 34, \"input_type\": \"word\", \"start\": 200.02843, \"end\": 205.919, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.wav\", \"normalized\": false, \"word_count\": 13, \"note_group_count\": 13, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.mel_stats.json\", \"mel_stats\": {\"min\": -5.788173198699951, \"max\": -0.5537443161010742, \"mean\": -2.8956081867218018, \"std\": 0.8255671858787537, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 809, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_034.f0_natural.npy\", \"f0_stats\": {\"min\": 274.8847961425781, \"max\": 494.5550842285156, \"mean\": 379.7164611816406, \"std\": 76.44359588623047, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 809]}}, {\"item_name\": \"opencpop_2001_phrase_035\", \"phrase_id\": 35, \"input_type\": \"word\", \"start\": 207.32931, \"end\": 212.02498, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.wav\", \"normalized\": false, \"word_count\": 6, \"note_group_count\": 6, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.mel_stats.json\", \"mel_stats\": {\"min\": -5.922113418579102, \"max\": -0.48442697525024414, \"mean\": -2.7864670753479004, \"std\": 0.7791098356246948, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 889, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_035.f0_natural.npy\", \"f0_stats\": {\"min\": 326.888427734375, \"max\": 559.0682983398438, \"mean\": 457.7713623046875, \"std\": 70.24754333496094, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 889]}}, {\"item_name\": \"opencpop_2001_phrase_036\", \"phrase_id\": 36, \"input_type\": \"word\", \"start\": 212.88081, \"end\": 219.11413, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.wav\", \"normalized\": false, \"word_count\": 7, \"note_group_count\": 7, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.mel_stats.json\", \"mel_stats\": {\"min\": -5.366901397705078, \"max\": -0.46281909942626953, \"mean\": -2.781965494155884, \"std\": 0.7823541164398193, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1079, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_036.f0_natural.npy\", \"f0_stats\": {\"min\": 308.52911376953125, \"max\": 498.7041931152344, \"mean\": 406.8849182128906, \"std\": 69.82485961914062, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1079]}}, {\"item_name\": \"opencpop_2001_phrase_037\", \"phrase_id\": 37, \"input_type\": \"word\", \"start\": 219.11413, \"end\": 226.80215, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.wav\", \"normalized\": false, \"word_count\": 7, \"note_group_count\": 7, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.mel_stats.json\", \"mel_stats\": {\"min\": -5.14113712310791, \"max\": -0.43082666397094727, \"mean\": -2.810241937637329, \"std\": 0.7961498498916626, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1304, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_037.f0_natural.npy\", \"f0_stats\": {\"min\": 326.27484130859375, \"max\": 559.9965209960938, \"mean\": 466.25555419921875, \"std\": 59.22427749633789, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 1304]}}, {\"item_name\": \"opencpop_2001_phrase_038\", \"phrase_id\": 38, \"input_type\": \"word\", \"start\": 226.80215, \"end\": 230.49141, \"output_wav\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.wav\", \"normalized\": false, \"word_count\": 6, \"note_group_count\": 6, \"mel_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.mel.npy\", \"mel_stats_json\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.mel_stats.json\", \"mel_stats\": {\"min\": -5.450397491455078, \"max\": -0.7316327095031738, \"mean\": -2.8332605361938477, \"std\": 0.8119458556175232, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 616, 80]}, \"f0_exists\": true, \"f0_source\": \"notes_fallback_naturalized\", \"f0_naturalized\": true, \"f0_raw_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.f0_raw.npy\", \"f0_natural_npy\": \"D:\\\\YiYuTongSheng\\\\data\\\\svs\\\\segments\\\\opencpop_2001_phrase_038.f0_natural.npy\", \"f0_stats\": {\"min\": 325.6992492675781, \"max\": 444.4220275878906, \"mean\": 388.8648681640625, \"std\": 33.94780349731445, \"has_nan\": false, \"has_inf\": false, \"shape\": [1, 616]}}]}\n",
+    "stderr": "D:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:24: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\YiYuTongSheng\\tools\\run_diffsinger_infer.py:24: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, name):\nD:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\librosa\\util\\files.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  from pkg_resources import resource_filename\nD:\\YiYuTongSheng\\external\\DiffSinger\\utils\\__init__.py:193: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.\n  state_dict = torch.load(checkpoint_path, map_location=\"cpu\")[\"state_dict\"]\nD:\\YiYuTongSheng\\external\\DiffSinger\\inference\\svs\\base_svs_infer.py:76: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.\n  ckpt_dict = torch.load(ckpt, map_location=\"cpu\")\nD:\\Anaconda_envs\\envs\\rvc\\lib\\site-packages\\torch\\nn\\utils\\weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.\n  WeightNorm.apply(module, name, dim)\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:   4%|▍         | 1/25 [00:00<00:05,  4.28it/s]\nsample time step:  24%|██▍       | 6/25 [00:00<00:00, 20.40it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 29.36it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 34.93it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 38.63it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 32.79it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 33.54it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 43.43it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 46.64it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 48.15it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.71it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.37it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.80it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.47it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.76it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.55it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.00it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.98it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.73it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.12it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.79it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.96it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.22it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 46.08it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 47.42it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 48.26it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.64it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.44it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.04it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.54it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 48.73it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.67it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.46it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.69it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.49it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.65it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.24it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.37it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.39it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.02it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.15it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.96it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.38it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.15it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.92it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.23it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.00it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.36it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.16it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.74it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.89it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.69it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.25it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.93it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.69it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 51.09it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.81it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.76it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 42.85it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 45.41it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 46.92it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 47.83it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.19it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.11it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 42.08it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 44.45it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 45.85it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 46.48it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 45.01it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 33.99it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 42.11it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 44.80it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 46.01it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 46.57it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 45.00it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 34.73it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.12it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 45.41it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 46.80it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 47.55it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 45.95it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.07it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.54it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.36it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.63it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.45it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 43.43it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.85it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.57it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 51.20it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 50.37it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.47it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.95it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.61it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.91it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.79it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 43.07it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.62it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.26it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 51.09it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 50.23it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.61it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.75it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.26it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.55it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.21it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.03it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.83it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.29it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.48it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.36it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.15it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.88it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.54it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.64it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.44it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 42.80it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 48.53it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 50.22it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 51.05it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 50.06it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.43it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.17it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.85it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.03it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.79it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.81it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.66it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.09it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.36it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.24it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.73it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.67it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 46.33it/s]\nsample time step:  80%|████████  | 20/25 [00:00<00:00, 48.01it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.61it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.83it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.25it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.79it/s]\nsample time step:  60%|██████    | 15/25 [00:00<00:00, 46.98it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 48.27it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.04it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.84it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 44.43it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.09it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 47.99it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.99it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.07it/s]\nsample time step:  36%|███▌      | 9/25 [00:00<00:00, 43.59it/s]\nsample time step:  56%|█████▌    | 14/25 [00:00<00:00, 46.29it/s]\nsample time step:  76%|███████▌  | 19/25 [00:00<00:00, 47.64it/s]\nsample time step:  96%|█████████▌| 24/25 [00:00<00:00, 48.37it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 46.85it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.93it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.12it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.96it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.04it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.86it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.00it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.97it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.44it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.85it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.66it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.31it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.21it/s]\nsample time step:  60%|██████    | 15/25 [00:00<00:00, 47.18it/s]\nsample time step:  84%|████████▍ | 21/25 [00:00<00:00, 48.81it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.60it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  20%|██        | 5/25 [00:00<00:00, 42.23it/s]\nsample time step:  44%|████▍     | 11/25 [00:00<00:00, 47.23it/s]\nsample time step:  68%|██████▊   | 17/25 [00:00<00:00, 49.14it/s]\nsample time step:  92%|█████████▏| 23/25 [00:00<00:00, 50.61it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.46it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.76it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.59it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.13it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.38it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.11it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 37.69it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.53it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.25it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.58it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.39it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 38.02it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 46.74it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 49.48it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 50.75it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 49.51it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 35.49it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 44.76it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 47.28it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 48.60it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 47.26it/s]\n\nsample time step:   0%|          | 0/25 [00:00<?, ?it/s]\nsample time step:  16%|█▌        | 4/25 [00:00<00:00, 36.85it/s]\nsample time step:  40%|████      | 10/25 [00:00<00:00, 45.37it/s]\nsample time step:  64%|██████▍   | 16/25 [00:00<00:00, 48.12it/s]\nsample time step:  88%|████████▊ | 22/25 [00:00<00:00, 49.25it/s]\nsample time step: 100%|██████████| 25/25 [00:00<00:00, 48.14it/s]\n",
     "timeout_sec": 1800,
     "runner_report": {
       "status": "success",
       "output_wav": "D:\\YiYuTongSheng\\data\\svs\\target_language_vocal.wav",
       "sample_rate": 24000,
-      "infer_class_requested": "e2e",
+      "infer_class_requested": "cascade",
       "infer_class": "cascade",
-      "infer_class_auto_switched": true,
-      "infer_class_switch_reason": "requested infer_class=e2e, but hparams.base_config looks cascade/opencs: ['usr/configs/popcs_ds_beta6.yaml', 'usr/configs/midi/cascade/opencs/opencpop_statis.yaml']; using cascade instead",
+      "infer_class_auto_switched": false,
+      "infer_class_switch_reason": "",
       "exp_name": "yiyutongsheng_acoustic_runtime",
+      "hparams_summary": {
+        "base_config": [
+          "usr/configs/popcs_ds_beta6.yaml",
+          "usr/configs/midi/cascade/opencs/opencpop_statis.yaml"
+        ],
+        "work_dir": "checkpoints/yiyutongsheng_acoustic_runtime",
+        "fs2_ckpt": "checkpoints/yiyutongsheng_variance_runtime",
+        "pretrain_fs_ckpt": "checkpoints/yiyutongsheng_variance_runtime",
+        "vocoder_ckpt": "checkpoints/yiyutongsheng_vocoder_runtime",
+        "pe_enable": true,
+        "use_nsf": true,
+        "audio_sample_rate": 24000,
+        "hop_size": 128
+      },
       "input_json": "D:\\YiYuTongSheng\\data\\svs\\diffsinger_opencpop\\diffsinger_input_2001.json",
       "input_format": "diffsinger_inputs",
+      "selected_input_types": [
+        "word"
+      ],
+      "f0_fallback_config": {
+        "enabled": true,
+        "naturalize": true,
+        "transition_ms": 50,
+        "vibrato_enabled": true,
+        "vibrato_threshold_sec": 0.35,
+        "vibrato_rate_hz": 5.5,
+        "vibrato_depth_cents": 15,
+        "vibrato_delay_sec": 0.15,
+        "vibrato_fade_sec": 0.08,
+        "tail_fall_enabled": true,
+        "tail_fall_ms": 150,
+        "tail_fall_cents": 20,
+        "jitter_enabled": true,
+        "jitter_cents": 2,
+        "random_seed": 1234
+      },
       "phrase_count_total": 38,
       "phrase_count_inferred": 38,
       "start_phrase": 1,
@@ -71,344 +115,1636 @@
         {
           "item_name": "opencpop_2001_phrase_001",
           "phrase_id": 1,
+          "input_type": "word",
           "start": 12.47841,
           "end": 16.27171,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_001.wav",
-          "phoneme_count": 20,
-          "normalized": false
+          "normalized": false,
+          "word_count": 10,
+          "note_group_count": 10,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_001.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_001.mel_stats.json",
+          "mel_stats": {
+            "min": -5.667928695678711,
+            "max": -0.8921656608581543,
+            "mean": -3.103276252746582,
+            "std": 0.7750789523124695,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              691,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_001.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_001.f0_natural.npy",
+          "f0_stats": {
+            "min": 309.84832763671875,
+            "max": 419.3408203125,
+            "mean": 350.3145751953125,
+            "std": 35.680763244628906,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              691
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_002",
           "phrase_id": 2,
+          "input_type": "word",
           "start": 16.55634,
           "end": 22.15201,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_002.wav",
-          "phoneme_count": 16,
-          "normalized": false
+          "normalized": false,
+          "word_count": 8,
+          "note_group_count": 8,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_002.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_002.mel_stats.json",
+          "mel_stats": {
+            "min": -5.9115447998046875,
+            "max": -0.6132049560546875,
+            "mean": -3.129511594772339,
+            "std": 0.7704002261161804,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              964,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_002.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_002.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.60890197753906,
+            "max": 419.39825439453125,
+            "mean": 314.5323791503906,
+            "std": 71.65184783935547,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              964
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_003",
           "phrase_id": 3,
+          "input_type": "word",
           "start": 23.33113,
           "end": 27.14866,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_003.wav",
-          "phoneme_count": 20,
-          "normalized": false
+          "normalized": false,
+          "word_count": 10,
+          "note_group_count": 10,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_003.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_003.mel_stats.json",
+          "mel_stats": {
+            "min": -5.701404094696045,
+            "max": -0.8205752372741699,
+            "mean": -3.04736590385437,
+            "std": 0.7657457590103149,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              734,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_003.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_003.f0_natural.npy",
+          "f0_stats": {
+            "min": 310.7677307128906,
+            "max": 419.8175964355469,
+            "mean": 350.9026184082031,
+            "std": 36.030887603759766,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              734
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_004",
           "phrase_id": 4,
+          "input_type": "word",
           "start": 27.46611,
           "end": 32.86797,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_004.wav",
-          "phoneme_count": 16,
-          "normalized": false
+          "normalized": false,
+          "word_count": 8,
+          "note_group_count": 8,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_004.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_004.mel_stats.json",
+          "mel_stats": {
+            "min": -5.7721405029296875,
+            "max": -0.8158354759216309,
+            "mean": -3.2083475589752197,
+            "std": 0.7367072105407715,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              920,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_004.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_004.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.43109130859375,
+            "max": 419.4440002441406,
+            "mean": 313.2358703613281,
+            "std": 72.51737976074219,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              920
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_005",
           "phrase_id": 5,
+          "input_type": "word",
           "start": 33.97518,
           "end": 38.76753,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_005.wav",
-          "phoneme_count": 34,
-          "normalized": false
+          "normalized": false,
+          "word_count": 15,
+          "note_group_count": 15,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_005.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_005.mel_stats.json",
+          "mel_stats": {
+            "min": -5.655763626098633,
+            "max": -0.636570930480957,
+            "mean": -2.9308419227600098,
+            "std": 0.7480626702308655,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_005.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_005.f0_natural.npy",
+          "f0_stats": {
+            "min": 276.6695251464844,
+            "max": 440.11383056640625,
+            "mean": 347.1239929199219,
+            "std": 57.12849426269531,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_006",
           "phrase_id": 6,
+          "input_type": "word",
           "start": 39.06457,
           "end": 43.39977,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_006.wav",
-          "phoneme_count": 19,
-          "normalized": false
+          "normalized": false,
+          "word_count": 7,
+          "note_group_count": 7,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_006.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_006.mel_stats.json",
+          "mel_stats": {
+            "min": -5.677192211151123,
+            "max": -0.8020443916320801,
+            "mean": -3.0281498432159424,
+            "std": 0.7729485630989075,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              789,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_006.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_006.f0_natural.npy",
+          "f0_stats": {
+            "min": 327.0401916503906,
+            "max": 441.4620361328125,
+            "mean": 379.8154296875,
+            "std": 34.631065368652344,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              789
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_007",
           "phrase_id": 7,
+          "input_type": "word",
           "start": 44.8147,
           "end": 49.84653,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_007.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_007.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_007.mel_stats.json",
+          "mel_stats": {
+            "min": -5.560280799865723,
+            "max": -0.48375463485717773,
+            "mean": -2.978553533554077,
+            "std": 0.7541998028755188,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              973,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_007.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_007.f0_natural.npy",
+          "f0_stats": {
+            "min": 310.5510559082031,
+            "max": 559.8634033203125,
+            "mean": 458.8480529785156,
+            "std": 95.59297180175781,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              973
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_008",
           "phrase_id": 8,
+          "input_type": "word",
           "start": 50.3095,
           "end": 55.06223,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_008.wav",
-          "phoneme_count": 21,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_008.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_008.mel_stats.json",
+          "mel_stats": {
+            "min": -5.929368495941162,
+            "max": -0.4635629653930664,
+            "mean": -3.096890926361084,
+            "std": 0.8373949527740479,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              885,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_008.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_008.f0_natural.npy",
+          "f0_stats": {
+            "min": 329.01739501953125,
+            "max": 498.6351013183594,
+            "mean": 397.5586853027344,
+            "std": 51.45441436767578,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              885
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_009",
           "phrase_id": 9,
+          "input_type": "word",
           "start": 55.7377,
           "end": 60.59378,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_009.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_009.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_009.mel_stats.json",
+          "mel_stats": {
+            "min": -5.209835052490234,
+            "max": -0.46398115158081055,
+            "mean": -2.873279571533203,
+            "std": 0.7552770972251892,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              937,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_009.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_009.f0_natural.npy",
+          "f0_stats": {
+            "min": 327.0824890136719,
+            "max": 559.9841918945312,
+            "mean": 455.3428955078125,
+            "std": 91.40166473388672,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              937
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_010",
           "phrase_id": 10,
+          "input_type": "word",
           "start": 61.18378,
           "end": 64.98443,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_010.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_010.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_010.mel_stats.json",
+          "mel_stats": {
+            "min": -5.3799567222595215,
+            "max": -0.6255545616149902,
+            "mean": -2.8867290019989014,
+            "std": 0.7815409898757935,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              669,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_010.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_010.f0_natural.npy",
+          "f0_stats": {
+            "min": 329.01739501953125,
+            "max": 498.1504821777344,
+            "mean": 402.1277160644531,
+            "std": 51.31024169921875,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              669
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_011",
           "phrase_id": 11,
+          "input_type": "word",
           "start": 65.19451,
           "end": 72.03509,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_011.wav",
-          "phoneme_count": 32,
-          "normalized": false
+          "normalized": false,
+          "word_count": 16,
+          "note_group_count": 16,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_011.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_011.mel_stats.json",
+          "mel_stats": {
+            "min": -5.507985591888428,
+            "max": -0.4176597595214844,
+            "mean": -2.8576509952545166,
+            "std": 0.7978266477584839,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1063,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_011.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_011.f0_natural.npy",
+          "f0_stats": {
+            "min": 274.602294921875,
+            "max": 494.8690490722656,
+            "mean": 384.2043762207031,
+            "std": 68.1595458984375,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1063
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_012",
           "phrase_id": 12,
+          "input_type": "word",
           "start": 72.03509,
           "end": 77.57073,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_012.wav",
-          "phoneme_count": 25,
-          "normalized": false
+          "normalized": false,
+          "word_count": 12,
+          "note_group_count": 12,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_012.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_012.mel_stats.json",
+          "mel_stats": {
+            "min": -5.338503837585449,
+            "max": -0.6922388076782227,
+            "mean": -2.8702635765075684,
+            "std": 0.8020309209823608,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              831,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_012.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_012.f0_natural.npy",
+          "f0_stats": {
+            "min": 308.34625244140625,
+            "max": 495.5397033691406,
+            "mean": 380.8604736328125,
+            "std": 69.67436981201172,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              831
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_013",
           "phrase_id": 13,
+          "input_type": "word",
           "start": 77.57073,
           "end": 83.5979,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_013.wav",
-          "phoneme_count": 30,
-          "normalized": false
+          "normalized": false,
+          "word_count": 15,
+          "note_group_count": 15,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_013.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_013.mel_stats.json",
+          "mel_stats": {
+            "min": -5.570188522338867,
+            "max": -0.5700383186340332,
+            "mean": -2.8843042850494385,
+            "std": 0.7786931395530701,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              899,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_013.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_013.f0_natural.npy",
+          "f0_stats": {
+            "min": 274.5691223144531,
+            "max": 495.5351257324219,
+            "mean": 392.04156494140625,
+            "std": 77.58724212646484,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              899
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_014",
           "phrase_id": 14,
+          "input_type": "word",
           "start": 83.74217,
           "end": 86.21221,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_014.wav",
-          "phoneme_count": 10,
-          "normalized": false
+          "normalized": false,
+          "word_count": 5,
+          "note_group_count": 5,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_014.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_014.mel_stats.json",
+          "mel_stats": {
+            "min": -6.033474922180176,
+            "max": -0.5541911125183105,
+            "mean": -2.975008964538574,
+            "std": 0.875220775604248,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              460,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_014.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_014.f0_natural.npy",
+          "f0_stats": {
+            "min": 306.86376953125,
+            "max": 498.5482482910156,
+            "mean": 366.9704284667969,
+            "std": 76.20142364501953,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              460
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_015",
           "phrase_id": 15,
+          "input_type": "word",
           "start": 88.81514,
           "end": 92.58436,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_015.wav",
-          "phoneme_count": 20,
-          "normalized": false
+          "normalized": false,
+          "word_count": 10,
+          "note_group_count": 10,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_015.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_015.mel_stats.json",
+          "mel_stats": {
+            "min": -5.708728790283203,
+            "max": -0.7232332229614258,
+            "mean": -3.0416746139526367,
+            "std": 0.8019159436225891,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              678,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_015.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_015.f0_natural.npy",
+          "f0_stats": {
+            "min": 308.579345703125,
+            "max": 419.2920837402344,
+            "mean": 350.05963134765625,
+            "std": 36.11555480957031,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              678
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_016",
           "phrase_id": 16,
+          "input_type": "word",
           "start": 92.82762,
           "end": 98.29112,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_016.wav",
-          "phoneme_count": 16,
-          "normalized": false
+          "normalized": false,
+          "word_count": 8,
+          "note_group_count": 8,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_016.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_016.mel_stats.json",
+          "mel_stats": {
+            "min": -6.003262996673584,
+            "max": -0.7718696594238281,
+            "mean": -3.0974442958831787,
+            "std": 0.7951524257659912,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              940,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_016.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_016.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.6168670654297,
+            "max": 419.6129455566406,
+            "mean": 309.9318542480469,
+            "std": 71.26018524169922,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              940
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_017",
           "phrase_id": 17,
+          "input_type": "word",
           "start": 99.7639,
           "end": 104.4738,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_017.wav",
-          "phoneme_count": 26,
-          "normalized": false
+          "normalized": false,
+          "word_count": 12,
+          "note_group_count": 12,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_017.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_017.mel_stats.json",
+          "mel_stats": {
+            "min": -6.004816055297852,
+            "max": -0.6983866691589355,
+            "mean": -3.0842788219451904,
+            "std": 0.7831699848175049,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_017.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_017.f0_natural.npy",
+          "f0_stats": {
+            "min": 243.7304229736328,
+            "max": 416.6538391113281,
+            "mean": 328.2364196777344,
+            "std": 50.27134323120117,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_018",
           "phrase_id": 18,
+          "input_type": "word",
           "start": 104.54605,
           "end": 109.01788,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_018.wav",
-          "phoneme_count": 13,
-          "normalized": false
+          "normalized": false,
+          "word_count": 6,
+          "note_group_count": 6,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_018.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_018.mel_stats.json",
+          "mel_stats": {
+            "min": -5.389237880706787,
+            "max": -0.6041412353515625,
+            "mean": -2.9361228942871094,
+            "std": 0.8054720163345337,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              768,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_018.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_018.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.65277099609375,
+            "max": 419.18719482421875,
+            "mean": 314.5130615234375,
+            "std": 72.3182373046875,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              768
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_019",
           "phrase_id": 19,
+          "input_type": "word",
           "start": 110.2519,
           "end": 115.12832,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_019.wav",
-          "phoneme_count": 36,
-          "normalized": false
+          "normalized": false,
+          "word_count": 16,
+          "note_group_count": 16,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_019.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_019.mel_stats.json",
+          "mel_stats": {
+            "min": -5.567890167236328,
+            "max": -0.6106953620910645,
+            "mean": -3.026170253753662,
+            "std": 0.794655978679657,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_019.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_019.f0_natural.npy",
+          "f0_stats": {
+            "min": 276.6695251464844,
+            "max": 439.7421569824219,
+            "mean": 345.9440002441406,
+            "std": 56.3532829284668,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              816
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_020",
           "phrase_id": 20,
+          "input_type": "word",
           "start": 115.4605,
           "end": 119.82472,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_020.wav",
-          "phoneme_count": 18,
-          "normalized": false
+          "normalized": false,
+          "word_count": 7,
+          "note_group_count": 7,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_020.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_020.mel_stats.json",
+          "mel_stats": {
+            "min": -5.801438331604004,
+            "max": -0.6328272819519043,
+            "mean": -3.078145980834961,
+            "std": 0.8070452809333801,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              790,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_020.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_020.f0_natural.npy",
+          "f0_stats": {
+            "min": 329.01739501953125,
+            "max": 441.4554443359375,
+            "mean": 378.4159851074219,
+            "std": 34.281864166259766,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              790
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_021",
           "phrase_id": 21,
+          "input_type": "word",
           "start": 121.18199,
           "end": 126.22364,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_021.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_021.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_021.mel_stats.json",
+          "mel_stats": {
+            "min": -5.482450485229492,
+            "max": -0.5294604301452637,
+            "mean": -2.890136480331421,
+            "std": 0.7430272698402405,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              977,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_021.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_021.f0_natural.npy",
+          "f0_stats": {
+            "min": 310.5510559082031,
+            "max": 559.8009643554688,
+            "mean": 460.2652893066406,
+            "std": 94.03628540039062,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              977
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_022",
           "phrase_id": 22,
+          "input_type": "word",
           "start": 126.68117,
           "end": 131.29641,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_022.wav",
-          "phoneme_count": 21,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_022.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_022.mel_stats.json",
+          "mel_stats": {
+            "min": -5.925323486328125,
+            "max": -0.46556615829467773,
+            "mean": -2.973220109939575,
+            "std": 0.8184789419174194,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              866,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_022.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_022.f0_natural.npy",
+          "f0_stats": {
+            "min": 327.5318603515625,
+            "max": 498.4226989746094,
+            "mean": 395.23095703125,
+            "std": 51.316917419433594,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              866
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_023",
           "phrase_id": 23,
+          "input_type": "word",
           "start": 132.10616,
           "end": 137.20515,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_023.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_023.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_023.mel_stats.json",
+          "mel_stats": {
+            "min": -5.011649131774902,
+            "max": -0.48675537109375,
+            "mean": -2.8355472087860107,
+            "std": 0.7518234252929688,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              973,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_023.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_023.f0_natural.npy",
+          "f0_stats": {
+            "min": 326.4356384277344,
+            "max": 559.989013671875,
+            "mean": 458.4931945800781,
+            "std": 93.82460021972656,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              973
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_024",
           "phrase_id": 24,
+          "input_type": "word",
           "start": 137.541,
           "end": 141.40466,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_024.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_024.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_024.mel_stats.json",
+          "mel_stats": {
+            "min": -5.166454315185547,
+            "max": -0.6890110969543457,
+            "mean": -2.8642914295196533,
+            "std": 0.7610791921615601,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              655,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_024.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_024.f0_natural.npy",
+          "f0_stats": {
+            "min": 329.01739501953125,
+            "max": 498.9405822753906,
+            "mean": 403.35577392578125,
+            "std": 51.52362823486328,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              655
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_025",
           "phrase_id": 25,
+          "input_type": "word",
           "start": 141.559,
           "end": 145.87626,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_025.wav",
-          "phoneme_count": 24,
-          "normalized": false
+          "normalized": false,
+          "word_count": 12,
+          "note_group_count": 12,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_025.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_025.mel_stats.json",
+          "mel_stats": {
+            "min": -5.561264991760254,
+            "max": -0.4450111389160156,
+            "mean": -2.9234230518341064,
+            "std": 0.8030810952186584,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              794,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_025.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_025.f0_natural.npy",
+          "f0_stats": {
+            "min": 272.9328918457031,
+            "max": 499.0149230957031,
+            "mean": 381.9326171875,
+            "std": 76.1609878540039,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              794
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_026",
           "phrase_id": 26,
+          "input_type": "word",
           "start": 146.99698,
           "end": 151.40276,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_026.wav",
-          "phoneme_count": 24,
-          "normalized": false
+          "normalized": false,
+          "word_count": 12,
+          "note_group_count": 12,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_026.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_026.mel_stats.json",
+          "mel_stats": {
+            "min": -5.754096508026123,
+            "max": -0.5391063690185547,
+            "mean": -2.8617231845855713,
+            "std": 0.8007221221923828,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              769,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_026.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_026.f0_natural.npy",
+          "f0_stats": {
+            "min": 306.7156677246094,
+            "max": 494.8722839355469,
+            "mean": 392.04974365234375,
+            "std": 72.57173156738281,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              769
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_027",
           "phrase_id": 27,
+          "input_type": "word",
           "start": 152.53254,
           "end": 156.90159,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_027.wav",
-          "phoneme_count": 24,
-          "normalized": false
+          "normalized": false,
+          "word_count": 12,
+          "note_group_count": 12,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_027.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_027.mel_stats.json",
+          "mel_stats": {
+            "min": -6.047890663146973,
+            "max": -0.4800095558166504,
+            "mean": -2.9176747798919678,
+            "std": 0.8094808459281921,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              823,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_027.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_027.f0_natural.npy",
+          "f0_stats": {
+            "min": 273.33416748046875,
+            "max": 494.86309814453125,
+            "mean": 381.7121887207031,
+            "std": 76.19740295410156,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              823
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_028",
           "phrase_id": 28,
+          "input_type": "word",
           "start": 157.93827,
           "end": 161.78984,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_028.wav",
-          "phoneme_count": 22,
-          "normalized": false
+          "normalized": false,
+          "word_count": 11,
+          "note_group_count": 11,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_028.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_028.mel_stats.json",
+          "mel_stats": {
+            "min": -5.750134468078613,
+            "max": -0.5217442512512207,
+            "mean": -2.8937089443206787,
+            "std": 0.833645761013031,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              695,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_028.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_028.f0_natural.npy",
+          "f0_stats": {
+            "min": 325.4330749511719,
+            "max": 497.8728332519531,
+            "mean": 399.048828125,
+            "std": 69.28705596923828,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              695
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_029",
           "phrase_id": 29,
+          "input_type": "word",
           "start": 161.78984,
           "end": 168.50662,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_029.wav",
-          "phoneme_count": 15,
-          "normalized": false
+          "normalized": false,
+          "word_count": 7,
+          "note_group_count": 7,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_029.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_029.mel_stats.json",
+          "mel_stats": {
+            "min": -5.982196807861328,
+            "max": -0.6542868614196777,
+            "mean": -2.89607310295105,
+            "std": 0.7935115098953247,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              855,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_029.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_029.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.79086303710938,
+            "max": 332.3402404785156,
+            "mean": 301.60394287109375,
+            "std": 27.281848907470703,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              855
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_030",
           "phrase_id": 30,
+          "input_type": "word",
           "start": 169.54354,
           "end": 177.44916,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_030.wav",
-          "phoneme_count": 16,
-          "normalized": false
+          "normalized": false,
+          "word_count": 8,
+          "note_group_count": 8,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_030.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_030.mel_stats.json",
+          "mel_stats": {
+            "min": -5.974754333496094,
+            "max": -0.49918031692504883,
+            "mean": -3.0164847373962402,
+            "std": 0.7707008123397827,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1037,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_030.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_030.f0_natural.npy",
+          "f0_stats": {
+            "min": 183.2890167236328,
+            "max": 332.73675537109375,
+            "mean": 258.42755126953125,
+            "std": 51.30141830444336,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1037
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_031",
           "phrase_id": 31,
+          "input_type": "word",
           "start": 177.44916,
           "end": 184.95499,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_031.wav",
-          "phoneme_count": 17,
-          "normalized": false
+          "normalized": false,
+          "word_count": 8,
+          "note_group_count": 8,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_031.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_031.mel_stats.json",
+          "mel_stats": {
+            "min": -5.7222113609313965,
+            "max": -0.7162680625915527,
+            "mean": -2.9135141372680664,
+            "std": 0.8074551820755005,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1199,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_031.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_031.f0_natural.npy",
+          "f0_stats": {
+            "min": 244.88934326171875,
+            "max": 373.6343688964844,
+            "mean": 331.482421875,
+            "std": 35.926177978515625,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1199
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_032",
           "phrase_id": 32,
+          "input_type": "word",
           "start": 185.21924,
           "end": 192.08807,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_032.wav",
-          "phoneme_count": 32,
-          "normalized": false
+          "normalized": false,
+          "word_count": 16,
+          "note_group_count": 16,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_032.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_032.mel_stats.json",
+          "mel_stats": {
+            "min": -5.702624320983887,
+            "max": -0.33675146102905273,
+            "mean": -2.8498878479003906,
+            "std": 0.7978463172912598,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1058,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_032.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_032.f0_natural.npy",
+          "f0_stats": {
+            "min": 275.2320556640625,
+            "max": 499.0868835449219,
+            "mean": 390.86492919921875,
+            "std": 68.33580780029297,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1058
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_033",
           "phrase_id": 33,
+          "input_type": "word",
           "start": 192.08807,
           "end": 200.02843,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_033.wav",
-          "phoneme_count": 38,
-          "normalized": false
+          "normalized": false,
+          "word_count": 19,
+          "note_group_count": 19,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_033.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_033.mel_stats.json",
+          "mel_stats": {
+            "min": -6.03652811050415,
+            "max": -0.4970564842224121,
+            "mean": -2.898655891418457,
+            "std": 0.7955511212348938,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1199,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_033.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_033.f0_natural.npy",
+          "f0_stats": {
+            "min": 308.43914794921875,
+            "max": 495.5398254394531,
+            "mean": 394.4797668457031,
+            "std": 75.46094512939453,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1199
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_034",
           "phrase_id": 34,
+          "input_type": "word",
           "start": 200.02843,
           "end": 205.919,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_034.wav",
-          "phoneme_count": 26,
-          "normalized": false
+          "normalized": false,
+          "word_count": 13,
+          "note_group_count": 13,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_034.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_034.mel_stats.json",
+          "mel_stats": {
+            "min": -5.788173198699951,
+            "max": -0.5537443161010742,
+            "mean": -2.8956081867218018,
+            "std": 0.8255671858787537,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              809,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_034.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_034.f0_natural.npy",
+          "f0_stats": {
+            "min": 274.8847961425781,
+            "max": 494.5550842285156,
+            "mean": 379.7164611816406,
+            "std": 76.44359588623047,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              809
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_035",
           "phrase_id": 35,
+          "input_type": "word",
           "start": 207.32931,
           "end": 212.02498,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_035.wav",
-          "phoneme_count": 13,
-          "normalized": false
+          "normalized": false,
+          "word_count": 6,
+          "note_group_count": 6,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_035.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_035.mel_stats.json",
+          "mel_stats": {
+            "min": -5.922113418579102,
+            "max": -0.48442697525024414,
+            "mean": -2.7864670753479004,
+            "std": 0.7791098356246948,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              889,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_035.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_035.f0_natural.npy",
+          "f0_stats": {
+            "min": 326.888427734375,
+            "max": 559.0682983398438,
+            "mean": 457.7713623046875,
+            "std": 70.24754333496094,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              889
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_036",
           "phrase_id": 36,
+          "input_type": "word",
           "start": 212.88081,
           "end": 219.11413,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_036.wav",
-          "phoneme_count": 15,
-          "normalized": false
+          "normalized": false,
+          "word_count": 7,
+          "note_group_count": 7,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_036.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_036.mel_stats.json",
+          "mel_stats": {
+            "min": -5.366901397705078,
+            "max": -0.46281909942626953,
+            "mean": -2.781965494155884,
+            "std": 0.7823541164398193,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1079,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_036.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_036.f0_natural.npy",
+          "f0_stats": {
+            "min": 308.52911376953125,
+            "max": 498.7041931152344,
+            "mean": 406.8849182128906,
+            "std": 69.82485961914062,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1079
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_037",
           "phrase_id": 37,
+          "input_type": "word",
           "start": 219.11413,
           "end": 226.80215,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_037.wav",
-          "phoneme_count": 15,
-          "normalized": false
+          "normalized": false,
+          "word_count": 7,
+          "note_group_count": 7,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_037.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_037.mel_stats.json",
+          "mel_stats": {
+            "min": -5.14113712310791,
+            "max": -0.43082666397094727,
+            "mean": -2.810241937637329,
+            "std": 0.7961498498916626,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1304,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_037.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_037.f0_natural.npy",
+          "f0_stats": {
+            "min": 326.27484130859375,
+            "max": 559.9965209960938,
+            "mean": 466.25555419921875,
+            "std": 59.22427749633789,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              1304
+            ]
+          }
         },
         {
           "item_name": "opencpop_2001_phrase_038",
           "phrase_id": 38,
+          "input_type": "word",
           "start": 226.80215,
           "end": 230.49141,
           "output_wav": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_038.wav",
-          "phoneme_count": 13,
-          "normalized": false
+          "normalized": false,
+          "word_count": 6,
+          "note_group_count": 6,
+          "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_038.mel.npy",
+          "mel_stats_json": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_038.mel_stats.json",
+          "mel_stats": {
+            "min": -5.450397491455078,
+            "max": -0.7316327095031738,
+            "mean": -2.8332605361938477,
+            "std": 0.8119458556175232,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              616,
+              80
+            ]
+          },
+          "f0_exists": true,
+          "f0_source": "notes_fallback_naturalized",
+          "f0_naturalized": true,
+          "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_038.f0_raw.npy",
+          "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2001_phrase_038.f0_natural.npy",
+          "f0_stats": {
+            "min": 325.6992492675781,
+            "max": 444.4220275878906,
+            "mean": 388.8648681640625,
+            "std": 33.94780349731445,
+            "has_nan": false,
+            "has_inf": false,
+            "shape": [
+              1,
+              616
+            ]
+          }
         }
       ]
     }

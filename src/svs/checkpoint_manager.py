@@ -75,6 +75,18 @@ def _load_phone_dict(path: Path) -> tuple[int | None, str | None]:
     return None, None
 
 
+def _auto_rvc_index_path(rvc_root: Path, model_name: str) -> Path | None:
+    stem = Path(model_name).stem.lower()
+    indices_dir = rvc_root / "assets" / "indices"
+    if not indices_dir.exists():
+        return None
+    candidates = [path for path in indices_dir.glob("*.index") if stem in path.name.lower()]
+    if not candidates:
+        return None
+    candidates.sort(key=lambda path: (len(path.name), path.name.lower()))
+    return candidates[0]
+
+
 def check_svs_checkpoints(config: dict) -> dict:
     svs_config = config.get("svs", {}) if isinstance(config.get("svs", {}), dict) else {}
     pretrained = svs_config.get("pretrained", {}) if isinstance(svs_config.get("pretrained", {}), dict) else {}
@@ -116,6 +128,28 @@ def check_svs_checkpoints(config: dict) -> dict:
         })
         if missing:
             warnings.append(f"DiffSinger source root is incomplete: {diffsinger_root}; missing={missing}")
+
+    rvc_config = svs_config.get("rvc", {}) if isinstance(svs_config.get("rvc", {}), dict) else {}
+    if bool(rvc_config.get("enabled", False)):
+        rvc_root = _resolve(config, rvc_config.get("root", "external/rvc"))
+        model_name = str(rvc_config.get("model_name", "bofan_voice.pth") or "bofan_voice.pth")
+        model_path = rvc_root / "assets" / "weights" / model_name
+        index_value = str(rvc_config.get("index_path", "") or "").strip()
+        index_path = _resolve(config, index_value) if index_value else _auto_rvc_index_path(rvc_root, model_name)
+        hubert_path = rvc_root / "assets" / "hubert" / "hubert_base.pt"
+        rvc_checks = [
+            ("rvc.root", rvc_root),
+            ("rvc.model", model_path),
+            ("rvc.index", index_path),
+            ("rvc.hubert", hubert_path),
+        ]
+        if str(rvc_config.get("f0method", "")).lower().strip() == "rmvpe":
+            rvc_checks.append(("rvc.rmvpe", rvc_root / "assets" / "rmvpe" / "rmvpe.pt"))
+        for name, path in rvc_checks:
+            exists = bool(path and path.exists())
+            checks.append({"name": name, "path": str(path) if path else None, "exists": exists})
+            if not exists:
+                warnings.append(f"Missing RVC asset: {name} -> {path}")
 
     if not checks:
         warnings.append("No svs.pretrained checkpoint paths are configured.")

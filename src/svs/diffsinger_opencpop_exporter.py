@@ -2,19 +2,10 @@ from __future__ import annotations
 
 import csv
 import json
-import re
 from pathlib import Path
 from typing import Any
 
 from src.common.io_utils import ensure_parent
-
-
-FALLBACK_PHONE_LIST = [
-    "AP", "SP", "a", "ai", "an", "ang", "ao", "b", "c", "ch", "d", "e", "ei", "en", "eng", "er", "f", "g",
-    "h", "i", "ia", "ian", "iang", "iao", "ie", "in", "ing", "iong", "iu", "j", "k", "l", "m", "n", "o",
-    "ong", "ou", "p", "q", "r", "s", "sh", "t", "u", "ua", "uai", "uan", "uang", "ui", "un", "uo", "v",
-    "van", "ve", "vn", "w", "x", "y", "z", "zh",
-]
 
 
 def _root(config: dict) -> Path:
@@ -52,97 +43,6 @@ def _write_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def _load_phone_dict(config: dict) -> tuple[list[str], Path | None, list[str]]:
-    warnings: list[str] = []
-    pretrained = config.get("svs", {}).get("pretrained", {}) if isinstance(config.get("svs", {}), dict) else {}
-    value = pretrained.get("phoneme_dictionary") or "checkpoints/diffsinger/zh_phoneme_dict.json"
-    path = _resolve(config, value)
-    if not path.exists() and path.suffix.lower() == ".txt" and path.with_suffix(".json").exists():
-        warnings.append(f"Auto-adapted phoneme dictionary path from {path} to {path.with_suffix('.json')}.")
-        path = path.with_suffix(".json")
-    if not path.exists() and path.suffix.lower() == ".json" and path.with_suffix(".txt").exists():
-        warnings.append(f"Auto-adapted phoneme dictionary path from {path} to {path.with_suffix('.txt')}.")
-        path = path.with_suffix(".txt")
-
-    if not path.exists():
-        warnings.append(f"Phoneme dictionary not found; using built-in OpenCpop phone list: {path}")
-        return FALLBACK_PHONE_LIST, None, warnings
-
-    if path.suffix.lower() == ".json":
-        data = json.loads(path.read_text(encoding="utf-8"))
-        if isinstance(data, list):
-            return [str(item) for item in data], path, warnings
-        if isinstance(data, dict):
-            return [str(key) for key in data.keys()], path, warnings
-
-    phones = [line.strip().split()[0] for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
-    return phones, path, warnings
-
-
-def _diffsinger_root(config: dict) -> Path:
-    value = config.get("svs", {}).get("diffsinger", {}).get("root", "external/DiffSinger")
-    return _resolve(config, value)
-
-
-def _load_pinyin_map(config: dict) -> dict[str, str]:
-    mapping = {"AP": "AP", "SP": "SP"}
-    table_path = _diffsinger_root(config) / "inference" / "svs" / "opencpop" / "cpop_pinyin2ph.txt"
-    if not table_path.exists():
-        return mapping
-    for line in table_path.read_text(encoding="utf-8").splitlines():
-        parts = [part.strip() for part in line.split("|") if part.strip()]
-        if len(parts) >= 2:
-            mapping[parts[0]] = parts[1]
-    return mapping
-
-
-def _normalise_pinyin(value: str) -> str:
-    text = str(value or "").strip().lower()
-    text = re.sub(r"[1-5]", "", text)
-    text = text.replace("u:", "v").replace("ü", "v")
-    if len(text) >= 2 and text[0] in "jqxy" and text[1] == "v":
-        text = text[0] + "u" + text[2:]
-    return text
-
-
-def _pinyin_from_char(char: str) -> str:
-    try:
-        from pypinyin import Style, lazy_pinyin
-    except ImportError:
-        return ""
-    result = lazy_pinyin(char, style=Style.NORMAL, errors="ignore")
-    return _normalise_pinyin(result[0]) if result else ""
-
-
-def _phones_from_note(note: dict, pinyin_map: dict[str, str], phone_vocab: set[str]) -> tuple[list[str], list[str]]:
-    warnings: list[str] = []
-    raw = str(note.get("phoneme") or note.get("pinyin") or "").strip()
-    char = str(note.get("lyric") or "").strip()
-
-    candidates = [_normalise_pinyin(raw)]
-    if char and char not in {"AP", "SP"}:
-        candidates.append(_pinyin_from_char(char))
-    if raw in {"AP", "SP"} or char in {"AP", "SP"}:
-        candidates.insert(0, raw or char)
-
-    for candidate in candidates:
-        if not candidate:
-            continue
-        if candidate in pinyin_map:
-            phones = pinyin_map[candidate].split()
-            unknown = [phone for phone in phones if phone not in phone_vocab]
-            if unknown:
-                warnings.append(f"Phone(s) not in dictionary for pinyin {candidate}: {unknown}")
-            return phones, warnings
-
-        phones = candidate.split()
-        if phones and all(phone in phone_vocab for phone in phones):
-            return phones, warnings
-
-    warnings.append(f"Could not map lyric={char!r}, phoneme={raw!r} to DiffSinger phones.")
-    return [], warnings
-
-
 def _midi_to_note_name(value: Any) -> str:
     try:
         midi = int(value)
@@ -161,7 +61,7 @@ def _note_pitch(note: dict) -> str:
     return _midi_to_note_name(note.get("midi"))
 
 
-def _duration_text(note: dict) -> str:
+def _duration_value(note: dict) -> float:
     try:
         duration = float(note.get("duration"))
     except (TypeError, ValueError):
@@ -169,26 +69,28 @@ def _duration_text(note: dict) -> str:
             duration = float(note.get("end")) - float(note.get("start"))
         except (TypeError, ValueError):
             duration = 0.0
-    return f"{max(duration, 0.001):.6f}"
+    return max(duration, 0.001)
 
 
-def _build_phrase_item(
-    score: dict,
-    phrase: dict,
-    phrase_index: int,
-    pinyin_map: dict[str, str],
-    phone_vocab: set[str],
-) -> tuple[dict | None, list[dict], list[str]]:
+def _duration_text(duration: float) -> str:
+    return f"{max(float(duration), 0.001):.6f}"
+
+
+def _item_name(song_id: Any, phrase_id: Any, phrase_index: int) -> str:
+    if str(phrase_id).isdigit():
+        return f"opencpop_{song_id or 'sample'}_phrase_{int(phrase_id):03d}"
+    return f"opencpop_{song_id or 'sample'}_phrase_{phrase_index:03d}"
+
+
+def _build_word_level_phrase_item(score: dict, phrase: dict, phrase_index: int) -> tuple[dict | None, list[dict], list[str]]:
     warnings: list[str] = []
-    phone_seq: list[str] = []
-    note_seq: list[str] = []
-    dur_seq: list[str] = []
-    slur_seq: list[str] = []
     rows: list[dict] = []
-    text_chars: list[str] = []
-    last_phones: list[str] = []
+    text_parts: list[str] = []
+    note_groups: list[list[str]] = []
+    duration_groups: list[list[str]] = []
+
     phrase_id = phrase.get("id") or phrase_index
-    song_id = score.get("song_id") or "sample"
+    song_id = score.get("song_id") if isinstance(score, dict) else "sample"
 
     if not isinstance(phrase, dict):
         return None, rows, warnings
@@ -196,80 +98,81 @@ def _build_phrase_item(
     for note in phrase.get("notes", []):
         if not isinstance(note, dict):
             continue
+
         pitch = _note_pitch(note)
-        duration = _duration_text(note)
+        duration = _duration_text(_duration_value(note))
+        lyric = str(note.get("lyric") or "").strip()
+        is_rest = bool(note.get("is_rest")) or pitch == "rest"
+        is_slur = bool(note.get("is_slur"))
 
-        if note.get("is_rest") or pitch == "rest":
-            phones = ["SP"]
-            slur = "0"
-        elif note.get("is_slur") and last_phones:
-            phones = [last_phones[-1]]
-            slur = "1"
+        if is_slur and note_groups and not is_rest:
+            note_groups[-1].append(pitch)
+            duration_groups[-1].append(duration)
+            word_index = len(note_groups) - 1
         else:
-            phones, phone_warnings = _phones_from_note(note, pinyin_map, phone_vocab)
-            warnings.extend(phone_warnings)
-            if not phones:
-                continue
-            last_phones = phones
-            slur = "0"
-            lyric = str(note.get("lyric") or "")
-            if lyric and lyric not in {"AP", "SP"}:
-                text_chars.append(lyric)
+            if is_rest:
+                pitch = "rest"
+                text_token = lyric if lyric in {"AP", "SP"} else "SP"
+            else:
+                if not lyric:
+                    warnings.append(f"Skipping note with empty lyric in phrase {phrase_id}: {note}")
+                    continue
+                text_token = lyric
 
-        for phone in phones:
-            phone_seq.append(phone)
-            note_seq.append(pitch)
-            dur_seq.append(duration)
-            slur_seq.append(slur)
-            rows.append(
-                {
-                    "phrase_id": phrase_id,
-                    "phone": phone,
-                    "note": pitch,
-                    "duration": duration,
-                    "is_slur": slur,
-                    "lyric": note.get("lyric", ""),
-                }
-            )
+            text_parts.append(text_token)
+            note_groups.append([pitch])
+            duration_groups.append([duration])
+            word_index = len(note_groups) - 1
 
-    if not phone_seq:
-        warnings.append(f"No DiffSinger phoneme-level tokens were generated for phrase {phrase_id}.")
+        rows.append(
+            {
+                "phrase_id": phrase_id,
+                "word_index": word_index,
+                "lyric": lyric,
+                "note": pitch,
+                "duration": duration,
+                "is_rest": is_rest,
+                "is_slur": is_slur,
+            }
+        )
+
+    if not note_groups:
+        warnings.append(f"No word-level DiffSinger note groups were generated for phrase {phrase_id}.")
         return None, rows, warnings
 
-    inp = {
-        "item_name": f"opencpop_{song_id}_phrase_{int(phrase_id):03d}" if str(phrase_id).isdigit() else f"opencpop_{song_id}_phrase_{phrase_index:03d}",
-        "text": "".join(text_chars),
-        "ph_seq": " ".join(phone_seq),
-        "note_seq": " ".join(note_seq),
-        "note_dur_seq": " ".join(dur_seq),
-        "is_slur_seq": " ".join(slur_seq),
-        "start": float(phrase.get("start", 0.0) or 0.0),
-        "end": float(phrase.get("end", 0.0) or 0.0),
-        "phrase_id": phrase_id,
-        "input_type": "phoneme",
-    }
+    duration_total = sum(float(value) for group in duration_groups for value in group)
+    return (
+        {
+            "item_name": _item_name(song_id, phrase_id, phrase_index),
+            "text": "".join(text_parts),
+            "notes": " | ".join(" ".join(group) for group in note_groups),
+            "notes_duration": " | ".join(" ".join(group) for group in duration_groups),
+            "start": float(phrase.get("start", 0.0) or 0.0),
+            "end": float(phrase.get("end", 0.0) or 0.0),
+            "phrase_id": phrase_id,
+            "input_type": "word",
+            "duration_total": round(duration_total, 6),
+        },
+        rows,
+        warnings,
+    )
 
-    lengths = {"phones": len(phone_seq), "notes": len(note_seq), "durations": len(dur_seq), "slurs": len(slur_seq)}
-    if len(set(lengths.values())) != 1:
-        warnings.append(f"DiffSinger input length mismatch for phrase {phrase_id}: {lengths}")
-    return inp, rows, warnings
 
-
-def _build_diffsinger_inputs(score: dict, pinyin_map: dict[str, str], phone_vocab: set[str]) -> tuple[list[dict], list[dict], list[str]]:
+def _build_diffsinger_inputs(score: dict) -> tuple[list[dict], list[dict], list[str]]:
     warnings: list[str] = []
     inputs: list[dict] = []
     rows: list[dict] = []
 
     phrases = score.get("phrases", []) if isinstance(score, dict) else []
     for phrase_index, phrase in enumerate(phrases, start=1):
-        item, phrase_rows, phrase_warnings = _build_phrase_item(score, phrase, phrase_index, pinyin_map, phone_vocab)
+        item, phrase_rows, phrase_warnings = _build_word_level_phrase_item(score, phrase, phrase_index)
         rows.extend(phrase_rows)
         warnings.extend(phrase_warnings)
         if item is not None:
             inputs.append(item)
 
     if not inputs:
-        warnings.append("No phrase-level DiffSinger inputs were generated from opencpop_svs_score.json.")
+        warnings.append("No word-level phrase DiffSinger inputs were generated from opencpop_svs_score.json.")
 
     return inputs, rows, warnings
 
@@ -281,22 +184,20 @@ def build_diffsinger_export_plan(config: dict) -> dict:
 
     target_dir = diffsinger_config.get("export_dir") or "data/svs/diffsinger_opencpop"
     target_dir_path = _resolve(config, target_dir)
-    input_path = _config_path(config, "diffsinger_input", f"data/svs/diffsinger_opencpop/diffsinger_input_{score.get('song_id', 'sample')}.json")
-    phoneme_tsv_path = _config_path(config, "diffsinger_phoneme_tsv", f"data/svs/diffsinger_opencpop/phonemes_{score.get('song_id', 'sample')}.tsv")
-    notes_csv_path = _config_path(config, "diffsinger_notes_csv", f"data/svs/diffsinger_opencpop/notes_{score.get('song_id', 'sample')}.csv")
+    song_id = score.get("song_id", "sample") if isinstance(score, dict) else "sample"
+    input_path = _config_path(config, "diffsinger_input", f"data/svs/diffsinger_opencpop/diffsinger_input_{song_id}.json")
+    word_tsv_path = _config_path(config, "diffsinger_phoneme_tsv", f"data/svs/diffsinger_opencpop/phonemes_{song_id}.tsv")
+    notes_csv_path = _config_path(config, "diffsinger_notes_csv", f"data/svs/diffsinger_opencpop/notes_{song_id}.csv")
 
-    phones, phone_dict_path, dict_warnings = _load_phone_dict(config)
-    pinyin_map = _load_pinyin_map(config)
-    diffsinger_inputs, rows, input_warnings = _build_diffsinger_inputs(score, pinyin_map, set(phones))
+    diffsinger_inputs, rows, input_warnings = _build_diffsinger_inputs(score)
 
     warnings = []
     if isinstance(score, dict):
         warnings.extend(score.get("warnings", []))
-    warnings.extend(dict_warnings)
     warnings.extend(input_warnings)
 
     return {
-        "format": "diffsinger_opencpop_export_plan.v2",
+        "format": "diffsinger_opencpop_export_plan.v3",
         "dry_run": False,
         "executed": True,
         "dataset": "opencpop",
@@ -305,12 +206,10 @@ def build_diffsinger_export_plan(config: dict) -> dict:
         "score_input": str(score_path),
         "target_export_dir": str(target_dir_path),
         "diffsinger_inputs": diffsinger_inputs,
-        "phoneme_rows": rows,
-        "phone_dictionary": str(phone_dict_path) if phone_dict_path else "built_in",
-        "phone_count": len(phones),
+        "word_rows": rows,
         "expected_files": {
             "input_json": str(input_path),
-            "phoneme_tsv": str(phoneme_tsv_path),
+            "phoneme_tsv": str(word_tsv_path),
             "notes_csv": str(notes_csv_path),
             "score_json": str(score_path),
         },
@@ -321,29 +220,33 @@ def build_diffsinger_export_plan(config: dict) -> dict:
 
 def save_diffsinger_export_plan(config: dict, payload: dict) -> Path:
     input_path = Path(payload["expected_files"]["input_json"])
-    phoneme_tsv_path = Path(payload["expected_files"]["phoneme_tsv"])
+    word_tsv_path = Path(payload["expected_files"]["phoneme_tsv"])
     notes_csv_path = Path(payload["expected_files"]["notes_csv"])
 
     _write_json(input_path, {"diffsinger_inputs": payload.get("diffsinger_inputs", [])})
 
-    ensure_parent(phoneme_tsv_path)
-    with phoneme_tsv_path.open("w", encoding="utf-8", newline="") as handle:
-        handle.write("index\tphrase_id\tphone\tnote\tduration\tis_slur\tlyric\n")
-        for index, row in enumerate(payload.get("phoneme_rows", [])):
+    ensure_parent(word_tsv_path)
+    with word_tsv_path.open("w", encoding="utf-8", newline="") as handle:
+        handle.write("index\tphrase_id\tword_index\tlyric\tnote\tduration\tis_rest\tis_slur\n")
+        for index, row in enumerate(payload.get("word_rows", [])):
             handle.write(
-                f"{index}\t{row.get('phrase_id','')}\t{row.get('phone','')}\t{row.get('note','')}\t{row.get('duration','')}\t{row.get('is_slur','')}\t{row.get('lyric','')}\n"
+                f"{index}\t{row.get('phrase_id','')}\t{row.get('word_index','')}\t{row.get('lyric','')}\t"
+                f"{row.get('note','')}\t{row.get('duration','')}\t{row.get('is_rest','')}\t{row.get('is_slur','')}\n"
             )
 
     ensure_parent(notes_csv_path)
     with notes_csv_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["index", "phrase_id", "phone", "note", "duration", "is_slur", "lyric"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["index", "phrase_id", "word_index", "lyric", "note", "duration", "is_rest", "is_slur"],
+        )
         writer.writeheader()
-        for index, row in enumerate(payload.get("phoneme_rows", [])):
+        for index, row in enumerate(payload.get("word_rows", [])):
             writer.writerow({"index": index, **row})
 
     output_path = _config_path(config, "diffsinger_export_plan", "data/svs/diffsinger_opencpop_export_plan.json")
     plan_payload = dict(payload)
-    plan_payload.pop("phoneme_rows", None)
+    plan_payload.pop("word_rows", None)
     _write_json(output_path, plan_payload)
     return output_path
 
@@ -362,9 +265,9 @@ class DiffSingerOpenCpopExporter:
             "outputs": {
                 "diffsinger_export_plan": str(output_path),
                 "diffsinger_inputs": generated.get("input_json"),
-                "diffsinger_phoneme_tsv": generated.get("phoneme_tsv"),
+                "diffsinger_word_tsv": generated.get("phoneme_tsv"),
                 "diffsinger_notes_csv": generated.get("notes_csv"),
             },
             "warnings": payload.get("warnings", []),
-            "message": "Prepared DiffSinger phoneme-level inference input.",
+            "message": "Prepared DiffSinger word-level inference input.",
         }

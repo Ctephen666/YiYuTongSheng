@@ -1,0 +1,25 @@
+web:
+  host: 127.0.0.1
+  port: 7860
+
+paths:
+  opencpop_root: data/dataset/opencpop
+  svs_dir: data/svs
+  svc_dir: data/svc
+  rvc_root: external/rvc
+  web_logs_dir: data/web_logs
+
+defaults:
+  song_id: "2001"
+  start_phrase: 1
+  max_phrases: null
+  assembly_mode: timeline
+  infer_class: cascade
+  normalize: true
+  f0_naturalize: true
+  f0_method: rmvpe
+  f0_up_key: 0
+  index_rate: 0.5
+  protect: 0.33
+  filter_radius: 3
+  resample_sr: 0

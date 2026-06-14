@@ -116,6 +116,22 @@ def _clear_runtime_checkpoints(directory: Path, keep: Path) -> None:
         candidate.unlink()
 
 
+def _runtime_step_name(role: str, ds_cfg: dict, default_step: int) -> str:
+    """Return DiffSinger-compatible checkpoint filename for a staged runtime dir.
+
+    The project-level files are flat names such as acoustic.ckpt / variance.ckpt /
+    vocoder.ckpt, but DiffSinger expects model_ckpt_steps_*.ckpt under an exp dir.
+    These staged step numbers are filenames only; the checkpoint payload still
+    comes from the corresponding project-level source file.
+    """
+    raw = ds_cfg.get(f"{role}_step", default_step)
+    try:
+        step = int(raw)
+    except (TypeError, ValueError):
+        step = int(default_step)
+    return f"model_ckpt_steps_{step}.ckpt"
+
+
 def _stage_configs_and_checkpoints(config: dict) -> dict:
     pretrained = _pretrained(config)
     ds_cfg = _diffsinger_config(config)
@@ -124,35 +140,61 @@ def _stage_configs_and_checkpoints(config: dict) -> dict:
         raise FileNotFoundError(f"DiffSinger source root does not exist: {root}")
 
     configured_acoustic_exp = str(ds_cfg.get("acoustic_exp_name", "yiyutongsheng_acoustic"))
+    configured_variance_exp = str(ds_cfg.get("variance_exp_name", "yiyutongsheng_variance"))
     configured_vocoder_exp = str(ds_cfg.get("vocoder_exp_name", "yiyutongsheng_vocoder"))
+
     acoustic_exp = f"{configured_acoustic_exp}_runtime"
+    variance_exp = f"{configured_variance_exp}_runtime"
     vocoder_exp = f"{configured_vocoder_exp}_runtime"
+
     acoustic_dir = root / "checkpoints" / acoustic_exp
+    variance_dir = root / "checkpoints" / variance_exp
     vocoder_dir = root / "checkpoints" / vocoder_exp
+
     acoustic_dir.mkdir(parents=True, exist_ok=True)
+    variance_dir.mkdir(parents=True, exist_ok=True)
     vocoder_dir.mkdir(parents=True, exist_ok=True)
 
     acoustic_ckpt = _resolve(config, pretrained.get("acoustic_checkpoint", "checkpoints/diffsinger/acoustic.ckpt"))
     acoustic_config = _resolve(config, pretrained.get("acoustic_config", "checkpoints/diffsinger/acoustic.yaml"))
+    variance_ckpt = _resolve(config, pretrained.get("variance_checkpoint", "checkpoints/diffsinger/variance.ckpt"))
+    variance_config = _resolve(config, pretrained.get("variance_config", "checkpoints/diffsinger/variance.yaml"))
     vocoder_ckpt = _resolve(config, pretrained.get("vocoder_checkpoint", "checkpoints/diffsinger/vocoder.ckpt"))
     vocoder_config = _resolve(config, pretrained.get("vocoder_config", "checkpoints/diffsinger/vocoder.yaml"))
 
-    acoustic_runtime_ckpt = acoustic_dir / "model_ckpt_steps_100000.ckpt"
-    vocoder_runtime_ckpt = vocoder_dir / "model_ckpt_steps_100000.ckpt"
-    _clear_runtime_checkpoints(acoustic_dir, acoustic_runtime_ckpt)
-    _clear_runtime_checkpoints(vocoder_dir, vocoder_runtime_ckpt)
-    acoustic_link_type = _alias_file(acoustic_ckpt, acoustic_runtime_ckpt)
-    vocoder_link_type = _alias_file(vocoder_ckpt, vocoder_runtime_ckpt)
+    acoustic_target = acoustic_dir / _runtime_step_name("acoustic", ds_cfg, 320000)
+    variance_target = variance_dir / _runtime_step_name("variance", ds_cfg, 160000)
+    vocoder_target = vocoder_dir / _runtime_step_name("vocoder", ds_cfg, 280000)
+
+    _clear_runtime_checkpoints(acoustic_dir, acoustic_target)
+    _clear_runtime_checkpoints(variance_dir, variance_target)
+    _clear_runtime_checkpoints(vocoder_dir, vocoder_target)
+
+    acoustic_link_type = _alias_file(acoustic_ckpt, acoustic_target)
+    variance_link_type = _alias_file(variance_ckpt, variance_target)
+    vocoder_link_type = _alias_file(vocoder_ckpt, vocoder_target)
 
     acoustic_payload = _read_yaml(acoustic_config)
     overrides = ds_cfg.get("hparams_override", {}) if isinstance(ds_cfg.get("hparams_override", {}), dict) else {}
     acoustic_payload.update(overrides)
+
+    # Full cascade route:
+    #   variance / FS checkpoint -> diffusion acoustic checkpoint -> vocoder.
+    # DiffSinger expects the FS checkpoint as an exp directory, not as a flat file.
+    acoustic_payload["fs2_ckpt"] = f"checkpoints/{variance_exp}"
+    acoustic_payload["pretrain_fs_ckpt"] = f"checkpoints/{variance_exp}"
     acoustic_payload["vocoder_ckpt"] = f"checkpoints/{vocoder_exp}"
-    acoustic_payload["pe_enable"] = bool(overrides.get("pe_enable", False))
-    acoustic_payload["use_nsf"] = bool(overrides.get("use_nsf", False))
+    if "pe_enable" in overrides:
+        acoustic_payload["pe_enable"] = bool(overrides["pe_enable"])
+
+    if "use_nsf" in overrides:
+        acoustic_payload["use_nsf"] = bool(overrides["use_nsf"])
     if ds_cfg.get("pndm_speedup") is not None:
         acoustic_payload["pndm_speedup"] = int(ds_cfg["pndm_speedup"])
     _write_yaml(acoustic_dir / "config.yaml", acoustic_payload)
+
+    variance_payload = _read_yaml(variance_config)
+    _write_yaml(variance_dir / "config.yaml", variance_payload)
 
     vocoder_payload = _read_yaml(vocoder_config)
     _write_yaml(vocoder_dir / "config.yaml", vocoder_payload)
@@ -160,14 +202,22 @@ def _stage_configs_and_checkpoints(config: dict) -> dict:
     return {
         "diffsinger_root": str(root),
         "configured_acoustic_exp_name": configured_acoustic_exp,
+        "configured_variance_exp_name": configured_variance_exp,
         "configured_vocoder_exp_name": configured_vocoder_exp,
         "acoustic_exp_name": acoustic_exp,
+        "variance_exp_name": variance_exp,
         "vocoder_exp_name": vocoder_exp,
         "acoustic_dir": str(acoustic_dir),
+        "variance_dir": str(variance_dir),
         "vocoder_dir": str(vocoder_dir),
+        "acoustic_checkpoint": str(acoustic_target),
+        "variance_checkpoint": str(variance_target),
+        "vocoder_checkpoint": str(vocoder_target),
         "acoustic_checkpoint_link": acoustic_link_type,
+        "variance_checkpoint_link": variance_link_type,
         "vocoder_checkpoint_link": vocoder_link_type,
         "acoustic_config": str(acoustic_dir / "config.yaml"),
+        "variance_config": str(variance_dir / "config.yaml"),
         "vocoder_config": str(vocoder_dir / "config.yaml"),
     }
 
@@ -182,7 +232,9 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
     if bool(ds_cfg.get("force_cpu", False)):
         device = "cpu"
     normalize = bool(ds_cfg.get("normalize_output", True))
-    infer_class = str(ds_cfg.get("infer_class", "e2e"))
+    # The available OpenCpop checkpoints are cascade-family assets.
+    # Default to cascade unless project.yaml explicitly overrides it.
+    infer_class = str(ds_cfg.get("infer_class", "cascade"))
     timeout = int(config.get("svs", {}).get("inference_timeout_sec", 1800))
     max_phrases = config.get("svs", {}).get("max_phrases")
     start_phrase = int(config.get("svs", {}).get("start_phrase", 1) or 1)
@@ -212,8 +264,10 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
         str(start_phrase),
         "--assembly-mode",
         assembly_mode,
+        "--f0-fallback-config",
+        json.dumps(ds_cfg.get("f0_fallback", {}), ensure_ascii=False),
     ]
-    if max_phrases is not None:
+    if max_phrases is not None and int(max_phrases) > 0:
         command.extend(["--max-phrases", str(int(max_phrases))])
     if normalize:
         command.append("--normalize")
@@ -252,12 +306,22 @@ def _run_inference_subprocess(config: dict, staged: dict, input_json: Path, outp
 
 
 def _has_diffsinger_input(payload: Any) -> bool:
+    def valid_item(item: Any) -> bool:
+        if not isinstance(item, dict):
+            return False
+        input_type = str(item.get("input_type") or "word").strip().lower()
+        if input_type == "word":
+            return bool(item.get("text") and item.get("notes") and item.get("notes_duration"))
+        if input_type == "phoneme":
+            return bool(item.get("ph_seq"))
+        return False
+
     if not isinstance(payload, dict):
         return False
     inputs = payload.get("diffsinger_inputs")
     if isinstance(inputs, list):
-        return any(isinstance(item, dict) and bool(item.get("ph_seq")) for item in inputs)
-    return bool(payload.get("ph_seq"))
+        return any(valid_item(item) for item in inputs)
+    return valid_item(payload)
 
 
 def build_neural_svs_render_plan(config: dict) -> dict:

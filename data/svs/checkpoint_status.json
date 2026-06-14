@@ -46,6 +46,31 @@
       "path": "D:\\YiYuTongSheng\\external\\DiffSinger",
       "exists": true,
       "missing_subdirs": []
+    },
+    {
+      "name": "rvc.root",
+      "path": "D:\\YiYuTongSheng\\external\\rvc",
+      "exists": true
+    },
+    {
+      "name": "rvc.model",
+      "path": "D:\\YiYuTongSheng\\external\\rvc\\assets\\weights\\bofan_voice_f0.pth",
+      "exists": true
+    },
+    {
+      "name": "rvc.index",
+      "path": "D:\\YiYuTongSheng\\external\\rvc\\assets\\indices\\bofan_voice_f0_IVF591_Flat_nprobe_1_bofan_voice_f0_v2.index",
+      "exists": true
+    },
+    {
+      "name": "rvc.hubert",
+      "path": "D:\\YiYuTongSheng\\external\\rvc\\assets\\hubert\\hubert_base.pt",
+      "exists": true
+    },
+    {
+      "name": "rvc.rmvpe",
+      "path": "D:\\YiYuTongSheng\\external\\rvc\\assets\\rmvpe\\rmvpe.pt",
+      "exists": true
     }
   ],
   "warnings": [],

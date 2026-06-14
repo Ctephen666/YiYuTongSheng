@@ -16,14 +16,22 @@
   "staged": {
     "diffsinger_root": "D:\\YiYuTongSheng\\external\\DiffSinger",
     "configured_acoustic_exp_name": "yiyutongsheng_acoustic",
+    "configured_variance_exp_name": "yiyutongsheng_variance",
     "configured_vocoder_exp_name": "yiyutongsheng_vocoder",
     "acoustic_exp_name": "yiyutongsheng_acoustic_runtime",
+    "variance_exp_name": "yiyutongsheng_variance_runtime",
     "vocoder_exp_name": "yiyutongsheng_vocoder_runtime",
     "acoustic_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime",
+    "variance_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime",
     "vocoder_dir": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime",
+    "acoustic_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime\\model_ckpt_steps_320000.ckpt",
+    "variance_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime\\model_ckpt_steps_160000.ckpt",
+    "vocoder_checkpoint": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime\\model_ckpt_steps_280000.ckpt",
     "acoustic_checkpoint_link": "existing",
+    "variance_checkpoint_link": "existing",
     "vocoder_checkpoint_link": "existing",
     "acoustic_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_acoustic_runtime\\config.yaml",
+    "variance_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_variance_runtime\\config.yaml",
     "vocoder_config": "D:\\YiYuTongSheng\\external\\DiffSinger\\checkpoints\\yiyutongsheng_vocoder_runtime\\config.yaml"
   },
   "warnings": []

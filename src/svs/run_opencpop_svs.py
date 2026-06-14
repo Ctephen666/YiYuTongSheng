@@ -11,6 +11,7 @@ from src.svs.build_opencpop_svs_score import build_opencpop_svs_score, save_open
 from src.svs.checkpoint_manager import check_svs_checkpoints, save_checkpoint_status
 from src.svs.diffsinger_opencpop_exporter import build_diffsinger_export_plan, save_diffsinger_export_plan
 from src.svs.opencpop_neural_svs_backend import build_neural_svs_render_plan, save_neural_svs_render_plan
+from src.svs.rvc_voice_conversion import apply_rvc_voice_conversion
 
 
 def _merge_result(outputs: dict[str, str], warnings: list[str], result: dict[str, Any]) -> None:
@@ -89,6 +90,11 @@ def run_opencpop_svs(config: dict) -> dict:
     _merge_warnings(warnings, render_plan)
 
     status = str(render_plan.get("status") or "failed")
+    if status == "success" and bool(config.get("svs", {}).get("rvc", {}).get("enabled", False)):
+        rvc_result = apply_rvc_voice_conversion(config, render_plan.get("output_audio"))
+        _merge_result(outputs, warnings, rvc_result)
+        status = str(rvc_result.get("status") or status)
+
     return {
         "status": status,
         "outputs": outputs,

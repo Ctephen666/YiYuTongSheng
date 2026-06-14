@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YiYuTongSheng Web Demo</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>YiYuTongSheng · Neural Singing Voice Conversion Demo</h1>
+      <p>异语同声 · 神经歌声合成与音色转换系统</p>
+    </div>
+    <div class="status-pill" id="systemStatus">Loading</div>
+  </header>
+
+  <main class="layout">
+    <aside class="side-panel">
+      <section class="panel">
+        <h2>歌曲选择</h2>
+        <label>OpenCpop Song</label>
+        <select id="songSelect"></select>
+        <div class="meta-grid" id="songMeta"></div>
+      </section>
+
+      <section class="panel">
+        <h2>人声模型</h2>
+        <label>RVC / SVC Model</label>
+        <select id="voiceSelect"></select>
+        <div class="meta-grid" id="voiceMeta"></div>
+      </section>
+
+      <section class="panel">
+        <h2>SVS 参数</h2>
+        <div class="form-grid">
+          <label>start_phrase<input id="startPhrase" type="number" min="1" value="{{ defaults.get('start_phrase', 1) }}"></label>
+          <label>max_phrases<input id="maxPhrases" type="number" min="1" placeholder="整首"></label>
+          <label>assembly_mode
+            <select id="assemblyMode">
+              <option value="timeline" selected>timeline</option>
+              <option value="concat">concat</option>
+            </select>
+          </label>
+          <label>infer_class<input id="inferClass" value="{{ defaults.get('infer_class', 'cascade') }}"></label>
+        </div>
+        <div class="toggle-row">
+          <label><input id="normalize" type="checkbox" checked> normalize</label>
+          <label><input id="f0Naturalize" type="checkbox" checked> f0 naturalize</label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>RVC 参数</h2>
+        <div class="form-grid">
+          <label>f0_method
+            <select id="f0Method">
+              <option value="rmvpe" selected>rmvpe</option>
+              <option value="harvest">harvest</option>
+              <option value="dio">dio</option>
+              <option value="pm">pm</option>
+            </select>
+          </label>
+          <label>f0_up_key<input id="f0UpKey" type="number" value="{{ defaults.get('f0_up_key', 0) }}"></label>
+          <label>index_rate<input id="indexRate" type="number" step="0.01" min="0" max="1" value="{{ defaults.get('index_rate', 0.5) }}"></label>
+          <label>protect<input id="protect" type="number" step="0.01" min="0" max="1" value="{{ defaults.get('protect', 0.33) }}"></label>
+          <label>filter_radius<input id="filterRadius" type="number" min="0" value="{{ defaults.get('filter_radius', 3) }}"></label>
+          <label>resample_sr<input id="resampleSr" type="number" min="0" value="{{ defaults.get('resample_sr', 0) }}"></label>
+        </div>
+      </section>
+    </aside>
+
+    <section class="main-panel">
+      <section class="panel">
+        <h2>流程控制</h2>
+        <div class="pipeline">
+          <span>OpenCpop Score</span>
+          <span>DiffSinger SVS</span>
+          <span>F0 Naturalization</span>
+          <span>RVC / SVC</span>
+          <span>Final Vocal</span>
+        </div>
+        <div class="button-grid">
+          <button id="runScore">生成 Score</button>
+          <button id="runSvs">生成基础歌声</button>
+          <button id="runSvc">执行音色转换</button>
+          <button id="runFull" class="primary">一键完整流程</button>
+          <button id="refreshAll">刷新</button>
+          <button id="refreshReports">刷新报告</button>
+          <button id="openOutput">打开输出目录</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>任务状态</h2>
+        <div id="jobs" class="jobs"></div>
+      </section>
+
+      <section class="panel">
+        <h2>完整版音频</h2>
+        <div id="audioList" class="audio-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <section class="wide-panel">
+    <div class="panel">
+      <h2>报告摘要</h2>
+      <div id="reportCards" class="card-grid"></div>
+    </div>
+    <div class="panel">
+      <h2>Phrase 时间轴</h2>
+      <div id="phraseTimeline" class="timeline"></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>phrase_id</th><th>item_name</th><th>start</th><th>end</th><th>duration</th>
+              <th>f0_source</th><th>f0_min</th><th>f0_max</th><th>f0_mean</th><th>mel_mean</th><th>wav_path</th>
+            </tr>
+          </thead>
+          <tbody id="phraseRows"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>实时日志</h2>
+      <div class="log-path" id="logPath"></div>
+      <pre id="logContent"></pre>
+    </div>
+  </section>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

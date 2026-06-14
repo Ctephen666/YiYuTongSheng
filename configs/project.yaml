@@ -35,6 +35,9 @@ outputs:
   checkpoint_status: "data/svs/checkpoint_status.json"
   render_plan: "data/svs/neural_svs_render_plan.json"
   infer_report: "data/svs/diffsinger_infer_report.json"
+  rvc_report: "data/svs/rvc_voice_conversion_report.json"
+  svs_vocal_diffsinger: "data/svs/target_language_vocal_diffsinger.wav"
+  svc_vocal: "data/svc/converted_target_voice.wav"
   svs_vocal: "data/svs/target_language_vocal.wav"
 
 paths:
@@ -63,6 +66,9 @@ paths:
   checkpoint_status: "data/svs/checkpoint_status.json"
   render_plan: "data/svs/neural_svs_render_plan.json"
   infer_report: "data/svs/diffsinger_infer_report.json"
+  rvc_report: "data/svs/rvc_voice_conversion_report.json"
+  svs_vocal_diffsinger: "data/svs/target_language_vocal_diffsinger.wav"
+  svc_vocal: "data/svc/converted_target_voice.wav"
   svs_vocal: "data/svs/target_language_vocal.wav"
 
 opencpop:
@@ -101,18 +107,46 @@ svs:
     phoneme_dictionary: "checkpoints/diffsinger/zh_phoneme_dict.json"
   diffsinger:
     root: "external/DiffSinger"
-    infer_class: "e2e"
+    infer_class: "cascade"
     acoustic_exp_name: "yiyutongsheng_acoustic"
+    variance_exp_name: "yiyutongsheng_variance"
     vocoder_exp_name: "yiyutongsheng_vocoder"
     export_dir: "data/svs/diffsinger_opencpop"
-    project_format: "phoneme_level_json"
+    project_format: "word_level_json"
     pndm_speedup: 40
     force_cpu: false
     normalize_output: true
+    f0_fallback:
+      enabled: true
+      naturalize: true
+      transition_ms: 50
+      vibrato_enabled: true
+      vibrato_threshold_sec: 0.35
+      vibrato_rate_hz: 5.5
+      vibrato_depth_cents: 15
+      vibrato_delay_sec: 0.15
+      vibrato_fade_sec: 0.08
+      tail_fall_enabled: true
+      tail_fall_ms: 150
+      tail_fall_cents: 20
+      jitter_enabled: true
+      jitter_cents: 2
+      random_seed: 1234
     hparams_override:
-      pe_enable: false
-      use_nsf: false
       vocoder_ckpt: "checkpoints/yiyutongsheng_vocoder"
+  rvc:
+    enabled: true
+    root: "external/rvc"
+    model_name: "bofan_voice_f0.pth"
+    index_path: "external/rvc/assets/indices/bofan_voice_f0_IVF591_Flat_nprobe_1_bofan_voice_f0_v2.index"
+    f0method: "rmvpe"
+    f0up_key: 0
+    index_rate: 0.5
+    filter_radius: 3
+    resample_sr: 0
+    rms_mix_rate: 1.0
+    protect: 0.33
+    timeout_sec: 1800
 
 pipeline:
   allow_mock_outputs: false

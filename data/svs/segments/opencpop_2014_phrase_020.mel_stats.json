@@ -1,0 +1,73 @@
+{
+  "item_name": "opencpop_2014_phrase_020",
+  "mel_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2014_phrase_020.mel.npy",
+  "mel_min": -5.541794300079346,
+  "mel_max": -0.5347881317138672,
+  "mel_mean": -2.8350770473480225,
+  "mel_std": 0.8178758025169373,
+  "mel_has_nan": false,
+  "mel_has_inf": false,
+  "mel_shape": [
+    1,
+    1106,
+    80
+  ],
+  "mel": {
+    "min": -5.541794300079346,
+    "max": -0.5347881317138672,
+    "mean": -2.8350770473480225,
+    "std": 0.8178758025169373,
+    "has_nan": false,
+    "has_inf": false,
+    "shape": [
+      1,
+      1106,
+      80
+    ]
+  },
+  "f0_exists": true,
+  "f0_source": "notes_fallback_naturalized",
+  "f0_naturalized": true,
+  "f0_raw_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2014_phrase_020.f0_raw.npy",
+  "f0_natural_npy": "D:\\YiYuTongSheng\\data\\svs\\segments\\opencpop_2014_phrase_020.f0_natural.npy",
+  "f0_raw_min": 261.6255798339844,
+  "f0_raw_max": 415.3046875,
+  "f0_raw_mean": 346.5858154296875,
+  "f0_raw_std": 43.657554626464844,
+  "f0_raw_has_nan": false,
+  "f0_raw_has_inf": false,
+  "f0_natural_min": 259.4494323730469,
+  "f0_natural_max": 418.9090881347656,
+  "f0_natural_mean": 346.5733337402344,
+  "f0_natural_std": 43.57881546020508,
+  "f0_natural_has_nan": false,
+  "f0_natural_has_inf": false,
+  "f0_min": 259.4494323730469,
+  "f0_max": 418.9090881347656,
+  "f0_mean": 346.5733337402344,
+  "f0_std": 43.57881546020508,
+  "f0_has_nan": false,
+  "f0_has_inf": false,
+  "f0_shape": [
+    1,
+    1106
+  ],
+  "f0": {
+    "min": 259.4494323730469,
+    "max": 418.9090881347656,
+    "mean": 346.5733337402344,
+    "std": 43.57881546020508,
+    "has_nan": false,
+    "has_inf": false,
+    "shape": [
+      1,
+      1106
+    ]
+  },
+  "vibrato_enabled": true,
+  "transition_smoothing_ms": 50,
+  "vibrato_rate_hz": 5.5,
+  "vibrato_depth_cents": 15,
+  "tail_fall_cents": 20,
+  "jitter_cents": 2
+}

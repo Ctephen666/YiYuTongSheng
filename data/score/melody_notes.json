@@ -1,3777 +1,4699 @@
 {
   "source": "opencpop_midi",
-  "midi": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\midis\\2001.midi",
-  "note_count": 429,
+  "midi": "D:\\YiYuTongSheng\\data\\dataset\\opencpop\\midis\\2018.midi",
+  "note_count": 558,
   "phrases": [
     {
       "id": 1,
-      "start": 12.514201,
-      "end": 22.065335,
-      "duration": 9.551134,
+      "start": 20.58,
+      "end": 26.491667,
+      "duration": 5.911667,
       "note_start": 0,
-      "note_end": 18,
+      "note_end": 16,
       "notes": [
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 12.514201,
-          "end": 12.757099,
-          "duration": 0.242898,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 20.58,
+          "end": 20.738333,
+          "duration": 0.158333,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 12.849428,
-          "end": 13.139201,
-          "duration": 0.289773,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 13.186076,
-          "end": 13.517042,
-          "duration": 0.330966,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 13.54119,
-          "end": 13.840905,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 13.897724,
-          "end": 14.13778,
-          "duration": 0.240057,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 14.228689,
-          "end": 14.522723,
-          "duration": 0.294034,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 14.576701,
-          "end": 14.863632,
-          "duration": 0.286932,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 14.924712,
-          "end": 15.123576,
-          "duration": 0.198864,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 15.268462,
-          "end": 15.552553,
-          "duration": 0.284091,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 15.650564,
-          "end": 16.171871,
-          "duration": 0.521307,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 20.798333,
+          "end": 20.941667,
+          "duration": 0.143333,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 16.632098,
-          "end": 16.973007,
-          "duration": 0.340909,
-          "velocity": 110
+          "start": 20.991667,
+          "end": 21.158333,
+          "duration": 0.166667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 21.206667,
+          "end": 21.52,
+          "duration": 0.313333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 21.62,
+          "end": 21.971667,
+          "duration": 0.351667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 22.003333,
+          "end": 22.283333,
+          "duration": 0.28,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 22.396667,
+          "end": 22.635,
+          "duration": 0.238333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 22.695,
+          "end": 23.345,
+          "duration": 0.65,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 23.825,
+          "end": 24.005,
+          "duration": 0.18,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 16.973007,
-          "end": 17.313916,
-          "duration": 0.340909,
-          "velocity": 110
+          "start": 24.041667,
+          "end": 24.205,
+          "duration": 0.163333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 24.241667,
+          "end": 24.405,
+          "duration": 0.163333,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 17.313916,
-          "end": 17.85795,
-          "duration": 0.544034,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 18.032666,
-          "end": 18.768461,
-          "duration": 0.735795,
-          "velocity": 110
+          "start": 24.453333,
+          "end": 24.761667,
+          "duration": 0.308333,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 19.35937,
-          "end": 19.700279,
-          "duration": 0.340909,
-          "velocity": 110
+          "start": 24.846667,
+          "end": 25.12,
+          "duration": 0.273333,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 19.700279,
-          "end": 20.041188,
-          "duration": 0.340909,
-          "velocity": 110
+          "start": 25.223333,
+          "end": 25.491667,
+          "duration": 0.268333,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 20.041188,
-          "end": 20.632097,
-          "duration": 0.590909,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 25.601667,
+          "end": 25.796667,
+          "duration": 0.195,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 20.769881,
-          "end": 22.065335,
-          "duration": 1.295454,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 25.825,
+          "end": 26.491667,
+          "duration": 0.666667,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 2,
-      "start": 23.444596,
-      "end": 32.877832,
-      "duration": 9.433236,
-      "note_start": 18,
-      "note_end": 36,
+      "start": 27.121667,
+      "end": 31.126667,
+      "duration": 4.005,
+      "note_start": 16,
+      "note_end": 26,
       "notes": [
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 23.444596,
-          "end": 23.730107,
-          "duration": 0.285511,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 23.767039,
-          "end": 24.095164,
-          "duration": 0.328125,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 24.127834,
-          "end": 24.409084,
-          "duration": 0.28125,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 24.440334,
-          "end": 24.74005,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 24.767039,
-          "end": 24.967323,
-          "duration": 0.200284,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 25.107948,
-          "end": 25.453118,
-          "duration": 0.34517,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 25.463061,
-          "end": 25.788345,
-          "duration": 0.325284,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 25.825277,
-          "end": 26.079538,
-          "duration": 0.254261,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 26.180391,
-          "end": 26.451697,
-          "duration": 0.271307,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 26.505675,
-          "end": 27.061072,
-          "duration": 0.555398,
-          "velocity": 110
-        },
-        {
           "pitch": "B3",
           "midi": 59,
-          "start": 27.55539,
-          "end": 27.877833,
-          "duration": 0.322443,
-          "velocity": 110
+          "start": 27.121667,
+          "end": 27.491667,
+          "duration": 0.37,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 27.926129,
-          "end": 28.218742,
-          "duration": 0.292614,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 27.518333,
+          "end": 27.886667,
+          "duration": 0.368333,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 28.258515,
-          "end": 28.724424,
-          "duration": 0.465909,
-          "velocity": 110
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 27.951667,
+          "end": 28.18,
+          "duration": 0.228333,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 28.910504,
-          "end": 29.664765,
-          "duration": 0.754261,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 28.195,
+          "end": 28.593333,
+          "duration": 0.398333,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 30.264196,
-          "end": 30.566753,
-          "duration": 0.302557,
-          "velocity": 110
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 29.016667,
+          "end": 29.168333,
+          "duration": 0.151667,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 30.603685,
-          "end": 30.90198,
-          "duration": 0.298295,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 29.195,
+          "end": 29.565,
+          "duration": 0.37,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 30.926128,
-          "end": 31.521298,
-          "duration": 0.59517,
-          "velocity": 110
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 29.593333,
+          "end": 29.828333,
+          "duration": 0.235,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 31.686071,
-          "end": 32.877832,
-          "duration": 1.191761,
-          "velocity": 110
+          "pitch": "F#3",
+          "midi": 54,
+          "start": 29.968333,
+          "end": 30.298333,
+          "duration": 0.33,
+          "velocity": 100
+        },
+        {
+          "pitch": "E3",
+          "midi": 52,
+          "start": 30.331667,
+          "end": 30.608333,
+          "duration": 0.276667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E3",
+          "midi": 52,
+          "start": 30.698333,
+          "end": 31.126667,
+          "duration": 0.428333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 3,
-      "start": 33.988627,
-      "end": 43.112204,
-      "duration": 9.123577,
-      "note_start": 36,
-      "note_end": 68,
+      "start": 33.255,
+      "end": 36.166667,
+      "duration": 2.911667,
+      "note_start": 26,
+      "note_end": 33,
       "notes": [
         {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 33.988627,
-          "end": 34.164764,
-          "duration": 0.176136,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 33.255,
+          "end": 33.455,
+          "duration": 0.2,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 34.201695,
-          "end": 34.338059,
-          "duration": 0.136364,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 34.348002,
-          "end": 34.490048,
-          "duration": 0.142045,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 34.515616,
-          "end": 34.644877,
-          "duration": 0.129261,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 34.660502,
-          "end": 34.81107,
-          "duration": 0.150568,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 34.833798,
-          "end": 35.022718,
-          "duration": 0.18892,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 35.038343,
-          "end": 35.291184,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 35.328116,
-          "end": 35.508513,
-          "duration": 0.180398,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 35.522718,
-          "end": 35.691752,
-          "duration": 0.169034,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 35.703115,
-          "end": 36.09374,
-          "duration": 0.390625,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 33.486667,
+          "end": 33.683333,
+          "duration": 0.196667,
+          "velocity": 100
         },
         {
           "pitch": "C#4",
           "midi": 61,
-          "start": 36.548286,
-          "end": 36.728683,
-          "duration": 0.180398,
-          "velocity": 110
+          "start": 33.713333,
+          "end": 33.915,
+          "duration": 0.201667,
+          "velocity": 100
         },
         {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 36.757092,
-          "end": 36.901979,
-          "duration": 0.144886,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 33.951667,
+          "end": 34.401667,
+          "duration": 0.45,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 36.917604,
-          "end": 37.065331,
-          "duration": 0.147727,
-          "velocity": 110
+          "pitch": "F#3",
+          "midi": 54,
+          "start": 34.696667,
+          "end": 35.043333,
+          "duration": 0.346667,
+          "velocity": 100
         },
         {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 37.086638,
-          "end": 37.224422,
-          "duration": 0.137784,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 35.093333,
+          "end": 35.395,
+          "duration": 0.301667,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 37.247149,
-          "end": 37.377831,
-          "duration": 0.130682,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 37.414763,
-          "end": 37.703115,
-          "duration": 0.288352,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 37.758513,
-          "end": 38.06391,
-          "duration": 0.305398,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 38.083797,
-          "end": 38.242888,
-          "duration": 0.159091,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 38.254251,
-          "end": 38.450274,
-          "duration": 0.196023,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 38.464478,
-          "end": 38.742887,
-          "duration": 0.278409,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 39.122149,
-          "end": 39.262774,
-          "duration": 0.140625,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 39.322433,
-          "end": 39.447433,
-          "duration": 0.125,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 39.485785,
-          "end": 39.649137,
-          "duration": 0.163352,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 39.663342,
-          "end": 39.819592,
-          "duration": 0.15625,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 39.838058,
-          "end": 40.122148,
-          "duration": 0.284091,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 40.47016,
-          "end": 40.624989,
-          "duration": 0.15483,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 40.630671,
-          "end": 40.789762,
-          "duration": 0.159091,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 40.840898,
-          "end": 40.97158,
-          "duration": 0.130682,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 40.994307,
-          "end": 41.187489,
-          "duration": 0.193182,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 41.210216,
-          "end": 41.443171,
-          "duration": 0.232954,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 41.505671,
-          "end": 41.866466,
-          "duration": 0.360795,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 41.87783,
-          "end": 43.112204,
-          "duration": 1.234375,
-          "velocity": 110
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 35.538333,
+          "end": 36.166667,
+          "duration": 0.628333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 4,
-      "start": 44.892033,
-      "end": 49.700271,
-      "duration": 4.808238,
-      "note_start": 68,
-      "note_end": 79,
+      "start": 36.843333,
+      "end": 43.83,
+      "duration": 6.986667,
+      "note_start": 33,
+      "note_end": 53,
       "notes": [
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 44.892033,
-          "end": 45.186067,
-          "duration": 0.294034,
-          "velocity": 110
+          "pitch": "E3",
+          "midi": 52,
+          "start": 36.843333,
+          "end": 37.078333,
+          "duration": 0.235,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 45.234363,
-          "end": 45.531238,
-          "duration": 0.296875,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 37.135,
+          "end": 37.4,
+          "duration": 0.265,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 45.552545,
-          "end": 45.872147,
-          "duration": 0.319602,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 37.501667,
+          "end": 37.833333,
+          "duration": 0.331667,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 45.903397,
-          "end": 46.16476,
-          "duration": 0.261364,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 37.875,
+          "end": 38.178333,
+          "duration": 0.303333,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 46.238624,
-          "end": 46.518454,
-          "duration": 0.279829,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 38.22,
+          "end": 38.47,
+          "duration": 0.25,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 46.603681,
-          "end": 46.894874,
-          "duration": 0.291193,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 38.518333,
+          "end": 38.791667,
+          "duration": 0.273333,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 46.938908,
-          "end": 47.323851,
-          "duration": 0.384943,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 39.05,
+          "end": 39.4,
+          "duration": 0.35,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 47.460215,
-          "end": 47.680385,
-          "duration": 0.22017,
-          "velocity": 110
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 39.438333,
+          "end": 39.78,
+          "duration": 0.341667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 47.708794,
-          "end": 47.991464,
-          "duration": 0.28267,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 39.828333,
+          "end": 40.073333,
+          "duration": 0.245,
+          "velocity": 100
         },
         {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 48.024135,
-          "end": 48.333794,
-          "duration": 0.309659,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 40.185,
+          "end": 40.305,
+          "duration": 0.12,
+          "velocity": 100
         },
         {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 48.363623,
-          "end": 49.700271,
-          "duration": 1.336647,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 40.305,
+          "end": 40.608333,
+          "duration": 0.303333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 40.648333,
+          "end": 40.968333,
+          "duration": 0.32,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 41.048333,
+          "end": 41.355,
+          "duration": 0.306667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 41.381667,
+          "end": 41.57,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 41.676667,
+          "end": 41.855,
+          "duration": 0.178333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 41.876667,
+          "end": 42.2,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 42.293333,
+          "end": 42.65,
+          "duration": 0.356667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 42.72,
+          "end": 43.076667,
+          "duration": 0.356667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 43.11,
+          "end": 43.281667,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 43.36,
+          "end": 43.83,
+          "duration": 0.47,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 5,
-      "start": 50.333793,
-      "end": 54.853679,
-      "duration": 4.519886,
-      "note_start": 79,
-      "note_end": 90,
+      "start": 45.966667,
+      "end": 48.4,
+      "duration": 2.433333,
+      "note_start": 53,
+      "note_end": 61,
       "notes": [
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 50.333793,
-          "end": 50.590896,
-          "duration": 0.257102,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 45.966667,
+          "end": 46.091667,
+          "duration": 0.125,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 50.649134,
-          "end": 50.933225,
-          "duration": 0.284091,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 46.166667,
+          "end": 46.308333,
+          "duration": 0.141667,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 50.999986,
-          "end": 51.299702,
-          "duration": 0.299716,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 46.371667,
+          "end": 46.538333,
+          "duration": 0.166667,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 51.363623,
-          "end": 51.63635,
-          "duration": 0.272727,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 46.585,
+          "end": 46.891667,
+          "duration": 0.306667,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 51.694588,
-          "end": 52.039759,
-          "duration": 0.34517,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 46.953333,
+          "end": 47.221667,
+          "duration": 0.268333,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 52.071009,
-          "end": 52.278395,
-          "duration": 0.207386,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 47.298333,
+          "end": 47.606667,
+          "duration": 0.308333,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 52.394872,
-          "end": 52.813906,
-          "duration": 0.419034,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 47.701667,
+          "end": 47.903333,
+          "duration": 0.201667,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 52.914759,
-          "end": 53.096577,
-          "duration": 0.181818,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 53.096577,
-          "end": 53.248565,
-          "duration": 0.151989,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 53.437486,
-          "end": 53.740042,
-          "duration": 0.302557,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 53.76277,
-          "end": 54.853679,
-          "duration": 1.090909,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 47.97,
+          "end": 48.4,
+          "duration": 0.43,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 6,
-      "start": 55.856519,
-      "end": 60.534075,
-      "duration": 4.677556,
-      "note_start": 90,
-      "note_end": 101,
+      "start": 49.106667,
+      "end": 51.813333,
+      "duration": 2.706666,
+      "note_start": 61,
+      "note_end": 69,
       "notes": [
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 55.856519,
-          "end": 56.072428,
-          "duration": 0.215909,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 49.106667,
+          "end": 49.268333,
+          "duration": 0.161667,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 56.159076,
-          "end": 56.407655,
-          "duration": 0.248579,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 49.316667,
+          "end": 49.46,
+          "duration": 0.143333,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 56.474417,
-          "end": 56.781235,
-          "duration": 0.306818,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 49.505,
+          "end": 49.638333,
+          "duration": 0.133333,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 56.819587,
-          "end": 57.105098,
-          "duration": 0.285511,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 49.681667,
+          "end": 50.035,
+          "duration": 0.353333,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 57.150553,
-          "end": 57.401973,
-          "duration": 0.25142,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 50.095,
+          "end": 50.435,
+          "duration": 0.34,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 57.457371,
-          "end": 57.674701,
-          "duration": 0.217329,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 50.485,
+          "end": 50.835,
+          "duration": 0.35,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 57.82811,
-          "end": 58.257087,
-          "duration": 0.428977,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 50.876667,
+          "end": 51.166667,
+          "duration": 0.29,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 58.366462,
-          "end": 58.551121,
-          "duration": 0.184659,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 58.565325,
-          "end": 58.839473,
-          "duration": 0.274148,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 58.886348,
-          "end": 59.214473,
-          "duration": 0.328125,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 59.241461,
-          "end": 60.534075,
-          "duration": 1.292613,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 51.206667,
+          "end": 51.813333,
+          "duration": 0.606667,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 7,
-      "start": 61.26987,
-      "end": 69.502822,
-      "duration": 8.232952,
-      "note_start": 101,
-      "note_end": 124,
+      "start": 52.416667,
+      "end": 69.846667,
+      "duration": 17.43,
+      "note_start": 69,
+      "note_end": 107,
       "notes": [
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 61.26987,
-          "end": 61.553961,
-          "duration": 0.284091,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 52.416667,
+          "end": 52.78,
+          "duration": 0.363333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 52.833333,
+          "end": 53.146667,
+          "duration": 0.313333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 53.208333,
+          "end": 53.483333,
+          "duration": 0.275,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 53.541667,
+          "end": 53.918333,
+          "duration": 0.376667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 54.195,
+          "end": 54.423333,
+          "duration": 0.228333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 54.465,
+          "end": 54.786667,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 54.831667,
+          "end": 55.185,
+          "duration": 0.353333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 55.243333,
+          "end": 55.531667,
+          "duration": 0.288333,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 61.605097,
-          "end": 61.839472,
-          "duration": 0.234375,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 61.92754,
-          "end": 62.235779,
-          "duration": 0.308239,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 62.279813,
-          "end": 62.576688,
-          "duration": 0.296875,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 62.632086,
-          "end": 62.887767,
-          "duration": 0.255682,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 62.951688,
-          "end": 63.275551,
-          "duration": 0.323864,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 63.289756,
-          "end": 63.590892,
-          "duration": 0.301136,
-          "velocity": 110
+          "start": 55.633333,
+          "end": 55.868333,
+          "duration": 0.235,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 63.806801,
-          "end": 63.992881,
-          "duration": 0.186079,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 64.017028,
-          "end": 64.225835,
-          "duration": 0.208807,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 64.352256,
-          "end": 64.626403,
-          "duration": 0.274148,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 64.667596,
-          "end": 64.941744,
-          "duration": 0.274148,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 65.30538,
-          "end": 65.600835,
-          "duration": 0.295454,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 65.684642,
-          "end": 65.941744,
-          "duration": 0.257102,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 66.025551,
-          "end": 66.330948,
-          "duration": 0.305398,
-          "velocity": 110
+          "start": 56.04,
+          "end": 56.985,
+          "duration": 0.945,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 66.36646,
-          "end": 66.623562,
-          "duration": 0.257102,
-          "velocity": 110
+          "start": 57.546667,
+          "end": 57.911667,
+          "duration": 0.365,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 66.71163,
-          "end": 66.882084,
-          "duration": 0.170455,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 66.897709,
-          "end": 67.068164,
-          "duration": 0.170454,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 67.080948,
-          "end": 67.286914,
-          "duration": 0.205966,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 67.386346,
-          "end": 67.703107,
-          "duration": 0.316761,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 67.730096,
-          "end": 67.980096,
-          "duration": 0.25,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 68.083789,
-          "end": 68.399129,
-          "duration": 0.315341,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 68.568164,
-          "end": 69.053959,
-          "duration": 0.485795,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 57.983333,
+          "end": 58.296667,
+          "duration": 0.313333,
+          "velocity": 100
         },
         {
           "pitch": "C#4",
           "midi": 61,
-          "start": 69.12072,
-          "end": 69.502822,
-          "duration": 0.382102,
-          "velocity": 110
+          "start": 58.371667,
+          "end": 58.726667,
+          "duration": 0.355,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 58.773333,
+          "end": 59.048333,
+          "duration": 0.275,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 59.175,
+          "end": 59.503333,
+          "duration": 0.328333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 59.566667,
+          "end": 59.906667,
+          "duration": 0.34,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 59.971667,
+          "end": 60.355,
+          "duration": 0.383333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 60.381667,
+          "end": 60.615,
+          "duration": 0.233333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 60.68,
+          "end": 61.191667,
+          "duration": 0.511667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 61.706667,
+          "end": 61.886667,
+          "duration": 0.18,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 61.906667,
+          "end": 62.105,
+          "duration": 0.198333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 62.136667,
+          "end": 62.325,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 62.355,
+          "end": 62.691667,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 62.718333,
+          "end": 62.985,
+          "duration": 0.266667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 63.101667,
+          "end": 63.423333,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 63.496667,
+          "end": 63.68,
+          "duration": 0.183333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 63.761667,
+          "end": 64.09,
+          "duration": 0.328333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 64.303333,
+          "end": 64.671667,
+          "duration": 0.368333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 64.745,
+          "end": 65.106667,
+          "duration": 0.361667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 65.145,
+          "end": 65.391667,
+          "duration": 0.246667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 65.535,
+          "end": 65.863333,
+          "duration": 0.328333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 65.903333,
+          "end": 66.24,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 66.28,
+          "end": 66.591667,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#3",
+          "midi": 54,
+          "start": 66.668333,
+          "end": 67.046667,
+          "duration": 0.378333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 67.08,
+          "end": 67.463333,
+          "duration": 0.383333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 67.893333,
+          "end": 68.216667,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 68.273333,
+          "end": 68.65,
+          "duration": 0.376667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 68.676667,
+          "end": 69.846667,
+          "duration": 1.17,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 8,
-      "start": 70.80964,
-      "end": 75.228673,
-      "duration": 4.419033,
-      "note_start": 124,
-      "note_end": 137,
+      "start": 71.805,
+      "end": 83.27,
+      "duration": 11.465,
+      "note_start": 107,
+      "note_end": 135,
       "notes": [
         {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 70.80964,
-          "end": 71.130663,
-          "duration": 0.321023,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 71.805,
+          "end": 72.166667,
+          "duration": 0.361667,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 71.167595,
-          "end": 71.431799,
-          "duration": 0.264204,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 72.205,
+          "end": 72.566667,
+          "duration": 0.361667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 72.598333,
+          "end": 72.875,
+          "duration": 0.276667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 72.985,
+          "end": 73.19,
+          "duration": 0.205,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 73.23,
+          "end": 73.59,
+          "duration": 0.36,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 73.75,
+          "end": 74.166667,
+          "duration": 0.416667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 74.188333,
+          "end": 74.548333,
+          "duration": 0.36,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 74.575,
+          "end": 74.908333,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 74.96,
+          "end": 75.238333,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 75.355,
+          "end": 75.575,
+          "duration": 0.22,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 75.62,
+          "end": 76.031667,
+          "duration": 0.411667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 76.293333,
+          "end": 76.461667,
+          "duration": 0.168333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 76.501667,
+          "end": 76.815,
+          "duration": 0.313333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 76.871667,
+          "end": 77.218333,
+          "duration": 0.346667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 77.286667,
+          "end": 77.613333,
+          "duration": 0.326667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 77.706667,
+          "end": 78.026667,
+          "duration": 0.32,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 78.066667,
+          "end": 78.433333,
+          "duration": 0.366667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 78.518333,
+          "end": 78.753333,
+          "duration": 0.235,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 78.796667,
+          "end": 79.158333,
+          "duration": 0.361667,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 71.491458,
-          "end": 71.805379,
-          "duration": 0.31392,
-          "velocity": 110
+          "start": 79.333333,
+          "end": 79.661667,
+          "duration": 0.328333,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 71.843731,
-          "end": 72.086629,
-          "duration": 0.242898,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 79.701667,
+          "end": 79.926667,
+          "duration": 0.225,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 72.139185,
-          "end": 72.319583,
-          "duration": 0.180398,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 80.063333,
+          "end": 80.206667,
+          "duration": 0.143333,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 72.330947,
-          "end": 72.499981,
-          "duration": 0.169034,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 72.524128,
-          "end": 72.710208,
-          "duration": 0.186079,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 72.84089,
-          "end": 73.144867,
-          "duration": 0.303977,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 73.169015,
-          "end": 73.34231,
-          "duration": 0.173295,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 73.365037,
-          "end": 73.535492,
-          "duration": 0.170454,
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 80.215,
+          "end": 80.45,
+          "duration": 0.235,
           "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 73.566742,
-          "end": 73.880662,
-          "duration": 0.31392,
-          "velocity": 110
+          "start": 80.498333,
+          "end": 80.791667,
+          "duration": 0.293333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 80.878333,
+          "end": 81.25,
+          "duration": 0.371667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 81.293333,
+          "end": 81.591667,
+          "duration": 0.298333,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 74.09231,
-          "end": 74.512764,
-          "duration": 0.420454,
-          "velocity": 110
+          "start": 81.68,
+          "end": 81.92,
+          "duration": 0.24,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 74.59373,
-          "end": 75.228673,
-          "duration": 0.634943,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 81.965,
+          "end": 83.27,
+          "duration": 1.305,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 9,
-      "start": 76.22015,
-      "end": 80.444581,
-      "duration": 4.224431,
-      "note_start": 137,
-      "note_end": 149,
+      "start": 84.41,
+      "end": 89.788333,
+      "duration": 5.378333,
+      "note_start": 135,
+      "note_end": 148,
       "notes": [
         {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 76.22015,
-          "end": 76.524127,
-          "duration": 0.303977,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 76.59515,
-          "end": 76.894866,
-          "duration": 0.299716,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 84.41,
+          "end": 84.718333,
+          "duration": 0.308333,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 76.936059,
-          "end": 77.254241,
-          "duration": 0.318182,
-          "velocity": 110
+          "start": 84.818333,
+          "end": 85.118333,
+          "duration": 0.3,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 77.298275,
-          "end": 77.562479,
-          "duration": 0.264204,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 85.22,
+          "end": 85.468333,
+          "duration": 0.248333,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 77.609354,
-          "end": 77.772707,
-          "duration": 0.163352,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 85.571667,
+          "end": 85.863333,
+          "duration": 0.291667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 77.789752,
-          "end": 77.955945,
-          "duration": 0.166193,
-          "velocity": 110
+          "pitch": "F4",
+          "midi": 65,
+          "start": 85.891667,
+          "end": 86.318333,
+          "duration": 0.426667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 77.958786,
-          "end": 78.222991,
-          "duration": 0.264204,
-          "velocity": 110
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 86.4,
+          "end": 86.615,
+          "duration": 0.215,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 78.299695,
-          "end": 78.5014,
-          "duration": 0.201704,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 78.630661,
-          "end": 78.931797,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 79.00282,
-          "end": 79.328104,
-          "duration": 0.325284,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 79.499979,
-          "end": 79.97441,
-          "duration": 0.474432,
-          "velocity": 110
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 86.688333,
+          "end": 87.091667,
+          "duration": 0.403333,
+          "velocity": 100
         },
         {
           "pitch": "C#4",
           "midi": 61,
-          "start": 80.012763,
-          "end": 80.444581,
-          "duration": 0.431818,
-          "velocity": 110
+          "start": 87.395,
+          "end": 87.566667,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 87.591667,
+          "end": 87.915,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 87.951667,
+          "end": 88.191667,
+          "duration": 0.24,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 88.24,
+          "end": 88.585,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 88.728333,
+          "end": 89.155,
+          "duration": 0.426667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 89.191667,
+          "end": 89.788333,
+          "duration": 0.596667,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 10,
-      "start": 81.714467,
-      "end": 86.017023,
-      "duration": 4.302556,
-      "note_start": 149,
-      "note_end": 161,
+      "start": 90.776667,
+      "end": 96.391667,
+      "duration": 5.615,
+      "note_start": 148,
+      "note_end": 157,
       "notes": [
         {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 81.714467,
-          "end": 82.03691,
-          "duration": 0.322443,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 90.776667,
+          "end": 91.126667,
+          "duration": 0.35,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 82.072421,
-          "end": 82.34941,
-          "duration": 0.276989,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 91.165,
+          "end": 91.39,
+          "duration": 0.225,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 82.399126,
-          "end": 82.660489,
-          "duration": 0.261364,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 91.45,
+          "end": 91.873333,
+          "duration": 0.423333,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 82.721569,
-          "end": 83.018444,
-          "duration": 0.296875,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 91.91,
+          "end": 92.1,
+          "duration": 0.19,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 83.092307,
-          "end": 83.262762,
-          "duration": 0.170454,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 92.3,
+          "end": 92.656667,
+          "duration": 0.356667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 83.262762,
-          "end": 83.433216,
-          "duration": 0.170455,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 92.69,
+          "end": 93.038333,
+          "duration": 0.348333,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 83.433216,
-          "end": 83.619296,
-          "duration": 0.186079,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 83.761341,
-          "end": 84.015603,
-          "duration": 0.254261,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 84.092307,
-          "end": 84.362193,
-          "duration": 0.269886,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 93.08,
+          "end": 93.45,
+          "duration": 0.37,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 84.446,
-          "end": 84.701682,
-          "duration": 0.255682,
-          "velocity": 110
+          "start": 93.5,
+          "end": 93.791667,
+          "duration": 0.291667,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 84.936057,
-          "end": 85.399125,
-          "duration": 0.463068,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 85.451682,
-          "end": 86.017023,
-          "duration": 0.565341,
-          "velocity": 110
+          "start": 93.948333,
+          "end": 96.391667,
+          "duration": 2.443333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 11,
-      "start": 88.836624,
-      "end": 95.04827,
-      "duration": 6.211646,
-      "note_start": 161,
-      "note_end": 175,
+      "start": 99.668333,
+      "end": 111.35,
+      "duration": 11.681667,
+      "note_start": 157,
+      "note_end": 185,
       "notes": [
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 88.836624,
-          "end": 89.150544,
-          "duration": 0.31392,
-          "velocity": 110
+          "pitch": "E4",
+          "midi": 64,
+          "start": 99.668333,
+          "end": 99.856667,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 99.925,
+          "end": 100.113333,
+          "duration": 0.188333,
+          "velocity": 100
         },
         {
           "pitch": "G#4",
           "midi": 68,
-          "start": 89.188897,
-          "end": 89.461624,
-          "duration": 0.272727,
-          "velocity": 110
+          "start": 100.126667,
+          "end": 100.348333,
+          "duration": 0.221667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 100.376667,
+          "end": 100.663333,
+          "duration": 0.286667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 100.736667,
+          "end": 100.931667,
+          "duration": 0.195,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 100.948333,
+          "end": 101.241667,
+          "duration": 0.293333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 101.4,
+          "end": 101.731667,
+          "duration": 0.331667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 101.798333,
+          "end": 102.42,
+          "duration": 0.621667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 102.721667,
+          "end": 102.916667,
+          "duration": 0.195,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 102.956667,
+          "end": 103.116667,
+          "duration": 0.16,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 103.145,
+          "end": 103.316667,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 103.393333,
+          "end": 103.691667,
+          "duration": 0.298333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 103.75,
+          "end": 103.975,
+          "duration": 0.225,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 103.988333,
+          "end": 104.323333,
+          "duration": 0.335,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 104.541667,
+          "end": 104.89,
+          "duration": 0.348333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 105.015,
+          "end": 105.473333,
+          "duration": 0.458333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 105.728333,
+          "end": 106.115,
+          "duration": 0.386667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 106.168333,
+          "end": 106.55,
+          "duration": 0.381667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 106.571667,
+          "end": 106.815,
+          "duration": 0.243333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 106.941667,
+          "end": 107.188333,
+          "duration": 0.246667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 107.22,
+          "end": 107.63,
+          "duration": 0.41,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 107.888333,
+          "end": 108.06,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 108.096667,
+          "end": 108.406667,
+          "duration": 0.31,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 108.493333,
+          "end": 108.82,
+          "duration": 0.326667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 108.876667,
+          "end": 109.206667,
+          "duration": 0.33,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 109.248333,
+          "end": 109.646667,
+          "duration": 0.398333,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 89.499976,
-          "end": 89.785487,
-          "duration": 0.285511,
-          "velocity": 110
+          "start": 109.665,
+          "end": 110.268333,
+          "duration": 0.603333,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 89.849408,
-          "end": 90.173271,
-          "duration": 0.323864,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 90.214465,
-          "end": 90.484351,
-          "duration": 0.269886,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 90.556794,
-          "end": 90.855089,
-          "duration": 0.298295,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 90.907646,
-          "end": 91.190317,
-          "duration": 0.28267,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 91.268442,
-          "end": 91.453101,
-          "duration": 0.184659,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 91.599407,
-          "end": 91.926112,
-          "duration": 0.326704,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 91.967305,
-          "end": 92.529805,
-          "duration": 0.5625,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 92.957362,
-          "end": 93.230089,
-          "duration": 0.272727,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 93.29685,
-          "end": 93.592305,
-          "duration": 0.295454,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 93.653384,
-          "end": 94.291168,
-          "duration": 0.637784,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 94.346566,
-          "end": 95.04827,
-          "duration": 0.701704,
-          "velocity": 110
+          "pitch": "B4",
+          "midi": 71,
+          "start": 110.386667,
+          "end": 111.35,
+          "duration": 0.963333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 12,
-      "start": 95.654804,
-      "end": 98.294008,
-      "duration": 2.639204,
-      "note_start": 175,
-      "note_end": 179,
+      "start": 112.281667,
+      "end": 123.856667,
+      "duration": 11.575,
+      "note_start": 185,
+      "note_end": 213,
       "notes": [
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 95.654804,
-          "end": 95.995713,
-          "duration": 0.340909,
-          "velocity": 110
+          "start": 112.281667,
+          "end": 112.418333,
+          "duration": 0.136667,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 96.01844,
-          "end": 96.389179,
-          "duration": 0.370739,
-          "velocity": 110
+          "start": 112.463333,
+          "end": 112.595,
+          "duration": 0.131667,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 96.414747,
-          "end": 96.931792,
-          "duration": 0.517045,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 112.655,
+          "end": 112.841667,
+          "duration": 0.186667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 112.901667,
+          "end": 113.228333,
+          "duration": 0.326667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 113.245,
+          "end": 113.603333,
+          "duration": 0.358333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 113.625,
+          "end": 113.998333,
+          "duration": 0.373333,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 97.105088,
-          "end": 98.294008,
-          "duration": 1.18892,
-          "velocity": 110
+          "start": 114.035,
+          "end": 114.276667,
+          "duration": 0.241667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 114.315,
+          "end": 115.021667,
+          "duration": 0.706667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 115.401667,
+          "end": 115.588333,
+          "duration": 0.186667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 115.62,
+          "end": 115.766667,
+          "duration": 0.146667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 115.8,
+          "end": 115.976667,
+          "duration": 0.176667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 115.995,
+          "end": 116.353333,
+          "duration": 0.358333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 116.408333,
+          "end": 116.743333,
+          "duration": 0.335,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 116.788333,
+          "end": 117.123333,
+          "duration": 0.335,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 117.171667,
+          "end": 117.385,
+          "duration": 0.213333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 117.446667,
+          "end": 117.738333,
+          "duration": 0.291667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 118.006667,
+          "end": 118.395,
+          "duration": 0.388333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 118.416667,
+          "end": 118.698333,
+          "duration": 0.281667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 118.788333,
+          "end": 119.08,
+          "duration": 0.291667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 119.158333,
+          "end": 119.48,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 119.578333,
+          "end": 119.793333,
+          "duration": 0.215,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 119.8,
+          "end": 120.108333,
+          "duration": 0.308333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 120.135,
+          "end": 120.388333,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 120.741667,
+          "end": 121.065,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 121.126667,
+          "end": 121.46,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 121.486667,
+          "end": 121.765,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 121.875,
+          "end": 122.1,
+          "duration": 0.225,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 122.15,
+          "end": 123.856667,
+          "duration": 1.706667,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 13,
-      "start": 99.755655,
-      "end": 105.849404,
-      "duration": 6.093749,
-      "note_start": 179,
-      "note_end": 195,
+      "start": 124.846667,
+      "end": 136.765,
+      "duration": 11.918333,
+      "note_start": 213,
+      "note_end": 242,
       "notes": [
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 99.755655,
-          "end": 100.065314,
-          "duration": 0.309659,
-          "velocity": 110
+          "pitch": "E4",
+          "midi": 64,
+          "start": 124.846667,
+          "end": 125.063333,
+          "duration": 0.216667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 125.103333,
+          "end": 125.263333,
+          "duration": 0.16,
+          "velocity": 100
         },
         {
           "pitch": "G#4",
           "midi": 68,
-          "start": 100.086621,
-          "end": 100.404803,
-          "duration": 0.318182,
-          "velocity": 110
+          "start": 125.29,
+          "end": 125.511667,
+          "duration": 0.221667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 125.548333,
+          "end": 125.85,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 125.926667,
+          "end": 126.136667,
+          "duration": 0.21,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 126.193333,
+          "end": 126.495,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 126.675,
+          "end": 127.08,
+          "duration": 0.405,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 127.12,
+          "end": 127.665,
+          "duration": 0.545,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 128.008333,
+          "end": 128.233333,
+          "duration": 0.225,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 128.258333,
+          "end": 128.43,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 128.458333,
+          "end": 128.675,
+          "duration": 0.216667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 128.696667,
+          "end": 129.035,
+          "duration": 0.338333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 129.081667,
+          "end": 129.301667,
+          "duration": 0.22,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 129.336667,
+          "end": 129.68,
+          "duration": 0.343333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 129.836667,
+          "end": 130.151667,
+          "duration": 0.315,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 130.23,
+          "end": 130.641667,
+          "duration": 0.411667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 131.008333,
+          "end": 131.341667,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 131.38,
+          "end": 131.745,
+          "duration": 0.365,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 131.793333,
+          "end": 132.141667,
+          "duration": 0.348333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 132.203333,
+          "end": 132.448333,
+          "duration": 0.245,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 132.461667,
+          "end": 132.863333,
+          "duration": 0.401667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 133.221667,
+          "end": 133.456667,
+          "duration": 0.235,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 133.498333,
+          "end": 133.79,
+          "duration": 0.291667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 133.811667,
+          "end": 134.113333,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 134.188333,
+          "end": 134.456667,
+          "duration": 0.268333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 134.58,
+          "end": 134.955,
+          "duration": 0.375,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 100.45878,
-          "end": 100.745712,
-          "duration": 0.286932,
-          "velocity": 110
+          "start": 135.008333,
+          "end": 135.38,
+          "duration": 0.371667,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 100.774121,
-          "end": 101.086621,
-          "duration": 0.3125,
-          "velocity": 110
+          "pitch": "B4",
+          "midi": 71,
+          "start": 135.401667,
+          "end": 135.731667,
+          "duration": 0.33,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 101.109348,
-          "end": 101.380655,
-          "duration": 0.271307,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 101.467302,
-          "end": 101.768439,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 101.819575,
-          "end": 102.109348,
-          "duration": 0.289773,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 102.14628,
-          "end": 102.39912,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 102.488609,
-          "end": 102.764177,
-          "duration": 0.275568,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 102.869291,
-          "end": 103.059632,
-          "duration": 0.190341,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 103.070995,
-          "end": 103.237188,
-          "duration": 0.166193,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 103.252813,
-          "end": 103.511336,
-          "duration": 0.258523,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 103.894859,
-          "end": 104.177529,
-          "duration": 0.28267,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 104.227245,
-          "end": 104.480086,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 104.573836,
-          "end": 105.218722,
-          "duration": 0.644886,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 105.264176,
-          "end": 105.849404,
-          "duration": 0.585227,
-          "velocity": 110
+          "pitch": "B4",
+          "midi": 71,
+          "start": 135.765,
+          "end": 136.765,
+          "duration": 1.0,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 14,
-      "start": 106.597983,
-      "end": 108.866448,
-      "duration": 2.268465,
-      "note_start": 195,
-      "note_end": 200,
+      "start": 137.591667,
+      "end": 148.26,
+      "duration": 10.668333,
+      "note_start": 242,
+      "note_end": 270,
       "notes": [
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 106.597983,
-          "end": 106.894858,
-          "duration": 0.296875,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 137.591667,
+          "end": 137.8,
+          "duration": 0.208333,
+          "velocity": 100
         },
         {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 106.944574,
-          "end": 107.288324,
-          "duration": 0.34375,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 107.33804,
-          "end": 107.897698,
-          "duration": 0.559659,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 137.825,
+          "end": 137.986667,
+          "duration": 0.161667,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 107.921846,
-          "end": 108.092301,
-          "duration": 0.170455,
-          "velocity": 110
+          "start": 138.005,
+          "end": 138.196667,
+          "duration": 0.191667,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 108.113608,
-          "end": 108.866448,
-          "duration": 0.752841,
-          "velocity": 110
+          "start": 138.25,
+          "end": 138.566667,
+          "duration": 0.316667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 138.605,
+          "end": 138.965,
+          "duration": 0.36,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 139.001667,
+          "end": 139.313333,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 139.348333,
+          "end": 139.741667,
+          "duration": 0.393333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 139.798333,
+          "end": 140.406667,
+          "duration": 0.608333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 140.648333,
+          "end": 140.818333,
+          "duration": 0.17,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 140.843333,
+          "end": 140.993333,
+          "duration": 0.15,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 141.031667,
+          "end": 141.248333,
+          "duration": 0.216667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 141.306667,
+          "end": 141.648333,
+          "duration": 0.341667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 141.676667,
+          "end": 142.015,
+          "duration": 0.338333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 142.076667,
+          "end": 142.388333,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 142.43,
+          "end": 142.648333,
+          "duration": 0.218333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 142.73,
+          "end": 142.98,
+          "duration": 0.25,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 143.298333,
+          "end": 143.588333,
+          "duration": 0.29,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 143.643333,
+          "end": 143.935,
+          "duration": 0.291667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 144.061667,
+          "end": 144.385,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 144.441667,
+          "end": 144.79,
+          "duration": 0.348333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 144.803333,
+          "end": 145.023333,
+          "duration": 0.22,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 145.05,
+          "end": 145.386667,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 145.453333,
+          "end": 145.816667,
+          "duration": 0.363333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 145.98,
+          "end": 146.303333,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 146.416667,
+          "end": 146.755,
+          "duration": 0.338333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 146.81,
+          "end": 147.155,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 147.196667,
+          "end": 147.391667,
+          "duration": 0.195,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 147.406667,
+          "end": 148.26,
+          "duration": 0.853333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 15,
-      "start": 110.271277,
-      "end": 119.705934,
-      "duration": 9.434657,
-      "note_start": 200,
-      "note_end": 233,
+      "start": 148.948333,
+      "end": 152.59,
+      "duration": 3.641667,
+      "note_start": 270,
+      "note_end": 275,
       "notes": [
         {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 110.271277,
-          "end": 110.470141,
-          "duration": 0.198864,
-          "velocity": 110
+          "pitch": "A4",
+          "midi": 69,
+          "start": 148.948333,
+          "end": 149.176667,
+          "duration": 0.228333,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 110.484346,
-          "end": 110.626391,
-          "duration": 0.142045,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 110.650539,
-          "end": 110.81105,
-          "duration": 0.160511,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 110.81105,
-          "end": 110.948834,
-          "duration": 0.137784,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 110.995709,
-          "end": 111.144857,
-          "duration": 0.149148,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 111.173266,
-          "end": 111.34372,
-          "duration": 0.170455,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 111.362186,
-          "end": 111.49855,
-          "duration": 0.136364,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 111.512754,
-          "end": 111.683209,
-          "duration": 0.170455,
+          "pitch": "A4",
+          "midi": 69,
+          "start": 149.205,
+          "end": 149.576667,
+          "duration": 0.371667,
           "velocity": 100
         },
         {
           "pitch": "G#4",
           "midi": 68,
-          "start": 111.710197,
-          "end": 111.865027,
-          "duration": 0.15483,
-          "velocity": 110
+          "start": 149.991667,
+          "end": 150.325,
+          "duration": 0.333333,
+          "velocity": 100
         },
         {
           "pitch": "A4",
           "midi": 69,
-          "start": 111.869288,
-          "end": 112.042584,
-          "duration": 0.173295,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 112.046845,
-          "end": 112.37639,
-          "duration": 0.329545,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 112.887754,
-          "end": 113.058208,
-          "duration": 0.170455,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 113.068152,
-          "end": 113.259913,
-          "duration": 0.191761,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 113.275538,
-          "end": 113.386333,
-          "duration": 0.110795,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 113.401958,
-          "end": 113.517015,
-          "duration": 0.115057,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 113.558208,
-          "end": 113.704515,
-          "duration": 0.146307,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 113.735765,
-          "end": 113.87639,
-          "duration": 0.140625,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 113.899117,
-          "end": 114.055367,
-          "duration": 0.15625,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 114.082356,
-          "end": 114.362185,
-          "duration": 0.279829,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 114.406219,
-          "end": 114.546844,
-          "duration": 0.140625,
-          "velocity": 110
+          "start": 150.396667,
+          "end": 150.74,
+          "duration": 0.343333,
+          "velocity": 100
         },
         {
           "pitch": "A4",
           "midi": 69,
-          "start": 114.579515,
-          "end": 114.728663,
-          "duration": 0.149148,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 114.754231,
-          "end": 115.100822,
-          "duration": 0.346591,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 115.448833,
-          "end": 115.764174,
-          "duration": 0.315341,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 115.832355,
-          "end": 115.990026,
-          "duration": 0.15767,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 116.007071,
-          "end": 116.193151,
-          "duration": 0.186079,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 116.201674,
-          "end": 116.434628,
-          "duration": 0.232954,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 116.818151,
-          "end": 116.94173,
-          "duration": 0.12358,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 116.963037,
-          "end": 117.149116,
-          "duration": 0.186079,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 117.184628,
-          "end": 117.345139,
-          "duration": 0.160511,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 117.359344,
-          "end": 117.518435,
-          "duration": 0.159091,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 117.526957,
-          "end": 117.762753,
-          "duration": 0.235795,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 117.836616,
-          "end": 118.159059,
-          "duration": 0.322443,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 118.19173,
-          "end": 119.705934,
-          "duration": 1.514204,
-          "velocity": 110
+          "start": 150.791667,
+          "end": 152.59,
+          "duration": 1.798333,
+          "velocity": 100
         }
       ]
     },
     {
       "id": 16,
-      "start": 121.244286,
-      "end": 126.053944,
-      "duration": 4.809658,
-      "note_start": 233,
-      "note_end": 244,
+      "start": 165.941667,
+      "end": 171.858333,
+      "duration": 5.916666,
+      "note_start": 275,
+      "note_end": 291,
       "notes": [
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 121.244286,
-          "end": 121.563888,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 121.585195,
-          "end": 121.904797,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 121.926104,
-          "end": 122.245706,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 122.267013,
-          "end": 122.586615,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 122.607922,
-          "end": 122.927524,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 122.948831,
-          "end": 123.268433,
-          "duration": 0.319602,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 123.28974,
-          "end": 123.660478,
-          "duration": 0.370739,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 123.819569,
-          "end": 124.004228,
-          "duration": 0.184659,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 124.036899,
-          "end": 124.25849,
-          "duration": 0.221591,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 124.345137,
-          "end": 124.620705,
-          "duration": 0.275568,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 124.695989,
-          "end": 126.053944,
-          "duration": 1.357954,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "start": 126.693148,
-      "end": 131.156215,
-      "duration": 4.463067,
-      "note_start": 244,
-      "note_end": 255,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 126.693148,
-          "end": 126.992864,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 127.034057,
-          "end": 127.333773,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 127.374966,
-          "end": 127.674682,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 127.715875,
-          "end": 128.015591,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 128.056784,
-          "end": 128.3565,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 128.397693,
-          "end": 128.697409,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 128.738602,
-          "end": 129.208772,
-          "duration": 0.47017,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 129.234341,
-          "end": 129.424681,
-          "duration": 0.190341,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 129.441727,
-          "end": 129.660477,
-          "duration": 0.21875,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 129.745704,
-          "end": 130.086613,
-          "duration": 0.340909,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 130.137749,
-          "end": 131.156215,
-          "duration": 1.018466,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "start": 132.186044,
-      "end": 145.880643,
-      "duration": 13.694599,
-      "note_start": 255,
-      "note_end": 289,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 132.186044,
-          "end": 132.437465,
-          "duration": 0.25142,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 132.539737,
-          "end": 132.778374,
-          "duration": 0.238636,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 132.866442,
-          "end": 133.119283,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 133.198828,
-          "end": 133.436044,
-          "duration": 0.237216,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 133.54968,
-          "end": 133.801101,
-          "duration": 0.25142,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 133.882067,
-          "end": 134.11218,
-          "duration": 0.230114,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 134.198828,
-          "end": 134.561044,
-          "duration": 0.362216,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 134.711612,
-          "end": 134.911896,
-          "duration": 0.200284,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 134.934623,
-          "end": 135.220134,
-          "duration": 0.285511,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 135.286896,
-          "end": 135.596555,
-          "duration": 0.309659,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 135.632066,
-          "end": 137.213032,
-          "duration": 1.580965,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 137.609338,
-          "end": 137.910475,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 137.950247,
-          "end": 138.251384,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 138.291156,
-          "end": 138.592293,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 138.632065,
-          "end": 138.933202,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 138.972974,
-          "end": 139.274111,
-          "duration": 0.301136,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 139.313883,
-          "end": 139.651951,
-          "duration": 0.338068,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 139.676099,
-          "end": 139.953088,
-          "duration": 0.276989,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 140.195985,
-          "end": 140.36644,
-          "duration": 0.170454,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 140.36644,
-          "end": 140.619281,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 140.71019,
-          "end": 140.963031,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 141.021269,
-          "end": 141.33661,
-          "duration": 0.315341,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 141.651951,
-          "end": 142.018428,
-          "duration": 0.366477,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 142.015587,
-          "end": 142.359337,
-          "duration": 0.34375,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 142.356496,
-          "end": 142.700246,
-          "duration": 0.34375,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 142.708769,
-          "end": 142.980076,
-          "duration": 0.271307,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 143.052519,
-          "end": 143.249962,
-          "duration": 0.197443,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 143.264166,
-          "end": 143.427519,
-          "duration": 0.163352,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 143.460189,
-          "end": 143.656212,
-          "duration": 0.196023,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 143.779791,
-          "end": 144.097973,
-          "duration": 0.318182,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 144.11928,
-          "end": 144.330927,
-          "duration": 0.211648,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 144.445984,
-          "end": 144.7457,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 144.950245,
-          "end": 145.428938,
-          "duration": 0.478693,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 145.448825,
-          "end": 145.880643,
-          "duration": 0.431818,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "start": 147.134904,
-      "end": 151.428937,
-      "duration": 4.294033,
-      "note_start": 289,
-      "note_end": 301,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 147.134904,
-          "end": 147.472972,
-          "duration": 0.338068,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 147.534052,
-          "end": 147.838029,
-          "duration": 0.303977,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 147.882063,
-          "end": 148.137745,
-          "duration": 0.255682,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 148.210188,
-          "end": 148.453085,
-          "duration": 0.242898,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 148.525529,
-          "end": 148.666154,
-          "duration": 0.140625,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 148.693142,
-          "end": 148.836608,
-          "duration": 0.143466,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 148.876381,
-          "end": 149.052517,
-          "duration": 0.176136,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 149.195983,
-          "end": 149.463028,
-          "duration": 0.267045,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 149.518426,
-          "end": 149.803937,
-          "duration": 0.285511,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 149.894846,
-          "end": 150.140585,
-          "duration": 0.245739,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 150.386324,
-          "end": 150.826664,
-          "duration": 0.440341,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 150.886323,
-          "end": 151.428937,
-          "duration": 0.542613,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "start": 152.607914,
-      "end": 156.85081,
-      "duration": 4.242896,
-      "note_start": 301,
-      "note_end": 313,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 152.607914,
-          "end": 152.910471,
-          "duration": 0.302557,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 152.958766,
-          "end": 153.25138,
-          "duration": 0.292614,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 153.311039,
-          "end": 153.561039,
-          "duration": 0.25,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 153.642004,
-          "end": 153.91047,
-          "duration": 0.268466,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 153.950243,
-          "end": 154.120698,
-          "duration": 0.170455,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 154.153368,
-          "end": 154.313879,
-          "duration": 0.160511,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 154.325243,
-          "end": 154.589447,
-          "duration": 0.264204,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 154.633481,
-          "end": 154.893425,
-          "duration": 0.259943,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 154.980072,
-          "end": 155.269845,
-          "duration": 0.289773,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 155.34797,
-          "end": 155.731493,
-          "duration": 0.383523,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 155.892004,
-          "end": 156.342288,
-          "duration": 0.450284,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 156.414731,
-          "end": 156.85081,
-          "duration": 0.436079,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "start": 158.041151,
-      "end": 162.299673,
-      "duration": 4.258522,
-      "note_start": 313,
-      "note_end": 325,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 158.041151,
-          "end": 158.38206,
-          "duration": 0.340909,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 158.41189,
-          "end": 158.671833,
-          "duration": 0.259943,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 158.754219,
-          "end": 159.031208,
-          "duration": 0.276989,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 159.079503,
-          "end": 159.404787,
-          "duration": 0.325284,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 159.443139,
-          "end": 159.619276,
-          "duration": 0.176136,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 159.630639,
-          "end": 159.793991,
-          "duration": 0.163352,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 159.806776,
-          "end": 159.981491,
-          "duration": 0.174716,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 160.119275,
-          "end": 160.349389,
-          "duration": 0.230114,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 160.448821,
-          "end": 160.681775,
-          "duration": 0.232954,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 160.778366,
-          "end": 161.109332,
-          "duration": 0.330966,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 161.328082,
-          "end": 161.704502,
-          "duration": 0.37642,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 161.798252,
-          "end": 162.299673,
-          "duration": 0.50142,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "start": 164.058195,
-      "end": 164.964445,
-      "duration": 0.90625,
-      "note_start": 325,
-      "note_end": 327,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 164.058195,
-          "end": 164.534047,
-          "duration": 0.475852,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#4",
-          "midi": 61,
-          "start": 164.562456,
-          "end": 164.964445,
-          "duration": 0.401989,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "start": 165.627797,
-      "end": 168.455921,
-      "duration": 2.828124,
-      "note_start": 327,
-      "note_end": 332,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 165.627797,
-          "end": 165.978649,
-          "duration": 0.350852,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 165.988592,
-          "end": 166.569558,
-          "duration": 0.580966,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 165.941667,
+          "end": 166.1,
+          "duration": 0.158333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 166.15,
+          "end": 166.283333,
+          "duration": 0.133333,
+          "velocity": 100
         },
         {
           "pitch": "B3",
           "midi": 59,
-          "start": 166.642001,
-          "end": 167.272683,
-          "duration": 0.630682,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 167.333762,
-          "end": 167.98291,
-          "duration": 0.649148,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 167.995694,
-          "end": 168.455921,
-          "duration": 0.460227,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "start": 169.714443,
-      "end": 174.043988,
-      "duration": 4.329545,
-      "note_start": 332,
-      "note_end": 338,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 169.714443,
-          "end": 170.068136,
-          "duration": 0.353693,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 170.092284,
-          "end": 170.640579,
-          "duration": 0.548295,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 170.772682,
-          "end": 171.359329,
-          "duration": 0.586648,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#3",
-          "midi": 54,
-          "start": 171.484329,
-          "end": 171.980068,
-          "duration": 0.495739,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 172.154784,
-          "end": 172.748533,
-          "duration": 0.59375,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#3",
-          "midi": 56,
-          "start": 172.793988,
-          "end": 174.043988,
-          "duration": 1.25,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 25,
-      "start": 176.495692,
-      "end": 179.168986,
-      "duration": 2.673294,
-      "note_start": 338,
-      "note_end": 343,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 176.495692,
-          "end": 176.836601,
-          "duration": 0.340909,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 176.880635,
-          "end": 177.482907,
-          "duration": 0.602273,
-          "velocity": 110
-        },
-        {
-          "pitch": "B3",
-          "midi": 59,
-          "start": 177.580919,
-          "end": 178.24285,
-          "duration": 0.661932,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 178.262737,
-          "end": 178.893418,
-          "duration": 0.630682,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 178.906202,
-          "end": 179.168986,
-          "duration": 0.262784,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "start": 180.542565,
-      "end": 189.507052,
-      "duration": 8.964487,
-      "note_start": 343,
-      "note_end": 361,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 180.542565,
-          "end": 180.842281,
-          "duration": 0.299716,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 180.914724,
-          "end": 181.470122,
-          "duration": 0.555398,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 181.617849,
-          "end": 182.194554,
-          "duration": 0.576704,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 182.261315,
-          "end": 182.548247,
-          "duration": 0.286932,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 182.984326,
-          "end": 183.595121,
-          "duration": 0.610795,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 183.650519,
-          "end": 184.847962,
-          "duration": 1.197443,
-          "velocity": 110
-        },
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 185.27836,
-          "end": 185.616428,
-          "duration": 0.338068,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 185.637735,
-          "end": 185.914723,
-          "duration": 0.276989,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 185.975803,
-          "end": 186.286882,
-          "duration": 0.311079,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 186.346541,
-          "end": 186.639155,
-          "duration": 0.292614,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 186.65478,
-          "end": 186.838018,
-          "duration": 0.183239,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 186.846541,
-          "end": 186.980064,
-          "duration": 0.133523,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 187.034041,
-          "end": 187.320973,
-          "duration": 0.286932,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 187.37637,
-          "end": 187.661882,
-          "duration": 0.285511,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 187.711598,
-          "end": 188.002791,
-          "duration": 0.291193,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 188.076654,
-          "end": 188.372109,
-          "duration": 0.295454,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 188.536882,
-          "end": 189.090859,
-          "duration": 0.553977,
-          "velocity": 110
+          "start": 166.315,
+          "end": 166.483333,
+          "duration": 0.168333,
+          "velocity": 100
         },
         {
           "pitch": "C#4",
           "midi": 61,
-          "start": 189.110745,
-          "end": 189.507052,
-          "duration": 0.396307,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 27,
-      "start": 190.781199,
-      "end": 194.998528,
-      "duration": 4.217329,
-      "note_start": 361,
-      "note_end": 373,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 190.781199,
-          "end": 191.12921,
-          "duration": 0.348011,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 191.136313,
-          "end": 191.411881,
-          "duration": 0.275568,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 191.499949,
-          "end": 191.75279,
-          "duration": 0.252841,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 191.84796,
-          "end": 192.093699,
-          "duration": 0.245739,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 192.168983,
-          "end": 192.339437,
-          "duration": 0.170455,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 192.34796,
-          "end": 192.497108,
-          "duration": 0.149148,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 192.514153,
-          "end": 192.775517,
-          "duration": 0.261364,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 192.820971,
-          "end": 193.116426,
-          "duration": 0.295454,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 193.163301,
-          "end": 193.457335,
-          "duration": 0.294034,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 193.538301,
-          "end": 193.793982,
-          "duration": 0.255682,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 194.039721,
-          "end": 194.470119,
-          "duration": 0.430398,
-          "velocity": 110
-        },
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 194.502789,
-          "end": 194.998528,
-          "duration": 0.495739,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 28,
-      "start": 196.213016,
-      "end": 200.396253,
-      "duration": 4.183237,
-      "note_start": 373,
-      "note_end": 385,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 196.213016,
-          "end": 196.563868,
-          "duration": 0.350852,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 196.6008,
-          "end": 196.893413,
-          "duration": 0.292614,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 196.961595,
-          "end": 197.231481,
-          "duration": 0.269886,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 197.301084,
-          "end": 197.57097,
-          "duration": 0.269886,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 197.566709,
-          "end": 197.57097,
-          "duration": 0.004261,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 197.776936,
-          "end": 197.924663,
-          "duration": 0.147727,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 197.958754,
-          "end": 198.230061,
-          "duration": 0.271307,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 198.32239,
-          "end": 198.53972,
-          "duration": 0.217329,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 198.63347,
-          "end": 198.88489,
-          "duration": 0.25142,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 199.021254,
-          "end": 199.332333,
-          "duration": 0.311079,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 199.512731,
-          "end": 199.987163,
-          "duration": 0.474432,
-          "velocity": 110
+          "start": 166.525,
+          "end": 166.786667,
+          "duration": 0.261667,
+          "velocity": 100
         },
         {
           "pitch": "C#4",
           "midi": 61,
-          "start": 200.061026,
-          "end": 200.396253,
-          "duration": 0.335227,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "start": 201.708753,
-      "end": 205.900513,
-      "duration": 4.19176,
-      "note_start": 385,
-      "note_end": 397,
-      "notes": [
-        {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 201.708753,
-          "end": 202.021253,
-          "duration": 0.3125,
-          "velocity": 110
+          "start": 166.923333,
+          "end": 167.218333,
+          "duration": 0.295,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 202.095117,
-          "end": 202.35648,
-          "duration": 0.261364,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 167.278333,
+          "end": 167.618333,
+          "duration": 0.34,
+          "velocity": 100
         },
         {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 202.431764,
-          "end": 202.717275,
-          "duration": 0.285511,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 167.715,
+          "end": 167.981667,
+          "duration": 0.266667,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 202.76415,
-          "end": 202.999946,
-          "duration": 0.235795,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 168.023333,
+          "end": 168.675,
+          "duration": 0.651667,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 203.036878,
-          "end": 203.173241,
-          "duration": 0.136364,
-          "velocity": 110
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 169.093333,
+          "end": 169.255,
+          "duration": 0.161667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 203.220116,
-          "end": 203.343696,
-          "duration": 0.12358,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 169.271667,
+          "end": 169.431667,
+          "duration": 0.16,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 203.393412,
-          "end": 203.684605,
-          "duration": 0.291193,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 169.458333,
+          "end": 169.591667,
+          "duration": 0.133333,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 203.745684,
-          "end": 204.025514,
-          "duration": 0.279829,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 169.701667,
+          "end": 170.053333,
+          "duration": 0.351667,
+          "velocity": 100
         },
         {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 204.080911,
-          "end": 204.345116,
-          "duration": 0.264204,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 170.096667,
+          "end": 170.421667,
+          "duration": 0.325,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 204.468695,
-          "end": 204.76557,
-          "duration": 0.296875,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 170.515,
+          "end": 170.813333,
+          "duration": 0.298333,
+          "velocity": 100
         },
         {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 204.936025,
-          "end": 205.399093,
-          "duration": 0.463068,
-          "velocity": 110
+          "pitch": "D4",
+          "midi": 62,
+          "start": 170.88,
+          "end": 171.098333,
+          "duration": 0.218333,
+          "velocity": 100
         },
         {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 205.431763,
-          "end": 205.900513,
-          "duration": 0.46875,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 30,
-      "start": 207.474376,
-      "end": 211.982898,
-      "duration": 4.508522,
-      "note_start": 397,
-      "note_end": 404,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 207.474376,
-          "end": 207.786876,
-          "duration": 0.3125,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 207.802501,
-          "end": 208.116422,
-          "duration": 0.31392,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 208.171819,
-          "end": 210.140569,
-          "duration": 1.968749,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 210.252785,
-          "end": 210.502785,
-          "duration": 0.25,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 210.572387,
-          "end": 210.923239,
-          "duration": 0.350852,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 210.944546,
-          "end": 211.542557,
-          "duration": 0.598011,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 211.578069,
-          "end": 211.982898,
-          "duration": 0.404829,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 31,
-      "start": 212.964432,
-      "end": 217.518408,
-      "duration": 4.553976,
-      "note_start": 404,
-      "note_end": 411,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 212.964432,
-          "end": 213.6775,
-          "duration": 0.713068,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 213.686023,
-          "end": 215.549658,
-          "duration": 1.863636,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 215.644829,
-          "end": 215.948806,
-          "duration": 0.303977,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 216.016988,
-          "end": 216.499942,
-          "duration": 0.482954,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 216.568124,
-          "end": 216.903351,
-          "duration": 0.335227,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 216.923238,
-          "end": 217.154772,
-          "duration": 0.231534,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 217.159033,
-          "end": 217.518408,
-          "duration": 0.359375,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 32,
-      "start": 218.421817,
-      "end": 222.882043,
-      "duration": 4.460226,
-      "note_start": 411,
-      "note_end": 418,
-      "notes": [
-        {
-          "pitch": "D#4",
-          "midi": 63,
-          "start": 218.421817,
-          "end": 218.684601,
-          "duration": 0.262784,
-          "velocity": 110
-        },
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 218.741419,
-          "end": 219.02551,
-          "duration": 0.284091,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 219.096532,
-          "end": 220.982896,
-          "duration": 1.886363,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 221.154771,
-          "end": 221.443123,
-          "duration": 0.288352,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 221.478634,
-          "end": 221.752782,
-          "duration": 0.274148,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 221.823804,
-          "end": 222.515566,
-          "duration": 0.691761,
-          "velocity": 110
-        },
-        {
-          "pitch": "C#5",
-          "midi": 73,
-          "start": 222.546816,
-          "end": 222.882043,
-          "duration": 0.335227,
-          "velocity": 110
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "start": 223.928918,
-      "end": 228.34653,
-      "duration": 4.417612,
-      "note_start": 418,
-      "note_end": 425,
-      "notes": [
-        {
-          "pitch": "E4",
-          "midi": 64,
-          "start": 223.928918,
-          "end": 224.556758,
-          "duration": 0.627841,
-          "velocity": 110
-        },
-        {
-          "pitch": "B4",
-          "midi": 71,
-          "start": 224.596531,
-          "end": 226.43886,
-          "duration": 1.842329,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 226.570962,
-          "end": 226.847951,
-          "duration": 0.276989,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 226.926076,
-          "end": 227.281189,
-          "duration": 0.355114,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 227.396246,
-          "end": 227.788292,
-          "duration": 0.392045,
-          "velocity": 110
-        },
-        {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 227.802496,
-          "end": 228.015564,
-          "duration": 0.213068,
-          "velocity": 110
-        },
-        {
-          "pitch": "F#4",
-          "midi": 66,
-          "start": 228.06386,
-          "end": 228.34653,
-          "duration": 0.28267,
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 171.198333,
+          "end": 171.858333,
+          "duration": 0.66,
           "velocity": 100
         }
       ]
     },
     {
-      "id": 34,
-      "start": 228.957325,
-      "end": 230.420393,
-      "duration": 1.463068,
-      "note_start": 425,
-      "note_end": 429,
+      "id": 17,
+      "start": 172.476667,
+      "end": 176.906667,
+      "duration": 4.43,
+      "note_start": 291,
+      "note_end": 301,
       "notes": [
         {
-          "pitch": "A4",
-          "midi": 69,
-          "start": 228.957325,
-          "end": 229.258462,
-          "duration": 0.301136,
-          "velocity": 110
+          "pitch": "B3",
+          "midi": 59,
+          "start": 172.476667,
+          "end": 172.791667,
+          "duration": 0.315,
+          "velocity": 100
         },
         {
-          "pitch": "G#4",
-          "midi": 68,
-          "start": 229.298234,
-          "end": 229.552496,
-          "duration": 0.254261,
-          "velocity": 110
+          "pitch": "A3",
+          "midi": 57,
+          "start": 172.893333,
+          "end": 173.191667,
+          "duration": 0.298333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 173.306667,
+          "end": 173.51,
+          "duration": 0.203333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 173.56,
+          "end": 173.961667,
+          "duration": 0.401667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 174.275,
+          "end": 174.465,
+          "duration": 0.19,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 174.513333,
+          "end": 174.838333,
+          "duration": 0.325,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 174.886667,
+          "end": 175.196667,
+          "duration": 0.31,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 175.226667,
+          "end": 175.591667,
+          "duration": 0.365,
+          "velocity": 100
         },
         {
           "pitch": "F#4",
           "midi": 66,
-          "start": 229.620677,
-          "end": 229.893405,
-          "duration": 0.272727,
-          "velocity": 110
+          "start": 175.64,
+          "end": 175.975,
+          "duration": 0.335,
+          "velocity": 100
         },
         {
           "pitch": "E4",
           "midi": 64,
-          "start": 230.0042,
-          "end": 230.420393,
-          "duration": 0.416193,
-          "velocity": 110
+          "start": 176.076667,
+          "end": 176.906667,
+          "duration": 0.83,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 177.568333,
+      "end": 189.628333,
+      "duration": 12.06,
+      "note_start": 301,
+      "note_end": 329,
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 177.568333,
+          "end": 177.936667,
+          "duration": 0.368333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 177.996667,
+          "end": 178.336667,
+          "duration": 0.34,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 178.401667,
+          "end": 178.736667,
+          "duration": 0.335,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 178.805,
+          "end": 179.013333,
+          "duration": 0.208333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 179.225,
+          "end": 179.536667,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 179.585,
+          "end": 179.936667,
+          "duration": 0.351667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 180.003333,
+          "end": 180.325,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 180.346667,
+          "end": 180.598333,
+          "duration": 0.251667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 180.68,
+          "end": 181.291667,
+          "duration": 0.611667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 181.703333,
+          "end": 181.855,
+          "duration": 0.151667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 181.918333,
+          "end": 182.09,
+          "duration": 0.171667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 182.133333,
+          "end": 182.288333,
+          "duration": 0.155,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 182.343333,
+          "end": 182.568333,
+          "duration": 0.225,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 182.713333,
+          "end": 182.991667,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 183.113333,
+          "end": 183.391667,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 183.496667,
+          "end": 183.69,
+          "duration": 0.193333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 183.755,
+          "end": 184.168333,
+          "duration": 0.413333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 184.311667,
+          "end": 184.655,
+          "duration": 0.343333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 184.73,
+          "end": 185.055,
+          "duration": 0.325,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 185.098333,
+          "end": 185.455,
+          "duration": 0.356667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 185.491667,
+          "end": 185.831667,
+          "duration": 0.34,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 185.87,
+          "end": 186.191667,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 186.246667,
+          "end": 186.513333,
+          "duration": 0.266667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#3",
+          "midi": 54,
+          "start": 186.666667,
+          "end": 187.036667,
+          "duration": 0.37,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 187.061667,
+          "end": 187.463333,
+          "duration": 0.401667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 187.856667,
+          "end": 188.223333,
+          "duration": 0.366667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 188.253333,
+          "end": 188.606667,
+          "duration": 0.353333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 188.645,
+          "end": 189.628333,
+          "duration": 0.983333,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 191.758333,
+      "end": 203.211667,
+      "duration": 11.453334,
+      "note_start": 329,
+      "note_end": 356,
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 191.758333,
+          "end": 192.111667,
+          "duration": 0.353333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 192.17,
+          "end": 192.511667,
+          "duration": 0.341667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 192.573333,
+          "end": 192.906667,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 192.945,
+          "end": 193.206667,
+          "duration": 0.261667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 193.235,
+          "end": 193.615,
+          "duration": 0.38,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#3",
+          "midi": 56,
+          "start": 193.703333,
+          "end": 194.075,
+          "duration": 0.371667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 194.175,
+          "end": 194.57,
+          "duration": 0.395,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 194.61,
+          "end": 194.896667,
+          "duration": 0.286667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 194.935,
+          "end": 195.32,
+          "duration": 0.385,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 195.39,
+          "end": 195.606667,
+          "duration": 0.216667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 195.673333,
+          "end": 196.081667,
+          "duration": 0.408333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 196.35,
+          "end": 196.485,
+          "duration": 0.135,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 196.528333,
+          "end": 196.826667,
+          "duration": 0.298333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 196.891667,
+          "end": 197.226667,
+          "duration": 0.335,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 197.325,
+          "end": 197.626667,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 197.711667,
+          "end": 198.058333,
+          "duration": 0.346667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 198.128333,
+          "end": 198.458333,
+          "duration": 0.33,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 198.503333,
+          "end": 198.69,
+          "duration": 0.186667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 198.793333,
+          "end": 199.046667,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 199.356667,
+          "end": 199.665,
+          "duration": 0.308333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 199.711667,
+          "end": 199.991667,
+          "duration": 0.28,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 200.125,
+          "end": 200.491667,
+          "duration": 0.366667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 200.525,
+          "end": 200.791667,
+          "duration": 0.266667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 200.895,
+          "end": 201.228333,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 201.258333,
+          "end": 201.553333,
+          "duration": 0.295,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 201.611667,
+          "end": 201.86,
+          "duration": 0.248333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 201.908333,
+          "end": 203.211667,
+          "duration": 1.303333,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 204.401667,
+      "end": 209.841667,
+      "duration": 5.44,
+      "note_start": 356,
+      "note_end": 369,
+      "notes": [
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 204.401667,
+          "end": 204.726667,
+          "duration": 0.325,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 204.786667,
+          "end": 205.126667,
+          "duration": 0.34,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 205.216667,
+          "end": 205.526667,
+          "duration": 0.31,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 205.583333,
+          "end": 205.835,
+          "duration": 0.251667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 205.865,
+          "end": 206.291667,
+          "duration": 0.426667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 206.353333,
+          "end": 206.606667,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 206.631667,
+          "end": 207.091667,
+          "duration": 0.46,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 207.368333,
+          "end": 207.6,
+          "duration": 0.231667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 207.616667,
+          "end": 207.891667,
+          "duration": 0.275,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 207.948333,
+          "end": 208.195,
+          "duration": 0.246667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 208.225,
+          "end": 208.55,
+          "duration": 0.325,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 208.755,
+          "end": 209.135,
+          "duration": 0.38,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 209.175,
+          "end": 209.841667,
+          "duration": 0.666667,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 210.733333,
+      "end": 216.98,
+      "duration": 6.246667,
+      "note_start": 369,
+      "note_end": 378,
+      "notes": [
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 210.733333,
+          "end": 211.081667,
+          "duration": 0.348333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 211.143333,
+          "end": 211.393333,
+          "duration": 0.25,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 211.418333,
+          "end": 211.885,
+          "duration": 0.466667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A3",
+          "midi": 57,
+          "start": 211.936667,
+          "end": 212.14,
+          "duration": 0.203333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 212.368333,
+          "end": 212.7,
+          "duration": 0.331667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 212.74,
+          "end": 213.051667,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 213.106667,
+          "end": 213.45,
+          "duration": 0.343333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 213.523333,
+          "end": 213.793333,
+          "duration": 0.27,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 213.95,
+          "end": 216.98,
+          "duration": 3.03,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 219.636667,
+      "end": 273.2,
+      "duration": 53.563333,
+      "note_start": 378,
+      "note_end": 496,
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 219.636667,
+          "end": 219.816667,
+          "duration": 0.18,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 219.843333,
+          "end": 220.016667,
+          "duration": 0.173333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 220.051667,
+          "end": 220.26,
+          "duration": 0.208333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 220.316667,
+          "end": 220.595,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 220.67,
+          "end": 220.858333,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 220.92,
+          "end": 221.225,
+          "duration": 0.305,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 221.415,
+          "end": 221.778333,
+          "duration": 0.363333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 221.805,
+          "end": 222.36,
+          "duration": 0.555,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 222.71,
+          "end": 222.898333,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 222.933333,
+          "end": 223.071667,
+          "duration": 0.138333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 223.098333,
+          "end": 223.29,
+          "duration": 0.191667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 223.378333,
+          "end": 223.708333,
+          "duration": 0.33,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 223.76,
+          "end": 223.926667,
+          "duration": 0.166667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 223.953333,
+          "end": 224.311667,
+          "duration": 0.358333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 224.475,
+          "end": 224.866667,
+          "duration": 0.391667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 224.931667,
+          "end": 225.373333,
+          "duration": 0.441667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 225.69,
+          "end": 226.106667,
+          "duration": 0.416667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 226.13,
+          "end": 226.455,
+          "duration": 0.325,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 226.54,
+          "end": 226.803333,
+          "duration": 0.263333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 226.908333,
+          "end": 227.131667,
+          "duration": 0.223333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 227.168333,
+          "end": 227.62,
+          "duration": 0.451667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 227.933333,
+          "end": 228.106667,
+          "duration": 0.173333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 228.151667,
+          "end": 228.458333,
+          "duration": 0.306667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 228.525,
+          "end": 228.87,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 228.908333,
+          "end": 229.186667,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 229.286667,
+          "end": 229.641667,
+          "duration": 0.355,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 229.68,
+          "end": 230.291667,
+          "duration": 0.611667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 230.431667,
+          "end": 231.841667,
+          "duration": 1.41,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 232.275,
+          "end": 232.428333,
+          "duration": 0.153333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B3",
+          "midi": 59,
+          "start": 232.463333,
+          "end": 232.628333,
+          "duration": 0.165,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 232.661667,
+          "end": 232.85,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 232.873333,
+          "end": 233.185,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 233.231667,
+          "end": 233.525,
+          "duration": 0.293333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 233.615,
+          "end": 233.891667,
+          "duration": 0.276667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 233.998333,
+          "end": 234.225,
+          "duration": 0.226667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 234.273333,
+          "end": 234.99,
+          "duration": 0.716667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 235.38,
+          "end": 235.575,
+          "duration": 0.195,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 235.598333,
+          "end": 235.775,
+          "duration": 0.176667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 235.798333,
+          "end": 235.975,
+          "duration": 0.176667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 236.023333,
+          "end": 236.353333,
+          "duration": 0.33,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 236.4,
+          "end": 236.691667,
+          "duration": 0.291667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 236.771667,
+          "end": 237.091667,
+          "duration": 0.32,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 237.168333,
+          "end": 237.421667,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 237.46,
+          "end": 237.791667,
+          "duration": 0.331667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 237.961667,
+          "end": 238.343333,
+          "duration": 0.381667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 238.406667,
+          "end": 238.665,
+          "duration": 0.258333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 238.785,
+          "end": 239.065,
+          "duration": 0.28,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 239.148333,
+          "end": 239.485,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 239.571667,
+          "end": 239.765,
+          "duration": 0.193333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 239.808333,
+          "end": 240.17,
+          "duration": 0.361667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 240.195,
+          "end": 240.463333,
+          "duration": 0.268333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 240.751667,
+          "end": 241.126667,
+          "duration": 0.375,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 241.156667,
+          "end": 241.493333,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 241.535,
+          "end": 241.793333,
+          "duration": 0.258333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 241.946667,
+          "end": 242.193333,
+          "duration": 0.246667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 242.221667,
+          "end": 244.381667,
+          "duration": 2.16,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 244.83,
+          "end": 245.0,
+          "duration": 0.17,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 245.036667,
+          "end": 245.225,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 245.246667,
+          "end": 245.415,
+          "duration": 0.168333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 245.506667,
+          "end": 245.858333,
+          "duration": 0.351667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 245.888333,
+          "end": 246.086667,
+          "duration": 0.198333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 246.128333,
+          "end": 246.491667,
+          "duration": 0.363333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 246.648333,
+          "end": 247.016667,
+          "duration": 0.368333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 247.05,
+          "end": 247.693333,
+          "duration": 0.643333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 248.021667,
+          "end": 248.211667,
+          "duration": 0.19,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 248.25,
+          "end": 248.406667,
+          "duration": 0.156667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 248.445,
+          "end": 248.608333,
+          "duration": 0.163333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 248.68,
+          "end": 248.995,
+          "duration": 0.315,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 249.05,
+          "end": 249.281667,
+          "duration": 0.231667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 249.32,
+          "end": 249.62,
+          "duration": 0.3,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 249.795,
+          "end": 250.078333,
+          "duration": 0.283333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 250.215,
+          "end": 250.7,
+          "duration": 0.485,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 250.975,
+          "end": 251.333333,
+          "duration": 0.358333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 251.393333,
+          "end": 251.733333,
+          "duration": 0.34,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 251.778333,
+          "end": 252.133333,
+          "duration": 0.355,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 252.201667,
+          "end": 252.393333,
+          "duration": 0.191667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 252.426667,
+          "end": 252.858333,
+          "duration": 0.431667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 253.158333,
+          "end": 253.351667,
+          "duration": 0.193333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 253.393333,
+          "end": 253.775,
+          "duration": 0.381667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 253.81,
+          "end": 254.165,
+          "duration": 0.355,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 254.19,
+          "end": 254.565,
+          "duration": 0.375,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 254.595,
+          "end": 254.943333,
+          "duration": 0.348333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 254.98,
+          "end": 255.291667,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 255.411667,
+          "end": 255.728333,
+          "duration": 0.316667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 255.773333,
+          "end": 257.031667,
+          "duration": 1.258333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 257.493333,
+          "end": 257.651667,
+          "duration": 0.158333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 257.718333,
+          "end": 257.883333,
+          "duration": 0.165,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 257.91,
+          "end": 258.06,
+          "duration": 0.15,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 258.118333,
+          "end": 258.43,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 258.491667,
+          "end": 258.828333,
+          "duration": 0.336667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 258.896667,
+          "end": 259.271667,
+          "duration": 0.375,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 259.31,
+          "end": 259.688333,
+          "duration": 0.378333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 259.723333,
+          "end": 260.316667,
+          "duration": 0.593333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 260.65,
+          "end": 260.811667,
+          "duration": 0.161667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 260.856667,
+          "end": 261.061667,
+          "duration": 0.205,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 261.086667,
+          "end": 261.285,
+          "duration": 0.198333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 261.313333,
+          "end": 261.621667,
+          "duration": 0.308333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 261.671667,
+          "end": 261.95,
+          "duration": 0.278333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 262.05,
+          "end": 262.43,
+          "duration": 0.38,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 262.446667,
+          "end": 262.7,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 262.72,
+          "end": 262.97,
+          "duration": 0.25,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 263.225,
+          "end": 263.631667,
+          "duration": 0.406667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 263.646667,
+          "end": 263.945,
+          "duration": 0.298333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 264.058333,
+          "end": 264.41,
+          "duration": 0.351667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 264.45,
+          "end": 264.795,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 264.815,
+          "end": 265.016667,
+          "duration": 0.201667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 265.043333,
+          "end": 265.345,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 265.423333,
+          "end": 265.745,
+          "duration": 0.321667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 266.003333,
+          "end": 266.348333,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 266.396667,
+          "end": 266.746667,
+          "duration": 0.35,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 266.805,
+          "end": 267.133333,
+          "duration": 0.328333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 267.198333,
+          "end": 267.455,
+          "duration": 0.256667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 267.488333,
+          "end": 268.53,
+          "duration": 1.041667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 268.935,
+          "end": 269.128333,
+          "duration": 0.193333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 269.156667,
+          "end": 269.525,
+          "duration": 0.368333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 269.903333,
+          "end": 270.288333,
+          "duration": 0.385,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 270.318333,
+          "end": 270.665,
+          "duration": 0.346667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 270.69,
+          "end": 273.2,
+          "duration": 2.51,
+          "velocity": 100
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 276.445,
+      "end": 303.97,
+      "duration": 27.525,
+      "note_start": 496,
+      "note_end": 558,
+      "notes": [
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 276.445,
+          "end": 276.633333,
+          "duration": 0.188333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 276.663333,
+          "end": 276.855,
+          "duration": 0.191667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 276.875,
+          "end": 277.1,
+          "duration": 0.225,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 277.163333,
+          "end": 277.43,
+          "duration": 0.266667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 277.515,
+          "end": 277.77,
+          "duration": 0.255,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 277.803333,
+          "end": 278.175,
+          "duration": 0.371667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 278.298333,
+          "end": 278.631667,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 278.688333,
+          "end": 279.22,
+          "duration": 0.531667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 279.668333,
+          "end": 279.833333,
+          "duration": 0.165,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 279.881667,
+          "end": 280.033333,
+          "duration": 0.151667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 280.05,
+          "end": 280.278333,
+          "duration": 0.228333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 280.326667,
+          "end": 280.655,
+          "duration": 0.328333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 280.741667,
+          "end": 280.933333,
+          "duration": 0.191667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 280.971667,
+          "end": 281.258333,
+          "duration": 0.286667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 281.385,
+          "end": 281.666667,
+          "duration": 0.281667,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 281.813333,
+          "end": 282.191667,
+          "duration": 0.378333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 282.606667,
+          "end": 282.96,
+          "duration": 0.353333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 282.988333,
+          "end": 283.36,
+          "duration": 0.371667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 283.401667,
+          "end": 283.76,
+          "duration": 0.358333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 283.81,
+          "end": 283.996667,
+          "duration": 0.186667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 284.025,
+          "end": 284.391667,
+          "duration": 0.366667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 284.771667,
+          "end": 285.001667,
+          "duration": 0.23,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 285.015,
+          "end": 285.365,
+          "duration": 0.35,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 285.383333,
+          "end": 285.685,
+          "duration": 0.301667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 285.751667,
+          "end": 285.971667,
+          "duration": 0.22,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 286.121667,
+          "end": 286.491667,
+          "duration": 0.37,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 286.521667,
+          "end": 286.891667,
+          "duration": 0.37,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 286.933333,
+          "end": 287.245,
+          "duration": 0.311667,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 287.293333,
+          "end": 288.715,
+          "duration": 1.421667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 289.083333,
+          "end": 289.215,
+          "duration": 0.131667,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 289.281667,
+          "end": 289.415,
+          "duration": 0.133333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 289.45,
+          "end": 289.615,
+          "duration": 0.165,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 289.683333,
+          "end": 290.035,
+          "duration": 0.351667,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 290.101667,
+          "end": 290.435,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 290.503333,
+          "end": 290.835,
+          "duration": 0.331667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 290.893333,
+          "end": 291.235,
+          "duration": 0.341667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 291.326667,
+          "end": 291.915,
+          "duration": 0.588333,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 292.25,
+          "end": 292.376667,
+          "duration": 0.126667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 292.421667,
+          "end": 292.576667,
+          "duration": 0.155,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 292.651667,
+          "end": 292.776667,
+          "duration": 0.125,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 292.853333,
+          "end": 293.171667,
+          "duration": 0.318333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F4",
+          "midi": 65,
+          "start": 293.25,
+          "end": 293.536667,
+          "duration": 0.286667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 293.655,
+          "end": 294.053333,
+          "duration": 0.398333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 294.086667,
+          "end": 294.273333,
+          "duration": 0.186667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 294.316667,
+          "end": 294.598333,
+          "duration": 0.281667,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 294.858333,
+          "end": 295.245,
+          "duration": 0.386667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 295.263333,
+          "end": 295.491667,
+          "duration": 0.228333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 295.65,
+          "end": 295.983333,
+          "duration": 0.333333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 296.026667,
+          "end": 296.39,
+          "duration": 0.363333,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#4",
+          "midi": 61,
+          "start": 296.428333,
+          "end": 296.631667,
+          "duration": 0.203333,
+          "velocity": 100
+        },
+        {
+          "pitch": "D4",
+          "midi": 62,
+          "start": 296.676667,
+          "end": 296.93,
+          "duration": 0.253333,
+          "velocity": 100
+        },
+        {
+          "pitch": "E4",
+          "midi": 64,
+          "start": 297.046667,
+          "end": 297.39,
+          "duration": 0.343333,
+          "velocity": 100
+        },
+        {
+          "pitch": "F#4",
+          "midi": 66,
+          "start": 297.591667,
+          "end": 297.963333,
+          "duration": 0.371667,
+          "velocity": 100
+        },
+        {
+          "pitch": "C#5",
+          "midi": 73,
+          "start": 297.998333,
+          "end": 298.351667,
+          "duration": 0.353333,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 298.368333,
+          "end": 298.691667,
+          "duration": 0.323333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 298.755,
+          "end": 298.99,
+          "duration": 0.235,
+          "velocity": 100
+        },
+        {
+          "pitch": "B4",
+          "midi": 71,
+          "start": 299.005,
+          "end": 300.028333,
+          "duration": 1.023333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 300.528333,
+          "end": 300.726667,
+          "duration": 0.198333,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 300.768333,
+          "end": 301.145,
+          "duration": 0.376667,
+          "velocity": 100
+        },
+        {
+          "pitch": "G#4",
+          "midi": 68,
+          "start": 301.565,
+          "end": 301.955,
+          "duration": 0.39,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 301.998333,
+          "end": 302.343333,
+          "duration": 0.345,
+          "velocity": 100
+        },
+        {
+          "pitch": "A4",
+          "midi": 69,
+          "start": 302.378333,
+          "end": 303.97,
+          "duration": 1.591667,
+          "velocity": 100
         }
       ]
     }

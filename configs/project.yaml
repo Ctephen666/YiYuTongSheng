@@ -139,13 +139,13 @@ svs:
     root: "external/rvc"
     model_name: "bofan_voice_f0.pth"
     index_path: "external/rvc/assets/indices/bofan_voice_f0_IVF591_Flat_nprobe_1_bofan_voice_f0_v2.index"
-    f0method: "rmvpe"
+    f0method: "harvest"
     f0up_key: 0
-    index_rate: 0.5
+    index_rate: 0.2
     filter_radius: 3
-    resample_sr: 0
+    resample_sr: 24000
     rms_mix_rate: 1.0
-    protect: 0.33
+    protect: 0.7
     timeout_sec: 1800
 
 pipeline:

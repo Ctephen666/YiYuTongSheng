@@ -166,3 +166,121 @@ def audio_quality_metrics(path: str | Path) -> dict:
         }
     )
     return result
+
+
+
+def _sha256_file(path: Path) -> str | None:
+    import hashlib
+
+    try:
+        digest = hashlib.sha256()
+        with path.open('rb') as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b''):
+                digest.update(chunk)
+        return digest.hexdigest()
+    except Exception:
+        return None
+
+
+def _to_mono_float(audio: np.ndarray) -> np.ndarray:
+    mono = np.mean(audio, axis=1) if audio.ndim == 2 else audio.reshape(-1)
+    return mono.astype(np.float32, copy=False)
+
+
+def waveform_difference_metrics(source_path: str | Path, converted_path: str | Path) -> dict:
+    """Check whether SVC output is actually different from SVS input.
+
+    This is intentionally lightweight and dependency-free. It catches the common
+    pipeline bug where RVC/SVC writes back to the SVS path and the evaluator then
+    compares two copies of the same file.
+    """
+    source = Path(source_path)
+    converted = Path(converted_path)
+    result = {
+        'source_path': str(source),
+        'converted_path': str(converted),
+        'source_exists': source.exists(),
+        'converted_exists': converted.exists(),
+        'same_resolved_path': False,
+        'same_file_size': None,
+        'sha256_equal': None,
+        'sample_rate_match': None,
+        'duration_diff_sec': None,
+        'compared_samples': 0,
+        'mean_abs_diff': None,
+        'max_abs_diff': None,
+        'rms_diff': None,
+        'waveform_correlation': None,
+        'likely_same_audio': None,
+        'warnings': [],
+    }
+    if not source.exists() or not converted.exists():
+        result['warnings'].append('Cannot compare SVS and SVC audio because one or both files are missing.')
+        return result
+    try:
+        result['same_resolved_path'] = source.resolve() == converted.resolve()
+    except Exception:
+        result['same_resolved_path'] = False
+    try:
+        result['same_file_size'] = source.stat().st_size == converted.stat().st_size
+    except Exception:
+        pass
+
+    source_hash = _sha256_file(source)
+    converted_hash = _sha256_file(converted)
+    if source_hash is not None and converted_hash is not None:
+        result['sha256_equal'] = source_hash == converted_hash
+
+    src_audio, src_sr, src_warnings = read_audio(source)
+    conv_audio, conv_sr, conv_warnings = read_audio(converted)
+    result['warnings'].extend(src_warnings)
+    result['warnings'].extend(conv_warnings)
+    if src_audio is None or conv_audio is None or src_sr is None or conv_sr is None:
+        result['warnings'].append('Cannot compute waveform difference because audio decoding failed.')
+        return result
+
+    src = _to_mono_float(src_audio)
+    conv = _to_mono_float(conv_audio)
+    result['sample_rate_match'] = int(src_sr) == int(conv_sr)
+    result['duration_diff_sec'] = _json_float(abs((src.size / float(src_sr)) - (conv.size / float(conv_sr))))
+
+    if src_sr != conv_sr:
+        result['warnings'].append(
+            f'Sample rates differ ({src_sr} vs {conv_sr}); waveform comparison uses raw aligned samples only.'
+        )
+
+    length = min(src.size, conv.size)
+    result['compared_samples'] = int(length)
+    if length == 0:
+        result['warnings'].append('No samples available for waveform comparison.')
+        return result
+    src = src[:length]
+    conv = conv[:length]
+    finite = np.isfinite(src) & np.isfinite(conv)
+    if not np.any(finite):
+        result['warnings'].append('No finite aligned samples for waveform comparison.')
+        return result
+    src = src[finite].astype(np.float64)
+    conv = conv[finite].astype(np.float64)
+    diff = conv - src
+    result['mean_abs_diff'] = _json_float(np.mean(np.abs(diff)))
+    result['max_abs_diff'] = _json_float(np.max(np.abs(diff)))
+    result['rms_diff'] = _json_float(np.sqrt(np.mean(diff * diff)))
+    if src.size > 1 and np.std(src) > 1e-12 and np.std(conv) > 1e-12:
+        result['waveform_correlation'] = _json_float(np.corrcoef(src, conv)[0, 1])
+
+    mean_abs = result['mean_abs_diff'] if result['mean_abs_diff'] is not None else 1.0
+    max_abs = result['max_abs_diff'] if result['max_abs_diff'] is not None else 1.0
+    corr = result['waveform_correlation'] if result['waveform_correlation'] is not None else 0.0
+    likely_same = bool(
+        result['same_resolved_path']
+        or result['sha256_equal']
+        or (mean_abs < 1e-7 and max_abs < 1e-6)
+        or (mean_abs < 1e-6 and corr > 0.99999)
+    )
+    result['likely_same_audio'] = likely_same
+    if likely_same:
+        result['warnings'].append(
+            'SVC output is nearly identical to SVS input; voice conversion may not have run or may have overwritten the SVS file.'
+        )
+    return result

@@ -9,7 +9,7 @@ try:
 except ImportError:  # pragma: no cover
     yaml = None
 
-from src.evaluate.audio_metrics import audio_quality_metrics
+from src.evaluate.audio_metrics import audio_quality_metrics, waveform_difference_metrics
 from src.evaluate.pitch_metrics import pitch_preservation_metrics
 from src.evaluate.report import compute_overall, write_json_report, write_markdown_report
 from src.evaluate.speaker_metrics import speaker_similarity_metrics
@@ -93,6 +93,11 @@ def run_evaluate(config_path: str = "configs/evaluate.yaml", overrides: dict | N
                 audio_quality[name] = {"is_valid_audio": False, "warnings": [f"{name} audio metric failed: {exc}"]}
 
     try:
+        conversion_integrity = waveform_difference_metrics(svs_wav or '', svc_wav or '')
+    except Exception as exc:  # noqa: BLE001
+        conversion_integrity = {'warnings': [f'Conversion integrity metric failed: {exc}'], 'likely_same_audio': None}
+
+    try:
         pitch = pitch_preservation_metrics(
             svs_wav or "",
             svc_wav or "",
@@ -124,8 +129,9 @@ def run_evaluate(config_path: str = "configs/evaluate.yaml", overrides: dict | N
     report = {
         "format": "yiyutongsheng_evaluate_report.v1",
         "status": "success",
-        "inputs": {key: str(_resolve(value)) if isinstance(value, str) else value for key, value in inputs.items()},
+        "inputs": {key: (value if key == "song_id" else str(_resolve(value)) if isinstance(value, str) else value) for key, value in inputs.items()},
         "audio_quality": audio_quality,
+        "conversion_integrity": conversion_integrity,
         "pitch_preservation": pitch,
         "intelligibility": intelligibility,
         "speaker_similarity": speaker,
@@ -133,7 +139,7 @@ def run_evaluate(config_path: str = "configs/evaluate.yaml", overrides: dict | N
         "warnings": [],
         "errors": errors,
     }
-    warnings.extend(_collect_warnings(audio_quality, pitch, intelligibility, speaker))
+    warnings.extend(_collect_warnings(audio_quality, conversion_integrity, pitch, intelligibility, speaker))
     report["warnings"] = warnings
     report["overall"] = compute_overall(report)
 

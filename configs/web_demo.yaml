@@ -17,9 +17,9 @@ defaults:
   infer_class: cascade
   normalize: true
   f0_naturalize: true
-  f0_method: rmvpe
+  f0_method: harvest
   f0_up_key: 0
-  index_rate: 0.5
-  protect: 0.33
+  index_rate: 0.2
+  protect: 0.7
   filter_radius: 3
-  resample_sr: 0
+  resample_sr: 24000

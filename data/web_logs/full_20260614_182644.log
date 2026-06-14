@@ -1,0 +1,24 @@
+
+===== step 1/1 start: D:\Anaconda_envs\envs\rvc\python.exe app.py --config D:\YiYuTongSheng\data\web_configs\project_2018_full_20260614_182644.yaml --step svs --target-language zh --opencpop-id 2018 =====
+2026-06-14 18:26:45,540 | INFO | Project: YiYuTongSheng
+2026-06-14 18:26:45,541 | INFO | Target language: zh
+2026-06-14 18:26:45,541 | INFO | OpenCpop root: data/dataset/opencpop
+2026-06-14 18:26:45,541 | INFO | OpenCpop song id: 2018
+2026-06-14 18:26:45,541 | INFO | Strict dataset source: True
+2026-06-14 18:26:45,541 | INFO | Running stage: svs
+Traceback (most recent call last):
+  File "D:\YiYuTongSheng\app.py", line 240, in <module>
+    main()
+  File "D:\YiYuTongSheng\app.py", line 234, in main
+    run_stage(step, pipeline[step], config, logger)
+  File "D:\YiYuTongSheng\app.py", line 165, in run_stage
+    result = module.run()
+  File "D:\YiYuTongSheng\src\svs\run_opencpop_svs.py", line 38, in run
+    return run_opencpop_svs(self.config)
+  File "D:\YiYuTongSheng\src\svs\run_opencpop_svs.py", line 94, in run_opencpop_svs
+    rvc_result = apply_rvc_voice_conversion(config, render_plan.get("output_audio"))
+  File "D:\YiYuTongSheng\src\svs\rvc_voice_conversion.py", line 214, in apply_rvc_voice_conversion
+    raise RuntimeError(f'RVC voice conversion failed. See report: {report_path}. Return code={result.returncode}')
+RuntimeError: RVC voice conversion failed. See report: D:\YiYuTongSheng\data\svs\rvc_voice_conversion_report.json. Return code=1
+
+===== step 1/1 end: returncode=1 =====

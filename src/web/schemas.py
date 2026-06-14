@@ -22,12 +22,12 @@ class RunRequest(BaseModel):
     f0_naturalize: bool = True
     voice_model: str | None = None
     index_file: str | None = None
-    f0_method: str = "rmvpe"
+    f0_method: str = "harvest"
     f0_up_key: int = 0
-    index_rate: float = 0.5
-    protect: float = 0.33
+    index_rate: float = 0.25
+    protect: float = 0.6
     filter_radius: int = 3
-    resample_sr: int = 0
+    resample_sr: int = 24000
 
 
 class JobSnapshot(BaseModel):

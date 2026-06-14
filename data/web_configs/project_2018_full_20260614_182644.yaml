@@ -1,0 +1,142 @@
+project:
+  name: YiYuTongSheng
+  mode: opencpop_zh_svs_inference
+  target_language: zh
+  sample_rate: 24000
+dataset:
+  name: opencpop
+  root: data/dataset/opencpop
+  strict_dataset_source: true
+  default_song_id: '2018'
+inputs:
+  opencpop_root: data/dataset/opencpop
+  opencpop_midi_dir: data/dataset/opencpop/midis
+  opencpop_segments: data/dataset/opencpop/segments
+  opencpop_transcriptions: data/dataset/opencpop/transcriptions
+  opencpop_textgrid: data/dataset/opencpop/TextGrid
+  opencpop_wavs: data/dataset/opencpop/wavs
+  opencpop_default_song_id: '2018'
+outputs:
+  dataset_manifest: data/dataset_manifest/opencpop_dataset_manifest.json
+  opencpop_item: data/dataset_manifest/opencpop_item_2018.json
+  melody_midi: data/score/melody.mid
+  melody_notes: data/score/melody_notes.json
+  lyrics_zh_phrases: data/lyrics/lyrics_zh_phrases.json
+  phonemes_zh: data/phoneme/phonemes_zh.json
+  alignment_zh: data/alignment/zh_note_alignment.json
+  svs_score: data/svs/opencpop_svs_score.json
+  diffsinger_export_plan: data/svs/diffsinger_opencpop_export_plan.json
+  diffsinger_input: data/svs/diffsinger_opencpop/diffsinger_input_2018.json
+  diffsinger_phoneme_tsv: data/svs/diffsinger_opencpop/phonemes_2018.tsv
+  diffsinger_notes_csv: data/svs/diffsinger_opencpop/notes_2018.csv
+  checkpoint_status: data/svs/checkpoint_status.json
+  render_plan: data/svs/neural_svs_render_plan.json
+  infer_report: data/svs/diffsinger_infer_report.json
+  rvc_report: data/svs/rvc_voice_conversion_report.json
+  svs_vocal_diffsinger: data/svs/target_language_vocal_diffsinger.wav
+  svc_vocal: data/svc/converted_target_voice.wav
+  svs_vocal: data/svs/target_language_vocal.wav
+paths:
+  dataset_manifest: data/dataset_manifest/opencpop_dataset_manifest.json
+  opencpop_item: data/dataset_manifest/opencpop_item_2001.json
+  opencpop_midi: data/dataset/opencpop/midis/2018.midi
+  opencpop_textgrid: data/dataset/opencpop/TextGrid/2018.TextGrid
+  opencpop_wav: data/dataset/opencpop/wavs/2018.wav
+  lyrics_zh: data/lyrics/lyrics_zh.txt
+  phrase_map: data/lyrics/phrase_map.json
+  lyrics_zh_phrases: data/lyrics/lyrics_zh_phrases.json
+  melody_midi: data/score/melody.mid
+  melody_notes: data/score/melody_notes.json
+  phonemes_zh: data/phoneme/phonemes_zh.json
+  alignment_zh: data/alignment/zh_note_alignment.json
+  svs_score: data/svs/opencpop_svs_score.json
+  diffsinger_export_plan: data/svs/diffsinger_opencpop_export_plan.json
+  diffsinger_input: data/svs/diffsinger_opencpop/diffsinger_input_2018.json
+  diffsinger_phoneme_tsv: data/svs/diffsinger_opencpop/phonemes_2018.tsv
+  diffsinger_notes_csv: data/svs/diffsinger_opencpop/notes_2018.csv
+  checkpoint_status: data/svs/checkpoint_status.json
+  render_plan: data/svs/neural_svs_render_plan.json
+  infer_report: data/svs/diffsinger_infer_report.json
+  rvc_report: data/svs/rvc_voice_conversion_report.json
+  svs_vocal_diffsinger: data/svs/target_language_vocal_diffsinger.wav
+  svc_vocal: data/svc/converted_target_voice.wav
+  svs_vocal: data/svs/target_language_vocal.wav
+opencpop:
+  sample_id: '2018'
+lyrics:
+  source: opencpop_dataset
+  allow_legacy_fallback_when_strict_false: true
+phoneme:
+  language: zh
+  backend: opencpop_annotation_or_pypinyin
+alignment:
+  strategy: zh_one_char_one_note_diffsinger
+  assign_extra_notes_as_slur: true
+  skip_rest_notes: true
+svs:
+  backend: diffsinger_opencpop
+  dry_run: false
+  execute_model: true
+  language: zh
+  device: auto
+  inference_timeout_sec: 1800
+  max_phrases: null
+  start_phrase: 1
+  assembly_mode: timeline
+  pretrained:
+    acoustic_checkpoint: checkpoints/diffsinger/acoustic.ckpt
+    acoustic_config: checkpoints/diffsinger/acoustic.yaml
+    variance_checkpoint: checkpoints/diffsinger/variance.ckpt
+    variance_config: checkpoints/diffsinger/variance.yaml
+    vocoder_checkpoint: checkpoints/diffsinger/vocoder.ckpt
+    vocoder_config: checkpoints/diffsinger/vocoder.yaml
+    phoneme_dictionary: checkpoints/diffsinger/zh_phoneme_dict.json
+  diffsinger:
+    root: external/DiffSinger
+    infer_class: cascade
+    acoustic_exp_name: yiyutongsheng_acoustic
+    variance_exp_name: yiyutongsheng_variance
+    vocoder_exp_name: yiyutongsheng_vocoder
+    export_dir: data/svs/diffsinger_opencpop
+    project_format: word_level_json
+    pndm_speedup: 40
+    force_cpu: false
+    normalize_output: true
+    f0_fallback:
+      enabled: true
+      naturalize: true
+      transition_ms: 50
+      vibrato_enabled: true
+      vibrato_threshold_sec: 0.35
+      vibrato_rate_hz: 5.5
+      vibrato_depth_cents: 15
+      vibrato_delay_sec: 0.15
+      vibrato_fade_sec: 0.08
+      tail_fall_enabled: true
+      tail_fall_ms: 150
+      tail_fall_cents: 20
+      jitter_enabled: true
+      jitter_cents: 2
+      random_seed: 1234
+    hparams_override:
+      vocoder_ckpt: checkpoints/yiyutongsheng_vocoder
+  rvc:
+    enabled: true
+    root: external/rvc
+    model_name: bofan_voice_f0.pth
+    index_path: D:\YiYuTongSheng\external\rvc\assets\indices\bofan_voice_f0_IVF591_Flat_nprobe_1_bofan_voice_f0_v2.index
+    f0method: rmvpe
+    f0up_key: 0
+    index_rate: 0.2
+    filter_radius: 3
+    resample_sr: 24000
+    rms_mix_rate: 1.0
+    protect: 0.7
+    timeout_sec: 1800
+pipeline:
+  allow_mock_outputs: false
+  overwrite: true
+  dry_run: false
+  run_legacy_english_pipeline: false
+models:
+  translation_backend: disabled_for_zh_opencpop_svs
